@@ -1,0 +1,204 @@
+.sub_title {
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+.title {
+  font-family: "Roboto-Regular";
+  overflow: hidden;
+  color: #313e5b;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.text {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #667085;
+  /* margin-top: -20px; */
+}
+
+.text_ul {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #313e5b;
+}
+
+.platformDataSection {
+  display: flex;
+  padding: 0px 28px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.tab_sub_sec {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05),
+    0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.PlatformOutputCards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #fff;
+  height: 72px;
+  margin: 0px 0px 25px 0;
+}
+
+.imageCard {
+  /* width: 72px; */
+  height: 60px;
+}
+
+.imageCardText {
+  color: #313e5b;
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.capabibilities {
+  display: flex;
+  padding: 5px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  border-radius: 99px;
+  background: var(--Brand-Purple, #6f2b8c);
+  /* width: 21rem; */
+  margin: 0px 15px 15px 0px;
+}
+
+.capabibilities:hover {
+  color: #6f2b8c;
+  background-color: #f4eef6;
+}
+
+.capabibilitiesText {
+  color: var(--White, #fff);
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.capabibilitiesSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.url_card {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-purple);
+}
+
+@media screen and (max-width: 550px) {
+  .capabibilities {
+    display: flex;
+    padding: 5px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 250px;
+    text-align: center;
+  }
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-around;
+  /* padding-bottom: 30px; */
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.title4 {
+  font-family: "Roboto-Regular";
+  color: var(--White, #fff);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  text-transform: capitalize;
+}
+
+.title5 {
+  color: var(--White, #fff);
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 18px;
+    line-height: 26px;
+    /* margin-top: -26px; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  li.tabs .tab {
+    width: 133px !important;
+    /* Add !important to override other styles if needed */
+  }
+
+  ul.tabs {
+    overflow-x: scroll;
+    white-space: nowrap;
+    /* Ensure that the tabs are in a single line */
+  }
+}
+
+li.tab.selected {
+  width: auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+}

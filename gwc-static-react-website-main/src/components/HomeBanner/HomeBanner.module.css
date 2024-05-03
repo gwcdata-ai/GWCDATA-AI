@@ -1,0 +1,35 @@
+/* Custom styles for the dots */
+.SliderSection .slick-slider .slick-dots {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 40px !important;
+}
+
+.SliderSection .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.SliderSection .slick-dots li button {
+  font-size: 10px;
+  line-height: 1;
+  color: #000; /* Adjust the color as needed */
+  border: 1px solid #000; /* Adjust the border properties */
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.SliderSection .slick-dots li.slick-active button {
+  background: #000; /* Adjust the active dot background color */
+  color: #fff; /* Adjust the active dot text color */
+}
+
+.gradient_text {
+  color: linear-gradient(180deg, #f16b66 35.94%, #faaf5f 100%);
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}

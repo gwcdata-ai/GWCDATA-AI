@@ -1,0 +1,79 @@
+.panel {
+  height: 100vh;
+
+  background-image: url("../../assets/images/HomePartner/partnersBanner.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  width: 100% !important;
+}
+/* .panel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  } */
+.blank_row {
+  width: calc(100% - 30px);
+  height: 100vh;
+  border: 0px solid #000;
+  background: #fff;
+  margin: -1px;
+  font-family: "Croissant One", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.center_align_ment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  height: 100vh;
+}
+
+.center__dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.fixed_heading {
+  color: #000;
+
+  font-family: "OS-Medium";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.375rem; /* 126.667% */
+}
+
+.fixed_para {
+  font-size: 16px;
+  line-height: 24px;
+  height: auto;
+  font-family: "OS-Regular";
+  color: #000;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 35px 20px;
+  margin: 25px;
+}
+.fixed_image {
+  background-color: #fff;
+  padding: auto;
+  border-radius: 25px;
+}
+
+.badge_box {
+  color: #fff;
+  display: flex;
+  padding: 0.25rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: #733891;
+  width: 200px;
+}

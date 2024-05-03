@@ -1,0 +1,91 @@
+.sub_title {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white);
+}
+
+.title {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white);
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.btn1 {
+  height: 60px;
+  padding: 16px 28px 16px 28px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 8px;
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: var(--white);
+  color: var(--theme-purple-btn-text);
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn1:hover {
+  background-color: var(--theme-purple-btn-text);
+  color: var(--white);
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn2 {
+  height: 60px;
+  padding: 16px 28px 16px 28px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 8px;
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: var(--theme-purple-btn-text);
+  color: var(--white);
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn2:hover {
+  background-color: var(--white);
+  color: var(--theme-purple-btn-text);
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}

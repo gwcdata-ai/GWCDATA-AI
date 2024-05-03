@@ -1,0 +1,192 @@
+.subheading {
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-purple);
+}
+
+.heading {
+  font-family: "Roboto-Regular";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--theme-secondary-blue);
+}
+
+.BenefitSectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 40px;
+  /* width: 100vw; */
+  /* height: 771px; */
+  background: #f9fafb;
+  flex: none;
+  order: 2;
+}
+
+.BenefitSectionContent {
+  font-family: "Gilroy";
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+  gap: 8px;
+  /* width: 1240px; */
+  /* height: 65px; */
+}
+
+.BenefitSectionHeader {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1d2939;
+}
+
+.BenefitSectionText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #7f56d9;
+}
+
+.BenefitSectionBox {
+  display: flex !important;
+  flex-direction: column;
+  padding: 32px;
+  gap: 20px;
+  width: 415.67px !important;
+  height: 500px;
+  background: transparent;
+  color: #667085;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 15px 50px;
+  font-family: "OS-Regular";
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-shadow: 0px 4px 6px 0px #0000000d;
+
+  box-shadow: 0px 10px 15px 0px #0000001a;
+}
+
+.BenefitSectionBox1 {
+  display: flex !important;
+  flex-direction: column;
+  padding: 32px;
+  gap: 20px;
+  width: 415.67px !important;
+  height: 500px;
+  background: transparent;
+  color: #667085;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 15px 50px;
+  font-family: "OS-Regular";
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-shadow: 0px 4px 6px 0px #0000000d;
+
+  box-shadow: 0px 10px 15px 0px #0000001a;
+}
+
+.title_card {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left !important;
+  color: #313e5b;
+}
+
+.date_card {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #313e5b;
+}
+.description_card {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.url_card {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-purple);
+}
+
+.HomeApproachSection {
+  /* background-image: url("../../assets/images/HomeApproach/HomeApprochBanner.jpg"); */
+  /* background: url("../../../assets/images/HomeApproach/FeaturesBannwe.png"),
+    lightgray 50% / cover no-repeat; */
+  background-size: cover;
+
+  padding: 60px 0px 60px 112px;
+}
+
+@media screen and (max-width: 550px) {
+  .HomeApproachSection {
+    padding: 20px;
+  }
+
+  .BenefitSectionBox1 {
+    width: "fit-content";
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .BenefitSectionBox {
+    display: flex !important;
+    flex-direction: column;
+    padding: 32px;
+    gap: 20px;
+    width: "fit-content" !important;
+    height: 500px;
+    background: transparent;
+    color: #667085;
+    background-color: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin-left: 10px;
+    font-family: "OS-Regular";
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    box-shadow: 0px 4px 6px 0px #0000000d;
+
+    box-shadow: 0px 10px 15px 0px #0000001a;
+  }
+}

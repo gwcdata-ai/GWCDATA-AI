@@ -1,0 +1,585 @@
+@font-face {
+  font-family: "OS-Bold";
+  src: url("./assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OS-BoldItalic";
+  src: url("./assets/fonts/OpenSans-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-ExtraBold";
+  src: url("./assets/fonts/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "OS-ExtraBoldItalic";
+  src: url("./assets/fonts/OpenSans-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Italic";
+  src: url("./assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Light";
+  src: url("./assets/fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "OS-LightItalic";
+  src: url("./assets/fonts/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Medium";
+  src: url("./assets/fonts/OpenSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "OS-MediumItalic";
+  src: url("./assets/fonts/OpenSans-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Regular";
+  src: url("./assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiBold";
+  src: url("./assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiBoldItalic";
+  src: url("./assets/fonts/OpenSans-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-Bold";
+  src: url("./assets/fonts/OpenSans_Condensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-BoldItalic";
+  src: url("./assets/fonts/OpenSans_Condensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-ExtraBold";
+  src: url("./assets/fonts/OpenSans_Condensed-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-Italic";
+  src: url("./assets/fonts/OpenSans_Condensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-Light";
+  src: url("./assets/fonts/OpenSans_Condensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-LightItalic";
+  src: url("./assets/fonts/OpenSans_Condensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-Medium";
+  src: url("./assets/fonts/OpenSans_Condensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-MediumItalic";
+  src: url("./assets/fonts/OpenSans_Condensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-Regular";
+  src: url("./assets/fonts/OpenSans_Condensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-SemiBold";
+  src: url("./assets/fonts/OpenSans_Condensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OS-Condensed-SemiBoldItalic";
+  src: url("./assets/fonts/OpenSans_Condensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-Bold";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-BoldItalic";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-Italic";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-Italic.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-LightItalic";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-Medium";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-MediumItalic";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-Regular";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-SemiBold";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OS-SemiCondensed-SemiBoldItalic";
+  src: url("./assets/fonts/OpenSans_SemiCondensed-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("./assets/fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-BlackItalic";
+  src: url("./assets/fonts/Roboto-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-BoldItalic";
+  src: url("./assets/fonts/Roboto-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("./assets/fonts/Roboto-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("./assets/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("./assets/fonts/Roboto-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./assets/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-MediumItalic";
+  src: url("./assets/fonts/Roboto-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("./assets/fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-ThinItalic";
+  src: url("./assets/fonts/Roboto-ThinItalic.ttf");
+}
+
+:root {
+  --red: #eb2127;
+  --blue: #2c3d9a;
+  --white: #fff;
+  --black: #000;
+  --theme-purple: #712b8c;
+  --theme-purple-btn-text: #6f2b8c;
+  --theme-blue: #4099d4;
+  --theme-yellow: #fec45f;
+  --theme-red: #f26b66;
+  --transitons: 0.2s;
+  --theme-primary-700: #6941c6;
+  /* --theme-secondary-blue: #313e5b; */
+  --theme-secondary-blue: linear-gradient(0deg, #313e5b, #313e5b),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+  /* --theme-gray-500: #667085; */
+  --theme-gray-500: linear-gradient(0deg, #313e5b, #313e5b),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+  --theme-gray-200: #eaecf0;
+  --theme-gray-100: #f2f4f7;
+  --theme-purple-50: #f4f3ff;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "OS-Regular";
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  cursor: pointer;
+  color: var(--theme-secondary-blue);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-primary-700);
+  border-radius: 15px;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--white);
+  background: var(--theme-blue);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--theme-blue);
+}
+
+.SliderSection .slick-dots {
+  bottom: 5px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrer_slider_card{
+  display: flex !important;
+    flex-direction: column;
+    padding: 2px;
+    gap: 30px;
+    width: 590px;
+    /* height: 377px; */
+    background: transparent;
+    color: #667085;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    height: 100%;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 15px 40px;
+    font-family: "OS-Regular";
+    -webkit-border-radius: 16px;
+}
+
+.sale_heading{
+  color: #313E5B;
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+
+.HomeSolutions .slick-dots {
+  bottom: 5px !important;
+  position: relative;
+  z-index: 1;
+}
+
+.form_heading{
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #ffff;
+}
+
+.radio-button .form-check-input:checked {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  height: 20px;
+  width: 20px;
+}
+
+.heading_skill{
+  font-family: "Roboto-Bold";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--theme-secondary-blue);
+    margin-left: 20px;
+}
+
+.border_title{
+  border:1px solid #6F2B8C;
+  background-color:#6F2B8C ;
+}
+
+.submit_btn{
+  border-radius: 8px;
+    background:#ffff;
+    display: flex;
+    height: 50px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    color:black;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 1px solid #FFF;
+}
+
+.submit_btn:hover{
+  border-radius: 8px;
+    background: #f5f5f5;;
+    display: flex;
+    height: 50px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    color:black;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 1px solid #FFF;
+}
+
+/* Custom Slick Dots */
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.ft-slick__dots--custom {
+  height: 8px;
+  width: 14px;
+  background-color: #e5e7e9;
+  border-radius: 4px;
+  /* position: relative; */
+}
+
+.slick-dots li {
+  width: 14px;
+  margin: 0 2px;
+  /* transition: width 0.3s ease-in-out; */
+}
+
+.slick-dots .slick-active {
+  width: 56px;
+  /* transition: width 0.3s ease-in-out; */
+}
+
+.slick-dots .slick-active .ft-slick__dots--custom {
+  width: 56px;
+  top: 0px;
+  overflow: hidden;
+}
+
+.slick-dots .slick-active .ft-slick__dots--custom {
+  height: 8px;
+  /* animation: loading 5s ease-in; */
+  background-image: linear-gradient(270deg, #6e2b8b, #6e2b8b);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+}
+
+.TestimonialsSection .slick-dots {
+  bottom: -52px;
+}
+
+.newCardsSection .slick-dots {
+  bottom: -52px;
+}
+
+.ApproachSection .slick-dots {
+  bottom: -52px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 0px !important;
+}
+
+.GCPOverview .slick-dots {
+  bottom: 15px;
+}
+
+.culture-bold {
+  font-size: 22px;
+  color: var(--theme-red);
+}
+
+.card_solution .slick-dots{
+  bottom: 0px!important;
+
+}
+
+.height_card_title{
+  
+}
+.overlay_container{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: 92%;
+  background-color: rgb(0 0 0 / 41%);
+  border-radius: 14px;
+}
+
+.image_container{
+  position: relative;
+  overflow: hidden;
+}
+
+.image_container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Set height to 100% */
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  transition: opacity 0.3s;
+  opacity: 0;
+  box-sizing: border-box; /* Add this property */
+}
+
+.image_container:hover::before {
+  opacity: 1;
+}
+
+.nasscomImg{
+  width:150px;
+}
+
+/* .culture-lineheight{
+  margin-bottom: 5px;
+} */
+
+@media only screen and (max-width: 600px) {
+  .tabs .tab {
+    width: 75px;
+  }
+
+  .tabs .tab.selected {
+    padding: 0px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 3px!important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 41%);
+  border-radius: 14px;
+}
+
+.footer_brand_img{
+  display: flex;
+}
+
+.nasscomImg{
+  width:100%;
+  margin-left: 10px;
+}
+}
+
+/* img {
+  pointer-events: none;
+} */

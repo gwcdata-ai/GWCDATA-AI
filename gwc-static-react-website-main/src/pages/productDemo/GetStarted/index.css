@@ -1,0 +1,46 @@
+.getStarted__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.getStarted__title {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.create_btn {
+  background-color: #99CCEE;
+  color: #112E4B;
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  /* width: 100%; */
+  padding: 12px 65px;
+  cursor: pointer;
+  border-radius: 1rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .create_btn {
+    padding: 12px 30px;
+  }
+}
+
+.create_btn:hover {
+  background-color: transparent;
+  border: 2px solid #99CCEE;
+  color: #112E4B;
+  font-family: "OS-Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  /* width: 100%; */
+  padding: 12px 65px;
+  /* margin-left: 35px; */
+
+}

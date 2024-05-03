@@ -1,0 +1,213 @@
+.container_bg {
+    background-color: #5ABBEF;
+}
+
+.mt4 {
+    margin-top: 35px !important;
+}
+
+.demo_log {
+    width: 100px;
+}
+
+.center_align {
+    display: flex;
+    justify-content: center;
+}
+
+.create_btn {
+    background-color: #99CCEE;
+    color: #112E4B;
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    /* width: 100%; */
+    padding: 12px 65px;
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .create_btn {
+        padding: 12px 30px;
+    }
+}
+
+.create_btn:hover {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-family: "OS-Regular";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    /* width: 100%; */
+    padding: 12px 65px;
+    /* margin-left: 35px; */
+
+}
+
+.btn_Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo_list {
+    list-style: none;
+}
+
+.demo_wrapper_parent {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+}
+
+
+
+.demo_list li {
+    margin-bottom: 5px;
+}
+
+.check_icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+
+.domo_heading {
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: white;
+}
+
+.mt4 {
+    margin-top: 15px;
+}
+
+.domo_para {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.domo_card {
+    height: 230px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 5px 5px 18.3px rgba(213, 210, 210, 0.205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    box-sizing: border-box;
+    gap: 4px;
+    font-family: "OS-Regular";
+}
+
+.card_domo_head1 {
+    /* color: #313e5b;
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; */
+    font-family: "Roboto-Bold";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--theme-purple);
+}
+
+.card_domo_head2 {
+    font-family: "Roboto-Bold";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--theme-blue);
+}
+
+.card_domo_head3 {
+    font-family: "Roboto-Bold";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--theme-red);
+}
+
+.card_domo_head4 {
+    color: #313e5b;
+    font-family: "Roboto-Bold";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.card_domo_para1 {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--theme-purple);
+}
+
+.card_domo_para2 {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--theme-blue);
+}
+
+.card_domo_para3 {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--theme-red);
+}
+
+.card_domo_para4 {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #313e5b;
+}
+
+.imageCard {
+    height: 60px;
+    padding-top: 10px;
+}

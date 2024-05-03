@@ -1,0 +1,105 @@
+.list {
+  background-color: var(--theme-purple-50);
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--theme-secondary-blue);
+  /* height: 60px; */
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.list:hover {
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: var(--theme-purple);
+  color: var(--white);
+}
+
+/* .feat_sub_title {
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-primary-700);
+} */
+
+.feat_title {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--theme-secondary-blue);
+}
+
+@media only screen and (max-width: 600px) {
+  .feat_title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.feat_text {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-gray-500);
+}
+
+@media screen and (max-width: 550px) {
+  .list {
+    width: 13rem;
+    height: 65px;
+    font-size: 15px;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .DataGovernanceListCards {
+    display: flex;
+    gap: 15px;
+    overflow: auto;
+  }
+}
+
+.title7 {
+  font-family: "Roboto-Regular";
+  color: var(--White, #313E5B);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  /* 122.222% */
+  letter-spacing: -0.72px;
+  text-transform: capitalize;
+}
+
+.title8 {
+  color: var(--White, #667085);
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}

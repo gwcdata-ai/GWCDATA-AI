@@ -1,0 +1,135 @@
+.sub_title {
+  font-family: 'OS-Regular';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6f2b8c;
+}
+
+.title {
+  font-family: 'Roboto-Bold';
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--theme-blue-secondary);
+}
+
+.text {
+  font-family: 'OS-Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gray-500);
+}
+
+.card {
+  /*width: 90%;
+  */
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.newsDesc {
+  color: var(--White, #fff);
+  font-family: 'OS-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.ImageNews {
+  /* width: 480px; */
+  height: 100%;
+}
+
+.contentOnImage {
+  position: absolute;
+  width: 100%;
+  /* height: 100vh; */
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.newsTag {
+  color: var(--White, #fff);
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 4px;
+  width: 35%;
+  padding: 4px 8px;
+  background: var(--Brand-Red, #f26b66);
+}
+
+@media screen and (max-width: 500px) {
+  .contentOnImage {
+    top: 80%;
+  }
+
+  .contentOnImage {
+    top: 95% !important;
+  }
+
+  .newsTag {
+    width: 70%;
+  }
+
+  .card {
+    width: 97%;
+  }
+}
+
+.btn_down {
+  color: var(--White, #fff);
+  font-family: 'Roboto-Regular';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 10px 8px;
+  background: var(--Brand-Red, #f26b66);
+}
+
+/* zoom img */
+.zoomable_image {
+  width: 100%;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.zoomable_image:hover {
+  transform: scale(1.1);
+}

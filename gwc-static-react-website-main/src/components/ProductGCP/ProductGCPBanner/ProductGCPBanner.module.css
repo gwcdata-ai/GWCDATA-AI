@@ -1,0 +1,155 @@
+.breadcrumbs {
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+  padding-top: 50px;
+}
+
+/* .GcpImg {
+  height: 370px;
+} */
+
+.banner_title {
+  font-family: "Roboto-Bold";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white);
+}
+
+.banner_para {
+  font-family: "OS-Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+.banner_button {
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border: 1px solid var(--white);
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-purple-btn-text);
+  background-color: var(--white);
+  padding: 16px 28px 16px 28px;
+  border-radius: 8px;
+  border: 1px;
+  width: fit-content;
+}
+
+.banner_button2 {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.banner_button:hover {
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  font-family: "Roboto-Regular";
+  background-color: var(--theme-purple);
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.bannerCard {
+  display: flex;
+  /* width: 383px; */
+  height: 283px;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #fff;
+  /* Shadow/md */
+  box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+    0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+}
+
+.subscribe_btn {
+  color: var(--white);
+  font-family: "OS-Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  height: 36px;
+  padding-bottom: 35px;
+  line-height: 28px; /* 155.556% */
+  border-radius: 8px;
+  border: 1px solid var(--theme-purple-btn-text);
+  background: var(--theme-purple-btn-text);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.subscribe_btn:hover {
+  color: var(--white);
+  border: 1px solid var(--white);
+  background: var(--theme-blue);
+}
+
+.BannerCardHeading {
+  color: #313e5b;
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+}
+
+.BannerCardPara {
+  color: #667085;
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+@media screen and (max-width: 550px) {
+  .bannerCard {
+    margin-top: 20px;
+  }
+  .banner_title {
+    font-family: "Roboto-Bold";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--white);
+  }
+
+  .banner_button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 8px 14px 8px 14px;
+    border-radius: 4px;
+    border: 1px;
+  }
+
+  .breadcrumbs {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .banner_para {
+    font-size: 16px;
+ 
+  }
+}

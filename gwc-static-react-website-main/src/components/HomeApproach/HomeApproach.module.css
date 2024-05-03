@@ -1,0 +1,113 @@
+.BenefitSectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 40px;
+  /* width: 100vw; */
+  /* height: 771px; */
+  background: #f9fafb;
+  flex: none;
+  order: 2;
+}
+
+.BenefitSectionContent {
+  font-family: "Gilroy";
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+  gap: 8px;
+  /* width: 1240px; */
+  /* height: 65px; */
+}
+
+.BenefitSectionHeader {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1d2939;
+}
+
+.BenefitSectionText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #7f56d9;
+}
+
+.BenefitSectionBox {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  gap: 20px;
+  /* width: 417.67px !important; */
+  height: 430px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  flex: none;
+  margin-left: 3rem;
+  order: 0;
+  flex-grow: 1;
+  margin: 15px 0px 0px 44px;
+  font-family: "OS-Regular";
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.benefits_title {
+  color: var(--white);
+  text-align: center;
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 150% */
+}
+
+.HomeApproachSection {
+  background: url("../../assets/images/HomeApproach/FeaturesBannwe.webp"),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+
+  padding: 60px 0px 60px 112px;
+}
+
+.approachdivpadding {
+  padding-left: 10px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1318px) {
+  .BenefitSectionBox {
+    height: 450px;
+  }
+}
+
+@media screen and (min-device-width: 900px) and (max-device-width: 1199px) {
+  .BenefitSectionBox {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .HomeApproachSection {
+    padding: 20px;
+  }
+
+  .BenefitSectionBox {
+    width: 335px !important;
+    margin-left: 10px;
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .BenefitSectionBox {
+    width: 300px !important;
+  }
+}

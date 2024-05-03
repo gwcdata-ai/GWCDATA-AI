@@ -1,0 +1,71 @@
+.tabs {
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  justify-content: flex-start;
+  /* padding-bottom: 30px; */
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.tabs .tab {
+  flex-basis: 20%;
+  margin: 0px 0.1em;
+  padding: 20px 10px 20px 10px;
+  cursor: pointer;
+  transform: translateY(1px);
+  border-radius: 5px 5px 0px 0px;
+  transition: background-color 0.2s ease-in-out;
+  border: 1px solid transparent;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.tabs .tab:hover {
+  background-color: #ececec;
+  color: var(--theme-purple);
+}
+
+.tabs .tab.selected {
+  border-radius: 5px 5px 0px 0px;
+  border-width: 1px;
+  border-color: transparent transparent #4099D4 transparent;
+  border-style: solid;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 5px solid #4099D4;
+}
+
+.tabs .tab.selected:hover {
+  background: none;
+}
+
+.tab__content {
+  padding-top: 40px;
+  color: white;
+  font-family: "Economica", sans-serif;
+  font-size: 20px;
+}
+
+.tab__icon {
+  padding-left: 0.5em;
+}
+
+.subtitle {
+  color: white;
+  font-family: "Kaushan Script", cursive;
+}
+
+@media only screen and (max-width: 600px) {
+  .tabs .tab {
+    width: auto !important;
+  }
+
+  .tabs {
+    overflow-x: scroll;
+
+  }
+}

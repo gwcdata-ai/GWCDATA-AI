@@ -1,0 +1,63 @@
+.sub_title {
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+.title {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white);
+}
+
+.list_title {
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-secondary-blue);
+}
+
+.list_list {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  height: 90px;
+  text-align: left;
+  color: var(--theme-gray-500);
+  list-style-type: none;
+}
+
+.list_img {
+  height: 322px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: -20px;
+  }
+  .list_list {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  .list_list {
+    height: 125px;
+  }
+}

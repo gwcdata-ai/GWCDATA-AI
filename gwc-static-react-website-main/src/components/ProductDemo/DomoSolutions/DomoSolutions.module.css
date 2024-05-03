@@ -1,0 +1,263 @@
+.BenefitSectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 40px;
+  /* width: 100vw; */
+  /* height: 771px; */
+  background: #f9fafb;
+  flex: none;
+  order: 2;
+}
+
+.BenefitSectionContent {
+  font-family: 'Gilroy';
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+  gap: 8px;
+  /* width: 1240px; */
+  /* height: 65px; */
+}
+
+.BenefitSectionHeader {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1d2939;
+}
+
+.BenefitSectionText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #7f56d9;
+}
+
+.BenefitSectionBox {
+  display: flex !important;
+  flex-direction: column;
+  padding: 32px;
+  gap: 20px;
+  width: 380.67px;
+  height: 465px;
+  background: transparent;
+  color: #667085;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 15px 50px;
+  font-family: 'OS-Regular';
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.BenefitSectionBoxs {
+  display: flex !important;
+  flex-direction: column;
+  padding: 32px;
+  gap: 20px;
+  width: 380.67px;
+  height: 360px;
+  background: transparent;
+  color: #667085;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 15px 50px;
+  font-family: 'OS-Regular';
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.BenefitSectionBox1 {
+  display: flex !important;
+  flex-direction: column;
+  padding: 32px;
+  gap: 20px;
+  width: 330.67px !important;
+  height: 480px;
+  background: transparent;
+  color: #667085;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 15px 50px;
+  font-family: 'OS-Regular';
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.title_card {
+  font-family: 'Roboto-Regular';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left !important;
+}
+
+.title_card_dash {
+  font-family: 'Roboto-Regular';
+  color: #667085;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center !important;
+}
+
+/* .title_card_dash:hover {
+  font-size: 30px;
+  line-height: 37px;
+} */
+
+.hover_card_img:hover .title_card_img {
+  width: 105%;
+}
+
+.description_card {
+  font-family: 'OS-Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 110px;
+}
+
+.url_card {
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-purple);
+}
+
+.url_card_dash {
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--theme-purple);
+}
+
+.HomeApproachSection {
+  /* background-image: url("../../assets/images/HomeApproach/HomeApprochBanner.jpg"); */
+  background: url('../../../assets/images/HomeApproach/FeaturesBannwe.webp'),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+
+  padding: 60px 0px 60px 112px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .BenefitSectionBox {
+    width: 280px;
+    height: 480px;
+  }
+
+  .description_card {
+    height: 300px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1250px) {
+  .BenefitSectionBox {
+    width: 350px;
+  }
+}
+
+@media screen and (min-device-width: 1300px) and (max-device-width: 1350px) {
+  .BenefitSectionBox {
+    width: 370.67px;
+  }
+}
+
+@media screen and (min-device-width: 1301px) and (max-device-width: 1366px) {
+  .BenefitSectionBox {
+    width: 360.67px;
+  }
+}
+
+@media screen and (min-device-width: 900px) and (max-device-width: 950px) {
+  .BenefitSectionBox {
+    width: 400.67px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .HomeApproachSection {
+    padding: 20px;
+  }
+
+  .BenefitSectionBox1 {
+    width: 'fit-content';
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .BenefitSectionBox {
+    display: flex !important;
+    flex-direction: column;
+    padding: 32px;
+    gap: 20px;
+    width: 'auto' !important;
+    margin-left: 10px;
+    height: 440px;
+    background: transparent;
+    color: #667085;
+    background-color: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    font-family: 'OS-Regular';
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+  }
+
+  .description_card {
+    height: 300px;
+  }
+}
+
+.arrows {
+  border-radius: 28px;
+  border: 2px solid #e4e7ec;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  display: flex;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.custom-prev .custom-next {
+  display: inline-flex;
+}

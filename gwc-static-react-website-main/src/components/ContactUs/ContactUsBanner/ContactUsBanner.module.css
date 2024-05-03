@@ -1,0 +1,90 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.backgroundImage {
+  background: url(../../assets/images/ContactUs/contactUsBanneer.webp),
+    lightgray -9.909px -370.817px / 101.083% 203.807% no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+  /* Add your background image styles here */
+  /* Ensure it covers the whole area */
+}
+
+.contactSection {
+  text-align: start;
+  height: 540px;
+  margin-bottom: 30px;
+  background: #6f2b8c;
+}
+
+.formContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 692px;
+  max-width: 600px;
+  height: 570px;
+  border-radius: 16px;
+  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.2);
+  margin-left: -80px;
+}
+
+.formRow {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #6f2b8c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6f2b8c;
+}
+
+@media screen and (max-width: 550px) {
+  .formContainer {
+    width: 100%;
+    height: auto;
+    margin-left: 4px;
+    margin-top: 10rem;
+  }
+}

@@ -1,0 +1,140 @@
+.domo1cardtitle {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--theme-purple);
+}
+
+.domo1cardtext {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--theme-purple);
+}
+
+.domo2cardtitle {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--theme-blue);
+}
+
+.domo2cardtext {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--theme-blue);
+}
+
+.domo3cardtitle {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--theme-red);
+}
+
+.domo3cardtext {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--theme-red);
+}
+
+.domo4cardtitle {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--theme-yellow);
+}
+
+.domo4cardtext {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25x;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--theme-yellow);
+}
+
+/* changes domo */
+.domo1cardtitle2 {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--theme-purple);
+}
+
+.domo1cardtitle8 {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #FEC560;
+}
+
+.domo2cardtitle2 {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #4099D4;
+}
+
+.domo2cardtitle8 {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: grey;
+}
+
+.domo2cardtitle9 {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: skyblue;
+}
+
+.domo3cardtitle2 {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--theme-red);
+}

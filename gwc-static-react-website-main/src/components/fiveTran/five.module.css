@@ -1,0 +1,281 @@
+.sub_title {
+    font-family: "OS-Regular";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-primary-700);
+}
+
+.title {
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--theme-secondary-blue);
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .banner_button {
+        font-size: 14px;
+        padding: 8px 14px 8px 14px;
+    }
+}
+
+.text {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-gray-500);
+}
+
+.companyCard {
+    display: flex;
+    /* width: 619px; */
+    padding: 38px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 16px;
+    background: var(--theme-purple);
+    color: white;
+}
+
+.BannerCompanyHeading {
+    color: white;
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 150% */
+}
+
+.BannerCompanyPara {
+    color: white;
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.banner_button {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    border: 1px solid var(--theme-purple) !important;
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-purple-btn-text);
+    background-color: transparent;
+    padding: 16px 28px 16px 28px;
+    border-radius: 8px;
+    border: 1px;
+    width: fit-content;
+}
+
+.banner_button:hover {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    font-family: "Roboto-Regular";
+    background-color: var(--theme-purple);
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.text1 {
+    color: #FFF;
+    font-family: "OS-Regular";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.text2 {
+    font-family: "OS-Regular";
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.banner_button {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    border: 1px solid var(--white);
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-purple-btn-text);
+    background-color: var(--white);
+    padding: 16px 28px 16px 28px;
+    border-radius: 8px;
+    border: 1px;
+    width: fit-content;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.banner_button:hover {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    font-family: "Roboto-Regular";
+    background-color: var(--theme-red);
+    color: var(--white);
+    border-color: var(--theme-red);
+    cursor: pointer;
+    scale: 1.05;
+    background-position: 100% 0;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner_button {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 8px 14px 8px 14px;
+        border-radius: 4px;
+        border: 1px;
+    }
+}
+
+.heading {
+    color: #313E5B;
+    font-family: "Roboto-Regular";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    text-transform: capitalize;
+}
+
+.get_btn {
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+    padding: 16px 28px 16px 28px;
+    border-radius: 8px;
+    border: 1px;
+    width: fit-content;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #6F2B8C;
+    background: #6F2B8C;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.get_btn:hover {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    font-family: "Roboto-Regular";
+    background-color: var(--theme-red);
+    color: var(--white);
+    border-color: var(--theme-red);
+    cursor: pointer;
+    scale: 1.05;
+    background-position: 100% 0;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.left_img {
+    float: inline-start;
+    margin-left: -50px;
+}
+
+@media screen and (min-width:0px)and (max-width:900px) {
+    .left_img {
+        float: inline-start;
+        margin-left: auto;
+    }
+}
+
+.title_head {
+    color: #313E5B;
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    text-transform: capitalize;
+}
+
+.para {
+    color: #667085;
+    font-family: "OS-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card_para1 {
+    color: #313E5B;
+    font-family: "Roboto-Bold";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+}
+
+.card_para2 {
+    color: #667085;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.five_card {
+    border-radius: 16px;
+    background: #FFF;
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.five_card:hover {
+    box-shadow: 0px 1px 8px 0px rgba(16, 24, 40, 0.12), 0px 1px 6px 0px rgba(16, 24, 40, 0.30);
+    border: 2px solid #98A2B3;
+}

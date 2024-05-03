@@ -1,0 +1,104 @@
+.sub_title {
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-primary-700);
+}
+
+.title {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--theme-secondary-blue);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: -20px;
+  }
+}
+
+.card_title {
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-secondary-blue);
+}
+
+.card_text {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-gray-500);
+}
+
+.card_section {
+  box-shadow: 0px 4px 6px 0px #0000000d;
+  box-shadow: 0px 10px 15px 0px #0000001a;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: var(--white);
+  margin-right: 20px;
+}
+
+.more_btn {
+  font-family: "Roboto-Bold";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-purple-btn-text);
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.more_btn:hover {
+  color: var(--theme-red);
+  scale: 0.95;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.card_tags {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--theme-purple-btn-text);
+  padding: 8px 24px 8px 24px;
+  border-radius: 99px;
+  gap: 3px;
+  margin-right: 5px;
+}
+
+.banner_row {
+  margin-right: -185px;
+}
+
+@media screen and (max-width: 550px) {
+  .banner_row {
+    margin-right: 0;
+  }
+}

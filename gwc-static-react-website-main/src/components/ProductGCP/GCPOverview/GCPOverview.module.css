@@ -1,0 +1,100 @@
+.sub_title {
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+.title {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white);
+}
+
+.card_title {
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-secondary-blue);
+}
+
+.card_text {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--theme-gray-500);
+}
+
+.card_section {
+  box-shadow: 0px 2px 4px -2px #1018280f;
+  box-shadow: 0px 4px 8px -2px #1018281a;
+  padding: 32px;
+  border-radius: 16px;
+  gap: 25px;
+  background-color: var(--white);
+}
+
+.sub_main_title {
+  color: #FFF;
+  font-family: "OS-Light";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text_overlay {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  width: 96%;
+  height: 93%;
+  background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 20px;
+
+}
+
+.last_img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0px 10px;
+  border-radius: 20px;
+}

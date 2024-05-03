@@ -1,0 +1,169 @@
+title5.sub_title {
+    font-family: "OS-Regular";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.title4 {
+    font-family: "Roboto-Regular";
+    color: var(--White, #FFF);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    /* 122.222% */
+    letter-spacing: -0.72px;
+    text-transform: capitalize;
+}
+
+.title5 {
+    color: var(--White, #FFF);
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.title6 {
+    color: var(--Gray-500, #667085);
+    text-overflow: ellipsis;
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 550px) {
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: -30px;
+    }
+}
+
+.text {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #667085;
+    margin-top: -20px;
+
+}
+
+.platformDataSection {
+    display: flex;
+    padding: 28px 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.tab_sub_sec {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.PlatformOutputCards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #fff;
+    height: 72px;
+    margin: 0px 0px 25px 0;
+}
+
+.imageCard {
+    /* width: 72px; */
+    height: 60px;
+}
+
+.imageCardText {
+    color: #313e5b;
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 150% */
+}
+
+.capabibilities {
+    display: flex;
+    padding: 5px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 99px;
+    background: var(--Brand-Purple, #6f2b8c);
+    /* width: 21rem; */
+    margin: 0px 15px 15px 0px;
+}
+
+.capabibilities:hover {
+    color: #6F2B8C;
+    background-color: #F4EEF6;
+}
+
+.capabibilitiesText {
+    color: var(--White, #fff);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 150% */
+}
+
+.capabibilitiesSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.url_card {
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-purple);
+}
+
+@media screen and (max-width: 550px) {
+    .capabibilities {
+        display: flex;
+        padding: 5px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 250px;
+        text-align: center;
+    }
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-around;
+    /* padding-bottom: 30px; */
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}

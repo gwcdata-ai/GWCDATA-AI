@@ -1,0 +1,778 @@
+.breadcrumbs {
+    font-family: "OS-Regular";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+}
+
+.banner_title {
+    font-family: "Roboto-Bold";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--white);
+}
+
+.banner_para {
+    font-family: "OS-Regular";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+    /* margin-right: 38rem; */
+}
+
+.banner_button {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    border: 1px solid var(--white);
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-purple-btn-text);
+    background-color: var(--white);
+    padding: 16px 28px 16px 28px;
+    border-radius: 8px;
+    border: 1px;
+    width: fit-content;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.banner_button:hover {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    font-family: "Roboto-Regular";
+    background-color: var(--theme-red);
+    color: var(--white);
+    border-color: var(--theme-red);
+    cursor: pointer;
+    scale: 1.05;
+    background-position: 100% 0;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner_title {
+        font-family: "Roboto-Bold";
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: var(--white);
+    }
+
+    .banner_button {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 8px 14px 8px 14px;
+        border-radius: 4px;
+        border: 1px;
+        border: 1px solid var(--theme-purple-btn-text);
+    }
+
+    .breadcrumbs {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+}
+
+.search_logo {
+    /* background: url(../../assets/images/Blog/search.svg); */
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #F9FAFB;
+    display: flex;
+    padding: 17px 22px;
+    gap: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.25);
+}
+
+.banner_sub_title {
+    color: #FFF;
+    font-family: "OS-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* what page */
+
+.title {
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--theme-secondary-blue);
+}
+
+.text {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-gray-500);
+}
+
+.banner_button {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    border: 1px solid var(--white);
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-purple-btn-text);
+    background-color: var(--white);
+    padding: 16px 26px 16px 26px;
+    border-radius: 8px;
+    width: fit-content;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid var(--Brand-Purple, #6F2B8C);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.banner_button:hover {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    font-family: "Roboto-Regular";
+    background-color: var(--theme-red);
+    color: var(--white);
+    border-color: var(--theme-red);
+    cursor: pointer;
+    scale: 1.05;
+    background-position: 100% 0;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner_button {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 8px 14px 8px 14px;
+        border-radius: 4px;
+        border: 1px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .banner_button {
+        font-size: 14px;
+        padding: 8px 14px 8px 14px;
+    }
+}
+
+
+/* tabs */
+.sub_title {
+    font-family: "OS-Regular";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.title {
+    font-family: "Roboto-Regular";
+    overflow: hidden;
+    color: #313E5B;
+    text-overflow: ellipsis;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+@media screen and (max-width: 550px) {
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+}
+
+.text {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #667085;
+
+
+}
+
+
+.platformDataSection {
+    display: flex;
+    padding: 0px 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.tab_sub_sec {
+    border-radius: 16px;
+    background: #313e5b;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.PlatformOutputCards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #313E5B;
+    height: 72px;
+    margin: 0px 0px 25px 0;
+}
+
+.imageCard {
+    /* width: 72px; */
+    height: 60px;
+}
+
+.imageCardText {
+    color: #313e5b;
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 150% */
+}
+
+.capabibilities {
+    display: flex;
+    padding: 5px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 99px;
+    background: var(--Brand-Purple, #6f2b8c);
+    /* width: 21rem; */
+    margin: 0px 15px 15px 0px;
+}
+
+.capabibilities:hover {
+    color: #6F2B8C;
+    background-color: #313E5B;
+}
+
+.capabibilitiesText {
+    color: var(--White, #313E5B);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.capabibilitiesSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.url_card {
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-purple);
+}
+
+@media screen and (max-width: 550px) {
+    .capabibilities {
+        display: flex;
+        padding: 5px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 250px;
+        text-align: center;
+    }
+}
+
+.title7 {
+    font-family: "Roboto-Regular";
+    color: var(--White, #313E5B);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    text-transform: capitalize;
+}
+
+.title8 {
+    color: var(--White, #667085);
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 550px) {
+    .title7 {
+        font-size: 30px;
+    }
+}
+
+.tab_icons {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.icon_text {
+    color: #313E5B;
+    font-family: "Roboto-Regular";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+}
+
+.tab_sub_sec {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.title6 {
+    color: var(--Gray-500, #667085);
+    text-overflow: ellipsis;
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.do_text {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #667085;
+
+}
+
+.tab_text {
+    color: #313E5B;
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+/* works  */
+.title4 {
+    color: var(--White, #FFF);
+    font-family: "Roboto-Regular";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    text-transform: capitalize;
+}
+
+.title5 {
+    color: var(--White, #FFF);
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.work_card {
+    border-radius: 16px;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.10);
+    padding: 32px;
+}
+
+.para1 {
+    overflow: hidden;
+    color: var(--101828, #313E5B);
+    text-overflow: ellipsis;
+    font-family: "OS-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.para2 {
+    color: var(--Gray-500, #667085);
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+/* tab */
+
+.five_card {
+    border-radius: 16px;
+    background: #FFF;
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.text_icon {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+@media screen and (min-width:0px)and (max-width:1000px) {
+    .text_icon {
+        display: block;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+    }
+}
+
+.card_para1 {
+    color: var(--101828, #313E5B);
+    font-family: "Roboto-Bold";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+}
+
+.card_para2 {
+    color: var(--Gray-500, #667085);
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+/* slider */
+
+.BenefitSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 40px;
+    /* width: 100vw; */
+    /* height: 771px; */
+    background: #f9fafb;
+    flex: none;
+    order: 2;
+}
+
+.BenefitSectionContent {
+    font-family: "Gilroy";
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    gap: 8px;
+    /* width: 1240px; */
+    /* height: 65px; */
+}
+
+.BenefitSectionHeader {
+    font-weight: 700;
+    font-size: 28px;
+    color: #1d2939;
+}
+
+.BenefitSectionText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #7f56d9;
+}
+
+.BenefitSectionBox {
+    display: flex !important;
+    flex-direction: column;
+    padding-right: 20px;
+    gap: 20px;
+    width: 380.67px;
+    height: fit-content;
+    background: transparent;
+    color: #667085;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 15px 50px;
+    font-family: "OS-Regular";
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.BenefitSectionBox1 {
+    display: flex !important;
+    flex-direction: column;
+    padding-right: 20px;
+    gap: 20px;
+    width: 330.67px !important;
+    height: auto;
+    background: transparent;
+    color: #667085;
+    background-color: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 15px 50px;
+    font-family: "OS-Regular";
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.title_card {
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left !important;
+}
+
+.description_card {
+    font-family: "OS-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* height: 110px; */
+}
+
+.url_card {
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--theme-purple);
+}
+
+.HomeApproachSection {
+    /* background-image: url("../../assets/images/HomeApproach/HomeApprochBanner.jpg"); */
+    background-color: #FFFF;
+    background-size: cover;
+
+    padding: 60px 0px 60px 112px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .BenefitSectionBox {
+        width: 280px;
+        height: auto;
+    }
+
+    .description_card {
+        height: 300px;
+    }
+
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1250px) {
+    .BenefitSectionBox {
+        width: 350px;
+    }
+}
+
+@media screen and (min-device-width: 1300px) and (max-device-width: 1350px) {
+    .BenefitSectionBox {
+        width: 370.67px;
+        height: auto;
+    }
+}
+
+@media screen and (min-device-width: 1301px) and (max-device-width: 1366px) {
+    .BenefitSectionBox {
+        width: 360.67px;
+    }
+}
+
+@media screen and (min-device-width: 900px) and (max-device-width: 950px) {
+    .BenefitSectionBox {
+        width: 400.67px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .HomeApproachSection {
+        padding: 20px;
+    }
+
+    .BenefitSectionBox1 {
+        width: "fit-content";
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .BenefitSectionBox {
+        display: flex !important;
+        flex-direction: column;
+        padding: 32px;
+        gap: 20px;
+        width: "auto" !important;
+        margin-left: 10px;
+        height: 440px;
+        background: transparent;
+        color: #667085;
+        background-color: #ffffff;
+        border: 1px solid #e4e7ec;
+        border-radius: 16px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        font-family: "OS-Regular";
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+    }
+
+    .description_card {
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-width:0px)and (max-width:900px) {
+    .five_image {
+        width: 100%;
+    }
+}
+
+/* heading */
+.title_head {
+    color: #313E5B;
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    text-transform: capitalize;
+}
+
+.para {
+    color: #667085;
+    font-family: "OS-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+@media screen and (min-width:0px)and (max-width:1024px) {
+    .description_card {
+        overflow: hidden;
+    }
+}
+
+.slide_card {
+    border-radius: 30px;
+    margin: 2rem;
+}
+
+
+/* new react slick */
+
+.down_carousel_card {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+@media screen and (min-width:0px)and (max-width:1024px) {
+    .description_card {
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .title_card {
+        font-size: 18px;
+    }
+}

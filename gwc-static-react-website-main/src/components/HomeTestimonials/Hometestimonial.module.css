@@ -1,0 +1,35 @@
+.card_title {
+  font-family: "Roboto-Regular";
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+.card_sub_title {
+  font-family: "Inter-Italic";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+.card_para {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--black);
+}
+
+.card_height {
+  min-height: 480px;
+  max-height: 580px;
+}
