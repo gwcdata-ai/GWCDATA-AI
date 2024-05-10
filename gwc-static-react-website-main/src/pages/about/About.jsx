@@ -28,9 +28,11 @@ import {
 import News from "../../components/about/News/News";
 import WorkCulture from "../../components/about/workCulture/WorkCulture";
 import NewsNewSection from "../../components/about/News/NewsNewSection";
+import { Helmet } from "react-helmet-async";
 
 export const AboutPage = () => {
   useEffect(() => {
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",

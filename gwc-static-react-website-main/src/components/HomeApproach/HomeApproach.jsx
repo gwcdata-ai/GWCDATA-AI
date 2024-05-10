@@ -170,11 +170,11 @@ const HomeApproach = () => {
             <div
               className={`${newStyles.meetOurLeadershipContainer} text-white`}
             >
-              Amplify Business Impact with the Transformative Power of Data
+              Amplify Business Impacts with the Transformative Power of Data
             </div>
           </div>
           <div className={`${newStyles.supportingText36} text-light mb-3`}>
-            Discover data analytics and AI solutions that expand the horizons of
+            Discover data analytics and AI solutions, that expand the horizons of
             your business possibilities.
           </div>
         </div>

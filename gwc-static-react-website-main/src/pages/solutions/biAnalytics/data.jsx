@@ -242,13 +242,13 @@ export const BiMigrationOurExpertise = {
 export const BiMigrationPuttingDataToWorkData = {
   // sub_title: "Why choose GWC?",
   title: "Why Choose GWC? ",
-  text: "Leveraging our end-to-end BI and analytics solution, we uncover insights into how historical and current data can shape the future of your organization.",
+  text: "Leveraging our end-to-end BI and analytics solutions, we uncover insights into how historical and current data can shape the future of your organization.",
   points: [
     // "Expertise",
     // "Innovation",
     // "Customization",
     // "Results-Driven ",
-    "Solving Problems Using BI Solutions",
+    "Solving Problems Using BI Tools",
     "Not Just Graphs & Charts, But Storytelling Dashboards",
     "Data to Insights. Insights to Actions",
     "Self-Service BI Enablement",

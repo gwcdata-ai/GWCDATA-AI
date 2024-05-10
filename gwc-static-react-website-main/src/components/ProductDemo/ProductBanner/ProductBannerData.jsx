@@ -10,7 +10,7 @@ export const ProductBannerCardsData = [
   {
     id: 1,
     name: "Business Apps",
-    desc: "Empower smarter decision-making with Domo's low-code and pro-code apps, enabling seamless automation of business insights.",
+    desc: "Empower smarter decision-making with Domo's low-code and pro-code apps, enabling seamlessly automate business insights.",
     buttonTxt: "Discover Apps",
     url:'#app-creation'
   },

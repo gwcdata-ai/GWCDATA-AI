@@ -1,11 +1,37 @@
-.sub_title {
-  font-family: "OS-Regular";
+.list {
+  background-color: var(--theme-purple-50);
+  font-family: "Roboto-Bold";
   font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
+  font-weight: 500;
+  line-height: 30px;
   letter-spacing: 0em;
-  text-align: left;
-  color: var(--theme-primary-700);
+  text-align: center;
+  color: #313e5b;
+  height: 60px;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.list:hover {
+  color: #f4eef6;
+  background-color: #6f2b8c;
+}
+.url_card{
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 550px) {
+  .list {
+    width: 13rem;
+  }
+  .DataGovernanceListCards {
+    display: flex;
+    gap: 15px;
+    overflow: auto;
+  }
 }
 
 .title {
@@ -18,6 +44,14 @@
   color: var(--theme-secondary-blue);
 }
 
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+    /* margin-top: -30px; */
+  }
+}
+
 .text {
   font-family: "OS-Regular";
   font-size: 16px;
@@ -26,81 +60,4 @@
   letter-spacing: 0em;
   text-align: left;
   color: var(--theme-gray-500);
-}
-
-.companyCard {
-  display: flex;
-  /* width: 619px; */
-  padding: 38px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  border-radius: 16px;
-  background: var(--theme-purple);
-  color: white;
-}
-
-.BannerCompanyHeading {
-  color: white;
-  font-family: "Roboto-Regular";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-  /* 150% */
-}
-
-.BannerCompanyPara {
-  color: white;
-  font-family: "OS-Regular";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 150% */
-}
-
-.banner_button {
-  box-shadow: 0px 1px 2px 0px #1018280d;
-  border: 1px solid var(--theme-purple) !important;
-  font-family: "Roboto-Regular";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: var(--theme-purple-btn-text);
-  background-color: transparent;
-  padding: 16px 28px 16px 28px;
-  border-radius: 8px;
-  border: 1px;
-  width: fit-content;
-  margin-top: 48px;
-}
-
-.banner_button:hover {
-  box-shadow: 0px 1px 2px 0px #1018280d;
-  font-family: "Roboto-Regular";
-  background-color: var(--theme-purple);
-  color: var(--white);
-  border-color: var(--white);
-}
-
-@media screen and (max-width: 550px) {
-  .title {
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: -30px;
-  }
-
-  .text {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .banner_button {
-    font-size: 14px;
-    padding: 8px 14px 8px 14px;
-    border-radius: 4px;
-  }
 }

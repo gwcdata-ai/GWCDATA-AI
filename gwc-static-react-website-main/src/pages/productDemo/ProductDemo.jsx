@@ -49,6 +49,8 @@ const ProductDemo = () => {
       <DemoPlatform />
       <PrincipalDomoFeature />
       <PrincipalDomoFeatureList />
+      {/* <PrincipalDomoFeatureList /> */}
+
       {/* <PricipalDomoFeatureContent /> */}
       <DomoAdvantages />
       <DomoUse />

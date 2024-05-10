@@ -46,7 +46,7 @@ export const HomeSolutiondata = [
     backgroundColor: "#F0F7FC ",
     hoverColor: "#4099D4",
     description:
-      "Revolutinize your growth by moving from traditional to modern Business Intelligence Ecosystem while eliciting its full efficiency. Migrate to Modernize your Business Intelligence Ecosystem with our Migration Accelerator framework.",
+      "Revolutionize your growth by moving from traditional to modern Business Intelligence Ecosystem, eliciting its full efficiency as you migrate to modern solutions. Migrate to Modernize your Business Intelligence Ecosystem with our Migration Accelerator framework.",
     link: "/solutions/bimigration-and-modernization",
   },
 
@@ -130,7 +130,7 @@ export const HomeSolutiondataMobile = [
     backgroundColor: "#F0F7FC ",
     hoverColor: "#4099D4",
     description:
-      "Revolutinize your growth by moving from traditional to modern Business Intelligence Ecosystem while eliciting its full efficiency. Migrate to Modernize your Business Intelligence Ecosystem with our Migration Accelerator framework.",
+      "Revolutionize your growth by moving from traditional to modern Business Intelligence Ecosystem, eliciting its full efficiency as you migrate to modern solutions. Migrate to Modernize your Business Intelligence Ecosystem with our Migration Accelerator framework.",
     link: "/solutions/bimigration-and-modernization",
   },
 

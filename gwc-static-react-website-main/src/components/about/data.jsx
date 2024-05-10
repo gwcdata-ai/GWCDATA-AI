@@ -53,7 +53,7 @@ export const AboutOverViewData = {
     "Continuous pursuit of value addition",
     "A strong emphasis on technology",
     "Innovation in everything ",
-    "Being an entended arm for business partners ",
+    "Being an extended arm for business partners ",
   ],
   leftImg: OverViewImg,
 };
@@ -195,16 +195,9 @@ export const AboutWhyChooseGwcEmployees = [
     logo: linkedin,
     url: "https://www.linkedin.com/in/mamtha-shanmugam-43ba8016a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGP%2FBBJapQ%2FCZkBi6ABu5fA%3D%3D",
   },
+
   {
     id: 8,
-    img: image3Img,
-    title: "Daniel Ranjit",
-    description: "Head of Technology",
-    logo: linkedin,
-    url: "https://www.linkedin.com/in/daniel-ranjit-762ab3185?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7uQJ3%2FJxRU%2BLkhHWt6piIg%3D%3D",
-  },
-  {
-    id: 9,
     img: image2Img,
     title: "Abinaya Sindhu",
     description: "Head of People Operations",
@@ -269,7 +262,7 @@ export const AboutRecognitionsData = {
   // sub_title: "Recognitions",
   title1: "Great Place To Work - 2023",
   text: "GWC is certified by Great Place To Work. It reflects our dedication to employee well-being and sets a standard for excellence in attracting, retaining, and nurturing top talent. ",
-  title2: "Why GWC Data.AI is a Great Place To Work?",
+  title2: "What Makes GWC Data.AI a Great Place to Work?",
   bannerBg: RecognitionBgImg,
   img: RecognitionsImg,
   list: [

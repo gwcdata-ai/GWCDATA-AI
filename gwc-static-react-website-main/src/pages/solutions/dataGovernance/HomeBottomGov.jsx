@@ -19,7 +19,7 @@ const HomeBottomGov = () => {
                                 Embark on a Transformative Journey with GWC’s Atlan & Alation Services
                             </h1>
                             <p className={`${styles.banner_para} mb-4`}>
-                                Empower your enterprise with GWC’S services Alation & Atlan. Alation enhances collaboration and data discovery by providing advanced data cataloguing solutions, fostering a data-driven culture. Atlan transforms data management, ensuring efficient governance and utilization. Get ready to unlock the transformative potential of data and Artificial Intelligence!
+                                Empower your enterprise with GWC’S services Alation & Atlan. Alation enhances collaboration and data discovery by providing advanced data cataloguing solutions, fostering a data-driven culture. Atlan transforms data management, ensuring efficient governance and utilization. Get ready to unlock the transformative potential of data, and Artificial Intelligence!
                             </p>
                             {/* <Link to="/contact-us">
                 <Button className={`${styles.banner_button}`}>

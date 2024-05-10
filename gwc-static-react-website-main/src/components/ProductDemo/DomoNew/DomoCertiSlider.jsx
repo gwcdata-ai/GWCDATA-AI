@@ -7,6 +7,9 @@ import f4 from "../../../assets/images/ProductDemo/team4.webp";
 import f5 from "../../../assets/images/ProductDemo/team5.webp";
 import f6 from "../../../assets/images/ProductDemo/team6.webp";
 import f7 from "../../../assets/images/ProductDemo/team7.webp";
+import f8 from "../../../assets/images/ProductDemo/team8.jpeg";
+import f9 from "../../../assets/images/ProductDemo/team9.jpeg";
+
 
 const DomoCertiSlider = () => {
 
@@ -58,6 +61,7 @@ const DomoCertiSlider = () => {
         <div className="slider-container">
 
             <Slider {...settings}>
+                
                 <div>
                     <img src={f1} alt="" className="mt-lg-5 w-100 rounded-5" />
                 </div>
@@ -78,6 +82,12 @@ const DomoCertiSlider = () => {
                 </div>
                 <div>
                     <img src={f7} alt="" className="mt-lg-5 w-100 rounded-5" />
+                </div>
+                <div>
+                    <img src={f8} alt="" className="mt-lg-5 w-100 rounded-5" />
+                </div>
+                <div>
+                    <img src={f9} alt="" className="mt-lg-5 w-100 rounded-5" />
                 </div>
             </Slider>
         </div>

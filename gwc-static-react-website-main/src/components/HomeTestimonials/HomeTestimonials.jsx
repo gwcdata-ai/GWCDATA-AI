@@ -159,7 +159,7 @@ const HomeTestimonials = () => {
                     Clients Testimonials
                   </div> */}
                   <div className={`${styles.heading5} text-light mb-4`}>
-                    Here it From Our Happy Customers
+                    Hear it From Our Happy Customers
                   </div>
                 </div>
                 {/* <div className={`${styles.supportingText36} text-light mb-5`}>

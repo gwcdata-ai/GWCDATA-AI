@@ -51,4 +51,12 @@ export const TestimonialsData = [
     image: testimonial2,
     icon: testimonialIcon2,
   },
+  // {
+  //   id: ,
+  //   name: "Director",
+  //   title: "3 Analytics",
+  //   desc: 'Talent wins games, but teamwork and intelligence win championships." GWC has supported multiple client Demo deliverables by teamwork and continuing their services to do give the best always. I appreciate the teamwork and support.!!!  Keep up the good work, Cheers.',
+  //   image: testimonial2,
+  //   icon: testimonialIcon2,
+  // },
 ];

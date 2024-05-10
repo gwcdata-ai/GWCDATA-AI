@@ -38,7 +38,6 @@ const CareerCarousal = () => {
         <div className="loading" />
       </div>
     ),
-    autoplay: true,
     responsive: [
       {
         breakpoint: 1024,

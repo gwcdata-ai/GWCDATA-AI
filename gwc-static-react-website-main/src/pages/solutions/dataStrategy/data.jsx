@@ -39,7 +39,7 @@ export const BiMigrationMainDataGovernance = {
   // sub_title: "Why Data Engineering?",
   title: "Forge Business Triumph With Data Insights ",
   description:
-    "Prepare for the future by building a scalable and flexible data infrastructure. Our solutions enable you to handle growing data volumes, ensuring your organization remains agile and responsive.",
+    "Prepare for the future, by building a scalable and flexible data infrastructure. Our solutions enable you to handle growing data volumes, ensuring your organization remains agile and responsive.",
   rightImg: DataGovernanceRightImg,
 };
 
@@ -77,7 +77,7 @@ export const BiMigrationDataGovernanceList = [
   },
   {
     id: 4,
-    name: "Customized Data Roadmap",
+    name: "Customized Data Roadmaps",
     description_title: "Craft Your Customized Data Roadmap With GWC",
     description_list: [
       "Our customized data roadmap ensures strategic alignment with your business objectives, paving the way for data-driven success.",

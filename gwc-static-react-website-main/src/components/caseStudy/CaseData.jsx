@@ -668,7 +668,7 @@ export const CaseListData = [
                 id: 2,
                 listHeading: 'The Solution',
                 listPara:
-                    '<b>To overcome these challenges, Customer embraced digital transformation by partnering with GWC Data.AI. They created a comprehensive solution using Power Apps for task allocation and SharePoint for data management.',
+                    'To overcome these challenges, Customer embraced digital transformation by partnering with GWC Data.AI. They created a comprehensive solution using Power Apps for task allocation and SharePoint for data management.',
                 listPoints: [
                     '<b>Real-time Visibility:</b> The Power Apps application provided a dynamic dashboard where project managers could instantly see engineer availability, skills, and current workloads. This real-time visibility was a game-changer, allowing them to make data-driven decisions.',
                     '<b>Automated Task Assignment:</b> The application automated much of the manual coordination that was previously prone to delays and errors. It allowed for the efficient assignment of tasks based on engineer availability and expertise.',
@@ -946,7 +946,6 @@ export const CaseListData = [
                     'Monitoring the efforts of employees over WFH and Office by using workplace data',
                     '<b>Reduced Turnover: </b> Employee turnover decreased by 15% because of the revamped onboarding process, professional development opportunities, and flexible work arrangements.',
                 ],
-                listPara: 'Employee feedback has been used as a key feed to the management during the hybrid model for seamless onboarding process and other trainings. ',
             },
             {
                 id: 3,
