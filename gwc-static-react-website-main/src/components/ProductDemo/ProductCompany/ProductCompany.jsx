@@ -36,7 +36,7 @@ const DoMoreWithDomo = [
       "Reduce time spent on complex tasks with low-code logic-building.",
       "Orchestrate steps and actions across enterprise SaaS platforms outside Domo.",
       "Access queue and task capabilities on-the-go for enhanced productivity.",
-      "Simplify task management with Domo's Task center app,available on the Apple and Google Play stores."
+      "Simplify task management with Domo's Task center app, available on the Apple and Google Play stores."
 
     ],
     image: img2,
@@ -146,7 +146,7 @@ export const ProductCompany = () => {
             />
           </Col>
           <Col lg={6} md={6} className="px-md-5 pt-md-0 pt-5 ">
-            <div className="" style={{padding:'25px 10px 0px 10px',display:'flex',flexDirection:'column',height:'45vh',justifyContent:'space-evenly'}}  >
+            <div className="" style={{padding:'25px 10px 0px 10px',display:'flex',flexDirection:'column',height:'49vh',justifyContent:'space-evenly'}}  >
               
 
               <p style={{fontWeight:'700'}}>{selectedItem?.description_title}</p>
