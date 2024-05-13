@@ -311,6 +311,57 @@ export const jobCareerData = [
       },
     ],
   },
+  {
+    id: 7,
+    jobID: "data-scientist",
+    jobRole: "Data Scientist ",
+    experience: " 3+ Years",
+    location: jobLocations[1],
+    type: jobType[0],
+    jobdescription: [
+      {
+        // title: "",
+        para1:
+          " We are seeking a talented and motivated Data Scientist to join our dynamic team. As a Data Scientist at GWC Data.AI, you will play a crucial role in leveraging data to drive business insights and decision-making. You will work closely with cross-functional teams to develop and implement data-driven solutions that address complex business challenges. ",
+        // para2:"",
+        // para3:"",
+        // para4: " ",
+      },
+      {
+        title: "Responsibilities ",
+        list: [
+          "Apply advanced statistical and machine learning techniques to Analyze large datasets and extract meaningful insights, including time series forecasting. ",
+          "Develop predictive models to forecast business trends and outcomes. ",
+          "Collaborate with stakeholders to identify key business questions and design data-driven solutions. ",
+          "Clean, Preprocess, and manipulate data to ensure accuracy and reliability. ",
+          "Communicate findings and recommendations to both technical and non-technical audiences through visualizations, reports, and presentations. ",
+          "Stay current with industry trends and advancements in data science techniques and technologies. ",
+        ],
+      },
+      {
+        title: "Preferred Qualifications",
+        list: [
+          "Experience with big data technologies such as Hadoop, Spark, or Kafka.",
+          "Familiarity with cloud platforms such as AWS, Azure, or Google Cloud, including proficiency in at least one of the following: AWS SageMaker, Azure Machine Learning, GCP Vertex AI. ",
+          "Knowledge in machine learning and deep learning techniques, with exposure to Generative AI. ",
+          "Knowledge of natural language processing (NLP) techniques. ",
+          "Experience working in industries such as finance, retail, healthcare, or e-commerce.",
+          "Exposure to OpenCV and Tesseract will be advantageous. ",
+        ],
+      },
+      {
+        title: "Requirements",
+        list: [
+          "Bachelor’s or Master’s degree in Computer Science, Statistics, Mathematics, or a related field.",
+          "3-4 years of proven experience working as a Data Scientist or in a similar role. ",
+          "Proficiency in Python,BI tools and working exposure in both SQL and NoSQL databases is a must. ",
+          "Excellent problem-solving and analytical skills. ",
+          "Strong communication and collaboration abilities.",
+          
+        ],
+      },
+    ],
+  },
 ];
 
 export const CareerBannerData = {
