@@ -8,6 +8,9 @@ import banner2 from "../../assets/images/Banner/BannerImage2.webp";
 import thumbsUp from "../../assets/icons/thumbsUp.png";
 import { Link } from "react-router-dom";
 import useMedia from "../../hooks/useMedia";
+import HomepageNewBG from "../../assets/images/Banner/homepagenewbg.gif";
+
+
 
 // Form
 import emailjs from "@emailjs/browser";
@@ -168,7 +171,7 @@ const HomeBannerNew = () => {
           objectFit: "cover",
           zIndex: "-1",
           padding: "0px",
-        }} src='https://zerozilla-admin.s3.ap-south-1.amazonaws.com/apartment/images/1707891438382~gif-5.gif' />
+        }} src={HomepageNewBG} />
       <Row className="px-0">
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">
           {bannerImages.map((banner, index) => (
@@ -390,7 +393,7 @@ const HomeBannerNew = () => {
           objectFit: "cover",
           zIndex: "-1",
           padding: "0px",
-        }} src='https://zerozilla-admin.s3.ap-south-1.amazonaws.com/apartment/images/1707891438382~gif-5.gif' alt='' />
+        }} src={HomepageNewBG} alt='' />
 
       <Row className="px-0">
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">

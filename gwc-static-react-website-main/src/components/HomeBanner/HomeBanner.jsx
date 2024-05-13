@@ -16,6 +16,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import styles1 from "../ContactUs/ContactUsBanner/ContactUsBanner.module.css";
+import homepagemobile from "../../assets/images/Banner/homepagemobile.gif";
+
 import homebannerstyle from "./HomeBanner.module.css";
 
 const SERVICEID = "service_tq3fxn1";
@@ -157,7 +159,7 @@ const HomeBanner = () => {
           objectFit: "cover",
           zIndex: "-1",
           padding: "0px",
-        }} src='https://zerozilla-admin.s3.ap-south-1.amazonaws.com/apartment/images/1707891362324~gif-4.gif' />
+        }} src={homepagemobile} />
 
       <Row className="px-0">
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">
@@ -380,7 +382,7 @@ const HomeBanner = () => {
           objectFit: "cover",
           zIndex: "-1",
           padding: "0px",
-        }} src='https://zerozilla-admin.s3.ap-south-1.amazonaws.com/apartment/images/1707891362324~gif-4.gif' />
+        }} src={homepagemobile} />
 
       <Row className="px-0">
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">
