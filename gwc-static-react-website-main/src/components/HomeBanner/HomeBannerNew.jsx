@@ -8,7 +8,8 @@ import banner2 from "../../assets/images/Banner/BannerImage2.webp";
 import thumbsUp from "../../assets/icons/thumbsUp.png";
 import { Link } from "react-router-dom";
 import useMedia from "../../hooks/useMedia";
-import HomepageNewBG from "../../assets/images/Banner/homepagenewbg.gif";
+// import HomepageNewBG from "../../assets/images/Banner/homepagenewbg.gif";
+import HomepageNewBGVideo from "../../assets/images/Banner/HomepageNewBGVideo.mp4";
 
 
 
@@ -159,19 +160,22 @@ const HomeBannerNew = () => {
 
   return isMobile ? (
     <Container fluid className="mt-5 px-0 mb-5">
-      <img width="100%"
-        height="680px"
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="video-element"
-        style={{
-          position: "absolute",
-          objectFit: "cover",
-          zIndex: "-1",
-          padding: "0px",
-        }} src={HomepageNewBG} />
+             <video
+  width="100%"
+  height="690px"
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="video-element"
+  style={{
+    position: "absolute",
+    objectFit: "cover",
+    zIndex: "-1",
+    padding: "0px",
+  }}>
+  <source src={HomepageNewBGVideo} type="video/mp4" />
+</video>
       <Row className="px-0">
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">
           {bannerImages.map((banner, index) => (
@@ -381,7 +385,7 @@ const HomeBannerNew = () => {
     </Container>
   ) : (
     <Container fluid className="mt-5 px-0 mb-5">
-      <img width="100%"
+      {/* <img width="100%"
         height="690px"
         autoPlay
         muted
@@ -393,7 +397,26 @@ const HomeBannerNew = () => {
           objectFit: "cover",
           zIndex: "-1",
           padding: "0px",
-        }} src={HomepageNewBG} alt='' />
+        }} src={HomepageNewBG} alt='' /> */}
+        <video
+  width="100%"
+  height="690px"
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="video-element"
+  style={{
+    position: "absolute",
+    objectFit: "cover",
+    zIndex: "-1",
+    padding: "0px",
+  }}
+>
+  <source src={HomepageNewBGVideo} type="video/mp4" />
+</video>
+
+        
 
       <Row className="px-0">
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">

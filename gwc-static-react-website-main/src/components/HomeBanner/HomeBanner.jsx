@@ -16,7 +16,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import styles1 from "../ContactUs/ContactUsBanner/ContactUsBanner.module.css";
-import homepagemobile from "../../assets/images/Banner/homepagemobile.gif";
+import homepagemobile from "../../assets/images/Banner/homepagemobile.mp4";
 
 import homebannerstyle from "./HomeBanner.module.css";
 
@@ -147,7 +147,7 @@ const HomeBanner = () => {
 
   return isMobile ? (
     <Container fluid className="mt-5 px-0 mb-5">
-      <img width="100%"
+      {/* <img width="100%"
         height="680px"
         autoPlay
         muted
@@ -159,7 +159,24 @@ const HomeBanner = () => {
           objectFit: "cover",
           zIndex: "-1",
           padding: "0px",
-        }} src={homepagemobile} />
+        }} src={homepagemobile} /> */}
+                <video
+  width="100%"
+  height="680px"
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="video-element"
+  style={{
+    position: "absolute",
+    objectFit: "cover",
+    zIndex: "-1",
+    padding: "0px",
+  }}
+>
+  <source src={homepagemobile} type="video/mp4" />
+</video>
 
       <Row className="px-0">
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">
@@ -370,7 +387,7 @@ const HomeBanner = () => {
     </Container>
   ) : (
     <Container fluid className="mt-5 px-0 mb-5">
-      <img width="100%"
+      {/* <img width="100%"
         height="680px"
         autoPlay
         muted
@@ -382,7 +399,24 @@ const HomeBanner = () => {
           objectFit: "cover",
           zIndex: "-1",
           padding: "0px",
-        }} src={homepagemobile} />
+        }} src={homepagemobile} /> */}
+        <video
+  width="100%"
+  height="680px"
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="video-element"
+  style={{
+    position: "absolute",
+    objectFit: "cover",
+    zIndex: "-1",
+    padding: "0px",
+  }}
+>
+  <source src={homepagemobile} type="video/mp4" />
+</video>
 
       <Row className="px-0">
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">
