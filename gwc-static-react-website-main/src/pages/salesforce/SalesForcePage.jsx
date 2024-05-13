@@ -13,7 +13,7 @@ import SalesBanner from '../../components/salesForce/SalesBanner'
 
 const SalesForcePage = () => {
 
-    console.log(SalesListData, "datalist");
+    // console.log(SalesListData, "datalist");
     useEffect(() => {
         window.scrollTo({
             top: 0,

@@ -8,7 +8,7 @@ import styles from "./commonBanner.module.css";
 
 
 export const CommonSectionBanner = ({ commonSectionBannerContent }) => {
-  console.log("commonSectionBannerContent", commonSectionBannerContent);
+  // console.log("commonSectionBannerContent", commonSectionBannerContent);
   return (
     <Container
       fluid

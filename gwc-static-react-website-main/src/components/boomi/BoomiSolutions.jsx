@@ -18,7 +18,7 @@ const BoomiSolutions = ({ dataLists }) => {
         setSelectedItem(dataLists[0]);
     }, []);
 
-    console.log(dataLists, "dataLists");
+    // console.log(dataLists, "dataLists");
 
     return (
         <Container fluid className="">

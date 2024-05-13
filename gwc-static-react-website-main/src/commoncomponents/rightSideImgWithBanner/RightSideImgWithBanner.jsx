@@ -13,7 +13,7 @@ AOS.init({
 export const CommonRightSideImgWIthBannerBg = ({
   rightSideImgwithBgBanner,
 }) => {
-  console.log("rightSideImgwithBgBanner", rightSideImgwithBgBanner);
+  // console.log("rightSideImgwithBgBanner", rightSideImgwithBgBanner);
   return (
     <Container
       fluid

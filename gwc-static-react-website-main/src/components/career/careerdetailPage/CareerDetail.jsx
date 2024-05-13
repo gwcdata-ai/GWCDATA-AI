@@ -45,11 +45,11 @@ const CareerDetail = () => {
     // Assuming jobData is your array of job objects
 
     // Filter the jobData based on the provided jobID
-    console.log('jobCareerData',jobCareerData);
-    console.log('jobId',jobId);
+    // console.log('jobCareerData',jobCareerData);
+    // console.log('jobId',jobId);
 
     const filteredJob = jobCareerData?.find((job) => job.jobID === jobId);
-    console.log('filteredJob',filteredJob);
+    // console.log('filteredJob',filteredJob);
 
 
     // Update the state with the filtered job object
@@ -115,7 +115,7 @@ const CareerDetail = () => {
         }
       )
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         setFileName(response.data.data.filePath);
         setSuccessUplaod(response.data.message);
       })

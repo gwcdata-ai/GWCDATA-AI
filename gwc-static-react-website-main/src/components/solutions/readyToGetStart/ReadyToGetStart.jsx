@@ -7,7 +7,7 @@ import commonStyles from "../../../commoncss/common.module.css";
 import styles from "./readyToGetStart.module.css";
 
 export const ReadyToGetStart = ({ ReadyToGetStartContent }) => {
-  console.log("ReadyToGetStartContent", ReadyToGetStartContent);
+  // console.log("ReadyToGetStartContent", ReadyToGetStartContent);
   return (
     <Container
       fluid

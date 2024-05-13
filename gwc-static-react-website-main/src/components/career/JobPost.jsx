@@ -55,14 +55,14 @@ const JobPost = () => {
 
   const handleApplyNowClick = (jobDetails) => {
     // Perform actions with the jobDetails, e.g., log to console
-    console.log("Applying for job:", jobDetails);
+    // console.log("Applying for job:", jobDetails);
     setSelectedData(jobDetails);
     // setShowModal(true);
     navigate(`/career-detail/${jobDetails?.jobID}`);
     // You can also make an API request or perform any other actions here
   };
   const handleJobDescription = (jobdescription, jobDetails) => {
-    console.log(jobdescription, "jobdescription");
+    // console.log(jobdescription, "jobdescription");
     setJobDescription(jobdescription);
     setSelectedData(jobDetails);
     setShowModal2(true);
@@ -119,7 +119,7 @@ const JobPost = () => {
         }
       )
       .then((response) => {
-        console.log(response.data.data.filePath);
+        // console.log(response.data.data.filePath);
         setFileName(response.data.data.filePath);
         setSuccessUplaod(response.data.message);
       })
@@ -139,7 +139,7 @@ const JobPost = () => {
       job_location: selectedData?.location?.location,
       job_type: selectedData?.type?.type,
     };
-    console.log(data);
+    // console.log(data);
 
     emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
       (response) => {

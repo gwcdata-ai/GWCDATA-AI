@@ -270,14 +270,14 @@ const HomeSolutions = () => {
 
   // slider arrow code
   const previous = () => {
-    console.log("Previous button clicked");
+    // console.log("Previous button clicked");
     if (sliderRef.current) {
       sliderRef.current.slickPrev();
     }
   };
 
   const next = () => {
-    console.log("Next button clicked");
+    // console.log("Next button clicked");
     if (sliderRef.current) {
       sliderRef.current.slickNext();
     }

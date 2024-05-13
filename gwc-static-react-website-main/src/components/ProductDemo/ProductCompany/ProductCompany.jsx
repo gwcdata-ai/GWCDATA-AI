@@ -83,15 +83,15 @@ export const ProductCompany = () => {
 
   const funSelectedlist = (item) => {
     setSelectedItem(item);
-    console.log('selecteditemfrom domo',item);
+    // console.log('selecteditemfrom domo',item);
   };
 
   useEffect(() => {
     setSelectedItem(DoMoreWithDomo[0]);
-    console.log('selecteditemfrom domo',selectedItem.description_list);
+    // console.log('selecteditemfrom domo',selectedItem.description_list);
 
   }, []);
-  console.log('DoMoreWithDomo',DoMoreWithDomo);
+  // console.log('DoMoreWithDomo',DoMoreWithDomo);
   return (
     <Container fluid className="pt-2 pb-5 mt-5" >
       <section className="">

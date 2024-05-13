@@ -12,7 +12,7 @@ AOS.init({
 });
 
 export const WhyChooseGwc = ({ dataWhyChooseGwc, dataEmployees }) => {
-  console.log(dataEmployees);
+  // console.log(dataEmployees);
   return (
     <Container fluid className="pt-2 pb-5">
       <section className="">

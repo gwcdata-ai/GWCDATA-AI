@@ -142,7 +142,7 @@ const HomeBannerNew = () => {
   });
 
   const handleSubmit = (values, { resetForm }) => {
-    console.log(values);
+    // console.log(values);
     emailjs.send(SERVICEID, TEMPLATEID, values, PUBLICID).then(
       (response) => {
         notify();

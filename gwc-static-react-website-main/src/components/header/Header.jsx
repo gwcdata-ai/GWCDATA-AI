@@ -22,7 +22,7 @@ export const Header = () => {
   const isTab = useMedia("(max-width:950px)");
   const [activeItem, setActiveItem] = useState("aboutus#vision-mission");
   const [expanded, setexpanded] = useState(false);
-  console.log("activeItem", activeItem);
+  // console.log("activeItem", activeItem);
 
   const location = useLocation();
   const findPath = location.pathname;
@@ -79,7 +79,7 @@ export const Header = () => {
 
   const handleNavItemClick = (item) => {
     const section = document.getElementById(item);
-    console.log("item------------------>", item);
+    // console.log("item------------------>", item);
     if (section) {
       window.scrollTo({
         top: section.offsetTop,
@@ -88,7 +88,7 @@ export const Header = () => {
     }
     setActiveItem(item);
     setexpanded(false);
-    console.log("neww");
+    // console.log("neww");
     setShowProfile(false);
   };
 

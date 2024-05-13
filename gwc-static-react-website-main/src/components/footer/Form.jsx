@@ -37,8 +37,8 @@ export const SubscribeForm = () => {
 
   const handleSubmit = (values, { resetForm }) => {
     // Handle form submission logic here
-    console.log("Submitted:", values.email);
-    console.log(values);
+    // console.log("Submitted:", values.email);
+    // console.log(values);
     emailjs.send(SERVICEID, TEMPLATEID, values, PUBLICID).then(
       (response) => {
         notify();

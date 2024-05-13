@@ -61,7 +61,7 @@ const BlogDetail = () => {
   //   };
 
   const handleSubmit = (values, { resetForm }) => {
-    console.log(values);
+    // console.log(values);
     emailjs.send(SERVICEID, TEMPLATEID, values, PUBLICID).then(
       (response) => {
         notify();
@@ -80,7 +80,7 @@ const BlogDetail = () => {
     return ele.slug == slug;
   });
 
-  console.log("item", item.blogSubHeading);
+  // console.log("item", item.blogSubHeading);
 
   return (
     <Container fluid className={` ${styles.detail_container}`}>

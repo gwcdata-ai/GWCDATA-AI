@@ -9,7 +9,7 @@ AOS.init({
 });
 
 export const OurStrengths = ({ strengthsData }) => {
-  console.log(strengthsData);
+  // console.log(strengthsData);
   return (
     <Container fluid className="pb-5">
       <section className="">

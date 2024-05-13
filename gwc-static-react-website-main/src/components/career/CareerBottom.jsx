@@ -87,7 +87,7 @@ const CareerBottom = () => {
         }
       )
       .then((response) => {
-        console.log(response.data.data.filePath);
+        // console.log(response.data.data.filePath);
         setFileName(response.data.data.filePath);
         setSuccessUplaod(response.data.message);
       })
@@ -108,7 +108,7 @@ const CareerBottom = () => {
       //   job_location: selectedData?.location?.location,
       //   job_type: selectedData?.type?.type,
     };
-    console.log(data);
+    // console.log(data);
 
     if (
       data?.applicant_resume_url === "" ||

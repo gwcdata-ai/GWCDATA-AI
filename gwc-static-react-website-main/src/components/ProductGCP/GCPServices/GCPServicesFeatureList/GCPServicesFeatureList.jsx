@@ -22,7 +22,7 @@ export const GCPServicesFeatureList = ({ dataList }) => {
 
   const isMobile = useMedia("(max-width:600px)");
 
-  console.log(dataList);
+  // console.log(dataList);
   return (
     <Container fluid className="pb-5">
       <section className="">

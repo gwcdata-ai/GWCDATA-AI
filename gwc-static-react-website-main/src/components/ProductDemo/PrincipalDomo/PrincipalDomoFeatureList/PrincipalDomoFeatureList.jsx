@@ -96,14 +96,14 @@ export const PrincipalDomoFeatureList = ({ dataList }) => {
 
   const funSelectedlist = (item) => {
     setSelectedItem(item);
-    console.log(item);
+    // console.log(item);
   };
 
   useEffect(() => {
     setSelectedItem(PrincipalDomoFeatureListData[0]);
   }, []);
 
-  console.log(dataList);
+  // console.log(dataList);
   return (
     <Container fluid className="">
       <section className="">

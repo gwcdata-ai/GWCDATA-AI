@@ -6,7 +6,7 @@ import commonStyles from "../../../commoncss/common.module.css";
 import styles from "./workFromHomeBanner.module.css";
 
 export const WorkFromHomeBanner = ({ workFromHomeBannerContent }) => {
-  console.log("workFromHomeBannerContent", workFromHomeBannerContent);
+  // console.log("workFromHomeBannerContent", workFromHomeBannerContent);
   return (
     <Container
       fluid

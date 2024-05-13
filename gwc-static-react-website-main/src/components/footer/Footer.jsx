@@ -30,7 +30,7 @@ import {
 import { SubscribeForm } from "./Form";
 
 export const FooterComponent = () => {
-  console.log("footerContent", FooterQuickLinks);
+  // console.log("footerContent", FooterQuickLinks);
   return (
     <Container
       fluid

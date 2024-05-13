@@ -18,7 +18,7 @@ export const DataGovernanceList = ({ dataList }) => {
     setSelectedItem(dataList[0]);
   }, []);
 
-  console.log(dataList);
+  // console.log(dataList);
   return (
     <Container fluid className="">
       <section className="">

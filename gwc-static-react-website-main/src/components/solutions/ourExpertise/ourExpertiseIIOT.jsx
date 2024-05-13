@@ -10,7 +10,7 @@ AOS.init({
 });
 
 export const OurExpertiseIIOT = ({ ourExpertiseContent }) => {
-  console.log("ourExpertiseContent", ourExpertiseContent);
+  // console.log("ourExpertiseContent", ourExpertiseContent);
   return (
     <Container
       fluid

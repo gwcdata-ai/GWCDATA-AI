@@ -16,7 +16,7 @@ const CaseStudyDetail = () => {
 
         return ele.slug == slug;
     });
-    console.log("item", item.caseSubHeading);
+    // console.log("item", item.caseSubHeading);
 
 
     return (

@@ -26,7 +26,7 @@ const HomePartners2 = () => {
   const [selectedOption, setSelectedOption] = useState("domo");
   const [allowScroll, setAllowScroll] = useState(false);
   const partnersSectionRef = useRef(null);
-  console.log("selectedOption", selectedOption);
+  // console.log("selectedOption", selectedOption);
 
   //  useEffect(() => {
   //   const handleScroll = () => {
