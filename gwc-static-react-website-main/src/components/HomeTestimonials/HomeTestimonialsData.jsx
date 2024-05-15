@@ -51,12 +51,20 @@ export const TestimonialsData = [
     image: testimonial2,
     icon: testimonialIcon2,
   },
-  // {
-  //   id: ,
-  //   name: "Director",
-  //   title: "3 Analytics",
-  //   desc: 'Talent wins games, but teamwork and intelligence win championships." GWC has supported multiple client Demo deliverables by teamwork and continuing their services to do give the best always. I appreciate the teamwork and support.!!!  Keep up the good work, Cheers.',
-  //   image: testimonial2,
-  //   icon: testimonialIcon2,
-  // },
+  {
+    id: 6,
+    name: "Managing Director",
+    title: "Alubee Die Casters",
+    desc: 'Talent wins games, but teamwork and intelligence win championships." GWC has supported multiple client Demo deliverables by teamwork and continuing their services to do give the best always. I appreciate the teamwork and support.!!!  Keep up the good work, Cheers.',
+    image: testimonial3,
+    icon: testimonialIcon3,
+  },
+  {
+    id: 7,
+    name: "Head of Retail",
+    title:"Style Union",
+    desc: "In late 2023, we began implementing DOMO, and the results surpassed our expectations. DOMO's dashboards effectively organize information for decision-making, with its simplicity and ease of use being key factors in our success. The GWC implementation team's engagement was crucial; they understood our business needs and transformed data into meaningful KPIs in record time .",
+    image: testimonial4,
+    icon: testimonialIcon4,
+  },
 ];

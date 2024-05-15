@@ -18,9 +18,9 @@ import * as Yup from "yup";
 import styles1 from "../../ContactUs/ContactUsBanner/ContactUsBanner.module.css";
 import axios from "axios";
 
-const SERVICEID = "service_tq3fxn1";
-const TEMPLATEID = "template_emjv7mm";
-const PUBLICID = "_M_x6ZxOlDwyjQYJ6";
+const SERVICEID = "service_j0am06q";
+const TEMPLATEID = "template_5xhcagh";
+const PUBLICID = "Kit_Tx2oUWPxLk7vs";
 
 const CareerDetail = () => {
   const [successupload, setSuccessUplaod] = useState("");
@@ -115,7 +115,7 @@ const CareerDetail = () => {
         }
       )
       .then((response) => {
-        // console.log(response);
+        console.log(response);
         setFileName(response.data.data.filePath);
         setSuccessUplaod(response.data.message);
       })
@@ -137,7 +137,9 @@ const CareerDetail = () => {
       job_location: jobData?.location?.location,
       job_type: jobData?.type?.type,
       applicant_skills: values?.applicant_skills,
+      applicant_message:values?.message,
     };
+    console.log('data is ',data);
 
     if (
       data?.applicant_resume_url === "" ||
