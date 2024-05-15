@@ -152,7 +152,8 @@ const CareerDetail = () => {
         (response) => {
           notify();
           resetForm();
-          handleClose();
+          setSuccessUplaod("")
+          // handleClose();
         },
         (err) => {
           console.log(
