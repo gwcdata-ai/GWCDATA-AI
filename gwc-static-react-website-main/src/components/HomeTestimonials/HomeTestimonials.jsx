@@ -214,7 +214,7 @@ const HomeTestimonials = () => {
                         bottom: "-8%",
                         left: 0,
                         width: "100%",
-                        // height: "55%",
+                        height: "59%",
                         zIndex: 0,
                       }}
                     />
@@ -247,7 +247,8 @@ const HomeTestimonials = () => {
                       src={data.icon}
                       style={{
                         position: "absolute",
-                        bottom: "18%",
+                        bottom: "27%",
+                        // top:"0%",
                         right: "40%",
                         zIndex: 1,
                       }}
