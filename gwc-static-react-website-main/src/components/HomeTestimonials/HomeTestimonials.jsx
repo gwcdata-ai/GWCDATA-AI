@@ -214,7 +214,7 @@ const HomeTestimonials = () => {
                         bottom: "-8%",
                         left: 0,
                         width: "100%",
-                        height: "40%",
+                        // height: "55%",
                         zIndex: 0,
                       }}
                     />
