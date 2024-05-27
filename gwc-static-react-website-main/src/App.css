@@ -250,6 +250,21 @@
   --theme-gray-100: #f2f4f7;
   --theme-purple-50: #f4f3ff;
 }
+.tb{
+  background-color:#f4f3ff !important;
+  color: black !important;
+}
+.tbm{
+  color: black !important;
+}
+.active {
+  color: #f4eef6 !important;
+  background-color: #6f2b8c !important;
+}
+.activeMobile {
+  color: #f4eef6 !important;
+  background-color: #6f2b8c !important;
+}
 
 body {
   overflow: hidden;

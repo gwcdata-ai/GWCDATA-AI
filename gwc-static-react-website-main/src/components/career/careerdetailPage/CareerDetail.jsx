@@ -103,6 +103,7 @@ const CareerDetail = () => {
   const uploadResume = async (e) => {
     setSuccessUplaod("Please Wait, Your resume is being uploading...");
     const formData = new FormData();
+    
     formData.append("file", e.target.files[0]);
     axios
       .post(
@@ -124,7 +125,7 @@ const CareerDetail = () => {
       });
   };
 
-  const handleSubmit = (values, { resetForm }) => {
+  const handleSubmit =async (values, { resetForm }) => {
     // Check if fileName is empty
 
     const data = {
@@ -132,7 +133,7 @@ const CareerDetail = () => {
       last_name: values?.lastName,
       applicant_email: values?.email,
       applicant_phone: values?.phone,
-      applicant_resume_url: fileName,
+      applicant_resume_url: '',
       job_title: jobData?.jobRole,
       job_location: jobData?.location?.location,
       job_type: jobData?.type?.type,
@@ -141,15 +142,10 @@ const CareerDetail = () => {
     };
     console.log('data is ',data);
 
-    if (
-      data?.applicant_resume_url === "" ||
-      data?.applicant_resume_url === null ||
-      data?.applicant_resume_url === undefined
-    ) {
-      notifyFailure();
-    } else {
-      emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
+
+     await emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
         (response) => {
+          console.log('res from emailjs',response);
           notify();
           resetForm();
           setSuccessUplaod("")
@@ -161,7 +157,29 @@ const CareerDetail = () => {
           );
         }
       );
-    }
+    
+
+    // if (
+    //   data?.applicant_resume_url === "" ||
+    //   data?.applicant_resume_url === null ||
+    //   data?.applicant_resume_url === undefined
+    // ) {
+    //   // notifyFailure();
+    // } else {
+    //  await emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
+    //     (response) => {
+    //       notify();
+    //       resetForm();
+    //       setSuccessUplaod("")
+    //       // handleClose();
+    //     },
+    //     (err) => {
+    //       console.log(
+    //         `Hello!, there is some network issue please check your internet connection and re-submit the request`
+    //       );
+    //     }
+    //   );
+    // }
   };
 
   return (

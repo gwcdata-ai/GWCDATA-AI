@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 const DoMoreWithDomo = [
   {
     id: 1,
+    className:'first',
     name: "Domo App Studio",
     description_title: "Unlock the power of date immersion with Domo's App Studio - now available for all customers !",
     description_list: [
@@ -30,6 +31,7 @@ const DoMoreWithDomo = [
   },
   {
     id: 2,
+    className:'second',
     name: "Domo Workflows",
     description_title: "Simplify and streamline data-driven processes effortlessly",
     description_list: [
@@ -45,6 +47,7 @@ const DoMoreWithDomo = [
   },
   {
     id: 3,
+    className:'third',
     name: "Domo.AI",
     description_title:
       "Unleash the potential of AI with Domo's Advanced Solutions",
@@ -61,6 +64,7 @@ const DoMoreWithDomo = [
   },
   {
     id: 4,
+    className:'fourth',
     name: "Cloud Amplifier",
     description_title: "Seamless Integration & Effortless Transformation to Unlock Data Potential with Cloud Amplifier",
     description_list: [
@@ -80,51 +84,90 @@ export const ProductCompany = () => {
   const isMobile = useMedia("(max-width:600px)");
 
   const [selectedItem, setSelectedItem] = useState({});
+  const tbs =  document.querySelectorAll('.tb');
+  const tbsMobile =  document.querySelectorAll('.tbm');
 
-  const funSelectedlist = (item) => {
-    setSelectedItem(item);
-    // console.log('selecteditemfrom domo',item);
+  // console.log('tabsss',tbsMobile);
+  // tbs[0].classList.add('active')
+  const funSelectedlist =  (item,seltab) => {
+    console.log('this is ', seltab);
+if(isMobile)
+  {
+    
+   tbsMobile[0].classList[5]=='activeMobile'? tbsMobile[0].classList.remove('activeMobile'):null;
+    
+    tbsMobile.forEach(elem => {
+      console.log('foreach',elem.classList);
+    elem.classList[1]=='tbm'? elem.classList.remove('activeMobile'):null;
+
+  
+    
+   });
+   seltab.classList.add('activeMobile')
+  }
+  else{
+  // for desktop
+  tbs[0].classList[1]=='active'? tbs[0].classList.remove('active'):null;
+   tbs.forEach(tb => {
+    tb.classList[2]=='tb'? tb.classList.remove('active'):null;
+
+    console.log('foreach',tb.classList);
+    
+   });
+   seltab.classList.add('active')
+  }
+
+  setSelectedItem(item);
+    
   };
 
   useEffect(() => {
     setSelectedItem(DoMoreWithDomo[0]);
-    // console.log('selecteditemfrom domo',selectedItem.description_list);
+    // tbs[0].classList.add('active')
+    
 
   }, []);
   // console.log('DoMoreWithDomo',DoMoreWithDomo);
   return (
-    <Container fluid className="pt-2 pb-5 mt-5" >
+    <Container fluid className="pt-1 pb-10 mt-4" >
+            {isMobile ? <p className={styles?.title} style={{paddingLeft:'13px',paddingBottom:'10px'}}>Do more with Domo</p> :null}  
+
       <section className="">
         <Container className={`${styles.DataGovernanceListCards}`}>
+          
+          
           {isMobile ? (
+            
             DoMoreWithDomo?.map((item, index) => {
               return (
+                
                 <div
                   key={index}
                   className={`w-100 mb-md-0 mb-2 `}
-                  onClick={() => {
-                    funSelectedlist(item);
-                  }}
+                  
                   style={{cursor:"pointer"}}
                 >
-                  <div className={`px-1 ${styles.list} mb-md-3 mb-1`}>
+                  
+                  <div onClick={(event) => {funSelectedlist(item,event.currentTarget)}} 
+                  className={`px-1 ${item.className === 'first' ? `` : ''} tbm  ${styles.list}  mb-md-3 mb-1`}>
                     {" "}
-                    <div className="px-1"> {item?.name} </div>{" "}
+                    <div className= {`  px-1 `}> {item?.name} </div>{" "}
                   </div>
                 </div>
               );
             })
           ) : (
             <Row className="">
+              <p className={styles?.title} style={{padding:'13px'}} >Do more with Domo</p>
               {DoMoreWithDomo?.map((item, index) => {
                 return (
-                  <Col md={3} key={index} className={`mb-md-0 mb-2`}>
-                    <div
-                    style={{cursor:"pointer"}}
-                      className={`px-1 ${styles.list} mb-md-3 mb-1`}
-                      onClick={() => {
-                        funSelectedlist(item);
-                      }}
+                  <Col md={3} key={index} className={`mb-md-0 mb-2  `}>
+                    
+                    <div onClick={(event) => {
+                        funSelectedlist(item,event.currentTarget);
+                      }} style={{cursor:"pointer"}}
+                      className={`px-1 ${item.className === 'first' ? `active` : ''} ${styles.list} tb mb-md-3 mb-1`}
+                     
                     >
                       {" "}
                       <div className="px-1"> {item?.name} </div>{" "}
@@ -136,16 +179,16 @@ export const ProductCompany = () => {
           )}
         </Container>
       </section>
-      <Container>
-        <Row  className="d-flex align-items-center justify-content-center my-md-5">
-          <Col lg={6} md={7} className="px-md-0 mt-sm-5 pt-4" >
+      <Container className="my-4"  >
+        <Row  className="d-flex align-items-center justify-content-center ">
+          <Col lg={6} md={7} className="px-md-0 pt-md-2 " >
             <img
               src={selectedItem?.image}
               alt=""
               className="w-100 rounded-4"
             />
           </Col>
-          <Col lg={6} md={6} className="px-md-5 pt-md-0 pt-5 ">
+          <Col lg={6} md={6} className="ps-md-5 pt-md-0  ">
             <div className="" style={{padding:'25px 10px 0px 10px',display:'flex',flexDirection:'column',height:'49vh',justifyContent:'space-evenly'}}  >
               
 

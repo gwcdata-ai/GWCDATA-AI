@@ -14,11 +14,24 @@
   justify-content: center;
   border-radius: 10px;
 }
-
-.list:hover {
-  color: #f4eef6;
-  background-color: #6f2b8c;
+.active {
+  color: #f4eef6 !important;
+  background-color: #6f2b8c !important;
 }
+
+/* .list:hover {
+  color: #f4eef6 !important;
+  background-color: #8302be !important;
+} */
+.tb{
+  background-color: white;
+  color: black;
+}
+.activeMobile {
+  color: #f4eef6 !important;
+  background-color: #6f2b8c !important;
+}
+
 .url_card{
   padding-left: 15px;
 }

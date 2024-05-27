@@ -9,9 +9,9 @@ import "react-toastify/dist/ReactToastify.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-const SERVICEID = "service_tq3fxn1";
-const TEMPLATEID = "template_msmv4ui";
-const PUBLICID = "_M_x6ZxOlDwyjQYJ6";
+const SERVICEID = "service_j0am06q";
+const TEMPLATEID = "template_8alinxd";
+const PUBLICID = "Kit_Tx2oUWPxLk7vs";
 
 const ContactUsBanner = () => {
   const notify = () => {
@@ -45,9 +45,19 @@ const ContactUsBanner = () => {
   });
 
   const handleSubmit = (values, { resetForm }) => {
-    // console.log(values);
-    emailjs.send(SERVICEID, TEMPLATEID, values, PUBLICID).then(
+    
+    const formData={
+      applicant_name: values.firstName,
+      last_name: values.lastName,
+      applicant_email: values.email,
+      applicant_phone: values.phone,
+      message: values.message
+
+    }
+    console.log(formData);
+    emailjs.send(SERVICEID, TEMPLATEID, formData, PUBLICID).then(
       (response) => {
+        console.log('res from emailjs',response);
         notify();
         resetForm();
       },
