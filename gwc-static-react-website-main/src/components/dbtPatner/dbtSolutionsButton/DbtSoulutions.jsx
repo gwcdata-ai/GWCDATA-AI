@@ -10,8 +10,41 @@ const DbtSoulutions = ({ dataLists }) => {
 
     const isMobile = useMedia("(max-width:600px)");
     const [selectedItem, setSelectedItem] = useState({});
+    const tbs =  document.getElementsByClassName('tb');
+    const tbsMobile =  document.getElementsByClassName('tbm');
 
-    const funSelectedlist = (item) => {
+    const funSelectedlist = (item,seltab) => {
+         // console.log('this is ', seltab);
+    if(isMobile)
+        {
+          // console.log('tbsMobile',tbsMobile);
+      if (tbsMobile[0].classList.contains('active')) {
+        tbsMobile[0].classList.remove('active');
+      }
+  
+      Array.from(tbsMobile).forEach(elem => {
+        // console.log('foreach', elem);
+        if (elem.classList.contains('tbm')) {
+          elem.classList.remove('active');
+        }
+      });
+      seltab.classList.add('active');
+        }
+      else{
+        // for desktop
+        // console.log('tbs[0].classList',tbs);
+        if (tbs[0].classList.contains('active')) {
+          tbs[0].classList.remove('active');
+        }
+        Array.from(tbs).forEach(elem => {
+          // console.log('foreach', elem);
+          if (elem.classList.contains('tb')) {
+            elem.classList.remove('active');
+          }
+        });
+        
+        seltab.classList.add('active');
+        }
         setSelectedItem(item);
     };
 
@@ -32,11 +65,12 @@ const DbtSoulutions = ({ dataLists }) => {
                                 <div
                                     key={index}
                                     className={`w-100 mb-md-0 mb-2 `}
-                                    onClick={() => funSelectedlist(item)}
+                                    
                                 >
-                                    <div className={`px-1 ${styles.list} mb-md-3 mb-1`}>
+                                    <div onClick={(event) => funSelectedlist(item,event.currentTarget)} 
+                                    className={`px-1 ${item?.className === 'first' ? `active` : ''} tbm ${styles.list} mb-md-3 mb-1`}>
                                         {" "}
-                                        <div className="px-1"> {item?.name} </div>{" "}
+                                        <div className="px-1" style={{ cursor: "pointer" }}> {item?.name} </div>{" "}
                                     </div>
                                 </div>
                             );
@@ -61,9 +95,8 @@ const DbtSoulutions = ({ dataLists }) => {
                                         margin: "12px",
                                         cursor: "pointer",
                                     }}
-                                    className={`p-2 ${styles.list} mb-md-3 mb-1`}
-                                    onClick={() => funSelectedlist(item)}
-                                >
+                                    className={`p-2 ${styles.list} mb-md-3 mb-1 tb ${item?.className === 'first' ? `active` : ''}`}
+                                    onClick={(event) => funSelectedlist(item,event.currentTarget)}>
                                     {item?.name}
                                 </div>
                             ))}
@@ -87,9 +120,9 @@ const DbtSoulutions = ({ dataLists }) => {
                                     {selectedItem?.description_title}{" "}
                                 </p>
                                 <div>
-                                    {selectedItem?.description_list?.map((item) => (
+                                    {selectedItem?.description_list?.map((item,index) => (
                                         // <p className={styles?.feat_text}> {item} </p>
-                                        <ul>
+                                        <ul key={index}>
                                             <li> {item} </li>
                                         </ul>
 

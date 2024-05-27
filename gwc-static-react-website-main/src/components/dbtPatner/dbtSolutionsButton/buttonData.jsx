@@ -14,6 +14,7 @@ export const DbtListData = [
   {
     id: 1,
     name: "Data Modernization ",
+    className:"first",
     description_title: "Data Modernization",
     description_list: [
       "Transform the data development process with dbt Cloud",

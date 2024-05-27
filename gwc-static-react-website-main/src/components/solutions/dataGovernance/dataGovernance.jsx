@@ -28,8 +28,8 @@ export const DataGovernance = ({ commonRightSectionContent }) => {
                 )}
                 {commonRightSectionContent?.list && (
                   <ul className={styles?.text}>
-                    {commonRightSectionContent?.list?.map((item) => (
-                      <li> {item} </li>
+                    {commonRightSectionContent?.list?.map((item,index) => (
+                      <li key={index}> {item} </li>
                     ))}
                   </ul>
                 )}

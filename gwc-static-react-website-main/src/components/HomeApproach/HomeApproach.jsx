@@ -182,8 +182,8 @@ const HomeApproach = () => {
       <Row>
         <Col xs={12} md={6} lg={3} className="w-100">
           <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-            {HomeApproachData.map((data) => (
-              <div className={styles.approachdivpadding}>
+            {HomeApproachData.map((data,index) => (
+              <div key={index} className={styles.approachdivpadding}>
                 <div className={styles.BenefitSectionBox} data-aos="fade-out">
                   <img src={data?.image} alt="Icon" />
                   <div className={styles.benefits_title}>{data.title}</div>

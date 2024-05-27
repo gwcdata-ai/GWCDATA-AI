@@ -94,7 +94,7 @@ export const FooterComponent = () => {
                   </p>
                   {FooterQuickLinks?.links?.map((item, index) => {
                     return (
-                      <p className="mb-2">
+                      <p className="mb-2" key={index}>
                         <a
                           href={item?.url}
                           className={`${styles.footer_links}`}
@@ -130,7 +130,7 @@ export const FooterComponent = () => {
                   </p>
                   {FooterResourcesLinks?.links?.map((item, index) => {
                     return (
-                      <p className="mb-2">
+                      <p className="mb-2" key={index}>
                         <a
                           href={item?.url}
                           className={`${styles.footer_links}`}
@@ -150,7 +150,7 @@ export const FooterComponent = () => {
                   </p>
                   {FooterProductLinks?.links?.map((item, index) => {
                     return (
-                      <p className="mb-2">
+                      <p className="mb-2" key={index}>
                         <a
                           href={item?.url}
                           className={`${styles.footer_links} `}
@@ -193,14 +193,14 @@ export const FooterComponent = () => {
                 </Col>
                 {FooterContactUs?.links?.map((item, index) => {
                   return (
-                    <>
-                      <Col xs={1} className=" p-0 m-0">
+                    <div key={index}>
+                      <Col xs={1} className=" p-0 m-0" >
                         <Image src={item?.icon} alt="" className="" />
                       </Col>
                       <Col xs={11} className="">
                         <p className={`${styles.footer_links} ${item.icon === DeviceIcon && styles.phone_number}`}>{item?.info}</p>
                       </Col>
-                    </>
+                    </div>
                   );
                 })}
               </Row>
@@ -219,6 +219,7 @@ export const FooterComponent = () => {
                   <span>
                     {" "}
                     <a
+                    key={index}
                       href={item?.url}
                       target="_blank"
                       className={styles.socialmediacss}

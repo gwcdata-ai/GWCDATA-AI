@@ -100,8 +100,9 @@ const DomoUse = () => {
           onMouseLeave={handleMouseLeave}
         >
           <Slider {...settings} className="m-0 p-0">
-            {DomoUseData.map((data) => (
+            {DomoUseData.map((data,index) => (
               <div
+              key={index}
                 className={styles["section-container"]}
                 data-aos="fade-right"
               >

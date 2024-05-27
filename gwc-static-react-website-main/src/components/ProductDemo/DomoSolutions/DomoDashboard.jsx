@@ -14,7 +14,7 @@ AOS.init({
 });
 
 
-const DomoSolutionsCard = ({ data }) => {
+const DomoSolutionsCard = ({ data,index }) => {
 
     // const domodashRef = useRef(null);
     // const location = useLocation();
@@ -40,7 +40,7 @@ const DomoSolutionsCard = ({ data }) => {
     };
 
     return (
-        <Link to={data?.url} target="blank">
+        <Link key={index} to={data?.url} target="blank">
             <div className={`${styles1.hover_card_img}`}>
                 <div
                     className={`${isMobile ? styles1.BenefitSectionBox1 : styles1.BenefitSectionBoxs
@@ -245,8 +245,8 @@ const DomoDashboard = () => {
             <Row className="mt-3">
                 <Col xs={12} md={6} lg={3} className="w-100">
                     <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-                        {DomoDashData?.map((data) => (
-                            <DomoSolutionsCard data={data} />
+                        {DomoDashData?.map((data,index) => (
+                            <DomoSolutionsCard data={data} index={index} />
                         ))}
                     </Slider>
                 </Col>

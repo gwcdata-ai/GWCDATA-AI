@@ -47,6 +47,7 @@ export const BiMigrationDataGovernanceList = [
     {
         id: 1,
         name: "Generative AI",
+        className:"first",
         description_title:
             "Redefining Content Generation",
         description_list: [

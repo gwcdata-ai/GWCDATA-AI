@@ -256,9 +256,9 @@ const CareerDetail = () => {
               <h3 className={` ${styles?.title} mt-2`}>Job Description</h3>
             </div>
 
-            {jobData?.jobdescription?.map((item) => {
+            {jobData?.jobdescription?.map((item,index) => {
               return (
-                <div key={item?.title} className="div">
+                <div key={index} className="div">
                   <p className={` ${styles?.all_list} mt-1`}>{item?.para} </p>
                   <h6 className={` ${styles?.job_title} mt-2`}>
                     {item?.title}{" "}
@@ -279,9 +279,9 @@ const CareerDetail = () => {
                     {item?.para4}{" "}
                   </p>
                   <ul className={` ${styles?.job_list} mt-0`}>
-                    {item?.list?.map((item) => {
+                    {item?.list?.map((item,index) => {
                       return (
-                        <li key={item} className={` ${styles?.all_list} mt-1`}>
+                        <li key={index} className={` ${styles?.all_list} mt-1`}>
                           {" "}
                           {item}{" "}
                         </li>

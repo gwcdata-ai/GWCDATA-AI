@@ -52,7 +52,7 @@ const DemoPlatform = () => {
                     <Row className="mb-2">
                         <Col md={4} className="" data-aos="fade-right">
 
-                            <div classNam e="left_section">
+                            <div className="left_section">
                                 <img src={macimg} alt="" className=" mx-lg-0 rounded-4 w-100 mb-2 px-4 mt4" />
                                 <div className="btn_Wrapper">
                                     <Link

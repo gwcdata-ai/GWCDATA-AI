@@ -87,8 +87,8 @@ const SalesList = ({ dataLists }) => {
                                     {selectedItem?.description_title}{" "}
                                 </p>
                                 <div>
-                                    {selectedItem?.description_list?.map((item) => (
-                                        <p className={styles?.feat_text}> {item} </p>
+                                    {selectedItem?.description_list?.map((item,index) => (
+                                        <p key={index} className={styles?.feat_text}> {item} </p>
                                     ))}
                                 </div>
 

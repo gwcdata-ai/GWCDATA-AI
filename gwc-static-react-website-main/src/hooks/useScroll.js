@@ -6,7 +6,7 @@ const useScroll = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      const section = document.querySelector(location.hash);
+      const section = document.querySelector(location?.hash);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }

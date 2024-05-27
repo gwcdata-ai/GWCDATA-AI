@@ -71,6 +71,7 @@ export const AlationSolutionsData = [
     {
         id: 1,
         name: "Active Data Governance ",
+        className:'first',
         description_title:
             "Active Data Governance ",
         description_list: [

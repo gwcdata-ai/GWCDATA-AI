@@ -44,6 +44,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 1,
     name: "Data Collection",
+    className:'first',
     description_title:
       "Data Collection- The Foundation of All Successful Analytics Initiatives",
     description_list: [
@@ -55,6 +56,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 2,
     name: "Data Exploration",
+  
     description_title: " Understand the True Characteristics of Data",
     description_list: [
       "Preliminary examination of datasets to discover patterns, trends, and outliers. ",

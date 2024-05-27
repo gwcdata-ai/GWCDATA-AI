@@ -182,7 +182,7 @@ const HomeBanner = () => {
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">
           {bannerImages.map((banner, index) => (
             <>
-              <div className={`${styles.section}`}>
+              <div key={index} className={`${styles.section}`  }>
                 <div className={styles.content1}>
                   <div className={styles.headingAndSupportingText9}>
                     <b
@@ -422,7 +422,7 @@ const HomeBanner = () => {
         <Slider {...settings} className="m-0 p-0 mt-md-0 mt-4">
           {bannerImages.map((banner, index) => (
             <>
-              <div className={`${styles.section}`}>
+              <div key={index} className={`${styles.section}`}>
                 <div className={styles.content1}>
                   <div className={styles.headingAndSupportingText9}>
                     <b

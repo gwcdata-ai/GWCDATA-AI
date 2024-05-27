@@ -18,6 +18,7 @@ export const dataExplainedGCPServices = [
   {
     id: 1,
     name: "Google Compute Engine",
+    className:"first",
     image: img1,
     description:
       "Google Compute Engine is an Infrastructure as a Service (IaaS) offering that allows users to run virtual machines (VMs) on Google's infrastructure. It provides scalable and flexible computing resources, allowing you to deploy and manage virtual machines in the cloud easily. Compute Engine is suitable for a wide range of workloads, including web hosting, application development, and data processing.",
@@ -84,6 +85,7 @@ export const LookerdataExplainedGCPServices = [
   {
     id: 1,
     name: "Commissioning Looker",
+    className:'first',
     image: l1,
     description:
       " We access your existing infrastructure and do a feasibility check for the looker implementation quickly and effectively. We then restructure the organisation’s architecture with the Looker platform and connect the data sources in a way that you can unearth the hidden information from your data. We prepare looks and dashboard to form user stories which eventually help in better decision making.",

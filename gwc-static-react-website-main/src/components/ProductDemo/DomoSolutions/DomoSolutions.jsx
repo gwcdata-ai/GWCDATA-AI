@@ -10,7 +10,7 @@ import newStyles from "../../../commoncss/Home.module.css";
 import useMedia from "../../../hooks/useMedia";
 import AOS from "aos";
 
-const DomoSolutionsCard = ({ data }) => {
+const DomoSolutionsCard = ({ data,index }) => {
   const isMobile = useMedia("(max-width:600px)");
 
   const [hover, setHover] = useState(false);
@@ -24,7 +24,7 @@ const DomoSolutionsCard = ({ data }) => {
   };
 
   return (
-    <div
+    <div key={index}
       className={`${
         isMobile ? styles.BenefitSectionBox1 : styles.BenefitSectionBox
       }`}
@@ -238,8 +238,8 @@ const DomoSolutions = () => {
       <Row className="mt-3">
         <Col xs={12} md={6} lg={3} className="w-100">
           <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-            {DomoSolutionsData?.map((data) => (
-              <DomoSolutionsCard data={data} />
+            {DomoSolutionsData?.map((data,index) => (
+              <DomoSolutionsCard data={data} index={index} />
             ))}
           </Slider>
         </Col>

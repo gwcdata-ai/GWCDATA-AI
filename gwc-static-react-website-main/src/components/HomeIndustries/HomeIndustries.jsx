@@ -187,8 +187,8 @@ const HomeIndustries = () => {
       <Row>
         <Col xs={12} sm={12} md={12} lg={3} className="w-100">
           <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-            {HomeIndustriesData.map((data) => (
-              <div className="px-3">
+            {HomeIndustriesData.map((data,index) => (
+              <div className="px-3" key={index}>
                 <div
                   className={styles["section-container"]}
                   data-aos="flip-down"

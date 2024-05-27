@@ -51,6 +51,7 @@ export const IIOTDataGovernanceList = [
   {
     id: 1,
     name: "Sensors & Devices Deployment",
+    className:"first",
     description_title:
       " Solid foundation for actionable insights & decision-making. ",
     description_list: [

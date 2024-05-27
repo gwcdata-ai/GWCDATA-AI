@@ -54,10 +54,10 @@ const ContactUsBanner = () => {
       message: values.message
 
     }
-    console.log(formData);
+    // console.log(formData);
     emailjs.send(SERVICEID, TEMPLATEID, formData, PUBLICID).then(
       (response) => {
-        console.log('res from emailjs',response);
+        // console.log('res from emailjs',response);
         notify();
         resetForm();
       },

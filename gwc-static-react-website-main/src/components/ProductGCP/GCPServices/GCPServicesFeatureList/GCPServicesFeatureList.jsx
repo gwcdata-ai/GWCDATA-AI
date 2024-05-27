@@ -15,8 +15,40 @@ export const GCPServicesFeatureList = ({ dataList }) => {
     description:
       "Google Compute Engine is an Infrastructure as a Service (IaaS) offering that allows users to run virtual machines (VMs) on Google's infrastructure. It provides scalable and flexible computing resources, allowing you to easily deploy and manage virtual machines in the cloud. Compute Engine is suitable for a wide range of workloads, including web hosting, application development, and data processing. ",
   });
+  const tbs =  document.getElementsByClassName('tb');
+  const tbsMobile =  document.getElementsByClassName('tbm');
+  const handleItemClick = (itemName,seltab) => {
+    // console.log('this is ', seltab);
+    if(isMobile)
+      {
+        // console.log('tbsMobile',tbsMobile);
+    if (tbsMobile[0].classList.contains('active')) {
+      tbsMobile[0].classList.remove('active');
+    }
 
-  const handleItemClick = (itemName) => {
+    Array.from(tbsMobile).forEach(elem => {
+      // console.log('foreach', elem);
+      if (elem.classList.contains('tbm')) {
+        elem.classList.remove('active');
+      }
+    });
+    seltab.classList.add('active');
+      }
+    else{
+      // for desktop
+      // console.log('tbs[0].classList',tbs);
+      if (tbs[0].classList.contains('active')) {
+        tbs[0].classList.remove('active');
+      }
+      Array.from(tbs).forEach(elem => {
+        // console.log('foreach', elem);
+        if (elem.classList.contains('tb')) {
+          elem.classList.remove('active');
+        }
+      });
+      
+      seltab.classList.add('active');
+      }
     setSelectedItem(itemName);
   };
 
@@ -31,11 +63,12 @@ export const GCPServicesFeatureList = ({ dataList }) => {
             dataList?.map((item, index) => {
               return (
                 <div
-                  onClick={() => handleItemClick(item)}
+                 
                   key={index}
                   className={`w-100 mb-md-0 mb-2 `}
                 >
-                  <div className={`px-1 ${styles.list} mb-md-3 mb-1`}>
+                  <div  onClick={(event) => handleItemClick(item,event.currentTarget)} 
+                  className={`px-1 ${item?.className === 'first' ? `active` : ''} tbm ${styles.list} mb-md-3 mb-1`}>
                     {" "}
                     <div className="px-1" style={{ cursor: "pointer" }}>
                       {" "}
@@ -52,11 +85,12 @@ export const GCPServicesFeatureList = ({ dataList }) => {
                   <Col
                     md={3}
                     key={index}
-                    className={`mb-md-0 mb-2`}
-                    onClick={() => handleItemClick(item)}
+                    className={`mb-md-0 mb-2 `}
+                    
                     style={{ cursor: "pointer" }}
                   >
-                    <div className={`px-1 ${styles.list} mb-md-3 mb-1`}>
+                    <div onClick={(event) => handleItemClick(item,event.currentTarget)} 
+                    className={`px-1 ${styles.list} mb-md-3 mb-1 tb ${item?.className === 'first' ? `active` : ''}`}>
                       {" "}
                       <div className="px-1"> {item?.name} </div>{" "}
                     </div>

@@ -85,37 +85,43 @@ export const ProductCompany = () => {
 
   const [selectedItem, setSelectedItem] = useState({});
   const tbs =  document.querySelectorAll('.tb');
-  const tbsMobile =  document.querySelectorAll('.tbm');
+  const tbsMobile =  document.getElementsByClassName('tbm');
 
   // console.log('tabsss',tbsMobile);
   // tbs[0].classList.add('active')
   const funSelectedlist =  (item,seltab) => {
-    console.log('this is ', seltab);
-if(isMobile)
-  {
-    
-   tbsMobile[0].classList[5]=='activeMobile'? tbsMobile[0].classList.remove('activeMobile'):null;
-    
-    tbsMobile.forEach(elem => {
-      console.log('foreach',elem.classList);
-    elem.classList[1]=='tbm'? elem.classList.remove('activeMobile'):null;
+    // console.log('this is ', seltab);
+    if(isMobile)
+      {
+        // console.log('tbsMobile',tbsMobile[0]);
+    if (tbsMobile[0].classList.contains('active')) {
+      tbsMobile[0].classList.remove('active');
+    }
 
-  
-    
-   });
-   seltab.classList.add('activeMobile')
-  }
-  else{
-  // for desktop
-  tbs[0].classList[1]=='active'? tbs[0].classList.remove('active'):null;
-   tbs.forEach(tb => {
-    tb.classList[2]=='tb'? tb.classList.remove('active'):null;
-
-    console.log('foreach',tb.classList);
-    
-   });
-   seltab.classList.add('active')
-  }
+    Array.from(tbsMobile).forEach(elem => {
+      // console.log('foreach', elem);
+      if (elem.classList.contains('tbm')) {
+        elem.classList.remove('active');
+      }
+    });
+     // console.log('seltab',seltab);
+    seltab.classList.add('active');
+      }
+    else{
+      // for desktop
+      // console.log('tbs[0].classList',tbs);
+      if (tbs[0].classList.contains('active')) {
+        tbs[0].classList.remove('active');
+      }
+      Array.from(tbs).forEach(elem => {
+        // console.log('foreach', elem);
+        if (elem.classList.contains('tb')) {
+          elem.classList.remove('active');
+        }
+      });
+      
+      seltab.classList.add('active');
+      }
 
   setSelectedItem(item);
     
@@ -149,7 +155,7 @@ if(isMobile)
                 >
                   
                   <div onClick={(event) => {funSelectedlist(item,event.currentTarget)}} 
-                  className={`px-1 ${item.className === 'first' ? `` : ''} tbm  ${styles.list}  mb-md-3 mb-1`}>
+                  className={`px-1 ${item?.className === 'first' ? `active ` : ''} tbm  ${styles.list}  mb-md-3 mb-1`}>
                     {" "}
                     <div className= {`  px-1 `}> {item?.name} </div>{" "}
                   </div>

@@ -107,6 +107,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 1,
     name: "Assessment & Planning",
+    className:"first",
     description_title:
       "A Baseline for Understanding Current Challenges and Opportunities",
     description_list: [

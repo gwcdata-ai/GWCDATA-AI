@@ -96,9 +96,9 @@ export const ProductBanner = () => {
             </Col>
           </Row>
           <Row>
-            {ProductBannerCardsData.map((data) => (
-              <Col sm={12} md={6} lg={4}>
-                <div className={styles.bannerCard}>
+            {ProductBannerCardsData.map((data,index) => (
+              <Col sm={12} md={6} lg={4} >
+                <div className={styles.bannerCard} key={index}>
                   <div className={styles.BannerCardHeading}>{data?.name}</div>
                   <p className={`h-50 ${styles.BannerCardPara}`}>
                     {data?.desc}

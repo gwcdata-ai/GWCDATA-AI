@@ -265,6 +265,10 @@
   color: #f4eef6 !important;
   background-color: #6f2b8c !important;
 }
+.activeTab {
+  color: #f4eef6 !important;
+  background-color: #6f2b8c !important;
+}
 
 body {
   overflow: hidden;

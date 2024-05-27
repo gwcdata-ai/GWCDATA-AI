@@ -9,6 +9,7 @@ export const BoomiListData = [
     {
         id: 1,
         name: "Healthcare and Life Sciences ",
+        className:"first",
         description_title:
             "Improve analysis with a 360-degree view",
         description_list: [

@@ -134,6 +134,7 @@ export const IIOTDataGovernanceList = [
   {
     id: 1,
     name: "Solution Architecting",
+    className:"first",
     description_title: "Solution Architecting",
     description_list: [
       "Our Salesforce Solution Architecting expertise involves designing & creating scalable & efficient solutions tailored to meet the unique needs of businesses, ensuring optimal performance within the Salesforce ecosystem.",

@@ -497,8 +497,8 @@ const JobPost = () => {
             </p>
             <div>
               <ul style={{ listStyleType: "circle" }}>
-                {jobDescription[0]?.list?.map((item) => {
-                  return <li> {item} </li>;
+                {jobDescription[0]?.list?.map((item,index) => {
+                  return <li key={index}> {item} </li>;
                 })}
               </ul>
             </div>{" "}
@@ -509,8 +509,8 @@ const JobPost = () => {
             </p>
             <div>
               <ul style={{ listStyleType: "circle" }}>
-                {jobDescription[1]?.list?.map((item) => {
-                  return <li> {item} </li>;
+                {jobDescription[1]?.list?.map((item,index) => {
+                  return <li key={index}> {item} </li>;
                 })}
               </ul>
             </div>{" "}
@@ -521,8 +521,8 @@ const JobPost = () => {
             </p>
             <div>
               <ul style={{ listStyleType: "circle" }}>
-                {jobDescription[2]?.list?.map((item) => {
-                  return <li> {item} </li>;
+                {jobDescription[2]?.list?.map((item,index) => {
+                  return <li key={index}> {item} </li>;
                 })}
               </ul>
             </div>{" "}

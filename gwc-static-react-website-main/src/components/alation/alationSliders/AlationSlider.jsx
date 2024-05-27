@@ -9,7 +9,7 @@ import useMedia from "../../../hooks/useMedia";
 import AOS from "aos";
 import { AlationSliderData } from "./alationSliderData";
 
-const ProductAllCard = ({ data }) => {
+const ProductAllCard = ({ data,index }) => {
     const isMobile = useMedia("(max-width:600px)");
 
     const [hover, setHover] = useState(false);
@@ -23,7 +23,7 @@ const ProductAllCard = ({ data }) => {
     };
 
     return (
-        <div
+        <div key={index}
             className={`${isMobile ? styles.BenefitSectionBox1 : styles.BenefitSectionBox
                 }`}
             data-aos="flip-down"
@@ -187,8 +187,8 @@ const AlationSlider = () => {
             <Row className="mt-3">
                 <Col xs={12} md={6} lg={3} className="w-100">
                     <Slider {...settings} className="m-0 p-0">
-                        {AlationSliderData?.map((data) => (
-                            <ProductAllCard data={data} />
+                        {AlationSliderData?.map((data,index) => (
+                            <ProductAllCard data={data} index={index} />
                         ))}
                     </Slider>
                 </Col>

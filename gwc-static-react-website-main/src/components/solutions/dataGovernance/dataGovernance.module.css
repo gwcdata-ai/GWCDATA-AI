@@ -34,3 +34,20 @@
   text-align: left;
   color:var(--theme-gray-500);
 }
+.active {
+  color: #f4eef6 !important;
+  background-color: #6f2b8c !important;
+}
+
+/* .list:hover {
+  color: #f4eef6 !important;
+  background-color: #8302be !important;
+} */
+.tb{
+  background-color: white;
+  color: black;
+}
+.activeMobile {
+  color: #f4eef6 !important;
+  background-color: #6f2b8c !important;
+}

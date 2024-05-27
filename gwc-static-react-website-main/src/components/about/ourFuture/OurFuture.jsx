@@ -41,7 +41,7 @@ export const OurFuture = ({ ourFutureContent }) => {
             </Col>
             {ourFutureContent?.content?.map((item, index) => {
               return (
-                <Col sm={12} md={12} lg={6} className="mb-4" data-aos="zoom-in">
+                <Col key={index} sm={12} md={12} lg={6} className="mb-4" data-aos="zoom-in">
                   <Card className={`${styles.card_height} p-4 rounded-4`}>
                     <Image
                       className={`${styles.list_img}`}

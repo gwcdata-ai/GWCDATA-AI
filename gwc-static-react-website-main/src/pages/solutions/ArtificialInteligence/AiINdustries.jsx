@@ -118,7 +118,7 @@ const AiINdustries = () => {
                     </div>
                     <Slider {...settings} className="m-0 p-0">
                         {AiData?.map((item, index) => (
-                            <Col md={3} className='mb-5'>
+                            <Col key={index} md={3} className='mb-5'>
                                 <Card className={` ${styles?.home_card} mt-3  mx-3`}>
                                     <Card.Img variant="top" src={item?.img} className='px-3 py-2' />
                                     <div className='px-3'>

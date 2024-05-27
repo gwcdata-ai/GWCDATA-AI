@@ -41,7 +41,7 @@ export const CommonRightSideImgWIthBannerBg = ({
                 {rightSideImgwithBgBanner?.list && (
                   <ul className={styles?.text}>
                     {rightSideImgwithBgBanner?.list?.map((item, index) => (
-                      <li className='mb-3' dangerouslySetInnerHTML={{ __html: item.replace(/\n/g, "")}} />
+                      <li key={index} className='mb-3' dangerouslySetInnerHTML={{ __html: item.replace(/\n/g, "")}} />
                       //  <li key={index}> {item} </li>
                     ))}
                   </ul>

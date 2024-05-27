@@ -101,6 +101,7 @@ export const SnowList = [
     {
         id: 1,
         name: "Retail",
+        className:"first",
         description_title:
             "Retail",
         description_list: [

@@ -55,28 +55,28 @@ const CaseStudyDetail = () => {
                                                     )}
                                                     {listPoints && (
                                                         <ul>
-                                                            {listPoints?.map((item) =>
+                                                            {listPoints?.map((item,index) =>
 
-                                                                <li className={` ${styles.blog_sub_para} mb-3`} dangerouslySetInnerHTML={{ __html: item.replace(/\n/g, "") }} />
+                                                                <li key={index} className={` ${styles.blog_sub_para} mb-3`} dangerouslySetInnerHTML={{ __html: item.replace(/\n/g, "") }} />
 
                                                             )}
                                                         </ul>
                                                     )}
 
                                                     {images?.length === 1 && (
-                                                        images?.map((item) => <img src={item} className='w-50 mt-3 mb-5' />)
+                                                        images?.map((item,index) => <img key={index} src={item} className='w-50 mt-3 mb-5' />)
                                                     )}
                                                     <Row>
                                                         {images?.length === 2 && (
-                                                            images?.map((item) =>
-                                                                <Col lg={5}>
+                                                            images?.map((item,index) =>
+                                                                <Col lg={5} key={index}>
                                                                     <img src={item} className='w-100 mb-5' />
                                                                 </Col>)
                                                         )}
                                                     </Row>
                                                     <Row>
                                                         {images?.length === 3 && (
-                                                            images?.map((item) => <Col lg={4}> <img src={item} className='w-100 mb-5' /> </Col>)
+                                                            images?.map((item,index) => <Col key={index} lg={4}> <img src={item} className='w-100 mb-5' /> </Col>)
                                                         )}
                                                     </Row>
 

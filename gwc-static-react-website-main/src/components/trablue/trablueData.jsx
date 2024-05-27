@@ -78,6 +78,7 @@ export const TrablueIIOTDataGovernanceList = [
     {
         id: 1,
         name: "Cost-Effective Scaling",
+        className:'first',
         description_title: "Cost-Effective Scaling",
         description_list: [
             "Strategically plan and scale Tableau solutions according to the client's growing needs, optimizing resource allocation and ensuring cost-effectiveness over time.",

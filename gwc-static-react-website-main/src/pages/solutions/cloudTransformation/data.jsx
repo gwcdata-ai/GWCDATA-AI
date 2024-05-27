@@ -48,6 +48,7 @@ export const CloudTransformationDataGovernanceList = [
   {
     id: 1,
     name: "Operate & Optimize Dev Capabilities",
+    className:"first",
     description_title:
       "Operate & Optimize Dev Capabilities",
     description_list: [

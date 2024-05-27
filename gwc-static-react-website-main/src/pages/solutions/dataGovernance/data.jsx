@@ -44,6 +44,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 1,
     name: "Data Classification & Sensitivity",
+    className:'first',
     description_title: "Data Classification & Sensitivity",
     description_list: [
       "Secure your business and comply with regulations by implementing a robust data classification and sensitivity approach.",
@@ -54,6 +55,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 2,
     name: "Data Quality Management",
+    className:'second',
     description_title: "Data Quality Management",
     description_list: [
       " Ensure trusted data fuels informed decisions.",
@@ -64,6 +66,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 3,
     name: "Data Lineage ",
+    className:'three',
     description_title:
       "Data Lineage ",
     description_list: [
@@ -75,6 +78,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 4,
     name: "Data Access & Authorization",
+    className:'four',
     description_title: " Data Access & Authorization",
     description_list: [
       "Protects sensitive information from unauthorized access and misuse.",
@@ -85,6 +89,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 5,
     name: "Data Privacy Compliance",
+    className:'five',
     description_title:
       "Data Privacy Compliance",
     description_list: [
@@ -96,6 +101,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 6,
     name: "Data Governance Policies",
+    className:'six',
     description_title: "Data Governance Policies",
     description_list: [
       "Boosts operational efficiency with a framework for efficient data management processes.",
@@ -106,6 +112,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 7,
     name: "Metadata Management",
+    className:'seven',
     description_title: "Metadata Management",
     description_list: [
       " Standards to establish consistent ways to describe and categorize your data.",
@@ -116,6 +123,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 8,
     name: "Training & Awareness ",
+    className:'eight',
     description_title: "Training & Awareness",
     description_list: [
       " Utilizes online training platforms and knowledge management systems for easy access and continuous learning ",
@@ -126,6 +134,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 9,
     name: "Data Risk Management",
+    className:'nine',
     description_title:
       "Data Risk Management",
     description_list: [
@@ -137,6 +146,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 10,
     name: " Audit & Monitoring",
+    className:'ten',
     description_title: " Audit & Monitoring",
     description_list: [
       " Identifies areas of non-compliance and potential risks and focus on Data quality and consistency across the organization.",

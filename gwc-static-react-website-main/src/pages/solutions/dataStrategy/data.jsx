@@ -47,6 +47,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 1,
     name: "Data Discovery",
+    className:'first',
     description_title: "Uncover Deeper Insights Through Data Discovery",
     description_list: [
       "Harness the potential of data discovery to make informed decisions, by uncovering patterns and trends.",
@@ -57,6 +58,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 2,
     name: "Advanced Analytics",
+    className:'second',
     description_title: "Overcome Complexity With Advanced Data Analytics",
     description_list: [
       "Foresee trends, patterns, and potential challenges, empowering proactive responses with predictive analytics.",
@@ -67,6 +69,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 3,
     name: "Digital Transformation Consulting​",
+    className:'third',
     description_title:
       "Navigate Digital Transformation With Our Expert Digital Transformation Consulting Services",
     description_list: [
@@ -78,6 +81,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 4,
     name: "Customized Data Roadmaps",
+    className:'four',
     description_title: "Craft Your Customized Data Roadmap With GWC",
     description_list: [
       "Our customized data roadmap ensures strategic alignment with your business objectives, paving the way for data-driven success.",
@@ -88,6 +92,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 5,
     name: "Objective Identification",
+    className:'five',
     description_title:
       "Get Clear Direction Through Objective Identification For Data-Driven Excellence",
     description_list: [
@@ -99,6 +104,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 6,
     name: "Target Audience Identification",
+    className:'six',
     description_title: "Target Audience Identification For Precise Engagement",
     description_list: [
       "Our approach involves strategic profiling to precisely identify your target audience, ensuring a deep understanding of their preferences, behaviors, and needs.",
@@ -109,6 +115,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 7,
     name: "Tailored Data Strategies",
+    className:'seven',
     description_title: " Crafting Tailored Data Strategies For Excellence",
     description_list: [
       "Our tailored data strategies are crafted with a customized approach, aligning with the unique needs, goals, and challenges of your organization.",
@@ -119,6 +126,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 8,
     name: "Data Maturity Identification​",
+    className:'eight',
     description_title: "We Reveal Insights Into Your Data Maturity Level",
     description_list: [
       "Our data maturity identification process involves a precise assessment of your organization's current data capabilities.",
@@ -129,6 +137,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 9,
     name: "Data Compliance​",
+    className:'nine',
     description_title:
       "Ensure Data Integrity While Navigating Data Compliance Challenges",
     description_list: [
@@ -140,6 +149,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 10,
     name: "IT Infra Optimization",
+    className:'ten',
     description_title:
       "Streamline Excellence With Our IT Infrastructure Optimization Strategies",
     description_list: [

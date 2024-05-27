@@ -200,8 +200,8 @@ export const AboutRecognitions = ({ recognitionsContent }) => {
           <Row className={styles.banner_row}>
             <Col xs={12} md={6} lg={3} className="w-100" data-aos="fade-down">
               <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-                {recognitionsContent?.list?.map((data) => (
-                  <div className={`${styles.section_container} px-md-0 px-2`}>
+                {recognitionsContent?.list?.map((data,index) => (
+                  <div key={index} className={`${styles.section_container} px-md-0 px-2`}>
                     <div className={styles.image_container}>
                       <Image
                         className={`rounded-4 ${styles.section_image}`}
