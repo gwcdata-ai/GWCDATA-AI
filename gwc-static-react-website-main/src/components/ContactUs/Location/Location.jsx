@@ -13,7 +13,7 @@ import locIcon from "../../../assets/images/ContactUs/Location/locationmap.svg";
 
 import AOS from "aos";
 AOS.init({
-  duration: 1500,
+  duration: 500,
 });
 AOS.refresh();
 const Location = () => {
@@ -56,9 +56,6 @@ const Location = () => {
           <div className={styles.ohioUsa}>Chennai</div>
           <img className={styles.frameChild11} alt="" src={locIcon} />
         </div>
-      </div>
-
-      <div className={styles.frameParent1}>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
           <img className={styles.rectangleIcon} alt="" src={loc9} />
           <div className={styles.frameChild4} />
@@ -71,6 +68,10 @@ const Location = () => {
           <div className={styles.ohioUsa}>Coimbatore</div>
           <img className={styles.frameChild5} alt="" src={locIcon} />
         </div>
+      </div>
+
+      <div className={styles.frameParent1}>
+        
         <div className={styles.rectangleContainer} data-aos="zoom-in">
           <img className={styles.rectangleIcon} src={loc10} alt="" />
           <div className={styles.frameChild7} />
@@ -90,9 +91,6 @@ const Location = () => {
           <div className={styles.ohioUsa}>Dharmapuri</div>
           <img className={styles.frameChild11} alt="" src={locIcon} />
         </div>
-      </div>
-
-      <div className={styles.frameParent1}>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
           <img className={styles.rectangleIcon} alt="" src={loc4} />
           <div className={styles.frameChild4} />
@@ -113,6 +111,28 @@ const Location = () => {
           <img className={styles.frameChild5} alt="" src={locIcon} />
         </div>
       </div>
+
+      {/* <div className={styles.frameParent1}>
+        <div className={styles.rectangleContainer} data-aos="zoom-in">
+          <img className={styles.rectangleIcon} alt="" src={loc4} />
+          <div className={styles.frameChild4} />
+          <div className={styles.sawmillRoadSuite200Container}>
+            <p className={styles.fillOutThis}>Kamarajar Nagar Colony , </p>
+            <p className={styles.fillOutThis}>Ammapet, Salem 636014</p>
+          </div>
+          <div className={styles.ohioUsa}>Salem </div>
+          <img className={styles.frameChild5} alt="" src={locIcon} />
+        </div>
+        <div className={styles.rectangleContainer} data-aos="zoom-in">
+          <img className={styles.rectangleIcon} src={loc11} alt="" />
+          <div className={styles.frameChild7} />
+          <div className={styles.sawmillRoadSuite200Container}>
+            3/6, CKC Road, Tirupattur - 635501
+          </div>
+          <div className={styles.ohioUsa}>Tirupattur</div>
+          <img className={styles.frameChild5} alt="" src={locIcon} />
+        </div>
+      </div> */}
     </div>
   );
 };

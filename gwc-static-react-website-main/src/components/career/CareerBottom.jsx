@@ -78,7 +78,7 @@ const CareerBottom = () => {
     formData.append("file", e.target.files[0]);
     axios
       .post(
-        `https://apiapartment.projectzerozilla.com/api/v1/common/upload-document-gwc`,
+        `https://www.api.gatewise.in/api/v1/common/upload-document-gwc`,
         formData,
         {
           headers: {

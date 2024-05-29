@@ -78,13 +78,13 @@ const ContactUsBanner = () => {
         <div className={styles.groupInner} />
         <div className={styles.rectangleDiv} />
         <div className={styles.getInTouchContainer}>
-          <div>Get in touch</div>
-          <span className={styles.span}>{` `}</span>
-          <div className="">with us</div>
+          <div>Get in touch with us</div>
+          {/* <span className={styles.span}>{` `}</span> */}
+          {/* <div className="">with us</div> */}
         </div>
         <div className={styles.haveAnInquiryContainer}>
           <p className={styles.fillOutThis}>
-            Have an inquiry or some feedback fo us?
+            Have an inquiry or some feedback to us?
           </p>
           <p className={styles.fillOutThis}>
             Fill out this form to contact our team. 

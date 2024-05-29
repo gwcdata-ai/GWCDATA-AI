@@ -152,8 +152,8 @@
   top: 375px;
   left: 0;
   background-color: #6f2b8c;
-  width: 107%;
-  height: 375px;
+  width: 100%;
+  height: 330px;
 }
 
 .span {
@@ -175,7 +175,7 @@
   text-transform: capitalize;
   font-weight: 700;
   display: inline-block;
-  width: 379.52px;
+  width: 65%;
   font-family: "Roboto-Regular";
 }
 
@@ -185,10 +185,10 @@
 
 .haveAnInquiryContainer {
   position: absolute;
-  top: 600px;
+  top: 530px;
   left: 127.49px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: -0.16px;
   font-family: "OS-Regular";
   display: inline-block;
@@ -436,7 +436,7 @@
 .rectangleGroup {
   position: absolute;
   top: 100px;
-  left: 780.44px;
+  left: 60%;
   width: 688.87px;
   display: flex;
   flex-direction: column;
@@ -494,7 +494,7 @@
 
 .rectangleParent {
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 730px;
 }
 
@@ -684,9 +684,9 @@
 
 .frameGroup {
   background-color: #fff;
-  width: 1440px;
+  width: 100%;
   flex-direction: column;
-  padding: 60px 112px;
+  padding: 20px 112px 30px 112px;
   box-sizing: border-box;
   gap: 48px;
   font-size: 18px;
@@ -1231,14 +1231,14 @@
 
 @media screen and (min-device-width: 1301px) and (max-device-width: 1366px) {
   .rectangleGroup {
-    left: 780.44px;
+    left: 60%;
     width: 688.87px;
   }
 }
 
 @media screen and (min-device-width: 1300px) and (max-device-width: 1350px) {
   .rectangleGroup {
-    left: 780.44px;
+    left: 60%;
     width: 688.87px;
   }
 }
@@ -1329,7 +1329,7 @@
   }
 
   .frameLocationGroup {
-    margin-top: 14rem;
+    margin-top: 44rem;
   }
 
   .plot1113rd3,

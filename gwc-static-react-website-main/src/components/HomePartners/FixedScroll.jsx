@@ -383,40 +383,38 @@ const FixedScroll = () => {
               <div className="fixed_para">
                 <h1> DBT</h1>
                 <p>
-                  Our seasoned team of Fivetran experts assists in dashboard
-                  creation, metric development, cost and time reduction, and
-                  enhancing data literacy and insights. Leveraging Fivetran's
-                  automated data movement platform, we deliver customized and
-                  efficient data solutions tailored to your business
-                  requirements.
+                At GWC Analytics, our dbt (data build tool) team is redefining the way we handle data transformation and modeling. With dbt, we turn raw data into valuable, actionable insights, empowering businesses to make data-driven decisions with confidence.
                 </p>
                 <h2>Capabilities</h2>
 
                 <div className={styles.badgeParent}>
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}> Data Modernization</div>
+                      <div className={styles.text163}> Dbt Implementation and Setup</div>
                     </div>
                   </div>
 
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}>Data Governance</div>
+                      <div className={styles.text163}>Data Transformation Development
+                      </div>
                     </div>
                   </div>
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}>Data Vault</div>
+                      <div className={styles.text163}>Data Quality and Testing
+                      </div>
                     </div>
                   </div>
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}>Cost Optimization</div>
+                      <div className={styles.text163}>Consulting and Best Practices
+                      </div>
                     </div>
                   </div>
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}>Dbt Mesh</div>
+                      <div className={styles.text163}>Migration Services</div>
                     </div>
                   </div>
                 </div>

@@ -217,27 +217,27 @@ export const HomePartnersData = [
     id: 8,
     name: "DBT",
     connect: "dbt",
-    desc: "Utilize GWC's dbt services to unlock the full potential of your data on a cloud-based platform designed for accelerated production. Elevate your data development process into a modern, collaborative powerhouse with the strategic backing of dbt Cloud.",
+    desc: "At GWC Analytics, our dbt (data build tool) team is redefining the way we handle data transformation and modeling. With dbt, we turn raw data into valuable, actionable insights, empowering businesses to make data-driven decisions with confidence.",
     capabilities: [
       {
         id: 1,
-        title: "Data Modernization",
+        title: "dbt Implementation and Setup",
       },
       {
         id: 2,
-        title: "Data Governance",
+        title: "Data Transformation Development",
       },
       {
         id: 3,
-        title: "Data Vault",
+        title: "Data Quality and Testing",
       },
       {
         id: 4,
-        title: "Cost Optimization",
+        title: "Consulting and Best Practices",
       },
       {
         id: 5,
-        title: "Dbt Mesh",
+        title: "Migration Services",
       },
     ],
   },

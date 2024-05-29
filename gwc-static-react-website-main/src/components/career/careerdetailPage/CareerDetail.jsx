@@ -107,7 +107,7 @@ const CareerDetail = () => {
     formData.append("file", e.target.files[0]);
     axios
       .post(
-        `https://apiapartment.projectzerozilla.com/api/v1/common/upload-document-gwc`,
+        `https://www.api.gatewise.in/api/v1/common/upload-document-gwc`,
         formData,
         {
           headers: {
@@ -133,41 +133,19 @@ const CareerDetail = () => {
       last_name: values?.lastName,
       applicant_email: values?.email,
       applicant_phone: values?.phone,
-      applicant_resume_url: '',
+      applicant_resume_url: fileName,
       job_title: jobData?.jobRole,
       job_location: jobData?.location?.location,
       job_type: jobData?.type?.type,
       applicant_skills: values?.applicant_skills,
       applicant_message:values?.message,
     };
-    console.log('data is ',data);
+    // console.log('data is ',data);
 
 
-     await emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
-        (response) => {
-          console.log('res from emailjs',response);
-          notify();
-          resetForm();
-          setSuccessUplaod("")
-          // handleClose();
-        },
-        (err) => {
-          console.log(
-            `Hello!, there is some network issue please check your internet connection and re-submit the request`
-          );
-        }
-      );
-    
-
-    // if (
-    //   data?.applicant_resume_url === "" ||
-    //   data?.applicant_resume_url === null ||
-    //   data?.applicant_resume_url === undefined
-    // ) {
-    //   // notifyFailure();
-    // } else {
     //  await emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
     //     (response) => {
+    //       console.log('res from emailjs',response);
     //       notify();
     //       resetForm();
     //       setSuccessUplaod("")
@@ -179,7 +157,29 @@ const CareerDetail = () => {
     //       );
     //     }
     //   );
-    // }
+    
+
+    if (
+      data?.applicant_resume_url === "" ||
+      data?.applicant_resume_url === null ||
+      data?.applicant_resume_url === undefined
+    ) {
+      notifyFailure();
+    } else {
+     await emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
+        (response) => {
+          notify();
+          resetForm();
+          setSuccessUplaod("")
+          // handleClose();
+        },
+        (err) => {
+          console.log(
+            `Hello!, there is some network issue please check your internet connection and re-submit the request`
+          );
+        }
+      );
+    }
   };
 
   return (

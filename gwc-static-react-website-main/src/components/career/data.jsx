@@ -687,6 +687,9 @@ import f13 from "../../assets/images/career/GWC_Cricket Tournment.webp";
 import f14 from "../../assets/images/career/GWC_Halloween Celebration.webp";
 import f15 from "../../assets/images/career/GWC_Mismatch Theme.webp";
 import f16 from "../../assets/images/career/GWC_Pongal Celebration.webp";
+import f17 from "../../assets/images/career/GWC_GROUP_RECENT.jpeg";
+import f18 from "../../assets/images/career/GWC_Sports_day_activity.jpg";
+
 
 export const careerCarousalData = [
   // {
@@ -694,12 +697,23 @@ export const careerCarousalData = [
   //   img: f1,
   //   text: "2nd Year Anniversary",
   // },
+  {
+    id: 1,
+    img: f17,
+    text: "3rd Anniversary for GWC",
+  },
+  {
+    id: 2,
+    img: f18,
+    text: "Sports Day Activity",
+  },
 
   {
     id: 3,
     img: f3,
     text: "Onam Celebration",
   },
+  
   // {
   //   id: 4,
   //   img: f4,
