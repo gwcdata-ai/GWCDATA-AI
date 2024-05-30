@@ -207,16 +207,10 @@ const HomeTestimonials = () => {
                     {/* Image taking 25% at the bottom */}
                     <img
                       alt=""
-                      className="w-100"
+                      className={`w-100 ${isMobile ? stylestestimonial.testimonialMobile:stylestestimonial.testimonialDesktop} `}
+
                       src={data?.image}
-                      style={{
-                        position: "absolute",
-                        bottom: "-8%",
-                        left: 0,
-                        width: "100%",
-                        height: "59%",
-                        zIndex: 0,
-                      }}
+                      
                     />
                     <p
                       className={`${stylestestimonial.card_title} px-2 text-center`}
@@ -245,13 +239,7 @@ const HomeTestimonials = () => {
                     <img
                       alt=""
                       src={data.icon}
-                      style={{
-                        position: "absolute",
-                        bottom: "27%",
-                        // top:"0%",
-                        right: "40%",
-                        zIndex: 1,
-                      }}
+                      className={`${isMobile ? stylestestimonial.testimonialIconMobile : stylestestimonial.testimonialIconDesktop}`}
                     />
                   </Col>
                 </div>
