@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main2 {
+          
+          display:flex;
+          flex-direction:row;
+          width:1200px; 
+          height:600px;
+          
+        }
+        
+        /*Device below 1024px, tablet/mobile*/
+        @media(max-width:1024px){
+          
+          .main2 {
+          
+          display:flex;
+          flex-direction:column;
+          width:100%;   
+          height:auto;
+          
+        } 
+        }
+        
+        .column {
+          
+          width:25%;
+          transition: width 0.5s;
+          overflow: hidden;
+          position:relative;
+          display:flex;
+          flex-direction:column;
+          justify-content:flex-end;
+          cursor:pointer;
+          
+        }
+        
+        .column:nth-child(1) {
+          
+          background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/01/anders-jilden-cYrMQA7a3Wc-unsplash.jpg');
+          background-size:cover;
+          background-position:center center;
+          border-radius: 10px 0px 0px 10px;
+          
+        }
+        
+        .column:nth-child(2) {
+          
+          background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/02/Footer-1.jpg');
+          background-size:cover;
+          background-position:center center;
+          
+        }
+        
+        .column:nth-child(3) {
+          
+          background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/03/nathan-dumlao-ciO5L8pin8A-unsplash-1.jpg');
+          background-size:cover;
+          background-position:center center;
+          
+        }
+        
+        .column:nth-child(4) {
+          
+          background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/01/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg');
+          background-size:cover;
+          background-position:center center;
+          border-radius: 0px 10px 10px 0px;
+        }
+        .column:nth-child(5) {
+          
+          background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/01/anders-jilden-cYrMQA7a3Wc-unsplash.jpg');
+          background-size:cover;
+          background-position:center center;
+          border-radius: 10px 0px 0px 10px;
+          
+        }
+        .column:nth-child(6) {
+          
+          background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/02/Footer-1.jpg');
+          background-size:cover;
+          background-position:center center;
+          
+        }
+        
+        /*Border Styling for device width below 1024px, Tablet/Mobile*/
+        @media(max-width:1024px){
+          
+          .column:nth-child(1) {
+          
+           border-radius: 10px 10px 0px 0px;
+          
+        }
+          
+          .column:nth-child(4) {
+          
+           border-radius: 0px 0px 10px 10px;
+        }
+        }
+        
+        /*Desktop Styling*/
+        @media screen and (min-width: 1025px) {
+                    
+            /*Clicked column styling*/
+            .expanded {
+                
+            width: 150% !important;
+            
+            }
+            }
+            
+            .expanded:after {
+                
+                content: '';
+        /*         background: rgba(0,0,0,0.5); */
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 0;
+                pointer-events:none;
+                
+            }
+              
+        /*Tablet and mobile, below 1025px*/  
+        @media (max-width: 1024px) {
+                
+        .column {
+                
+                width:100%;
+                transition: height 0.5s;
+                height: 120px;
+                
+        }    
+                
+        /*Clicked column styling*/
+        .expanded{
+                
+            height: 400px !important;         
+        
+            }
+         }
+            
+        /*Inner elements inside column container styling*/
+        .inner-element {
+                
+          opacity: 0;
+          transition: opacity 0s;
+          z-index: 2;
+          padding:20px;
+          background:transparent;
+          position:absolute;
+          left:0;
+          bottom:10px;
+              
+        }
+        
+        .inner-element h2{
+          
+          color:white;
+          font-family: 'poppins';
+          font-size:24px;
+          
+        }
+        
+        .inner-element p{
+          
+          color:white;
+          font-family: 'poppins';
+          font-size:16px;
+          font-weight:100;
+          
+        }
+            
+        /*Inner elements made visible on clicked column*/
+        .inner-element.active {
+                      
+         opacity: 1; 
+         transition: opacity 0.5s 0.4s;        
+               
+        }
+        
+        .icons {
+          
+          position:absolute;
+          bottom:20px;
+          left:18px;
+          font-size:40px;
+          padding:20px;
+          background:white;
+          z-index:2;
+          border-radius:50%;
+          height:40px;
+          width:40px;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+           
+        }
+        
+        .DMmotionarts{
+          
+          position:absolute;
+          width:200px;
+          left:0;
+          bottom:0;
+          
+        }
+        </style>
+</head>
+<body>
+ 
+        
+         <div class = "main2">
+                <div class = "column expanded"> 
+                  <div class = "inner-element active">
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                  <div class = "column"> 
+                  <div class = "inner-element">
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                  <div class = "column"> 
+                  <div class = "inner-element">
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                  <div class = "column"> 
+                  <div class = "inner-element">
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                <div class = "column"> 
+                    <div class = "inner-element">
+                      <h2>Coastal Caves</h2>
+                    </div>
+                  </div>
+                  <div class = "column"> 
+                    <div class = "inner-element">
+                      <h2>Coastal Caves</h2>
+                    </div>
+                  </div>
+              </div>
+        
+        <script>
+             const columns = document.querySelectorAll('.column');
+            const innerElements = document.querySelectorAll('.inner-element');
+        
+            columns.forEach(click => {
+                click.addEventListener('mouseover', event => {
+                    // Iterate over all columns
+                    columns.forEach(column => {
+                        if (column === click) {
+                            // Set the clicked column width to 100%
+                            column.classList.add('expanded');
+                        } else {
+                            // Shrink the width of other columns
+                            column.classList.remove('expanded');
+                        }
+                    });
+        
+                    // Iterate over all inner elements
+                    innerElements.forEach(innerElement => {
+                        // Add the active class to the inner element of the clicked column
+                        if (innerElement.parentElement === click) {
+                            innerElement.classList.add('active');
+                        } else {
+                            innerElement.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        
+        </script>
+    
+</body>
+</html>

@@ -3,7 +3,7 @@ import { Accordion, Card, Col, Container, Image, Row } from "react-bootstrap";
 import banner from "../../../assets/images/about/ourCultureBg.webp";
 import commonStyles from "../../../commoncss/common.module.css";
 import styles from "../../boomi/boomi.module.css";
-import WorkGwcRightImg from "../../../assets/images/about/workGwcRight.svg";
+import WorkGwcRightImg from "../../../assets/images/about/workGwcRight.png";
 import AOS from "aos";
 AOS.init({
   duration: 1000,

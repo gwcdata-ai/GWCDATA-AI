@@ -11,7 +11,8 @@ import useMedia from "../../hooks/useMedia";
 import newStyles from "../../commoncss/Home.module.css";
 
 import AOS from "aos";
-import { useRef } from "react";
+import { useEffect, useRef ,React} from "react";
+
 AOS.init({
   duration: 1500,
 });
@@ -19,6 +20,51 @@ AOS.init({
 const CareerCarousal = () => {
   const sliderRef = useRef(null); //slideref for slider arrow
   const isMobile = useMedia("(max-width:600px)");
+ 
+  useEffect(() => {
+    
+    const columns = document.querySelectorAll('.column');
+    const innerElements = document.querySelectorAll('.inner_element');
+
+    const handleMouseOver = (column) => {
+      columns.forEach(col => {
+        console.log('mouse hover',col);
+        if (col === column) {
+          col.classList.add(`${styles.expanded}`);
+        } else {
+          col.classList.remove(`${styles.expanded}`);
+        }
+      });
+
+      innerElements.forEach(innerElement => {
+        if (innerElement.parentElement === column) {
+          innerElement.classList.add('active');
+        } else {
+          innerElement.classList.remove('active');
+        }
+      });
+    };
+
+    columns.forEach(column => {
+      column.addEventListener('mouseover', event => {
+        handleMouseOver(column);
+      });
+      column.addEventListener('mouseleave', event => {
+        column.classList.remove(`${styles.expanded}`);
+        innerElements.forEach(innerElement => {
+          innerElement.classList.remove('active');
+        });
+      });
+    });
+
+    return () => {
+      columns.forEach(column => {
+        column.removeEventListener('mouseover', handleMouseOver);
+        column.removeEventListener('mouseleave', handleMouseOver);
+      });
+    };
+
+    }, []);
 
   const settings = {
     dots: true,
@@ -183,7 +229,46 @@ const CareerCarousal = () => {
             cherish.
           </p>
         </section>
+
         <div className={styles.carousel_container}>
+
+        {/* <div className = {styles.main2}>
+                <div className ={`${styles.column } column`} > 
+                  <div className = {`${styles.inner_element} inner_element`}>
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                <div className ={`${styles.column } column`} > 
+                  <div className = {`${styles.inner_element} inner_element`}>
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                <div className ={`${styles.column } column`} > 
+                  <div className = {`${styles.inner_element} inner_element`}>
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                
+                <div className ={`${styles.column } column`} > 
+                  <div className = {`${styles.inner_element} inner_element`}>
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                <div className ={`${styles.column } column`} > 
+                  <div className = {`${styles.inner_element} inner_element`}>
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+                <div className ={`${styles.column } column`} > 
+                  <div className = {`${styles.inner_element} inner_element`}>
+                    <h2>Coastal Caves</h2>
+                  </div>
+                </div>
+               
+                
+              </div> */}
+        
+
           <Slider ref={sliderRef} {...settings}>
             {careerCarousalData.map((data) => {
               const { id, text, img } = data;

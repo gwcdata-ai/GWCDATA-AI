@@ -1,5 +1,5 @@
 import FooterBg from "../../assets/images/footer/footerBg.webp";
-import CertifiedImg from "../../assets/images/footer/certified.svg";
+import CertifiedImg from "../../assets/images/footer/certifiedNew.png";
 import FooterLogoImg from "../../assets/images/footer/footlogo.svg";
 import NasscomImg from "../../assets/images/footer/nasscom.png";
 import FaceBookIcon from "../../assets/images/footer/facebook.svg";

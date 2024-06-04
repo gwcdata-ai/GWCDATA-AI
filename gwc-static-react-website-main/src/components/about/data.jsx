@@ -22,7 +22,7 @@ import image9Img from "../../assets/images/about/image9.png";
 import WorkFromHomeTownImg from "../../assets/images/about/workFromHomeTown.webp";
 import WFHImg from "../../assets/images/about/wfh.png";
 import OurCultureImg from "../../assets/images/about/ourCultureBg.webp";
-import WorkGwcRightImg from "../../assets/images/about/workGwcRight.svg";
+import WorkGwcRightImg from "../../assets/images/about/workGwcRight.png";
 import OurFutureImg from "../../assets/images/about/ourFuture.webp";
 import VisionImg from "../../assets/images/about/vision.webp";
 import MissionImg from "../../assets/images/about/mission.webp";

@@ -4,7 +4,7 @@ import commonstyles from "../../commoncss/Home.module.css";
 import styles from "./slider.module.css";
 import AOS from "aos";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import CertifiedImg from "../../assets/images/footer/certified.svg";
+import CertifiedImg from "../../assets/images/footer/certifiedNew.png";
 AOS.init({
     duration: 1500,
 });
