@@ -159,7 +159,7 @@
 
 .column {
   
-  width:25%;
+  width:30%;
   transition: width 0.5s;
   overflow: hidden;
   position:relative;
@@ -169,19 +169,28 @@
   cursor:pointer;
   
 }
+.inner_element > h2{
+font-size: 26px !important;
+text-align: center;
+}
+/* .inner_element{
+  display: none;
+}
+.expanded>.inner_element {
+    display: contents;
+} */
+
 
 .column:nth-child(1) {
   
-  background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/01/anders-jilden-cYrMQA7a3Wc-unsplash.jpg');
-  background-size:cover;
-  background-position:center center;
-  border-radius: 10px 0px 0px 10px;
+  /* background-size:cover;
+  background-position:center center; */
+  border-radius: 10px 0px 0px 10px !important;
   
 }
 
-.column:nth-child(2) {
+/* .column:nth-child(2) {
   
-  background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/02/Footer-1.jpg');
   background-size:cover;
   background-position:center center;
   
@@ -189,37 +198,45 @@
 
 .column:nth-child(3) {
   
-  background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/03/nathan-dumlao-ciO5L8pin8A-unsplash-1.jpg');
   background-size:cover;
-  background-position:center center;
-  
+  background-position:center center; 
+
 }
 
 .column:nth-child(4) {
   
-  background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/01/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg');
   background-size:cover;
   background-position:center center;
-  /* border-radius: 0px 10px 10px 0px; */
 }
 .column:nth-child(5) {
   
-  background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/01/anders-jilden-cYrMQA7a3Wc-unsplash.jpg');
   background-size:cover;
   background-position:center center;
-  /* border-radius: 10px 0px 0px 10px; */
   
 }
 .column:nth-child(6) {
   
-  background-image: url('http://dmmotionarts.com/wp-content/uploads/2024/02/Footer-1.jpg');
+  background-size:cover;
+  background-position:center center;
+
+  
+}
+.column:nth-child(7) {
+  
   background-size:cover;
   background-position:center center;
   border-radius: 0px 10px 10px 0px;
 
   
-}
+} */
+.column:nth-child(8) {
+  
+  /* background-size:cover;
+  background-position:center center; */
+  border-radius: 0px 10px 10px 0px !important;
 
+  
+}
 /*Border Styling for device width below 1024px, Tablet/Mobile*/
 @media(max-width:1024px){
   
@@ -229,7 +246,7 @@
   
 }
   
-  .column:nth-child(4) {
+  .column:nth-child(7) {
   
    border-radius: 0px 0px 10px 10px;
 }
@@ -241,10 +258,11 @@
     /*Clicked column styling*/
     .expanded {
         
-    width: 150% !important;
+    width: 550% !important;
     
     }
     }
+
     
     .expanded:after {
         
@@ -269,18 +287,55 @@
         transition: height 0.5s;
         height: 120px;
         
-}    
         
+}    
+     
 /*Clicked column styling*/
 .expanded{
         
-    height: 400px !important;         
+    height: 250px !important;         
 
     }
  }
+
+ @media (max-width: 830px) {
+        
+  .column {
+          
+          width:100%;
+          transition: height 0.5s;
+          height: 220px;
+          
+          
+  }    
+       
+  /*Clicked column styling*/
+  .expanded{
+          
+      height: 480px !important;         
+  
+      }
+   }
+   @media (max-width: 450px) {
+        
+    .column {
+            
+            width:100%;
+            transition: height 0.5s;
+            height: 120px;
+            
+            
+    }    
+         
+    /*Clicked column styling*/
+    .expanded{
+            
+        height: 250px !important;         
     
-/*Inner elements inside column container styling*/
-.inner_element {
+        }
+     }
+
+ .inner_element_mobile {
         
   opacity: 0;
   transition: opacity 0s;
@@ -289,26 +344,39 @@
   background:transparent;
   position:absolute;
   left:0;
-  bottom:10px;
+  bottom:-20px;
       
 }
-
-.inner_element h2{
-  
+.textOverImg_mobile{
   color:white;
-  font-family: 'poppins';
-  font-size:24px;
-  
+  /* font-family: 'poppins'; */
+  font-size:30px !important;
+  text-align: center;
+  font-weight: 600 !important;
+}
+/*Inner elements inside column container styling*/
+.inner_element {
+        
+  opacity: 0;
+  transition: opacity 0s;
+  z-index: 2;
+  padding:10px;
+  background:transparent;
+  backdrop-filter: blur(5px);
+  position:absolute;
+  left:0;
+  /* bottom:5px; */
+  width: 100%;
+      
+}
+.textOverImg{
+  color:white;
+  /* font-family: 'poppins'; */
+  font-size:40px !important;
+  text-align: center;
+  font-weight: 600 !important;
 }
 
-.inner_element p{
-  
-  color:white;
-  font-family: 'poppins';
-  font-size:16px;
-  font-weight:100;
-  
-}
     
 /*Inner elements made visible on clicked column*/
 .inner_element.active {
@@ -324,7 +392,7 @@
         
  }
 
-.icons {
+/* .icons {
   
   position:absolute;
   bottom:20px;
@@ -340,7 +408,7 @@
   justify-content:center;
   align-items:center;
    
-}
+} */
 
 .DMmotionarts{
   
@@ -350,6 +418,8 @@
   bottom:0;
   
 }
+
+
 /* end */
 .search_form {
   border-radius: 10px;

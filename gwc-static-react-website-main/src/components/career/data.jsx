@@ -673,18 +673,18 @@ export const careersliderdData = [
 
 import f1 from "../../assets/images/career/f1.webp";
 import f2 from "../../assets/images/career/Onam Celebration-1.webp";
-import f3 from "../../assets/images/career/Onam Celebration.webp";
+import f3 from "../../assets/images/career/Onam_Celebration.jpg";
 import f4 from "../../assets/images/career/Navaratri Celebration_Blue Theme.webp";
 import f5 from "../../assets/images/career/f5.webp";
-import f6 from "../../assets/images/career/f6.webp";
+import f6 from "../../assets/images/career/f6.jpg";
 import f7 from "../../assets/images/career/GWC_Team Lunch.webp";
 import f8 from "../../assets/images/career/Ayudha Pooja Celebration.webp";
 import f9 from "../../assets/images/career/Deepavali Gift Hampers.webp";
 import f10 from "../../assets/images/career/Employee Safety Measures.webp";
 import f11 from "../../assets/images/career/Ganesh Chaturthi Celebration.webp";
-import f12 from "../../assets/images/career/GWC_Christmas Celebration.webp";
-import f13 from "../../assets/images/career/GWC_Cricket Tournment.webp";
-import f14 from "../../assets/images/career/GWC_Halloween Celebration.webp";
+import f12 from "../../assets/images/career/GWC_Christmas.jpg";
+import f13 from "../../assets/images/career/GWC_Cricket.jpg";
+import f14 from "../../assets/images/career/GWC_Halloween.jpg";
 import f15 from "../../assets/images/career/GWC_Mismatch Theme.webp";
 import f16 from "../../assets/images/career/GWC_Pongal Celebration.webp";
 import f17 from "../../assets/images/career/GWC_GROUP_RECENT.jpeg";
@@ -692,15 +692,12 @@ import f18 from "../../assets/images/career/GWC_Sports_day_activity.jpg";
 
 
 export const careerCarousalData = [
-  // {
-  //   id: 1,
-  //   img: f1,
-  //   text: "2nd Year Anniversary",
-  // },
+  
   {
     id: 1,
     img: f17,
     text: "3rd Anniversary for GWC",
+    className:'first'
   },
   {
     id: 2,
@@ -719,16 +716,21 @@ export const careerCarousalData = [
   //   img: f4,
   //   text: "GWC Navaratri Celebration Blue Theme",
   // },
-  // {
-  //   id: 5,
-  //   img: f5,
-  //   text: "GWC Diwali Gifthampers",
-  // },
+  {
+    id: 5,
+    img: f5,
+    text: "GWC Diwali Gifthampers",
+  },
   {
     id: 6,
     img: f6,
     text: "Great Place to Work",
   },
+  // {
+  //   id: 7,
+  //   img: f1,
+  //   text: "2nd Year Anniversary",
+  // },
 
   // {
   //   id: 8,
