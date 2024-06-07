@@ -122,4 +122,83 @@ export const DomoDashData = [
   //   url: "/domoProdInfo/P1R06",
   //   image: dash6,
   // },
+  {
+    id: 4,
+    title: "Retail 360",
+    description:
+      " Merge data from diverse sources & systems spanning supply chain, retail operations, e-commerce, IoT & beyond to reveal insights, refine planning & execution processes.",
+    url: "/domoProdInfo/retail360",
+    image: dash5,
+  },
+];
+
+
+
+export const Retail360Data = [
+  {
+    id: 1,
+    title: "Finance  ",
+    url: "/domoProdInfo/JZLOy",
+    image: dash1,
+  },
+  {
+    id: 2,
+    title: "Retail360Data  ",
+    url: "/domoProdInfo/JZLOy",
+    image: dash5,
+  },
+  {
+    id: 3,
+    title: " Dashboard ",
+    url: "/domoProdInfo/JZLOy",
+    image: dash3,
+  },
+  {
+    id: 4,
+    title: "Finance  ",
+
+    url: "/domoProdInfo/JZLOy",
+    image: dash2,
+  },
+  {
+    id: 5,
+    title: " Dashboard ",
+
+    url: "/domoProdInfo/JZLOy",
+    image: dash4,
+  },
+  {
+    id: 6,
+    title: "Incorporate  ",
+    url: "/domoProdInfo/JZLOy",
+    image: dash5,
+  },
+  {
+    id: 7,
+    title: "Finance  ",
+  
+    url: "/domoProdInfo/JZLOy",
+    image: dash1,
+  },
+  {
+    id: 8,
+    title: "Finance  ",
+
+    url: "/domoProdInfo/JZLOy",
+    image: dash4,
+  },
+  {
+    id: 9,
+    title: " Dashboard ",
+
+    url: "/domoProdInfo/JZLOy",
+    image: dash3,
+  },
+  {
+    id: 10,
+    title: "Finance  ",
+
+    url: "/domoProdInfo/JZLOy",
+    image: dash2,
+  },
 ];

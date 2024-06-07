@@ -45,6 +45,7 @@ import { TrabluePage } from "./pages/trablue/TrabluePage";
 import AlationsPage from "./pages/alationpage/AlationsPage";
 import Domoproductinfo from "./pages/productDemo/DomoProductionPage/Domoproductinfo";
 import JobPost from "./components/career/jobPost";
+import DomodashboardRetail from "./pages/productDemo/DomoProductionPage/DomodashboardRetail";
 
 function App() {
   return (
@@ -121,6 +122,8 @@ function App() {
           <Route path="/tableau" element={<TrabluePage />} />
           <Route path="/alation" element={<AlationsPage />} />
           <Route path="/domoProdInfo/:iframeUrl" element={<Domoproductinfo />} />
+          <Route path="/domoProdInfo/retail360" element={<DomodashboardRetail />} />
+
         </Routes>
         <FooterComponent />
       </Suspense>

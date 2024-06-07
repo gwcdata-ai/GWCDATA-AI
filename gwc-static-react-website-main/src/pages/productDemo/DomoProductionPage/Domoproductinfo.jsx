@@ -17,7 +17,7 @@ const Domoproductinfo = () => {
   }, []);
 
   const { iframeUrl } = useParams();
-  // console.log(iframeUrl, "iframeUrl");
+  console.log(iframeUrl, "iframeUrl");
 
   return (
     <>

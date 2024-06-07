@@ -41,10 +41,9 @@ const DomoSolutionsCard = ({ data,index }) => {
 
     return (
         <Link key={index} to={data?.url} target="blank">
-            <div className={`${styles1.hover_card_img}`}>
+            <div className={`${styles1.hover_card_img}`} >
                 <div
-                    className={`${isMobile ? styles1.BenefitSectionBox1 : styles1.BenefitSectionBoxs
-                        }`}
+                    className={`${isMobile ? styles1.BenefitSectionBox1 : styles1.BenefitSectionBoxs }`}
                     data-aos="flip-down"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}

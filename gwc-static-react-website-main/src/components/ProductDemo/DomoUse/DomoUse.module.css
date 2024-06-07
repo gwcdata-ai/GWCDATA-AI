@@ -7,15 +7,181 @@
   text-align: left;
   color: var(--theme-purple);
 }
+.Retail_banner_container_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../../src/assets/images/ProductDemo/WhyDemoBanner.png');
+  margin-top: 5rem;
+
+}
+.retailHeader {
+  align-self: stretch;
+  position: relative;
+  font-size: 36px;
+  /* letter-spacing: -0.02em; */
+  /* line-height: 44px; */
+  font-weight: 600;
+  font-family: "Roboto-Bold";
+  color: #313e5b;
+  padding: 15px;
+}
+.retailHeader_Mobile {
+  align-self: stretch;
+  position: relative;
+  font-size: 26px;
+  /* letter-spacing: -0.02em; */
+  /* line-height: 44px; */
+  font-weight: 600;
+  font-family: "Roboto-Bold";
+  color: #313e5b;
+  padding: 20px 15px ;
+}
+
+.retail_title_Tablet{
+
+    font-family: 'Roboto-Regular';
+    color: #667085;
+    font-size: 18px;
+    font-weight: 600;
+    /* line-height: 25px; */
+    letter-spacing: 0em;
+    text-align: center !important;
+    padding: 15px 0px;
+
+}
+.Retail_bgColor{
+  /* background: rgb(111,43,140); */
+background: radial-gradient(circle, rgba(111,43,140,0.8183648459383753) 0%, rgba(255,255,255,0.8911939775910365) 53%);
+}
+
+.Retail_bgColor_Mobile{
+  /* background: rgb(111,43,140); */
+background: radial-gradient(circle, rgba(111,43,140,0.8183648459383753) 77%, rgba(255,255,255,0.8911939775910365) 90%);
+}
+
+.BenefitSectionBox1_Retail {
+  display: flex !important;
+  flex-direction: column;
+  padding: 15px;
+  /* gap: 20px; */
+  width: 20%;
+  /* height: 27vh; */
+  background: transparent;
+  color: #667085;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  /* flex: none; */
+  /* order: 0; */
+  /* flex-grow: 1; */
+  /* margin: 15px 50px; */
+  font-family: 'OS-Regular';
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-shadow: 0px 0px 30px -3px;
+  margin-bottom: 40px;
+}
+.BenefitSectionBox1_Retail_Tablet {
+  display: flex !important;
+  flex-direction: column;
+  padding: 20px 10px 0px 10px  ;
+  /* gap: 20px; */
+  width: 29%;
+  /* height: 27vh; */
+  background: transparent;
+  color: #667085;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  /* flex: none; */
+  /* order: 0; */
+  /* flex-grow: 1; */
+  /* margin: 15px 50px; */
+  font-family: 'OS-Regular';
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-shadow: 0px 0px 30px -3px;
+  margin-bottom: 40px;
+}
+.BenefitSectionBox1_Retail:hover  img{
+  scale: 105%;
+  transition: 0.1s all ease-in-out;
+}
+
+.BenefitSectionBox1_Retail_mobile {
+  display: flex !important;
+  flex-direction: column;
+  padding: 20px 05px 0px 05px  ;
+  width: 85%;
+  /* height: 27vh; */
+  background: transparent;
+  color: #667085;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  /* flex: none; */
+  /* order: 0; */
+  /* flex-grow: 1; */
+  /* margin: 15px 50px; */
+  font-family: 'OS-Regular';
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-shadow: 0px 0px 30px -3px;
+  margin-bottom: 25px;
+}
+
+.retail_title{
+  font-family: 'Roboto-Regular';
+  color: #667085;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center !important;
+  padding: 25px 0px;
+}
+.retail_title_Mobile{
+  font-family: 'Roboto-Regular';
+  color: #667085;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center !important;
+  padding: 20px 0px;
+}
 
 .section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.section_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  justify-content: center;
+  margin: 20px 0px;
+  gap: 4%;
+  /* height: 90vh; */
+}
 
 .image-container {
   margin-bottom: 20px;
+  /* Adjust the space between image and card */
+}
+.image_container {
+  margin-bottom: 10px;
+  width: 25%;
   /* Adjust the space between image and card */
 }
 
@@ -99,5 +265,12 @@
   box-shadow: 0px 4px 6px 0px #0000000d;
   box-shadow: 0px 10px 15px 0px #0000001a;
   padding: 35px;
+}
+.retailCard {
+  box-shadow: 0px 4px 6px 0px #0000000d;
+  box-shadow: 0px 10px 15px 0px #0000001a;
+  padding: 35px;
+  height: 30vh;
+  width: 100%;
 }
 
