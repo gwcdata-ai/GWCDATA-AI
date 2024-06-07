@@ -25,6 +25,7 @@ import creditUtilization from "../../assets/images/ProductDemo/creditUtilization
 import { Button, Col, Row } from "react-bootstrap";
 import GetStartedComponent from "./GetStarted/GetStartedComponent";
 import { CommonRightImageComponent } from "../../commoncomponents/rightSideImageSection/rightSideImageComponent";
+import { Helmet } from "react-helmet-async";
 // import { DomoWhyChooseGwc } from "./DomoProductionPage/domoData";
 
 const ProductDemo = () => {
@@ -38,6 +39,12 @@ const ProductDemo = () => {
   }, []);
   return (
     <>
+    <Helmet>
+    <meta name="keywords" content="DOMO,Domo,domo,DOMO tools,Domo tools,domo tools,data,data tools,data ai,Data Ai,AI tools,ai tools,cloud solutions,data solutions,Big data" />
+    <meta name="description" content="As the exclusive implementation partner for DOMO, we take pride in delivering end-to-end data analytics services. Our expertise extends beyond implementation, ensuring clients receive a comprehensive solution tailored to their unique needs, covering the entire spectrum of data analytics."></meta>
+
+
+    </Helmet>
       <ProductBanner />
       <DomoNewSection />
       <DomoAnalytics />

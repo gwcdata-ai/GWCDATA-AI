@@ -260,7 +260,7 @@ export const AboutOurFutureData = {
 
 export const AboutRecognitionsData = {
   // sub_title: "Recognitions",
-  title1: "Great Place To Work - 2023",
+  title1: "Great Place To Work - 2024",
   text: "GWC is certified by Great Place To Work. It reflects our dedication to employee well-being and sets a standard for excellence in attracting, retaining, and nurturing top talent. ",
   title2: "What Makes GWC Data.AI a Great Place to Work?",
   bannerBg: RecognitionBgImg,

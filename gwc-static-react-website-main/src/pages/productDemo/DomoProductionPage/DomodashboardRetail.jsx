@@ -61,7 +61,7 @@ const DomodashboardRetail = () => {
                 <div
                     className={` ${isMobile ? `${styles.BenefitSectionBox1_Retail_mobile}` : isTablet ? `${styles.BenefitSectionBox1_Retail_Tablet} ` : `${styles.BenefitSectionBox1_Retail} `} `}
                     
-                    data-aos="fade-up"                 
+                    // data-aos="fade-up"                 
                     // onMouseEnter={handleMouseEnter}
                     // onMouseLeave={handleMouseLeave}
                     >

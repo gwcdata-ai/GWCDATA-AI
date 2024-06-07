@@ -42,6 +42,7 @@ export const AboutPage = () => {
   }, []);
   return (
     <>
+  
       <CommonSectionBanner commonSectionBannerContent={AboutBannerData} />
       <CommonLeftImageComponent commonLeftSectionContent={AboutOverViewData} />
       <OurFuture ourFutureContent={AboutOurFutureData} />
