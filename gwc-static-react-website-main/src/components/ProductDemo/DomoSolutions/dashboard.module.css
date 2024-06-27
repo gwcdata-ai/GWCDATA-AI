@@ -10,6 +10,9 @@
     flex: none;
     order: 2;
 }
+.paddingMobile{
+    padding: 0px 0px 0px 40px;
+}
 
 .BenefitSectionContent {
     font-family: 'Gilroy';
@@ -79,6 +82,7 @@
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+    transition: 1s ease-in-out;
 }
 
 .BenefitSectionBox1 {
@@ -129,9 +133,16 @@
   line-height: 37px;
 } */
 
-.hover_card_img:hover .title_card_img {
+/* .hover_card_img:hover .title_card_img {
     width: 105%;
 }
+.hover_card_img {
+transition: all 1s ease-in-out;
+} */
+.hover_card_img:hover  img{
+    scale: 105%;
+    transition: 0.3s all ease-in-out;
+  }
 
 .description_card {
     font-family: 'OS-Regular';
@@ -169,7 +180,7 @@
         lightgray 50% / cover no-repeat;
     background-size: cover;
 
-    padding: 60px 0px 60px 112px;
+    padding: 60px 90px 60px 90px;
 }
 
 @media only screen and (max-width: 1024px) {

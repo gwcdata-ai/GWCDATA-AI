@@ -15,7 +15,7 @@ export const PrincipalDomoFeature = () => {
                 {/* <p className={styles?.sub_title}>
                   <strong>Principals</strong>
                 </p> */}
-                <p className={styles?.title}>Features of Domo</p>
+                <h2 className={styles?.title}>Features of Domo</h2>
 
                 <p className={styles?.text}>
                   Leveraging more than 1,000 pre-built connectors and numerous

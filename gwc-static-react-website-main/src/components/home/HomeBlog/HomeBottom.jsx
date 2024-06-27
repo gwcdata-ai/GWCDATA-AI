@@ -15,9 +15,9 @@ const HomeBottom = () => {
         <Container className={styles.banner_img} data-aos="fade-left">
           <Row className="d-flex">
             <Col lg={7} className="py-lg-3 px-0">
-              <h1 className={`${styles.banner_title} mb-4`}>
+              <p className={`${styles.banner_title} mb-4`}>
                 Want to gain actionable insights from your data?
-              </h1>
+              </p>
               <p className={`${styles.banner_para} mb-4`}>
                 Empower your business & drive success with our advanced BI and analytics solutions.
               </p>

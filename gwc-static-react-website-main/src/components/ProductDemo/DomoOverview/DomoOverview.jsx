@@ -28,7 +28,7 @@ export const DomoOverview = ({ commonLeftSectionContent }) => {
                 {/* <p className={styles?.sub_title}>
                   <strong>Overview</strong>
                 </p> */}
-                <p className={styles?.title}>What is Domo?</p>
+                <h2 className={styles?.title}>What is Domo?</h2>
 
                 <p className={styles?.text}>
                   Experience Domo, an all-encompassing platform which seamlessly

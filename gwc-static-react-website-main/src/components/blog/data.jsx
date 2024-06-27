@@ -6,6 +6,8 @@ import domo_custom_app_header from "../../assets/images/Blog/domo_custom_app_hea
 import business_intelligence_header from "../../assets/images/Blog/business_intelligence_header.png";
 import cloud_computing_header from "../../assets/images/Blog/cloud_computing_header.png";
 import deeplink_header from "../../assets/images/Blog/deeplink_header.png";
+import Harnessing_header from "../../assets/images/Blog/Blog_4_title.jpg";
+
 
 export const BlogCardData = [
   {
@@ -105,5 +107,14 @@ export const BlogCardData3 = [
     // views: "15k views",
     slug: "deep-link-filters-in-domo",
     img: deeplink_header,
+  },
+  {
+    id: 5,
+    date: "June 28, 2024",
+    heading: "Harnessing the Power of Domo for Streamlined Manufacturing Operations.",
+    days: "Few days ago",
+    // views: "15k views",
+    slug: "harnessing-the-power-of-domo-for-streamlined-manufacturing-operations",
+    img: Harnessing_header,
   },
 ];

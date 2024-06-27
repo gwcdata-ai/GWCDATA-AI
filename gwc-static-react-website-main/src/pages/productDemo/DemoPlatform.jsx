@@ -89,7 +89,7 @@ const DemoPlatform = () => {
                                 </Col>
                             </Row> */}
                             <div className="mx-lg-4">
-                                <h3 className="domo_heading mt-4 mb-2"><b>Create Your Free Account Now & Access It Forever</b></h3>
+                                <p className="domo_heading mt-4 mb-2"><b>Create Your Free Account Now & Access It Forever</b></p>
                                 <p className="domo_para mb-2">Enjoy unlimited features and get an unlimited number of users- With no credit card!</p>
                             </div>
                             <Row className=" mb-md-0 mb-5 mt-4 mx-lg-4">

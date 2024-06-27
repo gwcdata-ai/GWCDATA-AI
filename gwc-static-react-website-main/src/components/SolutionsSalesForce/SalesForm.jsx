@@ -17,15 +17,19 @@ import styles from "./slider.module.css";
 import AOS from "aos";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import useMedia from "../../hooks/useMedia";
 AOS.init({
-  duration: 1000,
+  duration: 500,
 });
 
 const SERVICEID = "service_mx7onts";
 const TEMPLATEID = "template_mp6paz9";
 const PUBLICID = "TWyAOLdix7PMCK_bW";
 
+
 export const SalesForm = () => {
+  const isMobile = useMedia('(max-width:600px)');
+
   const validationSchema = Yup.object().shape({
     fullName: Yup.string()
       .matches(/^[a-zA-Z\s]+$/, "Only letters and spaces are allowed")
@@ -78,28 +82,45 @@ export const SalesForm = () => {
   };
 
   return (
-    <Container fluid className="pt-2 pb-5">
+    <Container fluid className={`${isMobile ? ``:`pt-2 pb-5`}`}>
       <section className="">
         <Container className="mt-5">
-          <Row className="d-flex align-items-center justify-content-center">
+          <Row className="d-flex align-items-baseline justify-content-center">
             <Col lg={7} md={6} className="">
               <div className="">
-                <p className={styles?.title}>
-                  Salesforce- A Strategic Asset that Drives Your Business Growth
-                </p>
+                <h2 className={styles?.title}>
+                Salesforce Analytics
+                </h2>
                 <p className={styles?.text}>
-                  GWC stands as the preeminent destination for comprehensive
-                  Salesforce solutions. We specialize in seamlessly transforming
-                  manual processes into streamlined, efficient workflows with
-                  just a few clicks. Choose GWC as your trusted CRM Partner, and
-                  let us propel your business towards unparalleled success.
+                Salesforce Analytics bridges the gap between data analysis and operational execution, enhancing efficiency and effectiveness. This enables you to deliver outstanding customer experiences and achieve your business goals with precision and agility.
                 </p>
+                <h2 className={`${styles?.title}`}  >
+                Salesforce Einstein
+                </h2>
+                <p className={styles?.text}>
+                Powered by cutting-edge artificial intelligence, Einstein Analytics empowers organizations to uncover actionable insights from their data effortlessly. With intuitive dashboards and predictive analytics, unlock hidden patterns and trends to drive smarter business strategies.
+</p>
+<p className={styles?.text}>
+At GWC, we offer seamlessly integrated solutions that combine Salesforce CRM with other data sources, providing a comprehensive view of customers and enabling personalized engagement for enhanced customer experiences. With features like machine learning algorithms for forecasting and anomaly detection, we equip organizations with the tools they need to stay ahead in today's competitive landscape.                
+</p>
+<h2 className={`${styles?.title} `}  >
+                Salesforce + Tableau
+                </h2>
+                <p className={styles?.text}>
+                The dynamic synergy of Salesforce and Tableau, an alliance that revolutionizes data analytics like never before. Seamlessly integrated, our partnership brings you unparalleled capabilities to harness the full potential of your data ecosystem. With Salesforce's robust Customer 360 platform and Tableau's cutting-edge analytics solutions, you gain a holistic view of your customers and business operations.
+ 
+ At GWC, Experience the power of analytics democratization with Tableau where every individual in your organization becomes a data-driven decision-maker. Let us illuminate the path to your data-driven future.</p>
+                <div className={`d-flex justify-content-start py-3 `}>
+                <a href="/tableau">
+                <button style={{ fontFamily: "OS-Regular", fontSize: '16px', color: '#FFF' }} >Salesforce Tableau Integration</button>
+                </a>
+                </div>
                 {/* <ul className={styles?.text}>
                                     <li> </li>
                                 </ul> */}
               </div>
             </Col>
-            <Col lg={5} md={6} className="text-center">
+            <Col lg={5} md={6} className={`text-center m-auto`}>
               <Card className="p-3  border_title">
                 <div className={` ${styles?.form_title}  mx-2`}>
                   Request Free Salesforce <br />

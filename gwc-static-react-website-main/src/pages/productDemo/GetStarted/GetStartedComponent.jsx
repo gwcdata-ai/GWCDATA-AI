@@ -10,13 +10,13 @@ const GetStartedComponent = () => {
       <Row className='mt-5 ml-auto mr-auto '>
         <Col className='getStarted__container'>
           <Row>
-            <h4 className='getStarted__title'>Get the full product</h4>
+            <p className='getStarted__title'>Get the full product</p>
           </Row>
           <Row>
-            <h5>
+            <p style={{fontSize:'20px'}}>
               Fully Featured. Unlimited number of Users. Only pay for what you
               use
-            </h5>
+            </p>
           </Row>
           <Row>
             <Col>

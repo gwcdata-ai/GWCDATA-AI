@@ -59,9 +59,9 @@ const ProductPlatform = () => {
                 {/* <p className={`${styles?.sub_title} mb-5`}>
                   <strong>Platform</strong>
                 </p> */}
-                <p className={`mt-2 ${styles?.title}`}>
+                <h2 className={`mt-2 ${styles?.title}`}>
                   Domo Data Experience Platform
-                </p>
+                </h2>
                 <TabsPanel>
                   <Tab
                     title="Overview"

@@ -42,7 +42,7 @@ const DomoAdvantages = () => {
                 {/* <p className={styles?.sub_title}>
                   <strong>Analytics</strong>
                 </p> */}
-                <p className={styles?.title}>Top Benefits of Domo </p>
+                <h2 className={styles?.title}>Top Benefits of Domo </h2>
 
                 <p className={styles?.text}>
                   Domo is renowned for its compelling and visually appealing

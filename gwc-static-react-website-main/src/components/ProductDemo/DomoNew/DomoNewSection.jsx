@@ -30,7 +30,7 @@ export const DomoNewSection = () => {
                             data-aos="fade-left"
                         >
                             <div className="mt-lg-5">
-                                <p className={` ${styles?.title} mt-lg-5`}>DOMO's Trusted Partner</p>
+                                <h2 className={` ${styles?.title} mt-lg-5`}>DOMO's Trusted Partner</h2>
 
                                 <p className={styles?.text}>
                                     As a partner of DOMO and boasting a team of certified experts, GWC invites you to inquire about any topic and we shall have it done using DOMO. Leveraging DOMO's powerful analytics platform, we help clients enhance their processes, identify areas for improvement, and implement strategic solutions to achieve operational excellence while simultaneously reducing costs.

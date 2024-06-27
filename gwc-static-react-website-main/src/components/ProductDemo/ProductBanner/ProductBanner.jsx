@@ -70,9 +70,9 @@ export const ProductBanner = () => {
                 )}
               </p>
 
-              <h1 className={`${styles.banner_title} mb-4`}>
+              <p className={`${styles.banner_title} mb-4`}>
                 {AboutBannerData?.title}
-              </h1>
+              </p>
               <p className={`${styles.banner_para} mb-4`}>
                 {AboutBannerData?.para}
               </p>

@@ -27,6 +27,7 @@ export const SalesNewSection = () => {
                                     <li> </li>
                                 </ul> */}
                             </div>
+                            
                         </Col>
 
                     </Row>

@@ -7,7 +7,7 @@ const DomoNewCards = () => {
     <Container className="mt-5" id="domo-pricing">
       <Row className="d-flex align-items-center justify-content-center mb-4">
         <Col md={12} className="">
-          <p className={styles.title}> Domo Execution Credits</p>
+          <h2 className={styles.title}> Domo Execution Credits</h2>
           <p className={styles.card_para} style={{ fontSize: 18 }}>
             {" "}
             Unlock the full power of Domo's comprehensive BI platform with our
@@ -23,7 +23,8 @@ const DomoNewCards = () => {
             lg={4}
             key={index}
             className={` mb-md-0 mb-3 g-3`}
-            data-aos="flip-down"
+            data-aos="fade-up"
+            // data-aos-duration="900"
           >
             <div className={`${styles.card_section1}`}>
               {/* <img

@@ -44,7 +44,7 @@ const DomoSolutionsCard = ({ data,index }) => {
             <div className={`${styles1.hover_card_img}`} >
                 <div
                     className={`${isMobile ? styles1.BenefitSectionBox1 : styles1.BenefitSectionBoxs }`}
-                    data-aos="flip-down"
+                    data-aos="zoom-out"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
@@ -66,8 +66,8 @@ const DomoDashboard = () => {
 
     useEffect(() => {
         AOS.init({
-            offset: 200,
-            duration: 1500,
+            offset: 210,
+            duration: 1300,
             easing: "ease-in-sine",
             delay: 100,
         });
@@ -76,9 +76,9 @@ const DomoDashboard = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 3000,
-        slidesToShow: 3.1,
-        slidesToScroll: 1,
+        speed: 2300,
+        slidesToShow: 4,
+        slidesToScroll: 1.5,
         className: "center",
         arrows: true,
         initialSlide: 0,
@@ -101,18 +101,18 @@ const DomoDashboard = () => {
                     initialSlide: 0,
                     infinite: true,
                     dots: true,
-                    speed: 3000,
+                    speed: 2300,
                 },
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                     initialSlide: 0,
                     dots: true,
                     arrows: false,
-                    speed: 3000,
+                    speed: 2300,
                     autoplay: true,
                     autoplaySpeed: 2000,
                 },
@@ -124,9 +124,10 @@ const DomoDashboard = () => {
                     slidesToScroll: 1,
                     dots: true,
                     arrows: false,
-                    speed: 3000,
+                    speed: 2300,
                     autoplay: true,
                     autoplaySpeed: 2000,
+
                 },
             },
         ],
@@ -161,7 +162,7 @@ const DomoDashboard = () => {
                     fontSize: "0px",
                     width: "4%",
                     position: "absolute",
-                    right: "10px",
+                    right: "-75px ",
                 }}
                 onClick={onClick}
             >
@@ -197,6 +198,8 @@ const DomoDashboard = () => {
                     width: "40px",
                     borderRadius: "50%",
                     zIndex: "1",
+                    left: "-35px !important ",
+
                 }}
                 onClick={onClick}
             >
@@ -236,7 +239,8 @@ const DomoDashboard = () => {
                         <div
                             className={`${newStyles.meetOurLeadershipContainer} text-white`}
                         >
-                            Domo Dashboards
+                            <h2 className={newStyles.title}>  Domo Dashboards </h2>
+
                         </div>
                     </div>
                 </div>

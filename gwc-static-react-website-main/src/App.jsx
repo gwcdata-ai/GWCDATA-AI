@@ -46,6 +46,7 @@ import AlationsPage from "./pages/alationpage/AlationsPage";
 import Domoproductinfo from "./pages/productDemo/DomoProductionPage/Domoproductinfo";
 import JobPost from "./components/career/jobPost";
 import DomodashboardRetail from "./pages/productDemo/DomoProductionPage/DomodashboardRetail";
+import InnovationLabs from "./pages/InnovationLab/InnovationLabs";
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
             element={<SalesforcePage />} />
 
           <Route path="/contact-us" element={<Contact />} />
+
           <Route path="/domo-consulting" element={<ProductDemo />} />
           <Route path="/gcp-implementation" element={<ProductGCP />} />
 
@@ -123,6 +125,8 @@ function App() {
           <Route path="/alation" element={<AlationsPage />} />
           <Route path="/domoProdInfo/:iframeUrl" element={<Domoproductinfo />} />
           <Route path="/domoProdInfo/retail360" element={<DomodashboardRetail />} />
+          {/* <Route path="/innovation-labs" element={<InnovationLabs />} /> */}
+
 
         </Routes>
         <FooterComponent />

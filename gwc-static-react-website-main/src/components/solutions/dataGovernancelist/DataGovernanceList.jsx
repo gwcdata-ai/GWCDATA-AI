@@ -114,10 +114,10 @@ export const DataGovernanceList = ({ dataList }) => {
             <Col lg={8} md={6} className="px-md-5 pt-md-0 pt-5">
               <div className="">
                 {/* <p className={styles.feat_sub_title}> {selectedItem.name} </p> */}
-                <p className={styles?.feat_title}>
+                <h2 className={styles?.feat_title}>
                   {" "}
                   {selectedItem?.description_title}{" "}
-                </p>
+                </h2>
                 <ul style={{lineHeight:'2px'}}>
                   {selectedItem?.description_list?.map((item,index) => (
                     <li key={index} className={styles?.feat_text}> {item} </li>

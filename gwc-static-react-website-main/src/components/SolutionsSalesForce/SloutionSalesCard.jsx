@@ -118,7 +118,7 @@ const SloutionSalesCard = () => {
       <Container className="" >
         <Row className="card_solution">
           <div className="div">
-            <h3 className={` ${styles?.title2} mt-5`}>Industries</h3>
+            <p className={` ${styles?.title2} mt-5`}>Industries</p>
           </div>
           <Slider {...settings} className="m-0 p-0">
             {salesData?.map((item, index) => (

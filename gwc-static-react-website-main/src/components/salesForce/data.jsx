@@ -47,8 +47,9 @@ export const SalesListData = [
         ],
         image: img1,
     },
+   
     {
-        id: 4,
+        id: 5,
         name: "CPQ",
         description_title: "CPQ (Configure, Price, Quote)",
         description_list: [
@@ -57,7 +58,7 @@ export const SalesListData = [
         image: img2,
     },
     {
-        id: 5,
+        id: 6,
         name: "Experience Cloud",
         description_title: "Experience Cloud",
         description_list: [
@@ -66,7 +67,7 @@ export const SalesListData = [
         image: img3,
     },
     {
-        id: 6,
+        id: 7,
         name: "OMS",
         description_title: "OMS (Order Management System)",
         description_list: [
@@ -75,7 +76,7 @@ export const SalesListData = [
         image: img6,
     },
     {
-        id: 7,
+        id: 8,
         name: "Health Cloud",
         description_title: "Health Cloud ",
         description_list: [
@@ -84,7 +85,7 @@ export const SalesListData = [
         image: img5,
     },
     {
-        id: 8,
+        id: 9,
         name: "Field Services Lightening",
         description_title: "Field Service Lightning",
         description_list: [

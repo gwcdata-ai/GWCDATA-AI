@@ -13,7 +13,7 @@ const SalesSecondNew = () => {
     return (
         <Container fluid className="">
             <section className="" >
-                <Container className="mt-md-4 mt-0">
+                <Container className=" mt-0">
                     <Row className="d-flex align-items-center justify-content-center my-2">
                         <Col
                             xs={12}
@@ -58,11 +58,12 @@ const SalesSecondNew = () => {
                                 </a> */}
                             </div>
                         </Col>
-                        <Col xs={12} lg={6} md={6} className="px-md-0" data-aos="fade-left">
+                        <Col xs={12} lg={6} md={6} className="px-md-0" data-aos="fade-left" style={{overflow:"hidden"}}>
                             <img
                                 src={newsales}
                                 alt=""
-                                className="w-100 mx-lg-3 rounded-4 mt-md-0 mt-lg-5"
+                                className=" mx-lg-3 rounded-4 mt-md-0 "
+                                width={'90%'}
                             />
                         </Col>
                     </Row>

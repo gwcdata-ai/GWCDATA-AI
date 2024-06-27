@@ -10,6 +10,24 @@
   line-height: 24px;
   font-weight: 600;
 }
+.title {
+  font-family: "Roboto-Bold";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white);
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: -30px;
+    /* margin-bottom: -30px; */
+  }
+}
 
 .button,
 .buttonBase {

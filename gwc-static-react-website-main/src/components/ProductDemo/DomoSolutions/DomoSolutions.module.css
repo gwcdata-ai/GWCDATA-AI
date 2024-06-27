@@ -168,7 +168,7 @@
     lightgray 50% / cover no-repeat;
   background-size: cover;
 
-  padding: 60px 0px 60px 112px;
+  padding: 60px 90px 60px 90px;
 }
 
 @media only screen and (max-width: 1024px) {

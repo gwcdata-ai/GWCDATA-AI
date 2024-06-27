@@ -28,7 +28,7 @@ const DomoSolutionsCard = ({ data,index }) => {
       className={`${
         isMobile ? styles.BenefitSectionBox1 : styles.BenefitSectionBox
       }`}
-      data-aos="flip-down"
+      data-aos="slide-right"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -82,9 +82,9 @@ const DomoSolutions = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 3000,
-    slidesToShow: 3.1,
-    slidesToScroll: 1,
+    speed: 2300,
+    slidesToShow: 4,
+    slidesToScroll: 1.5,
     className: "center",
     arrows: true,
     initialSlide: 0,
@@ -158,7 +158,7 @@ const DomoSolutions = () => {
           fontSize: "0px",
           width: "4%",
           position: "absolute",
-          right: "10px",
+          right: "-75px",
         }}
         onClick={onClick}
       >
@@ -194,6 +194,7 @@ const DomoSolutions = () => {
           width: "40px",
           borderRadius: "50%",
           zIndex: "1",
+          left:"-35px",
         }}
         onClick={onClick}
       >
@@ -230,7 +231,8 @@ const DomoSolutions = () => {
             <div
               className={`${newStyles.meetOurLeadershipContainer} text-white`}
             >
-              Solutions of Domo
+              <h2 className={newStyles.title}>  Solutions of Domo </h2>
+
             </div>
           </div>
         </div>

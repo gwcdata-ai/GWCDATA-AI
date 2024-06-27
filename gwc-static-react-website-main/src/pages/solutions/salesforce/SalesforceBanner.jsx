@@ -7,18 +7,58 @@ import commonStyles from "../../../commoncss/common.module.css";
 import styles from "../../../components/atlanPatners/atlan.module.css";
 import { Link } from "react-router-dom";
 import styles1 from "../../../commoncomponents/banner/commonBanner.module.css";
+import SalesforceGIF2 from  "../../../assets/images/salesforce/salesforceBg2.mp4";
+
+import Sales_force_GIF_New from  "../../../assets/images/salesforce/Sales_force_GIF_New.gif";
+import useMedia from "../../../hooks/useMedia";
+
+
 
 
 const SalesforceBanner = () => {
+    const isMobile = useMedia('(max-width:600px)');
+
     return (
         <Container
             fluid
-            className={`${commonStyles.banner_container_img} py-lg-5 mt-5`}
-            style={{
-                backgroundImage: `url(${BannerBgImg}) `,
-            }}
+            className={`${commonStyles.banner_container_img} pb-lg-5 mt-5`}
+            // style={{
+            //     backgroundImage: `url(${BannerBgImg}) `,
+            // }}
         >
-            <section className="py-4">
+             <video
+        width="100%"
+        height="550px"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="video-element"
+        style={{
+          position: "absolute",
+          objectFit: "cover",
+          zIndex: "-1",
+          padding: "0px",
+          
+        }}
+      >
+        <source
+          src={SalesforceGIF2}
+          type="video/mp4"
+        />
+      </video>
+      <div
+        
+        style={{
+          position: "absolute",
+          objectFit: "cover",
+          zIndex: "-1",
+          padding: "0px",
+          backgroundColor:"rgba(0,0,0,0.5)"
+          }}>
+       
+      </div>
+            <section style={{paddingTop:'2.5rem',paddingBottom:'2.5rem'}}>
                 <Container className="py-4 mt-md-0 mt-4">
                     <Row className="d-flex">
                         <Col lg={7} md={6} className="pt-lg-5">
@@ -35,10 +75,10 @@ const SalesforceBanner = () => {
                                 Salesforce
                             </p>
 
-                            <h1 className={`${styles.banner_title} mb-4`} />
-                            <p className={`${styles.banner_title} mb-4`} >
+                            <p className={`${styles.banner_title} mb-4`} />
+                            <h1 className={`${styles.banner_title} mb-4`} >
                                 Salesforce
-                            </p>
+                            </h1>
                             <p className={`${styles.banner_sub_title44} mb-4`} >
                                 Leverage our Salesforce Expertise to Elevate your Business
                             </p>
@@ -50,8 +90,8 @@ const SalesforceBanner = () => {
                                 </Button>
                             </Link>
                         </Col>
-                        <Col lg={5} md={6}>
-                            <img src="https://zerozilla-admin.s3.ap-south-1.amazonaws.com/apartment/images/1709118796905~comp-1-1.gif" alt="logo" className="w-100 h-100 mt-lg-4" />
+                        <Col lg={5} md={6} className={`${isMobile ? null : `${styles1.paddingTop_Mobile}`}`}>
+                            <img src={Sales_force_GIF_New} alt="logo" className={`${isMobile ? `mt-lg-4` :`${styles1.GIF_Width_Mobile}`}`}/>
                         </Col>
                     </Row>
                 </Container>

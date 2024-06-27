@@ -12,7 +12,7 @@ export const PuttingDataToWork = ({ puttingDataSectionContent }) => {
   return (
     <Container fluid className="pt-2 pb-5">
       <section className="">
-        <Container className="mt-5">
+        <Container className="mt-2">
           <Row className="d-flex align-items-center justify-content-center">
             <Col md={12} className="">
               <div className="">

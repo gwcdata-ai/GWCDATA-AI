@@ -51,11 +51,7 @@ export const SalesforcePage = () => {
       {/* <SalesBottom /> */}
       {/* <CommonLeftImageComponent commonLeftSectionContent={IIOTDataGovernanceData}/> */}
       {/* <SalesNewSection /> */}
-      <div className="d-flex justify-content-center py-3">
-        <a href="/tableau">
-          <button style={{ fontFamily: "OS-Regular", fontSize: '16px', color: '#FFF' }} >Salesforce Tableau Integration</button>
-        </a>
-      </div>
+      
 
       <SalesForm />
       <PuttingDataToWork puttingDataSectionContent={IIOTPuttingDataToWorkData} />

@@ -27,6 +27,19 @@ import domo_custom_app_14 from "../../assets/images/Blog/domo_custom_app_14.png"
 import domo_custom_app_15 from "../../assets/images/Blog/domo_custom_app_15.png";
 import domo_custom_app_16 from "../../assets/images/Blog/domo_custom_app_16.png";
 import domo_custom_app_17 from "../../assets/images/Blog/domo_custom_app_17.png";
+import Blog_4_title from "../../assets/images/Blog/Blog_4_title.jpg";
+
+import Blog_4_1 from "../../assets/images/Blog/Customer_Service.jpg";
+import Blog_4_2 from "../../assets/images/Blog/Engineering_and_Design.jpg";
+import Blog_4_3 from "../../assets/images/Blog/Information_Technology.jpg";
+import Blog_4_4 from "../../assets/images/Blog/Legal_and_Compliance.jpg";
+import Blog_4_5 from "../../assets/images/Blog/Maintenance_and_Facilities.jpg";
+import Blog_4_6 from "../../assets/images/Blog/Quality_ControlAssurance.jpg";
+import Blog_4_7 from "../../assets/images/Blog/Research_and_Development.jpg";
+import Blog_4_8 from "../../assets/images/Blog/Supply_ChainLogistics.jpg";
+
+
+
 
 export const BlogListData = [
   {
@@ -492,4 +505,264 @@ export const BlogListData = [
       " In conclusion, the adoption of custom app solutions presents a compelling opportunity for organizations utilizing Domo to overcome the inherent limitations of standard offerings. By investing in custom development, businesses can unlock the full potential of their data, driving innovation, and gaining a competitive edge in today's data-driven landscape. If you're ready to take your Domo experience to the next level, consider exploring custom app solutions tailored to your unique requirements. ",
     writtenBy: "Written by Naveen - February 13, 2024",
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    id: 5,
+    slug: "harnessing-the-power-of-domo-for-streamlined-manufacturing-operations",
+    date: "June 28, 2024",
+    heading: "Harnessing the Power of Domo for Streamlined Manufacturing Operations",
+    days: "2 days ago",
+    // views: "110k views",
+    img: Blog_4_title,
+    topHeading:
+      "Harnessing the Power of Domo for Streamlined Manufacturing Operations",
+    blogTopImg: Blog_4_title,
+    blogSubHeading:
+      "Harnessing the Power of Domo for Streamlined Manufacturing Operations",
+    blogSubPara1:
+      "In today’s fast-paced manufacturing industry, seamless coordination among various departments is essential for success. From production and quality control to sales and customer service, every function plays a crucial role. However, managing these interconnected processes can be a daunting task without the right tools. Enter Domo, the ultimate one-stop-shop data analytics platform that can revolutionize how we run our manufacturing operations.",
+    blogList: [
+      {
+        id: 1,
+        listHeading: "Overview",
+        listPara:
+          "Domo stands out due to its robust capabilities in data integration, data warehousing, data governance, artificial intelligence (AI), machine learning (ML), data visualization, workflow automation, and data-driven applications.",
+    
+      },
+      {
+        id: 100,
+        listPara: "Let’s explore how these features enhance the operations of each department within a manufacturing company :",
+    
+      },
+      {
+        id: 2,
+        listHeading: "Production/Manufacturing",
+        listPara:
+          'With Domo’s powerful data integration, real-time data from the shop floor is seamlessly consolidated, providing insights into machine performance, production rates, and downtime. The data warehousing capabilities ensure all production data is stored efficiently, making it easily accessible for analysis. AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.',
+      },
+      {
+        id: 3,
+        listHeading: "Engineering and Design",
+        images: [Blog_4_2],
+        altTag:"Engineers collaborating over digital blueprints with data visualizations.",
+        listPara:
+          "Domo facilitates collaboration between design and production teams by providing a unified view of project timelines, resource allocation, and design iterations. Data visualization tools help in presenting complex design data in an easily understandable format, ensuring quick communication and implementation of design changes. This reduces the time to market for new products.",
+      },
+      {
+        id: 6,
+        listHeading: "Procurement/Purchasing",
+        listPara:
+          "Domo streamlines procurement by integrating supplier data, purchase orders, and contract management. This centralization allows for better negotiation with suppliers and timely procurement of raw materials, leading to significant cost savings. Detailed analytics on spending patterns aid in strategic sourcing decisions, while AI-driven insights improve procurement strategies.",
+      },
+      {
+        id: 4,
+        listHeading: "Quality Control/Assurance",
+        altTag:"Quality control specialist inspecting products with data quality metrics.",
+        images: [Blog_4_6],
+        listPara:
+          "Quality is non-negotiable in manufacturing. Domo’s data governance ensures that quality data is accurate and consistent. By integrating data from various quality checkpoints and testing stages, it provides a comprehensive view of product quality. Automated alerts, driven by AI, and detailed reports help in identifying defects early and implementing corrective actions promptly.",
+      },
+      {
+        id: 8,
+        listHeading: "Human Resources (HR)",
+        listPara:
+          "Employee productivity and satisfaction are vital. Domo’s HR analytics provide insights into workforce performance, training needs, and employee engagement. Data integration and governance ensure that HR data is reliable, while AI and ML models help in predicting workforce trends and planning accordingly. This data-driven approach ensures that we attract, develop, and retain top talent, fostering a culture of continuous improvement.",
+      },
+      {
+        id: 5,
+        listHeading: "Supply Chain/Logistics",
+        images: [Blog_4_8],
+        altTag:"Logistics manager tracking shipments and inventory levels in real-time.",
+        listPara:
+          "Efficient supply chain management is critical for manufacturing success. Domo aggregates data from suppliers, inventory systems, and logistics providers, offering end-to-end visibility. ML algorithms forecast demand, optimizing inventory levels, and reducing lead times. Workflow automation further enhances supply chain efficiency, lowering costs and boosting customer satisfaction.",
+      },
+      {
+        id: 9,
+        listHeading: "Finance and Accounting",
+        listPara:
+          "Financial health is the backbone of any business. Domo integrates financial data from various systems, offering real-time insights into revenue, expenses, and profitability. Data warehousing ensures all financial data is centralized, aiding in accurate budgeting, forecasting, and strategic financial planning. Automated workflows streamline financial operations, ensuring long-term sustainability.",
+      },
+      {
+        id: 7,
+        listHeading: "Research and Development (R&D)",
+        altTag:"R&D professionals analyzing data and project progress charts.",
+        images: [Blog_4_7],
+        listPara:
+          "Innovation drives growth. Domo enables R&D teams to track project progress, manage budgets, and analyze the impact of new product introductions. By consolidating data from various experiments and prototypes, Domo helps in prioritizing projects that offer the best return on investment. Data-driven applications built on Domo can further enhance R&D processes.",
+      },
+      
+      
+      {
+        id: 10,
+        listHeading: "Sales and Marketing",
+        listPara:
+          "Understanding market trends and customer needs is crucial. Domo’s powerful analytics help sales and marketing teams track campaign performance, customer acquisition costs, and sales pipelines. Data visualization tools present these insights clearly, driving targeted marketing efforts and effective sales strategies, ultimately boosting revenue growth.",
+      },
+      {
+        id: 11,
+        listHeading: "Customer Service",
+        images: [Blog_4_1],
+
+        listPara:
+          "Exceptional customer service differentiates us from competitors. Domo consolidates customer feedback, service requests, and resolution times, enabling a proactive approach to customer satisfaction. AI-driven insights help in understanding customer needs better, while workflow automation ensures timely responses and resolution of issues. By analyzing this data, we can continuously improve our products and services.",
+      },
+      {
+        id: 13,
+        listHeading: "Health, Safety, and Environment (HSE)",
+        listPara:
+          "Safety and sustainability are paramount. Domo integrates data from safety audits, incident reports, and environmental monitoring systems. AI and ML models predict potential safety hazards, while data governance ensures compliance with regulations. This centralized data helps in promoting a safe work environment and implementing sustainable practices.",
+      },
+      {
+        id: 12,
+        listHeading: "Information Technology (IT)",
+        images: [Blog_4_3],
+        listPara:
+          "Domo’s IT analytics provide a holistic view of the company’s technology infrastructure. This integration helps in monitoring system performance, managing data security, and supporting digital transformation initiatives. IT teams can leverage data-driven applications to ensure technology investments align with business goals.",
+      },
+     
+      {
+        id: 14,
+        listHeading: "Legal and Compliance",
+        listPara:
+          "Navigating legal complexities is simplified with Domo. By integrating contract management, compliance checklists, and regulatory updates, Domo ensures that we adhere to legal requirements and minimize risks. This proactive approach safeguards our business interests, with data governance ensuring all legal data is accurate and up-to-date.",
+      },
+      {
+        id: 15,
+        listHeading: "Maintenance and Facilities",
+        images: [Blog_4_5],
+        listPara:
+          "Domo enables predictive maintenance by integrating data from sensors and maintenance logs. AI-driven predictive models help in preventing equipment failures, reducing downtime, and extending the lifespan of assets. Workflow automation ensures timely maintenance actions, while facilities management is streamlined, ensuring optimal working conditions.",
+      },
+
+      // {
+      //   id: 5,
+      //   listHeading: "What We Will Cover",
+      //   listSub:
+      //     "In this article, we will guide you through the process of using Google Cloud's Data Loss Prevention (DLP) and Key Management Service(KMS) to: ",
+      //   listPoints: [
+      //     "Inspect and redact sensitive data using DLP's Inspection and De-Identification templates.",
+      //     "Use a KMS-generated symmetric encryption key to encrypt the identified sensitive data.",
+      //     "Create a data pipeline that reads data with sensitive information from a file in a Cloud Storage bucket.",
+      //     "Inspect the data using the DLP Inspection template and redact the findings by encrypting the data with a KMS encryption key",
+      //     "Load the encrypted data into a BigQuery table using Dataflow",
+      //     "This architecture ensures that sensitive information is securely encrypted in the BigQuery table, providing an extra layer of security in case of data exfiltration.",
+      //   ],
+      // },
+      // {
+      //   id: 6,
+      //   listHeading: "Setup and Requirements",
+      //   listSub:
+      //     "Before diving into the implementation, ensure you have the following set up:",
+      //   listPoints: [
+      //     "Google Cloud Data Loss Prevention (DLP)",
+      //     "Google Cloud Key Management Service (KMS)",
+      //     "Google Cloud Dataflow",
+      //     "Google Cloud Storage",
+      //     "Google BigQuery",
+      //   ],
+      // },
+      // {
+      //   id: 6,
+      //   listHeading:
+      //     "Ensure that the following roles are assigned to the service account:",
+      //   // listSub: 'Before diving into the implementation, ensure you have the following set up:',
+      //   listPoints: [
+      //     "BigQuery Data Editor",
+      //     "BigQuery Job User",
+      //     "Dataflow Worker",
+      //     "DLP Administrator",
+      //     "Storage Admin",
+      //   ],
+      // },
+      // {
+      //   id: 7,
+      //   listHeading: "1. Implementation Steps",
+      //   listSub: "Bucket in Google Cloud Storage and Load File",
+      //   listPoints: [
+      //     "Create a Google Cloud Storage bucket to hold the sample data file, e.g., gs://gcp-project bucket-2023.",
+      //     "Upload a sample CSV file containing sensitive PII data, such as US_SOCIAL_SECURITY_NUMBER",
+      //   ],
+      // },
+      // {
+      //   id: 8,
+      //   listHeading: "2. Key Ring and Encryption Key Creation in KMS",
+      //   // listSub: 'Bucket in Google Cloud Storage and Load File',
+      //   listPoints: [
+      //     "Navigate to the Cloud KMS section in Google Cloud Console.",
+      //     "Enable the KMS API if not already enabled.",
+      //     "Create a key ring (e.g., ring) within KMS.",
+      //     "Create a key within the key ring with software protection and purpose set to symmetric encrypt / decrypt.",
+      //     "Store the key resource name for later use",
+      //   ],
+      // },
+      // {
+      //   id: 9,
+      //   listHeading: "3. Create the Inspection Template in DLP",
+      //   // listSub: 'Bucket in Google Cloud Storage and Load File',
+      //   listPoints: [
+      //     "Enable the DLP API if not already enabled",
+      //     "In DLP, navigate to CONFIGURATION - TEMPLATES - INSPECT.",
+      //     "Create an Inspection Template, specifying the infotypes to detect, e.g.,US_SOCIAL_SECURITY_NUMBER.",
+      //   ],
+      // },
+      // {
+      //   id: 10,
+      //   listHeading: "4. Create the Wrapped Key and De-Identification Template",
+      //   // listSub: 'Bucket in Google Cloud Storage and Load File',
+      //   listPoints: [
+      //     "Create a De-Identification Template in DLP to define how findings should be redacted.",
+      //     "Specify the key resource name from KMS and provide a wrapped key.",
+      //     "Select the infoTypes (e.g., US_SOCIAL_SECURITY_NUMBER) to encrypt.",
+      //     "Review and create the De-Identification Template.",
+      //   ],
+      // },
+      // {
+      //   id: 11,
+      //   listHeading: "5. Create Dataflow Job",
+      //   // listSub: 'Bucket in Google Cloud Storage and Load File',
+      //   listPoints: [
+      //     "Ensure the required IAM roles are assigned for Dataflow service accounts",
+      //     "Create a BigQuery dataset to store the results.",
+      //     "Enable the necessary APIs for Dataflow",
+      //     "Create a Dataflow job using the Data Masking/Tokenization template",
+      //     "Configure the template parameters, specifying the location of the sample data, BigQuery dataset, project ID, temporary Cloud Storage bucket, and Cloud DLP De - Identification template resource name",
+      //     "Run the Dataflow job",
+      //   ],
+      // },
+    ],
+    // imageHeading: "Why Does GWC Interaction Matter?",
+    // blogImage: cloud_computing_header,
+    conclusion: "Conclusion",
+    conclusionText:
+      "Domo’s comprehensive data analytics platform transforms how we manage our manufacturing operations. By leveraging its capabilities in data integration, data warehousing, data governance, AI, ML, data visualization, workflow automation, and data-driven applications, Domo provides actionable insights that drive efficiency, innovation, and growth. Embracing Domo means empowering our teams with the information they need to excel and propelling our company towards a future of unparalleled success.",
+    writtenBy: "Written by Naveen - June 28, 2024",
+  },
+
+
+
+
+
 ];
