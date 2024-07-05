@@ -29,6 +29,8 @@ import Order from "../../../assets/images/solutions/new/Order Management System.
 import Service from "../../../assets/images/solutions/new/Service Cloud.webp";
 import sale from "../../../assets/images/solutions/new/Sales Cloud.webp";
 import Health from "../../../assets/images/solutions/new/Health Cloud.webp";
+import Salesforce_Einstein from "../../../assets/images/solutions/new/salesforce_einstein.jpg";
+import Salesforce_Life_Sciences_Cloud from "../../../assets/images/solutions/new/salesforce_life_sciences_cloud.jpg";
 
 export const IIOTBannerData = {
   breadcrumbs: [{ text: "Home", url: "/" }, { text: "Salesforce" }],
@@ -134,7 +136,7 @@ export const IIOTDataGovernanceList = [
   {
     id: 1,
     name: "Solution Architecting",
-    className:"first",
+    className: "first",
     description_title: "Solution Architecting",
     description_list: [
       "Our Salesforce Solution Architecting expertise involves designing & creating scalable & efficient solutions tailored to meet the unique needs of businesses, ensuring optimal performance within the Salesforce ecosystem.",
@@ -335,13 +337,13 @@ export const IIOTOurExpertise = {
     {
       id: 8,
       title: "Salesforce Einstein",
-      img: Health,
+      img: Salesforce_Einstein,
       text: "Salesforce Einstein is an AI technology embedded within the Salesforce platform that provides advanced predictive analytics, automation, and personalization. It helps businesses improve their CRM processes by delivering insights and automating tasks to enhance customer experiences.",
     },
     {
       id: 9,
       title: "Salesforce Life Sciences Cloud",
-      img: Health,
+      img: Salesforce_Life_Sciences_Cloud,
       text: "Salesforce Life Sciences Cloud is a specialized CRM solution for the life sciences industry, streamlining operations and ensuring regulatory compliance. It facilitates effective healthcare professional engagement, clinical trials management, and patient relationship management.",
     },
     {

@@ -87,9 +87,7 @@ function App() {
             path="/solutions/data-governance"
             element={<DataGovernancePage />}
           />
-          <Route
-            path="/solutions/salesforce"
-            element={<SalesforcePage />} />
+          <Route path="/solutions/salesforce" element={<SalesforcePage />} />
 
           <Route path="/contact-us" element={<Contact />} />
 
@@ -101,17 +99,18 @@ function App() {
 
           <Route path="/career-detail/:jobId" element={<CareerDetail />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route
-            exact
-            path="/blogs/:slug"
-            element={<BlogDetailPage />}></Route>
+          <Route exact path="/blogs/:slug" element={<BlogDetailPage />}></Route>
 
           {/* <Route path="/blog-detail" element={<BlogDetailPage />} /> */}
 
           <Route path="/case-studies" element={<CaseStudyPage />} />
           {/* <Route path="/case-study-detail" element={<CaseStudyDetailPage />} /> */}
 
-          <Route exact path="/case-studies/:slug" element={<CaseStudyDetailPage />}></Route>
+          <Route
+            exact
+            path="/case-studies/:slug"
+            element={<CaseStudyDetailPage />}
+          ></Route>
           <Route path="/wfh" element={<WorkHomePage />} />
 
           <Route path="/snowflake" element={<SnowFlakePage />} />
@@ -123,11 +122,15 @@ function App() {
           <Route path="/looker" element={<LookerPage />} />
           <Route path="/tableau" element={<TrabluePage />} />
           <Route path="/alation" element={<AlationsPage />} />
-          <Route path="/domoProdInfo/:iframeUrl" element={<Domoproductinfo />} />
-          <Route path="/domoProdInfo/retail360" element={<DomodashboardRetail />} />
-          {/* <Route path="/innovation-labs" element={<InnovationLabs />} /> */}
-
-
+          <Route
+            path="/domoProdInfo/:iframeUrl"
+            element={<Domoproductinfo />}
+          />
+          <Route
+            path="/domoProdInfo/retail360"
+            element={<DomodashboardRetail />}
+          />
+          <Route path="/innovation-labs" element={<InnovationLabs />} />
         </Routes>
         <FooterComponent />
       </Suspense>
@@ -136,4 +139,3 @@ function App() {
 }
 
 export default App;
-

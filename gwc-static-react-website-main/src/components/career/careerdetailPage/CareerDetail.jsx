@@ -45,12 +45,11 @@ const CareerDetail = () => {
     // Assuming jobData is your array of job objects
 
     // Filter the jobData based on the provided jobID
-    // console.log('jobCareerData',jobCareerData);
-    // console.log('jobId',jobId);
+    // console.log("jobCareerData", jobCareerData);
+    // console.log("jobId", jobId);
 
     const filteredJob = jobCareerData?.find((job) => job.jobID === jobId);
-    // console.log('filteredJob',filteredJob);
-
+    // console.log("filteredJob", filteredJob);
 
     // Update the state with the filtered job object
     setJobData(filteredJob);
@@ -103,7 +102,7 @@ const CareerDetail = () => {
   const uploadResume = async (e) => {
     setSuccessUplaod("Please Wait, Your resume is being uploading...");
     const formData = new FormData();
-    
+
     formData.append("file", e.target.files[0]);
     axios
       .post(
@@ -125,7 +124,7 @@ const CareerDetail = () => {
       });
   };
 
-  const handleSubmit =async (values, { resetForm }) => {
+  const handleSubmit = async (values, { resetForm }) => {
     // Check if fileName is empty
 
     const data = {
@@ -138,10 +137,9 @@ const CareerDetail = () => {
       job_location: jobData?.location?.location,
       job_type: jobData?.type?.type,
       applicant_skills: values?.applicant_skills,
-      applicant_message:values?.message,
+      applicant_message: values?.message,
     };
     // console.log('data is ',data);
-
 
     //  await emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
     //     (response) => {
@@ -157,7 +155,6 @@ const CareerDetail = () => {
     //       );
     //     }
     //   );
-    
 
     if (
       data?.applicant_resume_url === "" ||
@@ -166,11 +163,11 @@ const CareerDetail = () => {
     ) {
       notifyFailure();
     } else {
-     await emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
+      await emailjs.send(SERVICEID, TEMPLATEID, data, PUBLICID).then(
         (response) => {
           notify();
           resetForm();
-          setSuccessUplaod("")
+          setSuccessUplaod("");
           // handleClose();
         },
         (err) => {
@@ -256,7 +253,7 @@ const CareerDetail = () => {
               <h3 className={` ${styles?.title} mt-2`}>Job Description</h3>
             </div>
 
-            {jobData?.jobdescription?.map((item,index) => {
+            {jobData?.jobdescription?.map((item, index) => {
               return (
                 <div key={index} className="div">
                   <p className={` ${styles?.all_list} mt-1`}>{item?.para} </p>
@@ -279,7 +276,7 @@ const CareerDetail = () => {
                     {item?.para4}{" "}
                   </p>
                   <ul className={` ${styles?.job_list} mt-0`}>
-                    {item?.list?.map((item,index) => {
+                    {item?.list?.map((item, index) => {
                       return (
                         <li key={index} className={` ${styles?.all_list} mt-1`}>
                           {" "}
@@ -408,7 +405,8 @@ const CareerDetail = () => {
                               htmlFor="applicant_skills"
                               style={{ color: "white" }}
                             >
-                              Technical Skills<span style={{ color: "red" }}>*</span>
+                              Technical Skills
+                              <span style={{ color: "red" }}>*</span>
                             </label>
                             <Field
                               type="text"

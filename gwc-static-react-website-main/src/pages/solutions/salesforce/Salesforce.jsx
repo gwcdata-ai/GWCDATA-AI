@@ -29,7 +29,6 @@ import { SalesNewSection } from "../../../components/SolutionsSalesForce/SalesNe
 import SalesSecondNew from "../../../components/SolutionsSalesForce/SalesSecondNew";
 import SalesforceBanner from "./SalesforceBanner";
 
-
 export const SalesforcePage = () => {
   useEffect(() => {
     window.scrollTo({
@@ -37,7 +36,7 @@ export const SalesforcePage = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
@@ -51,10 +50,11 @@ export const SalesforcePage = () => {
       {/* <SalesBottom /> */}
       {/* <CommonLeftImageComponent commonLeftSectionContent={IIOTDataGovernanceData}/> */}
       {/* <SalesNewSection /> */}
-      
 
       <SalesForm />
-      <PuttingDataToWork puttingDataSectionContent={IIOTPuttingDataToWorkData} />
+      <PuttingDataToWork
+        puttingDataSectionContent={IIOTPuttingDataToWorkData}
+      />
       <ReadyToGetStart ReadyToGetStartContent={IIOTReadyToGetStart} />
       {/* <CaseStudies caseStudiesSectionContent={IIOTCaseStudies} /> */}
       <SloutionSalesCard />

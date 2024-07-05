@@ -16,6 +16,99 @@ export const jobType = [
 
 export const jobCareerData = [
   {
+    id: 8,
+    jobID: "senior-data-scientist",
+    jobRole: "Senior Data Scientist",
+    experience: " 7+ Years",
+    location: jobLocations[1],
+    type: jobType[0],
+    jobdescription: [
+      {
+        // title: "",
+        para1:
+          " GWC Data.Ai is a dynamic and innovative company specializing in cutting-edge AI/ML solutions. We are seeking a highly skilled Lead Data Scientist with a minimum of 7+ years of experience to join our team at our Hosur location. As a GenAI Lead, you will play a pivotal role in shaping the strategic direction of our AI practice, leading a team of talented data scientists and engineers, and delivering impactful AI/ML solutions to our clients.",
+        // para2:"",
+        // para3:"",
+        // para4: " ",
+      },
+      {
+        title: "Responsibilities",
+        list: [
+          "Leverage data science tools and techniques, keeping abreast with the latest in the community to solve problems.",
+          "Present recommendations from complex analysis to business partners in clear and actionable form, influencing the future. ",
+          "Develop PoC, present lucidly to the business and evolve the solutions. ",
+          "Research, learn/disseminate & adapt new technologies to solve problems & improve upon existing solutions. ",
+          "Manage the continuous improvement of data science and machine learning by following industry best practices and staying up to date with and extending the state-of-the-art in Machine Learning research.",
+          "Integrate data science solutions into current business processes. ",
+          "Develop and recommend process standards and best practices in Machine Learning as applicable to the retail industry. ",
+          "Peer review and publish work in top tier ML/AI conferences such as NIPS, ICML, AAAI and COLT. ",
+          "Participate and speak at various external forums such as research conferences and technical summits. ",
+        ],
+      },
+      {
+        title: "Requirements",
+        list: [
+          "Experience in analysing complex problems and translating them to data science algorithms with due attention to computational efficiency and testing at scale.",
+          "Expertise in machine learning, supervised and unsupervised: Time Series Forecasting, latest technique in NLP Deep Learning Algorithms and Reinforcement Learning.",
+          "Experience in statistical learning: Predictive & Prescriptive Analytics, Web Analytics, Parametric and Non-parametric models, Regression, Time Series, Dynamic / Causal Model, Statistical Learning, Guided Decisions, Topic Modelling·",
+          "Experience working with big data - identifying trends, patterns, and outliers in large volumes of data.·",
+          "Worked with at least one mainstream machine learning framework such as caffe, convNet, Tensor Flow and Torch. ",
+          "Experience with SQL, relational databases and data warehouse. ",
+          "Experience with big data platforms - Hadoop(Hive, Pig, Map Reduce, HQL) / Spark / H20. ",
+          "Domain Knowledge : Search, Recommendation Engine.",
+          "Experience with multiple stakeholder management, data based story-telling, mentoring peers and juniors, multiple project handling at the same time.",
+        ],
+      },
+    ],
+  },
+  {
+    id: 9,
+    jobID: "senior-solution-architect-(azure)",
+    jobRole: "Senior Solution Architect(Azure)",
+    experience: " 7+ Years",
+    location: jobLocations[1],
+    type: jobType[0],
+    jobdescription: [
+      {
+        // title: "",
+        para1:
+          "GWC is a leading technology company specializing in innovative data solutions. We are dedicated to harnessing the power of data to drive business insights and operational efficiency. We are looking for a skilled Solution Architect-Azure to join our dynamic team.",
+        // para2:"",
+        // para3:"",
+        // para4: " ",
+      },
+      // {
+      //   title: "Responsibilities",
+      //   list: [
+      //     "Leverage data science tools and techniques, keeping abreast with the latest in the community to solve problems.",
+      //     "Present recommendations from complex analysis to business partners in clear and actionable form, influencing the future. ",
+      //     "Develop PoC, present lucidly to the business and evolve the solutions. ",
+      //     "Research, learn/disseminate & adapt new technologies to solve problems & improve upon existing solutions. ",
+      //     "Manage the continuous improvement of data science and machine learning by following industry best practices and staying up to date with and extending the state-of-the-art in Machine Learning research.",
+      //     "Integrate data science solutions into current business processes. ",
+      //     "Develop and recommend process standards and best practices in Machine Learning as applicable to the retail industry. ",
+      //     "Peer review and publish work in top tier ML/AI conferences such as NIPS, ICML, AAAI and COLT. ",
+      //     "Participate and speak at various external forums such as research conferences and technical summits. ",
+      //   ],
+      // },
+      {
+        title: "Requirements",
+        list: [
+          "8+ years overall IT experience and 3+ years of relevant Microsoft Azure architecture, design & delivery experience.",
+          "Experience in Azure Infra, Networks, Storage, Apps and Azure DevOps.",
+          "Experience with Azure Resource Manager, Resource Groups, Virtual Networks, Azure Virtual Machines, Azure Blob Storage, PowerShell DSC, Azure Automation, Azure Active Directory, and Azure Site Recovery.",
+          "Experience in developing and deploying Cloud Native Applications using Azure PaaS Capabilities (App Services Plans, Key Vault, SQL Azure DB, Azure Functions, Containers, AKS, Logic Apps, Service Bus, Event Grid, API Management).",
+          "Experience in Enterprise Integration Technologies such as BizTalk, Azure API Management, Logic Apps, Service Bus. ",
+          "Experience with claims-based authentication (SAML/OAuth/OIDC), MFA, and RBAC. ",
+          "Understands setting up Monitoring and diagnostics on Azure for a web application. ",
+          "Knowledge of programming and scripting languages such as C#, Java, Python, JavaScript, PowerShell, & Bash etc.",
+          "Experience with Azure Governance and Best Practices (Role Based Access Control, Networking Architectures, Cost Management controls, etc..).",
+          "Good to have Microsoft Azure Architecture Certification.",
+        ],
+      },
+    ],
+  },
+  {
     id: 1,
     jobID: "it-sales-business-development-manager",
     jobRole: "IT Sales Business Development Manager",
@@ -85,60 +178,60 @@ export const jobCareerData = [
       },
     ],
   },
-  {
-    id: 2,
-    jobID: "lead-data-scientist",
-    jobRole: "Lead Data Scientist",
-    experience: "5+ Years",
-    location: jobLocations[1],
-    type: jobType[0],
-    jobdescription: [
-      {
-        title: "",
-        // subtitle: "Skills - AI/ML, GenAI, NLP, Python and R",
-        para1:
-          "GWC Data.Ai is a dynamic and innovative company specializing in cutting-edge AI/ML solutions. We are seeking a highly skilled Lead Data Scientist with a minimum of 5 years of experience to join our team at our Hosur location. As a GenAI Lead, you will play a pivotal role in shaping the strategic direction of our AI practice, leading a team of talented data scientists and engineers, and delivering impactful AI/ML solutions to our clients. ",
-        // para2:
-        //   "The ideal candidate should have extensive expertise in data science and machine learning principles, a proven track record in deploying AI/ML solutions, managing project implementations, leading and mentoring teams of data scientists and engineers, and specialized knowledge in LLMs, Natural Language Processing, Computer Vision, Recommendation Systems, Deep Learning, or Reinforcement Learning. Additionally, a Bachelors/ Masters degree in Computer Science, Data Science, Statistics, or a related discipline and relevant certifications in AI/ML technologies such as TensorFlow, PyTorch, or Microsoft Azure AI Fundamentals are required",
-        // para3:
-        //   "Join us in driving AI/ML-based solutions tailored to our clients specific business challenges! ",
-        // list: [
-        //   "",
-        // ],
-      },
-      {
-        title: "Responsibilities",
-        // subtitle: "",
-        // para1: "",
-        // para2: "",
-        // para3: " ",
-        list: [
-          "Provide strategic direction for the AI practice and contribute to the development of innovative solutions. ",
-          "Lead and manage a team of data scientists and engineers, fostering a collaborative and growth-oriented environment. ",
-          "Oversee the end-to-end project delivery process, ensuring high-quality solutions and client satisfaction. ",
-          "Utilize expertise in AI/ML, GenAI, NLP, Python, and R to design and deploy robust solutions. ",
-          "Mentor team members, sharing knowledge and best practices in data science and machine learning. ",
-          "Specialized knowledge in areas such as LLMs, Natural Language Processing, Computer Vision, Recommendation Systems, Deep Learning, or Reinforcement Learning is highly desirable.",
-          "Collaborate with cross-functional teams to understand clients' business challenges and tailor AI/ML solutions accordingly. ",
-        ],
-      },
-      {
-        title: "Qualifications",
-        // subtitle: "",
-        // para1: "",
-        // para2: "",
-        // para3: " ",
-        list: [
-          "Minimum of 5 years of experience in AI/ML, GenAI, NLP, Python, and R. ",
-          "Bachelor's/Master's degree in Computer Science, Data Science, Statistics, or a related discipline. ",
-          "Relevant certifications in AI/ML technologies such as TensorFlow, PyTorch, or Microsoft Azure AI Fundamentals. ",
-          "Proven track record of successfully deploying AI/ML solutions and managing project implementations. ",
-          "Strong leadership skills with the ability to drive results and inspire a team. ",
-          "Excellent communication and interpersonal skills.  ",
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   jobID: "lead-data-scientist",
+  //   jobRole: "Lead Data Scientist",
+  //   experience: "5+ Years",
+  //   location: jobLocations[1],
+  //   type: jobType[0],
+  //   jobdescription: [
+  //     {
+  //       title: "",
+  //       // subtitle: "Skills - AI/ML, GenAI, NLP, Python and R",
+  //       para1:
+  //         "GWC Data.Ai is a dynamic and innovative company specializing in cutting-edge AI/ML solutions. We are seeking a highly skilled Lead Data Scientist with a minimum of 5 years of experience to join our team at our Hosur location. As a GenAI Lead, you will play a pivotal role in shaping the strategic direction of our AI practice, leading a team of talented data scientists and engineers, and delivering impactful AI/ML solutions to our clients. ",
+  //       // para2:
+  //       //   "The ideal candidate should have extensive expertise in data science and machine learning principles, a proven track record in deploying AI/ML solutions, managing project implementations, leading and mentoring teams of data scientists and engineers, and specialized knowledge in LLMs, Natural Language Processing, Computer Vision, Recommendation Systems, Deep Learning, or Reinforcement Learning. Additionally, a Bachelors/ Masters degree in Computer Science, Data Science, Statistics, or a related discipline and relevant certifications in AI/ML technologies such as TensorFlow, PyTorch, or Microsoft Azure AI Fundamentals are required",
+  //       // para3:
+  //       //   "Join us in driving AI/ML-based solutions tailored to our clients specific business challenges! ",
+  //       // list: [
+  //       //   "",
+  //       // ],
+  //     },
+  //     {
+  //       title: "Responsibilities",
+  //       // subtitle: "",
+  //       // para1: "",
+  //       // para2: "",
+  //       // para3: " ",
+  //       list: [
+  //         "Provide strategic direction for the AI practice and contribute to the development of innovative solutions. ",
+  //         "Lead and manage a team of data scientists and engineers, fostering a collaborative and growth-oriented environment. ",
+  //         "Oversee the end-to-end project delivery process, ensuring high-quality solutions and client satisfaction. ",
+  //         "Utilize expertise in AI/ML, GenAI, NLP, Python, and R to design and deploy robust solutions. ",
+  //         "Mentor team members, sharing knowledge and best practices in data science and machine learning. ",
+  //         "Specialized knowledge in areas such as LLMs, Natural Language Processing, Computer Vision, Recommendation Systems, Deep Learning, or Reinforcement Learning is highly desirable.",
+  //         "Collaborate with cross-functional teams to understand clients' business challenges and tailor AI/ML solutions accordingly. ",
+  //       ],
+  //     },
+  //     {
+  //       title: "Qualifications",
+  //       // subtitle: "",
+  //       // para1: "",
+  //       // para2: "",
+  //       // para3: " ",
+  //       list: [
+  //         "Minimum of 5 years of experience in AI/ML, GenAI, NLP, Python, and R. ",
+  //         "Bachelor's/Master's degree in Computer Science, Data Science, Statistics, or a related discipline. ",
+  //         "Relevant certifications in AI/ML technologies such as TensorFlow, PyTorch, or Microsoft Azure AI Fundamentals. ",
+  //         "Proven track record of successfully deploying AI/ML solutions and managing project implementations. ",
+  //         "Strong leadership skills with the ability to drive results and inspire a team. ",
+  //         "Excellent communication and interpersonal skills.  ",
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     id: 3,
     jobID: "full-stack-engineer",
@@ -311,57 +404,56 @@ export const jobCareerData = [
       },
     ],
   },
-  {
-    id: 7,
-    jobID: "data-scientist",
-    jobRole: "Data Scientist ",
-    experience: " 3+ Years",
-    location: jobLocations[1],
-    type: jobType[0],
-    jobdescription: [
-      {
-        // title: "",
-        para1:
-          " We are seeking a talented and motivated Data Scientist to join our dynamic team. As a Data Scientist at GWC Data.AI, you will play a crucial role in leveraging data to drive business insights and decision-making. You will work closely with cross-functional teams to develop and implement data-driven solutions that address complex business challenges. ",
-        // para2:"",
-        // para3:"",
-        // para4: " ",
-      },
-      {
-        title: "Responsibilities ",
-        list: [
-          "Apply advanced statistical and machine learning techniques to Analyze large datasets and extract meaningful insights, including time series forecasting. ",
-          "Develop predictive models to forecast business trends and outcomes. ",
-          "Collaborate with stakeholders to identify key business questions and design data-driven solutions. ",
-          "Clean, Preprocess, and manipulate data to ensure accuracy and reliability. ",
-          "Communicate findings and recommendations to both technical and non-technical audiences through visualizations, reports, and presentations. ",
-          "Stay current with industry trends and advancements in data science techniques and technologies. ",
-        ],
-      },
-      {
-        title: "Preferred Qualifications",
-        list: [
-          "Experience with big data technologies such as Hadoop, Spark, or Kafka.",
-          "Familiarity with cloud platforms such as AWS, Azure, or Google Cloud, including proficiency in at least one of the following: AWS SageMaker, Azure Machine Learning, GCP Vertex AI. ",
-          "Knowledge in machine learning and deep learning techniques, with exposure to Generative AI. ",
-          "Knowledge of natural language processing (NLP) techniques. ",
-          "Experience working in industries such as finance, retail, healthcare, or e-commerce.",
-          "Exposure to OpenCV and Tesseract will be advantageous. ",
-        ],
-      },
-      {
-        title: "Requirements",
-        list: [
-          "Bachelor’s or Master’s degree in Computer Science, Statistics, Mathematics, or a related field.",
-          "3-4 years of proven experience working as a Data Scientist or in a similar role. ",
-          "Proficiency in Python,BI tools and working exposure in both SQL and NoSQL databases is a must. ",
-          "Excellent problem-solving and analytical skills. ",
-          "Strong communication and collaboration abilities.",
-          
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: 7,
+  //   jobID: "data-scientist",
+  //   jobRole: "Data Scientist ",
+  //   experience: " 3+ Years",
+  //   location: jobLocations[1],
+  //   type: jobType[0],
+  //   jobdescription: [
+  //     {
+  //       // title: "",
+  //       para1:
+  //         " We are seeking a talented and motivated Data Scientist to join our dynamic team. As a Data Scientist at GWC Data.AI, you will play a crucial role in leveraging data to drive business insights and decision-making. You will work closely with cross-functional teams to develop and implement data-driven solutions that address complex business challenges. ",
+  //       // para2:"",
+  //       // para3:"",
+  //       // para4: " ",
+  //     },
+  //     {
+  //       title: "Responsibilities ",
+  //       list: [
+  //         "Apply advanced statistical and machine learning techniques to Analyze large datasets and extract meaningful insights, including time series forecasting. ",
+  //         "Develop predictive models to forecast business trends and outcomes. ",
+  //         "Collaborate with stakeholders to identify key business questions and design data-driven solutions. ",
+  //         "Clean, Preprocess, and manipulate data to ensure accuracy and reliability. ",
+  //         "Communicate findings and recommendations to both technical and non-technical audiences through visualizations, reports, and presentations. ",
+  //         "Stay current with industry trends and advancements in data science techniques and technologies. ",
+  //       ],
+  //     },
+  //     {
+  //       title: "Preferred Qualifications",
+  //       list: [
+  //         "Experience with big data technologies such as Hadoop, Spark, or Kafka.",
+  //         "Familiarity with cloud platforms such as AWS, Azure, or Google Cloud, including proficiency in at least one of the following: AWS SageMaker, Azure Machine Learning, GCP Vertex AI. ",
+  //         "Knowledge in machine learning and deep learning techniques, with exposure to Generative AI. ",
+  //         "Knowledge of natural language processing (NLP) techniques. ",
+  //         "Experience working in industries such as finance, retail, healthcare, or e-commerce.",
+  //         "Exposure to OpenCV and Tesseract will be advantageous. ",
+  //       ],
+  //     },
+  //     {
+  //       title: "Requirements",
+  //       list: [
+  //         "Bachelor’s or Master’s degree in Computer Science, Statistics, Mathematics, or a related field.",
+  //         "3-4 years of proven experience working as a Data Scientist or in a similar role. ",
+  //         "Proficiency in Python,BI tools and working exposure in both SQL and NoSQL databases is a must. ",
+  //         "Excellent problem-solving and analytical skills. ",
+  //         "Strong communication and collaboration abilities.",
+  //       ],
+  //     },
+  //   ],
+  // },
 ];
 
 export const CareerBannerData = {
@@ -607,7 +699,8 @@ export const careersliderdData = [
           fill="white"
         />
       </svg>
-    ), svg_mobile: (
+    ),
+    svg_mobile: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
@@ -650,7 +743,8 @@ export const careersliderdData = [
           fill="white"
         />
       </svg>
-    ), svg_mobile: (
+    ),
+    svg_mobile: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
@@ -690,14 +784,12 @@ import f16 from "../../assets/images/career/GWC_Pongal Celebration.webp";
 import f17 from "../../assets/images/career/GWC_GROUP_RECENT.jpeg";
 import f18 from "../../assets/images/career/GWC_Sports_day_activity.jpg";
 
-
 export const careerCarousalData = [
-  
   {
     id: 1,
     img: f17,
     text: "3rd Anniversary for GWC",
-    className:'first'
+    className: "first",
   },
   {
     id: 2,
@@ -710,7 +802,7 @@ export const careerCarousalData = [
     img: f3,
     text: "Onam Celebration",
   },
-  
+
   // {
   //   id: 4,
   //   img: f4,

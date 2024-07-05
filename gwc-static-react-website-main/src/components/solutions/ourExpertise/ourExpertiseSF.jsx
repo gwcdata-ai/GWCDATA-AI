@@ -175,7 +175,11 @@ export const OurExpertiseSF = ({ ourExpertiseContent }) => {
                   <div className={`${styles.card_section_sf_expert} mb-3`}>
                     <Image
                       src={item?.img}
-                      style={{ width: "100%", height: "200px" }}
+                      style={{
+                        width: "100%",
+                        height: "200px",
+                        objectFit: "cover",
+                      }}
                       alt=""
                     />
                     <p className={`${styles.card_title_expert} my-3`}>

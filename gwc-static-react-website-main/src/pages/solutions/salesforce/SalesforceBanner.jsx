@@ -91,7 +91,7 @@ const SalesforceBanner = () => {
                             </Link>
                         </Col>
                         <Col lg={5} md={6} className={`${isMobile ? null : `${styles1.paddingTop_Mobile}`}`}>
-                            <img src={Sales_force_GIF_New} alt="logo" className={`${isMobile ? `mt-lg-4` :`${styles1.GIF_Width_Mobile}`}`}/>
+                            <img src={Sales_force_GIF_New} alt="logo" className={`${isMobile ? `mt-lg-4 ${styles1.GIF_Width_Mobile}` :`${styles1.GIF_Width_Desktop}`}`}/>
                         </Col>
                     </Row>
                 </Container>

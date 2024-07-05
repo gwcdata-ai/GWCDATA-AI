@@ -38,9 +38,6 @@ import Blog_4_6 from "../../assets/images/Blog/Quality_ControlAssurance.jpg";
 import Blog_4_7 from "../../assets/images/Blog/Research_and_Development.jpg";
 import Blog_4_8 from "../../assets/images/Blog/Supply_ChainLogistics.jpg";
 
-
-
-
 export const BlogListData = [
   {
     id: 1,
@@ -505,35 +502,12 @@ export const BlogListData = [
       " In conclusion, the adoption of custom app solutions presents a compelling opportunity for organizations utilizing Domo to overcome the inherent limitations of standard offerings. By investing in custom development, businesses can unlock the full potential of their data, driving innovation, and gaining a competitive edge in today's data-driven landscape. If you're ready to take your Domo experience to the next level, consider exploring custom app solutions tailored to your unique requirements. ",
     writtenBy: "Written by Naveen - February 13, 2024",
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     id: 5,
     slug: "harnessing-the-power-of-domo-for-streamlined-manufacturing-operations",
     date: "June 28, 2024",
-    heading: "Harnessing the Power of Domo for Streamlined Manufacturing Operations",
+    heading:
+      "Harnessing the Power of Domo for Streamlined Manufacturing Operations",
     days: "2 days ago",
     // views: "110k views",
     img: Blog_4_title,
@@ -550,24 +524,24 @@ export const BlogListData = [
         listHeading: "Overview",
         listPara:
           "Domo stands out due to its robust capabilities in data integration, data warehousing, data governance, artificial intelligence (AI), machine learning (ML), data visualization, workflow automation, and data-driven applications.",
-    
       },
       {
         id: 100,
-        listPara: "Let’s explore how these features enhance the operations of each department within a manufacturing company :",
-    
+        listPara:
+          "Let’s explore how these features enhance the operations of each department within a manufacturing company :",
       },
       {
         id: 2,
         listHeading: "Production/Manufacturing",
         listPara:
-          'With Domo’s powerful data integration, real-time data from the shop floor is seamlessly consolidated, providing insights into machine performance, production rates, and downtime. The data warehousing capabilities ensure all production data is stored efficiently, making it easily accessible for analysis. AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.',
+          "With Domo’s powerful data integration, real-time data from the shop floor is seamlessly consolidated, providing insights into machine performance, production rates, and downtime. The data warehousing capabilities ensure all production data is stored efficiently, making it easily accessible for analysis. AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
       },
       {
         id: 3,
         listHeading: "Engineering and Design",
         images: [Blog_4_2],
-        altTag:"Engineers collaborating over digital blueprints with data visualizations.",
+        altTag:
+          "Engineers collaborating over digital blueprints with data visualizations.",
         listPara:
           "Domo facilitates collaboration between design and production teams by providing a unified view of project timelines, resource allocation, and design iterations. Data visualization tools help in presenting complex design data in an easily understandable format, ensuring quick communication and implementation of design changes. This reduces the time to market for new products.",
       },
@@ -580,7 +554,8 @@ export const BlogListData = [
       {
         id: 4,
         listHeading: "Quality Control/Assurance",
-        altTag:"Quality control specialist inspecting products with data quality metrics.",
+        altTag:
+          "Quality control specialist inspecting products with data quality metrics.",
         images: [Blog_4_6],
         listPara:
           "Quality is non-negotiable in manufacturing. Domo’s data governance ensures that quality data is accurate and consistent. By integrating data from various quality checkpoints and testing stages, it provides a comprehensive view of product quality. Automated alerts, driven by AI, and detailed reports help in identifying defects early and implementing corrective actions promptly.",
@@ -595,7 +570,8 @@ export const BlogListData = [
         id: 5,
         listHeading: "Supply Chain/Logistics",
         images: [Blog_4_8],
-        altTag:"Logistics manager tracking shipments and inventory levels in real-time.",
+        altTag:
+          "Logistics manager tracking shipments and inventory levels in real-time.",
         listPara:
           "Efficient supply chain management is critical for manufacturing success. Domo aggregates data from suppliers, inventory systems, and logistics providers, offering end-to-end visibility. ML algorithms forecast demand, optimizing inventory levels, and reducing lead times. Workflow automation further enhances supply chain efficiency, lowering costs and boosting customer satisfaction.",
       },
@@ -608,13 +584,12 @@ export const BlogListData = [
       {
         id: 7,
         listHeading: "Research and Development (R&D)",
-        altTag:"R&D professionals analyzing data and project progress charts.",
+        altTag: "R&D professionals analyzing data and project progress charts.",
         images: [Blog_4_7],
         listPara:
           "Innovation drives growth. Domo enables R&D teams to track project progress, manage budgets, and analyze the impact of new product introductions. By consolidating data from various experiments and prototypes, Domo helps in prioritizing projects that offer the best return on investment. Data-driven applications built on Domo can further enhance R&D processes.",
       },
-      
-      
+
       {
         id: 10,
         listHeading: "Sales and Marketing",
@@ -642,7 +617,7 @@ export const BlogListData = [
         listPara:
           "Domo’s IT analytics provide a holistic view of the company’s technology infrastructure. This integration helps in monitoring system performance, managing data security, and supporting digital transformation initiatives. IT teams can leverage data-driven applications to ensure technology investments align with business goals.",
       },
-     
+
       {
         id: 14,
         listHeading: "Legal and Compliance",
@@ -760,9 +735,179 @@ export const BlogListData = [
       "Domo’s comprehensive data analytics platform transforms how we manage our manufacturing operations. By leveraging its capabilities in data integration, data warehousing, data governance, AI, ML, data visualization, workflow automation, and data-driven applications, Domo provides actionable insights that drive efficiency, innovation, and growth. Embracing Domo means empowering our teams with the information they need to excel and propelling our company towards a future of unparalleled success.",
     writtenBy: "Written by Naveen - June 28, 2024",
   },
+  // {
+  //   id: 5,
+  //   slug: "transforming-fashion-retai-with-domo:a-one-stop-shop-for-data-analytics",
+  //   date: "July 6, 2024",
+  //   heading: "Transforming Fashion Retail with Domo: A One-Stop Shop for Data Analytics",
+  //   days: "2 days ago",
+  //   views: "15k views",
+  //   img: domo_custom_app_header,
+  //   topHeading:
+  //     "Transforming Fashion Retail with Domo: A One-Stop Shop for Data Analytics",
+  //   blogTopImg: domo_custom_app_header,
+  //   blogSubHeading:
+  //     "Transforming Fashion Retail with Domo: A One-Stop Shop for Data Analytics",
+  //   // blogSubPara1: '',
+  //   blogList: [
+  //     {
+  //       id: 1,
+  //       listHeading: "Introduction",
+  //       listPara:
+  //         "In today's fast-paced fashion retail industry, the ability to swiftly adapt to changing trends and customer preferences is crucial. Success hinges on seamless integration across various departments, from design and merchandising to sales and customer service. This is where Domo, a comprehensive data analytics platform, comes into play, revolutionizing the way we run our business. ",
+  //     },
 
+  //     {
+  //       id: 2,
+  //       listHeading: "Why Domo? ",
+  //       listPara:" Domo stands out as a one-stop shop for all data analytics needs, offering unparalleled capabilities in:  ",
+  //       listPoints: [
+  //         "<b> Data Integration ",
+  //         "<b> Data Warehousing ",
+  //         "<b> Data Governance ",
+  //         "<b> Artificial Intelligence (AI) ",
+  //         "<b> Machine Learning (ML) ",
+  //         "<b> Data Visualization ",
+  //         "<b> Workflow Automation ",
+  //         "<b> Data-Driven Apps ",
 
+  //       ],
+  //     },
+  //     {
+  //       id: 3,
+  //       listHeading: "Design and Development",
+  //       listPara:
+  //         "With Domo, our design team can integrate various data sources to predict trends and customer preferences, ensuring our collections are always on point. AI and ML algorithms analyze past sales data and social media trends, providing valuable insights that guide the creative process. ",
 
+  //     },
+  //     {
+  //       id: 4,
+  //       listHeading: "Merchandising",
+  //       // listSub: "Tailored Solutions",
+  //       listPara:
+  //         "Domo’s data warehousing and integration capabilities allow our merchandising team to have a unified view of inventory levels, sales performance, and market trends. This enables precise product assortment and pricing strategies, ensuring that our stores and online platforms are always stocked with the right products at the right time.",
+  //       images: [domo_custom_app_1],
+  //     },
+  //     {
+  //       id: 5,
+  //       listSub: "Buying ",
+  //       listPara:
+  //         "Our buyers leverage Domo’s advanced analytics to make data-driven decisions, negotiating better deals with suppliers and ensuring timely product delivery. The platform’s data visualization tools offer clear insights into supplier performance and market demand.",
+  //       images: [domo_custom_app_2],
+  //     },
+  //     {
+  //       id: 6,
+  //       listSub: "Production and Sourcing ",
+  //       listPara:
+  //         "Domo’s workflow automation and data governance features streamline the production process, from sourcing raw materials to final manufacturing. By automating repetitive tasks and ensuring compliance with quality standards, we can focus on innovation and efficiency.",
+  //       images: [domo_custom_app_3],
+  //     },
+  //     {
+  //       id: 7,
+  //       listSub: "Marketing and Advertising ",
+  //       listPara:
+  //         "With Domo, our marketing team can create targeted campaigns based on real-time data. The platform’s data integration and visualization tools allow us to track campaign performance across various channels, optimizing our marketing spend and enhancing brand visibility.",
+  //       images: [domo_custom_app_4],
+  //     },
+  //     {
+  //       id: 8,
+  //       listHeading:
+  //         "Sales ",
+  //         listPara:
+  //         "Domo’s powerful data-driven apps provide our sales teams with real-time insights into store performance, customer preferences, and sales trends. This data enables proactive decision-making, driving sales growth both in-store and online.",
 
-
+  //       images: [domo_custom_app_5, domo_custom_app_6],
+  //     },
+  //     {
+  //       id: 9,
+  //       listHeading: "E-commerce",
+  //       listPara:
+  //         "The e-commerce landscape is ever-evolving, and Domo helps us stay ahead of the curve. By integrating data from our website, social media, and third-party platforms, we can optimize the online shopping experience, improve customer satisfaction, and boost sales.",
+  //     },
+  //     {
+  //       id: 10,
+  //       listSub: "Finance and Accounting",
+  //       listPara:
+  //         "Domo’s robust data governance ensures financial data integrity and compliance. Our finance team uses the platform to manage budgets, forecast financial performance, and generate comprehensive reports, all within a secure environment. ",
+  //       images: [domo_custom_app_7],
+  //     },
+  //     {
+  //       id: 11,
+  //       listSub: "Human Resources",
+  //       listPara:
+  //         "Domo empowers our HR team with data-driven insights into employee performance, recruitment trends, and workforce planning. This allows us to attract, retain, and develop top talent, fostering a culture of growth and innovation.  ",
+  //       images: [domo_custom_app_8],
+  //     },
+  //     {
+  //       id: 12,
+  //       listSub: "Logistics and Supply Chain",
+  //       listPara:
+  //         'Efficiency in logistics and supply chain management is critical in fashion retail. Domo’s integration and workflow automation streamline operations, ensuring timely delivery and optimal inventory levels, reducing costs and enhancing customer satisfaction.  ',
+  //       images: [domo_custom_app_9],
+  //     },
+  //     {
+  //       id: 13,
+  //       listSub: "Step 4",
+  //       listPara: "Provide the dataset ID.  ",
+  //       images: [domo_custom_app_10],
+  //     },
+  //     {
+  //       id: 14,
+  //       listSub: "Step 5",
+  //       listPara:
+  //         "After providing the dataset alias name, you can assign any name you want to refer to the dataset. ",
+  //       images: [domo_custom_app_11],
+  //     },
+  //     {
+  //       id: 15,
+  //       listSub: "Step 6",
+  //       listPara:
+  //         'If you would like to add another dataset, please type "Y" to continue and provide the dataset ID and dataset alias. If you do not wish to add another dataset, type "N" to end the command.  ',
+  //       images: [domo_custom_app_12],
+  //     },
+  //     {
+  //       id: 16,
+  //       listSub: "Step 7",
+  //       listPara:
+  //         "Installation of DOMO CLI is complete when this screen appears. ",
+  //       images: [domo_custom_app_13],
+  //     },
+  //     {
+  //       id: 17,
+  //       listSub: "Step 8",
+  //       listPara:
+  //         "Domo cli process completed then created directory name as you give design name. After navigate the directory.  ",
+  //       images: [domo_custom_app_14],
+  //     },
+  //     {
+  //       id: 18,
+  //       listSub: "Step 9",
+  //       listPoints: ["domo login "],
+  //       listPara:
+  //         "Choose to which instance you want select. If create new instance choose the “new instance”. ",
+  //       images: [domo_custom_app_15],
+  //     },
+  //     {
+  //       id: 19,
+  //       listSub: "Step 10",
+  //       listPara:
+  //         "The custom app has been completed and subsequently published to the DOMO instance. ",
+  //       images: [domo_custom_app_16],
+  //     },
+  //     {
+  //       id: 20,
+  //       listSub: "Step 11",
+  //       listPoints: ["domo dev "],
+  //       listPara:
+  //         "This command facilitates running the custom app on your local machine. ",
+  //       images: [domo_custom_app_17],
+  //     },
+  //   ],
+  //   imageHeading: "Addressing Challenges Faced by Domo",
+  //   blogImage: domo_custom_app_header,
+  //   conclusion: "Conclusion",
+  //   conclusionText:
+  //     " In conclusion, the adoption of custom app solutions presents a compelling opportunity for organizations utilizing Domo to overcome the inherent limitations of standard offerings. By investing in custom development, businesses can unlock the full potential of their data, driving innovation, and gaining a competitive edge in today's data-driven landscape. If you're ready to take your Domo experience to the next level, consider exploring custom app solutions tailored to your unique requirements. ",
+  //   writtenBy: "Written by Naveen - February 13, 2024",
+  // },
 ];

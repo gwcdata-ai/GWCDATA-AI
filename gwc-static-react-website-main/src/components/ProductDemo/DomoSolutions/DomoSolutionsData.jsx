@@ -122,17 +122,15 @@ export const DomoDashData = [
   //   url: "/domoProdInfo/P1R06",
   //   image: dash6,
   // },
-  {
-    id: 4,
-    title: "Retail 360",
-    description:
-      " Merge data from diverse sources & systems spanning supply chain, retail operations, e-commerce, IoT & beyond to reveal insights, refine planning & execution processes.",
-    url: "/domoProdInfo/retail360",
-    image: dash5,
-  },
+  // {
+  //   id: 4,
+  //   title: "Retail 360",
+  //   description:
+  //     " Merge data from diverse sources & systems spanning supply chain, retail operations, e-commerce, IoT & beyond to reveal insights, refine planning & execution processes.",
+  //   url: "/domoProdInfo/retail360",
+  //   image: dash5,
+  // },
 ];
-
-
 
 export const Retail360Data = [
   {
@@ -176,7 +174,7 @@ export const Retail360Data = [
   {
     id: 7,
     title: "Finance  ",
-  
+
     url: "/domoProdInfo/JZLOy",
     image: dash1,
   },

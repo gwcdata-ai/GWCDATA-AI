@@ -40,7 +40,7 @@ const ProductDemo = () => {
   return (
     <>
     <Helmet>
-    <meta name="keywords" content="DOMO,Domo,domo,DOMO tools,Domo tools,domo tools,data,data tools,data ai,Data Ai,AI tools,ai tools,cloud solutions,data solutions,Big data" />
+    <meta name="keywords" content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data" />
     <meta name="description" content="As the exclusive implementation partner for DOMO, we take pride in delivering end-to-end data analytics services. Our expertise extends beyond implementation, ensuring clients receive a comprehensive solution tailored to their unique needs, covering the entire spectrum of data analytics."></meta>
 
 

@@ -19,9 +19,12 @@
   font-weight: 400;
   line-height: 30px;
 }
-.GIF_Width_Mobile{
+.GIF_Width_Desktop{
 width: 120% !important;
 }
+.GIF_Width_Mobile{
+  width: 100% !important;
+  }
 
 .breadcrumbs:hover {
   /* background-color: black; */
