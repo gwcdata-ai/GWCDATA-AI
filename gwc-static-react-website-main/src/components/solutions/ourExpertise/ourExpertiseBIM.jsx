@@ -25,7 +25,7 @@ export const OurExpertiseBIM = ({ ourExpertiseContent }) => {
               <p className={styles?.sub_title}>
                 <strong>{ourExpertiseContent?.sub_title}</strong>
               </p>
-              <p className={styles?.title}>{ourExpertiseContent?.title}</p>
+              <h1 className={styles?.title}>{ourExpertiseContent?.title}</h1>
             </Col>
             {ourExpertiseContent?.list?.map((item, index) => (
               <Col

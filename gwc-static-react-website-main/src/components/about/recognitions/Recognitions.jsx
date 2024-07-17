@@ -172,10 +172,10 @@ export const AboutRecognitions = ({ recognitionsContent }) => {
                 {" "}
                 {recognitionsContent?.sub_title}{" "}
               </p>
-              <p className={`mb-4 ${styles.title}`}>
+              <h2 className={`mb-4 ${styles.title}`}>
                 {" "}
                 {recognitionsContent?.title1}{" "}
-              </p>
+              </h2>
               <p className={`mb-0 ${styles.text}`}>
                 {" "}
                 {recognitionsContent?.text}{" "}
@@ -185,8 +185,15 @@ export const AboutRecognitions = ({ recognitionsContent }) => {
                 {recognitionsContent?.title2}{" "}
               </p>
             </Col>
-            <Col md={3} className={`${isMobile ? styles.ImgcenterForMobile : null}`} >
-              <Image src={recognitionsContent?.img} style={{width:'70%'}} alt="" />
+            <Col
+              md={3}
+              className={`${isMobile ? styles.ImgcenterForMobile : null}`}
+            >
+              <Image
+                src={recognitionsContent?.img}
+                style={{ width: "70%" }}
+                alt=""
+              />
             </Col>
             {/* <p className={` ${styles.slide_title}`}>
               {" "}
@@ -198,11 +205,26 @@ export const AboutRecognitions = ({ recognitionsContent }) => {
             </p> */}
           </Row>
           <Row className={styles.banner_row}>
-            <Col xs={12} md={6} lg={3} className={`w-100 ${styles.marginForMobile }`}  data-aos="fade-down">
+            <Col
+              xs={12}
+              md={6}
+              lg={3}
+              className={`w-100 ${styles.marginForMobile}`}
+              data-aos="fade-down"
+            >
               <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-                {recognitionsContent?.list?.map((data,index) => (
-                  <div key={index} className={`${styles.section_container} px-md-0 px-2`}>
-                    <div className={ `${isMobile?styles.image_container_for_Mobile:styles.image_container}`}>
+                {recognitionsContent?.list?.map((data, index) => (
+                  <div
+                    key={index}
+                    className={`${styles.section_container} px-md-0 px-2`}
+                  >
+                    <div
+                      className={`${
+                        isMobile
+                          ? styles.image_container_for_Mobile
+                          : styles.image_container
+                      }`}
+                    >
                       <Image
                         className={`rounded-4 ${styles.section_image}`}
                         src={data?.img} // Replace with your image URL
@@ -213,7 +235,7 @@ export const AboutRecognitions = ({ recognitionsContent }) => {
                           src="https://via.placeholder.com/400x200"
                           alt="Icon"
                         /> */}
-                        <div className={styles.slide_title}>{data.title}</div>
+                        <h3 className={styles.slide_title}>{data.title}</h3>
                         <div className={styles.slide_text}>{data.text}</div>
                       </div>
                     </div>

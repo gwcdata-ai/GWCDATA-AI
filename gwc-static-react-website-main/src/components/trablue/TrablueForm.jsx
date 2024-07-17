@@ -86,11 +86,14 @@ export const TrablueForm = () => {
               <div className="">
                 <p className={styles?.title}>Derive Key Insights from Data</p>
                 <p className={styles?.text}>
-                  GWC is a Tableau expert with a proven track record in
-                  transforming complex data into insightful visualizations for
-                  informed decision-making. You can start your journey with us
-                  in moulding your data and getting the best insights out of it
-                  in just a few clicks away.
+                  GWC is a{" "}
+                  <h2 className={styles?.text} style={{ display: "inline" }}>
+                    Tableau expert{" "}
+                  </h2>{" "}
+                  with a proven track record in transforming complex data into
+                  insightful visualizations for informed decision-making. You
+                  can start your journey with us in moulding your data and
+                  getting the best insights out of it in just a few clicks away.
                 </p>
                 <img src={formImg} alt="" className="w-75 h-50" />
               </div>

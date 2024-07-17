@@ -23,6 +23,7 @@ import { CaseStudies } from "../../../components/solutions/caseStudies/CaseStudi
 import { DataGovernance } from "../../../components/solutions/dataGovernance/dataGovernance";
 import HomeBottom from "../../../components/home/HomeBlog/HomeBottom";
 import StrategyBottomSection from "./StrategyBottomSection";
+import { Helmet } from "react-helmet-async";
 
 export const DataStrategyPage = () => {
   useEffect(() => {
@@ -31,10 +32,21 @@ export const DataStrategyPage = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
+      <Helmet>
+        {/* <meta
+          name="keywords"
+          content="snowflake, what is snowflake, snowflake database, snowflake inc, snowflake data, snowflake software, snowflake company, snowflakes, snowflake db, snowflake computing, snowflake cloud, snowflake data cloud, snowflake technology, snowflake login, snowflake inc., snowflake platform, snowflake tool, snowflake products, snowflake tech, what is snowflake database, snowflake analytics, snowflake system, data snowflake, snowflake services, snowflake data storage"
+        /> */}
+        <title>{"GWC DATA.AI - Data Stratergy & Engineering "}</title>
+        <meta
+          name="description"
+          content="Discover expert insights on Data Strategy & Engineering to optimize your data management, enhance analytics capabilities, and drive business growth. Learn best practices, tools, and frameworks to effectively harness data for strategic decision-making."
+        ></meta>
+      </Helmet>
       <CommonSectionBanner commonSectionBannerContent={BiMigrationBannerData} />
       <DataGovernance
         commonRightSectionContent={BiMigrationMainDataGovernance}

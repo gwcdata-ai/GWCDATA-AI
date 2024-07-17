@@ -67,7 +67,7 @@ export const DataGovernanceList = ({ dataList }) => {
                     } tbm ${styles.list} mb-md-3 mb-1`}
                   >
                     {" "}
-                    <div className="px-1 "> {item?.name} </div>{" "}
+                    <h2 className="px-1 "> {item?.name} </h2>{" "}
                   </div>
                 </div>
               );
@@ -78,7 +78,7 @@ export const DataGovernanceList = ({ dataList }) => {
               className={`mb-md-0 mb-1 mt-3`}
             >
               {dataList.map((item, index) => (
-                <div
+                <h2
                   key={index}
                   style={{
                     flex:
@@ -100,7 +100,7 @@ export const DataGovernanceList = ({ dataList }) => {
                   }
                 >
                   {item?.name}
-                </div>
+                </h2>
               ))}
             </div>
           )}
@@ -117,10 +117,10 @@ export const DataGovernanceList = ({ dataList }) => {
             <Col lg={8} md={6} className="px-md-5 pt-md-0 pt-5">
               <div className="">
                 {/* <p className={styles.feat_sub_title}> {selectedItem.name} </p> */}
-                <h2 className={styles?.feat_title}>
+                <p className={styles?.feat_title}>
                   {" "}
                   {selectedItem?.description_title}{" "}
-                </h2>
+                </p>
                 <ul style={{ lineHeight: "2px" }}>
                   {selectedItem?.description_list?.map((item, index) => (
                     <li key={index} className={styles?.feat_text}>

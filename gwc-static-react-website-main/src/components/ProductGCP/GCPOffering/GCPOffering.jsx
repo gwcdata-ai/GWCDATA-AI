@@ -1,4 +1,4 @@
-import React,{useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import TabsPanel from "../../../ReusableUI/Tabs/TabsPanel";
 import Tab from "../../../ReusableUI/Tabs/Tab";
@@ -39,7 +39,7 @@ const GCPOffering = () => {
         fluid
         className={`${commonStyles.banner_container_img}  py-5`}
         style={{ backgroundImage: `url(${banner})` }}
-        id='gcp'
+        id="gcp"
       >
         <Container className="">
           <Row className="d-flex align-items-center justify-content-center px-0">
@@ -48,114 +48,78 @@ const GCPOffering = () => {
                 {/* <p className={styles?.sub_title}>
                   <strong>Offerings</strong>
                 </p> */}
-                <p className={styles?.title}>Google Cloud Offerings</p>
+                <h2 className={styles?.title}>Google Cloud Offerings</h2>
                 <p className={styles?.text}>
-                  Our certified experts analyze, assess, and optimize your GCP environment, saving you money and maximizing efficiency.
-
+                  Our certified experts analyze, assess, and optimize your GCP
+                  environment, saving you money and maximizing efficiency.
                 </p>
                 <p className={styles?.text}>
-                  We ensure your cloud operations run smoothly and reliably so you can focus on your business goals.
-
+                  We ensure your cloud operations run smoothly and reliably so
+                  you can focus on your business goals.
                 </p>
               </div>
             </Col>
             <Col lg={7} md={6} className="px-md-1" data-aos="fade-left">
               <div className={styles.platformDataSection}>
                 <Row className="d-flex align-items-center justify-content-center">
-                  <Col
-                    lg={4}
-                    md={4}
-                    sm={6}
-                    xs={6}
-                    className="mt-4 "  
-                  >
+                  <Col lg={4} md={4} sm={6} xs={6} className="mt-4 ">
                     <div className={styles.offeringCards}>
                       <Image
                         src={icon1}
                         className={`mt-2 ${styles.imageCard}`}
                       />
-                      <div className={styles.imageCardText}>
+                      <h3 className={styles.imageCardText}>
                         Infrastructure Modernization
-                      </div>
+                      </h3>
                     </div>
                   </Col>
-                  <Col
-                    lg={4}
-                    md={4}
-                    sm={6}
-                    xs={6}
-                    className="mt-4 "
-                  >
+                  <Col lg={4} md={4} sm={6} xs={6} className="mt-4 ">
                     <div className={styles.offeringCards}>
                       <Image
                         src={icon2}
                         className={`mt-2 ${styles.imageCard}`}
                       />
-                      <div className={styles.imageCardText}>
+                      <h3 className={styles.imageCardText}>
                         Application Modernization
-                      </div>
+                      </h3>
                     </div>
                   </Col>
-                  <Col
-                    lg={4}
-                    md={4}
-                    sm={6}
-                    xs={6}  className="mt-4">
+                  <Col lg={4} md={4} sm={6} xs={6} className="mt-4">
                     <div className={styles.offeringCards}>
                       <Image
                         src={icon3}
                         className={`mt-2 ${styles.imageCard}`}
                       />
-                      <div className={styles.imageCardText}>
-                        Data Engineering
-                      </div>
+                      <h3 className={styles.imageCardText}>Data Engineering</h3>
                     </div>
                   </Col>
-                  <Col
-                    lg={4}
-                    md={4}
-                    sm={6}
-                    xs={6}
-                    className="mt-4 "
-                  >
+                  <Col lg={4} md={4} sm={6} xs={6} className="mt-4 ">
                     <div className={styles.offeringCards}>
                       <Image
                         src={icon4}
                         className={`mt-2 ${styles.imageCard}`}
                       />
-                      <div className={styles.imageCardText}>
-                        BI Modernization
-                      </div>
+                      <h3 className={styles.imageCardText}>BI Modernization</h3>
                     </div>
                   </Col>
-                  <Col
-                    lg={4}
-                    md={4}
-                    sm={6}
-                    xs={6}
-                    className="mt-4 "
-                  >
+                  <Col lg={4} md={4} sm={6} xs={6} className="mt-4 ">
                     <div className={styles.offeringCards}>
                       <Image
                         src={icon5}
                         className={`mt-2 ${styles.imageCard}`}
                       />
-                      <div className={styles.imageCardText}>
+                      <h3 className={styles.imageCardText}>
                         Machine Learning Operations
-                      </div>
+                      </h3>
                     </div>
                   </Col>
-                  <Col
-                    lg={4}
-                    md={4}
-                    sm={6}
-                    xs={6}  className="mt-4">
+                  <Col lg={4} md={4} sm={6} xs={6} className="mt-4">
                     <div className={styles.offeringCards}>
                       <Image
                         src={icon6}
                         className={`mt-2 ${styles.imageCard}`}
                       />
-                      <div className={styles.imageCardText}> FinOps</div>
+                      <h3 className={styles.imageCardText}> FinOps</h3>
                     </div>
                   </Col>
                 </Row>

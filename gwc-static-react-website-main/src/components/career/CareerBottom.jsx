@@ -69,7 +69,7 @@ const CareerBottom = () => {
       .required("Mobile Number is required"),
     message: Yup.string(),
     job_title: Yup.string().required("Job title is required"),
-    applicant_skills:Yup.string().required("Skills is required")
+    applicant_skills: Yup.string().required("Skills is required"),
   });
 
   const uploadResume = async (e) => {
@@ -104,7 +104,7 @@ const CareerBottom = () => {
       applicant_phone: values?.phone,
       applicant_resume_url: fileName,
       job_title: values?.job_title,
-      applicant_skills:values?.applicant_skills
+      applicant_skills: values?.applicant_skills,
       //   job_location: selectedData?.location?.location,
       //   job_type: selectedData?.type?.type,
     };
@@ -138,9 +138,9 @@ const CareerBottom = () => {
         <Container className={styles.banner_img} data-aos="fade-left">
           <Row className="d-flex">
             <Col lg={7} className="py-lg-3 px-0">
-              <h1 className={`${styles.banner_title} mb-4`}>
+              <p className={`${styles.banner_title} mb-4`}>
                 Explore More Opportunities
-              </h1>
+              </p>
               <p className={`${styles.banner_para} mb-4`}>
                 Couldn't find your ideal job? Build a profile, and let us assist
                 you in your job search.
@@ -183,7 +183,7 @@ const CareerBottom = () => {
               initialValues={{
                 firstName: "",
                 lastName: "",
-                applicant_skills:'',
+                applicant_skills: "",
                 email: "",
                 phone: "",
                 message: "",
@@ -260,7 +260,8 @@ const CareerBottom = () => {
                       <Col sm={6}>
                         <div className={styles1.inputGroup}>
                           <label htmlFor="applicant_skills">
-                             Technical Skills<span style={{ color: "red" }}>*</span>
+                            Technical Skills
+                            <span style={{ color: "red" }}>*</span>
                           </label>
                           <Field
                             type="text"

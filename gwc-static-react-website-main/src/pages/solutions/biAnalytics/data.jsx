@@ -25,7 +25,8 @@ import img10 from "../../../assets/images/solutions/bianlyst/Integration with Bu
 
 export const BiMigrationBannerData = {
   breadcrumbs: [{ text: "Home", url: "/" }, { text: "BI & Analytics" }],
-  title: "Discover the Full Potential of Your Data Through Our Innovative Business Intelligence & Analytics Solutions",
+  title:
+    "Discover the Full Potential of Your Data Through Our Innovative Business Intelligence & Analytics Solutions",
   // para: "Discover the Full Potential of Your Data Through Our Innovative Business Intelligence & Analytics Solutions",
   buttontext: "Get In Touch",
   url: "/contact-us",
@@ -44,7 +45,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 1,
     name: "Data Collection",
-    className:'first',
+    className: "first",
     description_title:
       "Data Collection- The Foundation of All Successful Analytics Initiatives",
     description_list: [
@@ -56,7 +57,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 2,
     name: "Data Exploration",
-  
+
     description_title: " Understand the True Characteristics of Data",
     description_list: [
       "Preliminary examination of datasets to discover patterns, trends, and outliers. ",
@@ -211,7 +212,7 @@ export const BiMigrationDataGovernanceData = {
 
 export const BiMigrationOurExpertise = {
   // sub_title: "Our Expertise",
-  title: "Expertise",
+  title: "BI & Analytics Expertise",
   bannerBg: OurExpertisebannerBgImg,
   list: [
     {
@@ -296,10 +297,8 @@ export const BiMigrationReadyToGetStart = {
   sub_title: "Ready to take your data strategy to the next level?",
   title1:
     "Contact us today to schedule a consultation and discover how GWC DATA.AI can help you unleash the power of your data.",
-  title2:
-    "",
-  title3:
-    "",
+  title2: "",
+  title3: "",
   bannerBg: ReadyTogetStartBgImg,
   btn1: "Watch Demo",
   btn2: "Connect now",

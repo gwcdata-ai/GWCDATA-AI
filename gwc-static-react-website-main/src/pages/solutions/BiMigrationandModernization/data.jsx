@@ -12,16 +12,16 @@ import VideoRefImg from "../../../assets/images/solutions/videoRef.jpeg";
 import CaseStudy1Img from "../../../assets/images/solutions/caseStudy1.png";
 import CaseStudy2Img from "../../../assets/images/solutions/caseStudy2.png";
 import CaseStudy3Img from "../../../assets/images/solutions/caseStudy3.png";
-import img1 from "../../../assets/images/solutions/bimigration/Assessment and Planning.webp";
-import img2 from "../../../assets/images/solutions/bimigration/Data Inventry and Analysis.webp";
-import img3 from "../../../assets/images/solutions/bimigration/Data Migration.webp";
-import img4 from "../../../assets/images/solutions/bimigration/Report and Dashboard Migration.webp";
-import img5 from "../../../assets/images/solutions/bimigration/Integration with Existing Systems.webp";
-import img6 from "../../../assets/images/solutions/bimigration/Security and Access Control.webp";
-import img7 from "../../../assets/images/solutions/bimigration/Training and Change Management.webp";
-import img8 from "../../../assets/images/solutions/bimigration/Testing and Quality Assurance.webp";
+import img1 from "../../../assets/images/solutions/bimigration/Assessment_and_Planning.webp";
+import img2 from "../../../assets/images/solutions/bimigration/Data_Inventry_and_Analysis.webp";
+import img3 from "../../../assets/images/solutions/bimigration/Data_Migration.webp";
+import img4 from "../../../assets/images/solutions/bimigration/Report_and_Dashboard_Migration.webp";
+import img5 from "../../../assets/images/solutions/bimigration/Integration_with_Existing_Systems.webp";
+import img6 from "../../../assets/images/solutions/bimigration/Security_and_Access_Control.webp";
+import img7 from "../../../assets/images/solutions/bimigration/Training_and_Change_Management.webp";
+import img8 from "../../../assets/images/solutions/bimigration/Testing_and_Quality_Assurance.webp";
 import img9 from "../../../assets/images/solutions/bimigration/Deployment.webp";
-import img10 from "../../../assets/images/solutions/bimigration/Post-Migration Optimization.webp";
+import img10 from "../../../assets/images/solutions/bimigration/Post-Migration_Optimization.webp";
 
 export const BiMigrationBannerData = {
   breadcrumbs: [
@@ -107,7 +107,7 @@ export const BiMigrationDataGovernanceList = [
   {
     id: 1,
     name: "Assessment & Planning",
-    className:"first",
+    className: "first",
     description_title:
       "A Baseline for Understanding Current Challenges and Opportunities",
     description_list: [
@@ -165,15 +165,14 @@ export const BiMigrationDataGovernanceList = [
       "Address Any Aecurity Gaps & Maintain a Robust Security Posture",
     description_list: [
       "Define and manage user access rights based on roles and responsibilities.",
-      "Apply encryption to sensitive data during transmission and storage."
+      "Apply encryption to sensitive data during transmission and storage.",
     ],
     image: img6,
   },
   {
     id: 7,
     name: "Training & Change Management ",
-    description_title:
-      "Leverage the Full Potential of the Modernized Solution",
+    description_title: "Leverage the Full Potential of the Modernized Solution",
     description_list: [
       "Develop and deliver training programs to educate users.",
       "Implement a communication plan to inform stakeholders about the upcoming changes.  ",
@@ -238,7 +237,7 @@ export const BiMigrationDataGovernanceData = {
 
 export const BiMigrationOurExpertise = {
   // sub_title: "Our Expertise",
-  title: "Expertise",
+  title: "BI Migration and Modernization Expertise",
   bannerBg: OurExpertisebannerBgImg,
   list: [
     {
@@ -323,10 +322,8 @@ export const BiMigrationReadyToGetStart = {
   sub_title: "Get Started Today",
   title1:
     "Ready to take your BI system to the next level? Contact us today to learn more about our BI migration and modernization services and how we can help you unlock the full potential of your data.",
-  title2:
-    "",
-  title3:
-    "",
+  title2: "",
+  title3: "",
   bannerBg: ReadyTogetStartBgImg,
   btn1: "Watch Demo",
   btn2: " Talk to GWC Expert",

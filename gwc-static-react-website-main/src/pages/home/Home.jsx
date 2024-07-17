@@ -31,7 +31,10 @@ const HomePage = () => {
     <div className={styles.Home}>
       <Helmet>
         <title>GWC DATA.AI</title>
-        <meta name="description" content="GWC DATA.AI." />
+        <meta
+          name="description"
+          content="Welcome to GWC DATA.AI, where we empower business with data & AI insights to drive informed action and  transform data into actionable insights. Explore our innovative solutions in data analytics, research, and technology that empower businesses to thrive in a digital world."
+        />
         <meta name="keywords" content="Solution Matters" />
       </Helmet>
       {isMobile ? <HomeBanner /> : <HomeBannerNew />}

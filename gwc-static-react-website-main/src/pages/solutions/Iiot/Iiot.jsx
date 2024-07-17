@@ -23,6 +23,7 @@ import { DataGovernance } from "../../../components/solutions/dataGovernance/dat
 import HomeBottom from "../../../components/home/HomeBlog/HomeBottom";
 import { OurExpertiseIIOT } from "../../../components/solutions/ourExpertise/ourExpertiseIIOT";
 import IotBottomSection from "./IotBottomSection";
+import { Helmet } from "react-helmet-async";
 
 export const IiotPage = () => {
   useEffect(() => {
@@ -31,10 +32,25 @@ export const IiotPage = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
+      <Helmet>
+        {/* <meta
+          name="keywords"
+          content="
+          
+          Business Intelligence,Data Analytics,Data Visualization,BI Tools,Predictive Analytics,Data-Driven Decision Making,Performance Metrics,Reporting Solutions,Data Management,Analytics Strategies
+
+          "
+        /> */}
+        <title>{"GWC DATA.AI - Industrial IOT "}</title>
+        <meta
+          name="description"
+          content=" Unlock the future of manufacturing with Industrial IoT (IIoT). Explore how connected devices, smart sensors, and advanced analytics improve operational efficiency, reduce downtime, and drive innovation. Transform your industry with IIoT solutions for enhanced productivity and sustainability."
+        ></meta>
+      </Helmet>
       <CommonSectionBanner commonSectionBannerContent={IIOTBannerData} />
       <DataGovernance commonRightSectionContent={IIOTMainDataGovernance} />
       <DataGovernanceList dataList={IIOTDataGovernanceList} />

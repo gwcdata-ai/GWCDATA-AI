@@ -40,7 +40,6 @@ const HomeSolutionsCard = ({ id, data, highlightCard }) => {
   };
 
   return (
-
     <div
       style={{ width: "auto" }}
       className={`${styles.SolutionCard}`}
@@ -98,8 +97,6 @@ const HomeSolutionsCard = ({ id, data, highlightCard }) => {
         </div>
       </div>
     </div>
-
-
   );
 };
 
@@ -125,7 +122,6 @@ const HomeSolutionsCardMobile = ({ id, data, highlightCard }) => {
   };
 
   return (
-
     <div
       style={{ width: "inherit" }}
       className={styles.SolutionCard}
@@ -139,7 +135,6 @@ const HomeSolutionsCardMobile = ({ id, data, highlightCard }) => {
           backgroundColor: hover ? data?.hoverColor : data?.backgroundColor,
         }}
       >
-
         <div className={`${styles.icon}`}>
           <img className={styles.vectorIcon} alt="" src={data?.image} />
         </div>
@@ -156,10 +151,7 @@ const HomeSolutionsCardMobile = ({ id, data, highlightCard }) => {
               onMouseEnter={handleBtnMouseEnter}
               onMouseLeave={handleBtnMouseLeave}
             >
-              <div
-                // className={styles.buttonBase1}
-                style={{ color: btnhover ? "white" : "black" }}
-              >
+              <div style={{ color: btnhover ? "white" : "black" }}>
                 <Link to={data?.link}>
                   <div
                     // className={styles.text114}
@@ -168,7 +160,8 @@ const HomeSolutionsCardMobile = ({ id, data, highlightCard }) => {
                       textAlign: "center",
                     }}
                   >
-                    Learn more                  </div>
+                    Learn more{" "}
+                  </div>
                 </Link>
 
                 {/* <CustomArrow color={btnhover ? data?.backgroundColor : "black"} /> */}
@@ -182,8 +175,7 @@ const HomeSolutionsCardMobile = ({ id, data, highlightCard }) => {
 };
 
 const HomeSolutions = () => {
-
-  const sliderRef = useRef(null);  //slideref for slider arrow
+  const sliderRef = useRef(null); //slideref for slider arrow
 
   const isMobile = useMedia("(max-width:1024px)");
 
@@ -291,7 +283,6 @@ const HomeSolutions = () => {
         ref={solutionsRef}
         id="our-solutions"
       >
-
         <div className={`${styles.featuresSection} ${hover ? "hover" : ""}`}>
           <div className={styles.content2}>
             <div className={styles.headingAndSupportingText10}>
@@ -307,7 +298,6 @@ const HomeSolutions = () => {
                     business Value Chain
                   </div>
                 </Container>
-
               </div>
               {/* <div className={`mb-4 ${styles.supportingText36}`}>
                 Powerful, self-serve product and growth analytics to help you
@@ -327,7 +317,6 @@ const HomeSolutions = () => {
               />
             ))
           ) : (
-
             // <Slider ref={sliderRef} {...settings}>
             <Container>
               <Row className="">
@@ -347,7 +336,6 @@ const HomeSolutions = () => {
 
             // </Slider>
           )}
-
         </div>
       </Container>
     </>
@@ -355,5 +343,3 @@ const HomeSolutions = () => {
 };
 
 export default HomeSolutions;
-
-

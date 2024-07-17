@@ -21,6 +21,7 @@ import commonStyles from "../../commoncss/common.module.css";
 import styles from "../../components/InnovationLab/styleInnovation.module.css";
 import AOS from "aos";
 import useMedia from "../../hooks/useMedia";
+import { Helmet } from "react-helmet-async";
 
 const InnovationLabs = () => {
   const isMobile = useMedia("(max-width:600px)");
@@ -29,6 +30,18 @@ const InnovationLabs = () => {
   });
   return (
     <>
+      <Helmet>
+        <meta
+          name="keywords"
+          content="GWC DATA.AI, research and innovation, data technology, analytics solutions, cutting-edge projects, industry advancements, data science research, innovative solutions, tech innovation"
+        />
+        <meta
+          name="description"
+          content="Explore GWC DATA.AI's commitment to research and innovation. Discover cutting-edge projects and solutions that drive advancements in data technology and analytics, shaping the future of the industry."
+        />
+
+        <title>GWC DATA.AI - Research & Innovation hub</title>
+      </Helmet>
       <Container
         fluid
         className={`${
@@ -67,12 +80,12 @@ const InnovationLabs = () => {
                             </p> */}
 
                 {/* <h1 className={`${styles.banner_title} mb-4`} /> */}
-                <p
+                <h1
                   className={`${styles.banner_title} `}
                   style={{ margin: "20rem 0rem 0rem 0rem" }}
                 >
                   Research & Innovation
-                </p>
+                </h1>
                 <p className={`${styles.banner_description} `}>
                   {
                     " Welcome to our Research and Innovation Hub, where expertise meets pioneering spirit and explore how our commitment to innovation can redefine possibilities and propel your organization forward. "
@@ -148,9 +161,9 @@ const InnovationLabs = () => {
                         : `${styles.content_section_parent_2}`
                     } `}
                   >
-                    <h4 className={`${isMobile && `${styles.title_mobile}`}`}>
+                    <h2 className={`${isMobile && `${styles.title_mobile}`}`}>
                       <strong>Future of Sustainability</strong>
-                    </h4>
+                    </h2>
                     <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                       Accelerating the transition towards sustainable industries
                       in developing comprehensive, science-based solutions
@@ -191,9 +204,9 @@ const InnovationLabs = () => {
                         : `${styles.content_section_parent_2}`
                     } `}
                   >
-                    <h4 className={`${isMobile && `${styles.title_mobile}`}`}>
+                    <h2 className={`${isMobile && `${styles.title_mobile}`}`}>
                       <strong>Future of Manufacturing</strong>
-                    </h4>
+                    </h2>
                     <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                       Harnessing cutting-edge data science and machine learning
                       advancements from precision medicine to autonomous
@@ -231,9 +244,9 @@ const InnovationLabs = () => {
                         : `${styles.content_section_parent_2}`
                     } `}
                   >
-                    <h4 className={`${isMobile && `${styles.title_mobile}`}`}>
+                    <h2 className={`${isMobile && `${styles.title_mobile}`}`}>
                       <strong>Future of Applied AI</strong>
-                    </h4>
+                    </h2>
                     <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                       Strategically applying advanced data science and machine
                       learning technologies to tackle industry-specific
@@ -262,9 +275,9 @@ const InnovationLabs = () => {
                     {/* <p className={styles?.sub_title}>
                   <strong>Analytics</strong>
                 </p> */}
-                    <h2 className={styles?.title}>
+                    <p className={styles?.title}>
                       {" Discover How We’re Innovating Across Industries"}
-                    </h2>
+                    </p>
 
                     <p className={`${styles?.text1} mt-2`}>
                       Discover how GWC Data.ai is leading the charge in
@@ -289,9 +302,9 @@ const InnovationLabs = () => {
                     />
                   </div>
                   <div className={`${styles.content_section_parent_right} `}>
-                    <h4 className={`${isMobile && `${styles.title_mobile}`}`}>
+                    <h2 className={`${styles.title_desktop}`}>
                       <strong>Future of Sustainability</strong>
-                    </h4>
+                    </h2>
                     <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                       Accelerating the transition towards sustainable industries
                       in developing comprehensive, science-based solutions
@@ -306,9 +319,9 @@ const InnovationLabs = () => {
                 </Col>
                 <Col sm={12} className={`py-md-0 mt-4 ${styles.parent_box}`}>
                   <div className={`${styles.content_section_parent_left} `}>
-                    <h4 className={`${isMobile && `${styles.title_mobile}`}`}>
+                    <h2 className={`${styles.title_desktop}`}>
                       <strong>Future of Manufacturing</strong>
-                    </h4>
+                    </h2>
                     <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                       Harnessing cutting-edge data science and machine learning
                       advancements from precision medicine to autonomous
@@ -338,9 +351,9 @@ const InnovationLabs = () => {
                     />
                   </div>
                   <div className={`${styles.content_section_parent_right} `}>
-                    <h4 className={`${isMobile && `${styles.title_mobile}`}`}>
+                    <h2 className={`${styles.title_desktop}`}>
                       <strong>Future of Applied AI</strong>
-                    </h4>
+                    </h2>
                     <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                       Strategically applying advanced data science and machine
                       learning technologies to tackle industry-specific
@@ -382,11 +395,11 @@ const InnovationLabs = () => {
                   {/* <p className={styles?.sub_title}>
                   <strong>Analytics</strong>
                 </p> */}
-                  <h2 className={styles?.title}>
+                  <p className={styles?.title}>
                     {
                       "How GWC DATA.AI's Research and Innovation Can Benefit You "
                     }
-                  </h2>
+                  </p>
 
                   <p className={`${styles?.text1} mt-2`}>
                     Discover the strategic advantages of partnering with GWC
@@ -429,9 +442,9 @@ const InnovationLabs = () => {
                       : `${styles.content_section_parent_2}`
                   } `}
                 >
-                  <h4>
+                  <h2 className={`${styles.title_desktop}`}>
                     <strong>Experimentation</strong>
-                  </h4>
+                  </h2>
                   <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                     Harnessing our expertise in cutting-edge technologies—AI, 3D
                     printing, drones, robotics, and big data—we pioneer the
@@ -496,9 +509,9 @@ const InnovationLabs = () => {
                       : `${styles.content_section_parent_2}`
                   } `}
                 >
-                  <h4>
+                  <h2 className={`${styles.title_desktop}`}>
                     <strong>Research and Ideation</strong>
-                  </h4>
+                  </h2>
                   <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                     our collaborative efforts decode disruptive trends,
                     cultivate groundbreaking ideas, and forecast new horizons
@@ -537,9 +550,9 @@ const InnovationLabs = () => {
                       : `${styles.content_section_parent_2}`
                   } `}
                 >
-                  <h4>
+                  <h2 className={`${styles.title_desktop}`}>
                     <strong>Open Innovation</strong>
-                  </h4>
+                  </h2>
                   <p style={{ lineHeight: "1.8", paddingTop: "1rem" }}>
                     At the core of our philosophy lies open innovation, a
                     dynamic bridge connecting clients to Australia's vibrant

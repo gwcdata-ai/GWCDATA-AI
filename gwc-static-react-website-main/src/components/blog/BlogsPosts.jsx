@@ -23,37 +23,55 @@ const BlogsPosts = ({ blogData }) => {
       <Container>
         <Row>
           <div className="mt-5">
-            <p className={` ${styles?.title} `}>Curated Reads</p>
+            <p className={` ${styles?.title} `} style={{ color: "black" }}>
+              Curated Reads
+            </p>
           </div>
         </Row>
         <Row>
           <Col md={12}>
             <Row style={{ display: "flex", flexDirection: "row" }}>
               {blogData.map((data) => {
-                const { id, date, heading, days, views, img, blogList } = data;
+                const {
+                  id,
+                  date,
+                  heading,
+                  days,
+                  views,
+                  img,
+                  blogList,
+                  topHeading,
+                } = data;
                 return (
                   <Col md={4} key={id}>
                     <Card className={` ${styles.card_bg} mb-5`}>
-                      <Card.Img variant="top" src={img} />
+                      <Link to={`/blogs/${data?.slug}`}>
+                        <Card.Img variant="top" src={img} />
+                      </Link>
+
                       <Card.Text>
                         <div className={` ${styles?.text_section} `}>
-                          <p className={` ${styles?.para} mb-0`}>{date}</p>
                           <Link to={`/blogs/${data?.slug}`}>
-                            {" "}
-                            <h6 className={` ${styles?.main_para} mb-0`} style={{ fontSize: 16 }}>
-                              {heading}
+                            <p className={` ${styles?.para} mb-0`}>{date}</p>{" "}
+                            <h6
+                              className={` ${styles?.main_para} mb-0`}
+                              style={{ fontSize: 16 }}
+                            >
+                              {/* {topHeading} */}
+                              {topHeading?.slice(0, 40)} ...
                             </h6>
-                          </Link>
-                          <div className={` ${styles?.views_sec} `}>
-                            {/* <p className={` ${styles?.para} mb-0 `}>{days}</p> */}
-                            <p
+                            <div className={` ${styles?.views_sec} `}>
+                              {/* <p className={` ${styles?.para} mb-0 `}>{days}</p> */}
+                              {/* <p
                               className={` ${styles?.para} mb-0 `}
                               style={{ fontSize: 12 }}
                             >
                               {blogList[0]?.listPara?.slice(0, 130)}...
-                            </p>
-                            {/* <p className={` ${styles?.para} mb-0 `}>{views}</p> */}
-                          </div>
+                            </p> */}
+                              {/* <p className={` ${styles?.para} mb-0 `}>{views}</p> */}
+                            </div>
+                          </Link>
+
                           <div className={styles.hr_line}></div>
                           <div className={styles.socialMedia}>
                             {/* <img src={Facebook} alt="facebook" /> */}

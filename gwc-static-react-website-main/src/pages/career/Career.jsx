@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import JobPost from '../../components/career/jobPost';
+import JobPost from "../../components/career/jobPost";
 import { CommonSectionBanner } from "../../commoncomponents/banner/CommonBanner";
 import { CareerBannerData, CareerTeamData } from "../../components/career/data";
 import { CommonLeftImageComponent } from "../../commoncomponents/leftSideImageSection/LestSideImageComponent";
@@ -12,20 +12,32 @@ import CareerCarousal from "../../components/career/CareerCarousal";
 import CareerHire from "../../components/career/CareerHire";
 import CareerBanner from "../../components/career/CareerBanner";
 import SalesBottom from "../../components/SolutionsSalesForce/SalesBottom";
+import { Helmet } from "react-helmet-async";
 
 const Career = () => {
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="keywords"
+          content="careers, job opportunities, GWC DATA.AI, data science, technology jobs, data analytics, data solutions, innovation, workplace culture, business/technical interview,life at GWC Data.AI, work from hometown, our employees, gwc's global presence, welcome to the future of work, join our team, join gwc team, what we offer, life At GWC, student internship, digital services and consulting, open to work, job openings near me, job openings in salem, job openings in banglore, hiring candidates, "
+        />
+        <meta
+          name="description"
+          content="Explore exciting career opportunities at GWC DATA.AI. Join our innovative team to drive data solutions and shape the future of technology. Discover a culture of growth, collaboration, and creativity."
+        />
+
+        <title>GWC DATA.AI - Careers</title>
+      </Helmet>
       {/* <CommonSectionBanner commonSectionBannerContent={CareerBannerData} /> */}
       <CareerBanner />
       <CommonLeftImageComponent commonLeftSectionContent={CareerTeamData} />
@@ -37,9 +49,8 @@ const Career = () => {
       <CareerCarousal />
       <CareerHire />
       <CareerBottom />
-
     </>
-  )
-}
+  );
+};
 
-export default Career
+export default Career;

@@ -160,7 +160,7 @@ export const OurExpertiseSF = ({ ourExpertiseContent }) => {
               <p className={styles?.sub_title}>
                 <strong>{ourExpertiseContent?.sub_title}</strong>
               </p>
-              <p className={styles?.title}>{ourExpertiseContent?.title} </p>
+              <h1 className={styles?.title}>{ourExpertiseContent?.title} </h1>
             </Col>
             <Slider {...settings} className="m-0 p-0">
               {ourExpertiseContent?.list?.map((item, index) => (
@@ -182,10 +182,10 @@ export const OurExpertiseSF = ({ ourExpertiseContent }) => {
                       }}
                       alt=""
                     />
-                    <p className={`${styles.card_title_expert} my-3`}>
+                    <h3 className={`${styles.card_title_expert} my-3`}>
                       {" "}
                       {item?.title}
-                    </p>
+                    </h3>
 
                     <p className={`${styles.card_text_expert}  `}>
                       {item?.text}

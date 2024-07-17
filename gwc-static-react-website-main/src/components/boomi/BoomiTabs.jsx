@@ -59,7 +59,7 @@ const BoomiTabs = () => {
         <Container className="" id="bi-analytics">
           <Row className="d-flex align-items-center justify-content-center">
             <Col lg={12} xs={12} className="py-md-0 py-5 ">
-              <p className={`mt-2 ${styles?.title7}`}>Platform Services</p>
+              <h2 className={`mt-2 ${styles?.title7}`}>Platform Services</h2>
               <p className={` ${styles?.title8}`}>
                 At GWC, we pride ourselves on our extensive experience and
                 expertise in implementing Boomi solutions for businesses across
@@ -67,7 +67,7 @@ const BoomiTabs = () => {
               </p>
               <TabsPanel>
                 <Tab
-                  title={<span className={styles.tab_text}>Integration</span>}
+                  title={<h3 className={styles.tab_text}>Integration</h3>}
                   icon="far fa-address-card"
                 >
                   <Container className="mt-0">
@@ -95,9 +95,7 @@ const BoomiTabs = () => {
                 </Tab>
 
                 <Tab
-                  title={
-                    <span className={styles.tab_text}>API Management</span>
-                  }
+                  title={<h3 className={styles.tab_text}>API Management</h3>}
                   icon="fas fa-hourglass-start"
                 >
                   <Container className="mt-0">
@@ -124,9 +122,7 @@ const BoomiTabs = () => {
                   </Container>
                 </Tab>
                 <Tab
-                  title={
-                    <span className={styles.tab_text}>Master Data Hub</span>
-                  }
+                  title={<h3 className={styles.tab_text}>Master Data Hub</h3>}
                   icon="fas fa-hourglass-start"
                 >
                   <Container className="mt-0">
@@ -155,7 +151,7 @@ const BoomiTabs = () => {
 
                 <Tab
                   title={
-                    <span className={styles.tab_text}>B2B/EDI Management</span>
+                    <h3 className={styles.tab_text}>B2B/EDI Management</h3>
                   }
                   icon="fas fa-hourglass-start"
                 >

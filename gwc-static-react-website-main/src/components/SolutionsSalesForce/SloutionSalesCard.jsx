@@ -1,5 +1,5 @@
-import React from 'react'
-import { Col, Container, Row, Card } from 'react-bootstrap'
+import React from "react";
+import { Col, Container, Row, Card } from "react-bootstrap";
 import styles from "./slider.module.css";
 import img1 from "../../assets/images/career/img1.png";
 import img2 from "../../assets/images/career/img2.png";
@@ -7,21 +7,21 @@ import img3 from "../../assets/images/career/img3.png";
 import img4 from "../../assets/images/career/img4.png";
 import useMedia from "../../hooks/useMedia";
 import Slider from "react-slick";
-import { salesData } from './data';
+import { salesData } from "./data";
 
 const SloutionSalesCard = () => {
   const truncateText = (text, limit) => {
     if (text.length > limit) {
-      return text.slice(0, limit) + '...';
+      return text.slice(0, limit) + "...";
     }
-    return text.padEnd(limit, ' '); // Pad with spaces to ensure consistent length
+    return text.padEnd(limit, " "); // Pad with spaces to ensure consistent length
   };
 
   const truncateTextTitle = (text, limit) => {
     if (text.length > limit) {
-      return text.slice(0, limit) + '...';
+      return text.slice(0, limit) + "...";
     }
-    return text.padEnd(limit, ' '); // Pad with spaces to ensure consistent length
+    return text.padEnd(limit, " "); // Pad with spaces to ensure consistent length
   };
 
   const isMobile = useMedia("(max-width:600px)");
@@ -114,18 +114,22 @@ const SloutionSalesCard = () => {
     );
   }
   return (
-    <Container fluid  >
-      <Container className="" >
+    <Container fluid>
+      <Container className="">
         <Row className="card_solution">
           <div className="div">
-            <p className={` ${styles?.title2} mt-5`}>Industries</p>
+            <h2 className={` ${styles?.title2} mt-5`}>Industries</h2>
           </div>
           <Slider {...settings} className="m-0 p-0">
             {salesData?.map((item, index) => (
-              <Col key={index} md={3} className='mb-5'>
+              <Col key={index} md={3} className="mb-5">
                 <Card className={` ${styles?.home_card} mt-3  mx-3`}>
-                  <Card.Img variant="top" src={item?.img} className='px-3 py-2' />
-                  <div className='px-3'>
+                  <Card.Img
+                    variant="top"
+                    src={item?.img}
+                    className="px-3 py-2"
+                  />
+                  <div className="px-3">
                     {/* <p className={` ${styles?.card_title} `}
                                 dangerouslySetInnerHTML={{
                                   __html:truncateText(item?.title,20 )
@@ -135,13 +139,10 @@ const SloutionSalesCard = () => {
                                   __html:truncateTextTitle(item?.para,150 )
                                 }}> */}
 
-
-                    <p className={` ${styles?.card_title} mb-3`}
-                    >
+                    <h3 className={` ${styles?.card_title} mb-3`}>
                       {item?.title}
-                    </p>
-                    <p className={` ${styles?.card_para_title}  mb-0`}
-                    >
+                    </h3>
+                    <p className={` ${styles?.card_para_title}  mb-0`}>
                       {item?.para}
                     </p>
                   </div>
@@ -149,13 +150,10 @@ const SloutionSalesCard = () => {
               </Col>
             ))}
           </Slider>
-
-
-
         </Row>
       </Container>
     </Container>
-  )
-}
+  );
+};
 
-export default SloutionSalesCard
+export default SloutionSalesCard;

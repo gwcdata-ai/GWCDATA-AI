@@ -71,9 +71,9 @@ const DbtCard = () => {
         <Container className="" id="bi-analytics">
           <Row className="d-flex align-items-center justify-content-center">
             <Col lg={12} xs={12} className="py-md-0 py-0 ">
-              <p className={`mt-2 ${styles?.title4}`}>
-                Data Services That Scale{" "}
-              </p>
+              <h2 className={`mt-2 ${styles?.title4}`}>
+                Data Services That Scale DBT{" "}
+              </h2>
               <p className={` ${styles?.title5} mb-4 `}>
                 Unleash the potential of dbt and empower your organization to
                 make data-driven decisions confidently.

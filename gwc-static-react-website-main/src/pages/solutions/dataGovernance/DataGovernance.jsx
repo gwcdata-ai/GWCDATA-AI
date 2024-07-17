@@ -23,6 +23,7 @@ import { DataGovernance } from "../../../components/solutions/dataGovernance/dat
 import HomeBottom from "../../../components/home/HomeBlog/HomeBottom";
 import { OurExpertiseDG } from "../../../components/solutions/ourExpertise/ourExpertiseDG";
 import HomeBottomGov from "./HomeBottomGov";
+import { Helmet } from "react-helmet-async";
 
 export const DataGovernancePage = () => {
   useEffect(() => {
@@ -31,10 +32,21 @@ export const DataGovernancePage = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
+      <Helmet>
+        {/* <meta
+          name="keywords"
+          content="snowflake, what is snowflake, snowflake database, snowflake inc, snowflake data, snowflake software, snowflake company, snowflakes, snowflake db, snowflake computing, snowflake cloud, snowflake data cloud, snowflake technology, snowflake login, snowflake inc., snowflake platform, snowflake tool, snowflake products, snowflake tech, what is snowflake database, snowflake analytics, snowflake system, data snowflake, snowflake services, snowflake data storage"
+        /> */}
+        <title>{"GWC DATA.AI - Data Governance"}</title>
+        <meta
+          name="description"
+          content="Explore comprehensive data governance strategies to ensure data integrity, compliance, and security. Learn best practices for managing data quality, implementing governance frameworks, and driving business value through effective data management."
+        ></meta>
+      </Helmet>
       <CommonSectionBanner commonSectionBannerContent={BiMigrationBannerData} />
       <DataGovernance
         commonRightSectionContent={BiMigrationMainDataGovernance}

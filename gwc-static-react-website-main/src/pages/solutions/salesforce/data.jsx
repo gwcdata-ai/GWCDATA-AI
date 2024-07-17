@@ -241,7 +241,7 @@ export const IIOTDataGovernanceData = {
 };
 
 export const IIOTOurExpertise = {
-  title: "Expertise",
+  title: "Salesforce Expertise",
   bannerBg: OurExpertisebannerBgImg,
   list: [
     // {

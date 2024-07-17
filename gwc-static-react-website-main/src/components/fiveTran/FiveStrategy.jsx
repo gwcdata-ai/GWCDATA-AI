@@ -18,10 +18,10 @@ const FiveStrategy = () => {
         </Col>
         <Col md={6}>
           <div className={`${styles.leftSection} mt-5`}>
-            <h5 className={`${styles.heading}`}>
+            <h2 className={`${styles.heading}`}>
               Empower your Team to Visualize their Pipeline and Accelerate Time
               to Close with Fivetran
-            </h5>
+            </h2>
             <p className={`${styles?.text2} text-black`}>
               The GWC team comprises highly qualified and experienced data
               professionals who can provide tailored and effective data

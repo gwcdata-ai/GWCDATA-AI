@@ -94,9 +94,9 @@
 
 @media only screen and (max-width: 600px) {
   .title {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 28px;
-    margin-top: -20px;
+    margin-top: -10px;
   }
 }
 
@@ -235,7 +235,6 @@
   }
 }
 
-
 /* based on pages  BIM*/
 .card_section_bim {
   box-shadow: 0px 2px 4px -2px #1018280f;
@@ -246,8 +245,6 @@
   background-color: var(--white);
   height: 400px;
 }
-
-
 
 @media (min-width: 1200px) and (max-width: 1251px) {
   .card_section_bim {
@@ -289,7 +286,6 @@
   background-color: var(--white);
   height: 393px;
 }
-
 
 @media (min-width: 1200px) and (max-width: 1299px) {
   .card_section_ct {
@@ -350,7 +346,6 @@
   }
 }
 
-
 @media (min-width: 992px) and (max-width: 1200px) {
   .card_section {
     height: 546px;
@@ -389,7 +384,6 @@
   }
 } */
 
-
 /* based on pages  IIOT*/
 .card_section_iiot {
   box-shadow: 0px 2px 4px -2px #1018280f;
@@ -400,7 +394,6 @@
   background-color: var(--white);
   height: 430px;
 }
-
 
 @media (min-width: 1200px) and (max-width: 1251px) {
   .card_section_iiot {
@@ -431,7 +424,6 @@
     height: fit-content !important;
   }
 }
-
 
 /* based on pages  data Salesforce*/
 .card_section_sf_expert {
@@ -465,7 +457,9 @@
   background-color: var(--white);
   height: 380px;
   padding: 10px 20px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -473,7 +467,6 @@
     height: 590px;
   }
 }
-
 
 @media (min-width: 1200px) and (max-width: 1251px) {
   .card_section_sf {
@@ -495,7 +488,6 @@
     background-color: #fff;
     height: 495px;
     margin-left: 20px;
-
   }
 }
 
@@ -525,9 +517,7 @@
   }
 }
 
-
 @media only screen and (max-width: 600px) {
-
   .card_section_sf_expert {
     box-shadow: 0px 2px 4px -2px #fff;
     box-shadow: 0px 4px 8px -2px #fff;
@@ -535,7 +525,7 @@
     border-radius: 16px;
     gap: 25px;
     background-color: #fff;
-    height: 500px
+    height: 500px;
   }
 
   .card_top_section {

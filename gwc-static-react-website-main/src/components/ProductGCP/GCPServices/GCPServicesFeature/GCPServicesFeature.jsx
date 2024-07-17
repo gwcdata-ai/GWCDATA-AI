@@ -14,11 +14,13 @@ export const GCPServicesFeature = () => {
                 {/* <p className={styles?.sub_title}>
                   <strong>Services</strong>
                 </p> */}
-                <p className={styles?.title}>Service Offerings</p>
+                <h1 className={styles?.title}>Google Service Offerings</h1>
 
                 <p className={styles?.text}>
-                  Don't just migrate to the cloud; fly high with it! Our GCP Managed Services unlock the full potential of the Google Cloud Platform, empowering you to focus on innovation while we handle the heavy lifting.
-
+                  Don't just migrate to the cloud; fly high with it! Our GCP
+                  Managed Services unlock the full potential of the Google Cloud
+                  Platform, empowering you to focus on innovation while we
+                  handle the heavy lifting.
                 </p>
               </div>
             </Col>

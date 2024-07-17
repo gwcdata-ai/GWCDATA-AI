@@ -24,6 +24,7 @@ import HomeBottom from "../../../components/home/HomeBlog/HomeBottom";
 import { OurExpertiseAI } from "../../../components/solutions/ourExpertise/ourExpertiseAI";
 import AiINdustries from "./AiINdustries";
 import AiBottomSection from "./AiBottomSection";
+import { Helmet } from "react-helmet-async";
 
 export const ArtificialInteligencePage = () => {
   useEffect(() => {
@@ -32,10 +33,25 @@ export const ArtificialInteligencePage = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
+      <Helmet>
+        {/* <meta
+          name="keywords"
+          content="
+          
+          Business Intelligence,Data Analytics,Data Visualization,BI Tools,Predictive Analytics,Data-Driven Decision Making,Performance Metrics,Reporting Solutions,Data Management,Analytics Strategies
+
+          "
+        /> */}
+        <title>{"GWC DATA.AI - Artificial Intelligence "}</title>
+        <meta
+          name="description"
+          content=" Explore the world of Artificial Intelligence and its transformative impact on industries. Learn about AI technologies, applications, and best practices for leveraging machine learning, natural language processing, and automation to drive innovation and enhance decision-making."
+        ></meta>
+      </Helmet>
       <CommonSectionBanner commonSectionBannerContent={BiMigrationBannerData} />
       <DataGovernance
         commonRightSectionContent={BiMigrationMainDataGovernance}

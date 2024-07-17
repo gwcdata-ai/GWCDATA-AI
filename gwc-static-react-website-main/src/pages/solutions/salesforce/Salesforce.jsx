@@ -28,6 +28,7 @@ import SalesHeader from "./SalesHeader";
 import { SalesNewSection } from "../../../components/SolutionsSalesForce/SalesNewSection";
 import SalesSecondNew from "../../../components/SolutionsSalesForce/SalesSecondNew";
 import SalesforceBanner from "./SalesforceBanner";
+import { Helmet } from "react-helmet-async";
 
 export const SalesforcePage = () => {
   useEffect(() => {
@@ -40,6 +41,18 @@ export const SalesforcePage = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        {/* <meta
+          name="keywords"
+          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
+        /> */}
+        <meta
+          name="description"
+          content="Discover how Salesforce can transform your business operations. Learn about its powerful CRM solutions, cloud-based applications, and tools for improving customer relationships, driving sales growth, and enhancing productivity. Leverage Salesforce to unlock your organization’s full potential."
+        />
+
+        <title>GWC DATA.AI - Salesforce</title>
+      </Helmet>
       {/* <CommonSectionBanner commonSectionBannerContent={IIOTBannerData} /> */}
       <SalesforceBanner />
       <SalesSecondNew />

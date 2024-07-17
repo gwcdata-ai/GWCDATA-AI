@@ -8,8 +8,19 @@
   color: var(--white);
   text-transform: uppercase;
 }
-.paddingTop_Mobile{
-  padding-top:3rem;
+.paddingTop_Mobile {
+  padding-top: 3rem;
+}
+.breadcrumbs_h1 {
+  font-family: "OS-Regular";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+  text-transform: uppercase;
+  display: inline-block;
 }
 .banner_sub_title {
   color: #fff;
@@ -19,12 +30,12 @@
   font-weight: 400;
   line-height: 30px;
 }
-.GIF_Width_Desktop{
-width: 120% !important;
+.GIF_Width_Desktop {
+  width: 120% !important;
 }
-.GIF_Width_Mobile{
+.GIF_Width_Mobile {
   width: 100% !important;
-  }
+}
 
 .breadcrumbs:hover {
   /* background-color: black; */
@@ -32,7 +43,6 @@ width: 120% !important;
   /* width: fit-content; */
   color: #f16d67;
 }
-
 
 .banner_title {
   font-family: "Roboto-Bold";
@@ -123,7 +133,7 @@ width: 120% !important;
   /* background: url(../../assets/images/Blog/search.svg); */
   background-repeat: no-repeat;
   background-position: left;
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
   display: flex;
   padding: 17px 22px;
   gap: 8px;

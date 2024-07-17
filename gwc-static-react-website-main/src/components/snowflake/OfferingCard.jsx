@@ -14,21 +14,18 @@ import useMedia from "../../hooks/useMedia";
 const OfferingCard = () => {
   const isMobile = useMedia("(max-width:600px)");
   const truncateText = (text, limit) => {
-    const words = text.split(' ');
+    const words = text.split(" ");
     if (words.length > limit) {
-      return words.slice(0, limit).join(' ') + '...';
+      return words.slice(0, limit).join(" ") + "...";
     }
     return text;
   };
 
-
-
   const truncateTextTitle = (text, limit) => {
     if (text.length > limit) {
-      return text.slice(0, limit) + '...';
+      return text.slice(0, limit) + "...";
     }
-    return text.padEnd(limit, ' '); // Pad with spaces to ensure consistent length
-
+    return text.padEnd(limit, " "); // Pad with spaces to ensure consistent length
   };
   const settings = {
     dots: true,
@@ -123,16 +120,20 @@ const OfferingCard = () => {
       fluid
       className={`${commonStyles.banner_container_img}  py-5`}
       style={{ backgroundImage: `url(${banner})` }}
-      id='gcp'
+      id="gcp"
     >
       <Container className="">
         <Row className="">
           <Col lg={12} md={12} className="px-0" data-aos="fade-right">
             <div className={styles.platformDataSection}>
-              <p className={` ${styles?.title} mt-2   `}>Snowflake Offerings</p>
+              <h2 className={` ${styles?.title} mt-2   `}>
+                Snowflake Offerings
+              </h2>
               <p className={styles?.text}>
-                Snowflake, a cloud-based data warehousing platform, provides a range of offerings to help organizations manage & analyze their data efficiently. We ensure your cloud operations run smoothly & reliably so you can focus on your business goals.
-
+                Snowflake, a cloud-based data warehousing platform, provides a
+                range of offerings to help organizations manage & analyze their
+                data efficiently. We ensure your cloud operations run smoothly &
+                reliably so you can focus on your business goals.
               </p>
             </div>
           </Col>
@@ -164,8 +165,9 @@ const OfferingCard = () => {
                   className={` mb-md-0 mb-5 `}
                   data-aos="zoom-in"
                 >
-                  <div className={`${stylescard.card_snow_section_sf} mb-3 mx-3`}>
-
+                  <div
+                    className={`${stylescard.card_snow_section_sf} mb-3 mx-3`}
+                  >
                     <Image
                       src={icon}
                       style={{ width: "72px", height: "72px" }}
@@ -178,13 +180,8 @@ const OfferingCard = () => {
                                   __html: text?.replace(/\n/g, ""),
                                 }}
                               /> */}
-                    <p className={`${stylescard.heading} mt-1`}
-
-                    >
-                      {text}
-                    </p>
-                    <p className={`${stylescard.card_title}`}
-                    >{para}</p>
+                    <h3 className={`${stylescard.heading} mt-1`}>{text}</h3>
+                    <p className={`${stylescard.card_title}`}>{para}</p>
                     {/* <p className={`${stylescard.heading} my-3`}
                                dangerouslySetInnerHTML={{
                                 __html:truncateTextTitle(text,15) ,
@@ -195,15 +192,13 @@ const OfferingCard = () => {
                               }}></p> */}
                   </div>
                 </Col>
-              )
+              );
             })}
           </Slider>
-
         </Row>
       </Container>
     </Container>
-  )
-}
-
+  );
+};
 
 export default OfferingCard;

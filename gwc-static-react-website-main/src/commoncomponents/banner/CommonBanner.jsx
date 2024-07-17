@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import commonStyles from "../../commoncss/common.module.css";
 import styles from "./commonBanner.module.css";
 
-
 export const CommonSectionBanner = ({ commonSectionBannerContent }) => {
   // console.log("commonSectionBannerContent", commonSectionBannerContent);
   return (
@@ -33,14 +32,16 @@ export const CommonSectionBanner = ({ commonSectionBannerContent }) => {
                               className={`${styles.breadcrumbs} mb-4`}
                             >
                               {" "}
-                              {item?.text}{" "}
+                              {item?.text}
                             </a>
                           ) : (
-                            <span>{item?.text}</span>
+                            <p className={`${styles.breadcrumbs_h1}`}>
+                              {item?.text}
+                            </p>
                           )}
                           {index !==
                             commonSectionBannerContent?.breadcrumbs?.length -
-                            1 && <span> / </span>}
+                              1 && <span> / </span>}
                         </span>
                       )
                     )}
@@ -50,13 +51,18 @@ export const CommonSectionBanner = ({ commonSectionBannerContent }) => {
 
               {/* <h1 className={`${styles.banner_title} mb-4`}> */}
               {/* {commonSectionBannerContent?.title} */}
-              <h1 className={`${styles.banner_title} mb-4`} dangerouslySetInnerHTML={{ __html: commonSectionBannerContent?.title.replace(/\n/g, "") }} />
+              <h2
+                className={`${styles.banner_title} mb-4`}
+                dangerouslySetInnerHTML={{
+                  __html: commonSectionBannerContent?.title.replace(/\n/g, ""),
+                }}
+              />
               {/* </h1> */}
               <p className={`${styles.banner_para} mb-4`}>
                 {commonSectionBannerContent?.para}
               </p>
               {commonSectionBannerContent?.buttontext && (
-                <Link to={commonSectionBannerContent?.url} >
+                <Link to={commonSectionBannerContent?.url}>
                   <Button className={`${styles.banner_button}`}>
                     {" "}
                     {commonSectionBannerContent?.buttontext}{" "}

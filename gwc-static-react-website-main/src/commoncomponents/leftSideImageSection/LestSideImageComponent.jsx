@@ -6,7 +6,6 @@ import styles from "./leftSideImageSection.module.css";
 import AOS from "aos";
 AOS.init({
   duration: 1000,
-
 });
 
 export const CommonLeftImageComponent = ({ commonLeftSectionContent }) => {
@@ -32,9 +31,9 @@ export const CommonLeftImageComponent = ({ commonLeftSectionContent }) => {
                 <p className={styles?.sub_title}>
                   <strong>{commonLeftSectionContent?.sub_title}</strong>
                 </p>
-                <p className={styles?.title}>
+                <h2 className={styles?.title}>
                   {commonLeftSectionContent?.title}
-                </p>
+                </h2>
                 {commonLeftSectionContent?.description && (
                   <p className={styles?.text}>
                     {commonLeftSectionContent?.description}
@@ -43,7 +42,10 @@ export const CommonLeftImageComponent = ({ commonLeftSectionContent }) => {
                 {commonLeftSectionContent?.list && (
                   <ul className={`${styles?.text} px-3`}>
                     {commonLeftSectionContent?.list?.map((item, index) => (
-                      <li className='mb-3' key={index}> {item} </li>
+                      <li className="mb-3" key={index}>
+                        {" "}
+                        {item}{" "}
+                      </li>
                     ))}
                   </ul>
                 )}

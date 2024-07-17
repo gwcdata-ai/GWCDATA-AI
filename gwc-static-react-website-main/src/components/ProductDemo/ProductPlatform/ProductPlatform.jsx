@@ -44,7 +44,6 @@ const ProductPlatform = () => {
   return (
     <>
       <Container
-        fluid
         id="app-creation"
         className={`${commonStyles.banner_container_img}  py-lg-5`}
         style={{ backgroundImage: `url(${banner})` }}

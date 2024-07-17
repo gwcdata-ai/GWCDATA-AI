@@ -18,9 +18,9 @@ export const CommonRightImageComponent = ({ commonRightSectionContent }) => {
                 <p className={styles?.sub_title}>
                   <strong>{commonRightSectionContent?.sub_title}</strong>
                 </p>
-                <p className={styles?.title}>
+                <h1 className={styles?.title}>
                   {commonRightSectionContent?.title}
-                </p>
+                </h1>
                 {commonRightSectionContent?.description && (
                   <p className={styles?.text}>
                     {commonRightSectionContent?.description}
@@ -28,7 +28,7 @@ export const CommonRightImageComponent = ({ commonRightSectionContent }) => {
                 )}
                 {commonRightSectionContent?.list && (
                   <ul className={styles?.text}>
-                    {commonRightSectionContent?.list?.map((item,index) => (
+                    {commonRightSectionContent?.list?.map((item, index) => (
                       <li key={index}> {item} </li>
                     ))}
                   </ul>

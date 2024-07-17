@@ -32,17 +32,31 @@ import { Helmet } from "react-helmet-async";
 
 export const AboutPage = () => {
   useEffect(() => {
-
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
-  
+      <Helmet>
+        <meta
+          name="keywords"
+          content="
+          NASSCOM member,data analytics, artificial intelligence, solution matters,GWC Data.AI founder & CEO,GWC  COO,GWC  Chief Technology Officer, 
+          GWC CTO,GWC Chief Data Officer,GWC CDO,GWC Chief Innovation Officer,GWC CIO, VP, data-engineering,GWC associate director, 
+          GWC Head of People Operations,proven ROI, pioneering innovation, Great Place to Work 2024 , Top 10 CEO under 40, 
+          10 Best Data & AI Startups,GWC DATA.AI, about us, data solutions, data analytics, company mission, technology innovation, our values, team, leadership, data-driven insights"
+        />
+        <meta
+          name="description"
+          content="Learn about GWC DATA.AI, a leader in data solutions and analytics. Discover our mission, values, and the innovative team driving our success in transforming data into actionable insights."
+        />
+
+        <title>GWC DATA.AI - About Us</title>
+      </Helmet>
       <CommonSectionBanner commonSectionBannerContent={AboutBannerData} />
       <CommonLeftImageComponent commonLeftSectionContent={AboutOverViewData} />
       <OurFuture ourFutureContent={AboutOurFutureData} />

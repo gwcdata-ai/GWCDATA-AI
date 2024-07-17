@@ -24,10 +24,7 @@ import img9 from "../../../assets/images/solutions/Cloud/final/Data & Analytics 
 import img10 from "../../../assets/images/solutions/Cloud/final/Custom AI Solutions.webp";
 
 export const CloudTransformationBannerData = {
-  breadcrumbs: [
-    { text: "Home", url: "/" },
-    { text: "Cloud Transformation " },
-  ],
+  breadcrumbs: [{ text: "Home", url: "/" }, { text: "Cloud Transformation " }],
   title: " Transform Your Business Through Data-powered Innovation",
   // para: "Upgrade your outdated machinery to modern standards and gain centralized control over all operations ",
   buttontext: "Get In Touch",
@@ -37,8 +34,7 @@ export const CloudTransformationBannerData = {
 
 export const CloudTransformationMainDataGovernance = {
   sub_title: "Why Cloud Transformation? ",
-  title:
-    "Digital resilience awaits! Let’s show the way!",
+  title: "Digital resilience awaits! Let’s show the way!",
   description:
     " We enable businesses to quickly respond to changes and embrace new ways of working that incorporate the digital adoption of new technologies.",
   rightImg: DataGovernanceRightImg,
@@ -48,36 +44,33 @@ export const CloudTransformationDataGovernanceList = [
   {
     id: 1,
     name: "Operate & Optimize Dev Capabilities",
-    className:"first",
-    description_title:
-      "Operate & Optimize Dev Capabilities",
+    className: "first",
+    description_title: "Operate & Optimize Dev Capabilities",
     description_list: [
       "Apply DevOps best practices to custom solutions, integrations, and managed services.",
       "Leverage cloud-based IDEs and collaboration tools for seamless development across teams and locations.",
     ],
-    image: img1
+    image: img1,
   },
   {
     id: 2,
     name: "Transform Cloud Operations",
-    description_title:
-      "Transform Cloud Operations",
+    description_title: "Transform Cloud Operations",
     description_list: [
       "Set up and implement service management, operations monitoring and talent development.",
       "Regularly review and assess your cloud operations to identify areas for improvement and iterate on your strategy.",
     ],
-    image: img2
+    image: img2,
   },
   {
     id: 3,
     name: "Application Migration",
-    description_title:
-      "Application Migration",
+    description_title: "Application Migration",
     description_list: [
       "Establish the essentials for cloud-native application development and modernizing legacy applications.",
       "Utilize cloud platform services like AI/ML, data analytics, and APIs to unlock new functionalities and data-driven insights. ",
     ],
-    image: img3
+    image: img3,
   },
   {
     id: 4,
@@ -87,7 +80,7 @@ export const CloudTransformationDataGovernanceList = [
       "Harness the agility and reach of the cloud while preserving the security and control of on-premises systems. ",
       "Implement comprehensive disaster recovery and backup strategies that encompass both on-premises and cloud components.",
     ],
-    image: img4
+    image: img4,
   },
   {
     id: 5,
@@ -97,30 +90,27 @@ export const CloudTransformationDataGovernanceList = [
       "Security monitoring, investigations and response coupled with security posture with a zero trust model.",
       "Integrate security into the DevOps pipeline and foster collaboration between security, development, and operations teams.",
     ],
-    image: img5
+    image: img5,
   },
   {
     id: 6,
     name: "Compliance Management",
-    description_title:
-      "Compliance Management",
+    description_title: "Compliance Management",
     description_list: [
       "Streamline compliance processes and optimize resource allocation with best-in-class tools and expertise.",
       "Regularly review your compliance posture and adapt your strategies as regulations and cloud environments evolve.",
     ],
-    image: img6
+    image: img6,
   },
   {
     id: 7,
     name: "Data Governance",
-    description_title:
-      "Data Governance",
+    description_title: "Data Governance",
     description_list: [
       "Optimizing data utilization and aligning with business goals using data governance practices.",
       "Implement a comprehensive data catalog across all environments to locate, understand, and track data lineage.",
-
     ],
-    image: img7
+    image: img7,
   },
   {
     id: 8,
@@ -130,7 +120,7 @@ export const CloudTransformationDataGovernanceList = [
       "Assess, develop, transform and modernize Enterprise Data Warehouses and Databases.",
       "Leverage cloud tools for data enrichment and transformation to unlock greater value.",
     ],
-    image: img8
+    image: img8,
   },
   {
     id: 9,
@@ -140,7 +130,7 @@ export const CloudTransformationDataGovernanceList = [
       "Tailored to your needs, our solutions aim to make your organization data-aware and transform it into a data-driven one.",
       "Implement cloud-based BI platforms for interactive dashboards and data exploration.",
     ],
-    image: img9
+    image: img9,
   },
   {
     id: 10,
@@ -150,7 +140,7 @@ export const CloudTransformationDataGovernanceList = [
       "Assess feasibility, build and train the model, and develop Machine Learning solutions.",
       "Ensure smooth integration of your custom AI solution with existing IT infrastructure and applications.",
     ],
-    image: img10
+    image: img10,
   },
 ];
 
@@ -180,7 +170,7 @@ export const CloudTransformationDataGovernanceData = {
 
 export const CloudTransformationOurExpertise = {
   // sub_title: "Our Expertise",
-  title: "Expertise",
+  title: "Cloud Transformation Expertise",
   bannerBg: OurExpertisebannerBgImg,
   list: [
     {
@@ -211,7 +201,6 @@ export const CloudTransformationOurExpertise = {
 };
 
 export const CloudTransformationPuttingDataToWorkData = {
-
   title: "Why Choose GWC? ",
   text: "Invest in cloud optimization and reap lasting rewards. Partner with us to unlock the full potential of your cloud footprint.",
   points: [
@@ -258,13 +247,11 @@ export const CloudTransformationPuttingDataToWorkData = {
 };
 
 export const CloudTransformationReadyToGetStart = {
-  sub_title: "Your Cloud Journey, Your Way. We're Your Expert Guides To Optimal Cloud Utilization.",
-  title1:
-    "Setup your Cloud Foundations and Infrastructure",
-  title2:
-    "Modernize your business Operating Model ",
-  title3:
-    "Transform Workforce with Digital Talent & Culture",
+  sub_title:
+    "Your Cloud Journey, Your Way. We're Your Expert Guides To Optimal Cloud Utilization.",
+  title1: "Setup your Cloud Foundations and Infrastructure",
+  title2: "Modernize your business Operating Model ",
+  title3: "Transform Workforce with Digital Talent & Culture",
   bannerBg: ReadyTogetStartBgImg,
   btn1: "Watch Demo",
   btn2: " Get Started",

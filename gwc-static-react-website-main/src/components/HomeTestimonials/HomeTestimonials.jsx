@@ -71,7 +71,6 @@ const HomeTestimonials = () => {
     // Add other settings as needed
   };
 
-
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -158,9 +157,9 @@ const HomeTestimonials = () => {
                   {/* <div className={`${styles.subheading} text-light`}>
                     Clients Testimonials
                   </div> */}
-                  <div className={`${styles.heading5} text-light mb-4`}>
+                  <h2 className={`${styles.heading5} text-light mb-4`}>
                     Hear it From Our Happy Customers
-                  </div>
+                  </h2>
                 </div>
                 {/* <div className={`${styles.supportingText36} text-light mb-5`}>
                   Powerful, self-serve product and growth analytics to help you
@@ -207,12 +206,14 @@ const HomeTestimonials = () => {
                     {/* Image taking 25% at the bottom */}
                     <img
                       alt=""
-                      className={`w-100 ${isMobile ? stylestestimonial.testimonialMobile:stylestestimonial.testimonialDesktop} `}
-
+                      className={`w-100 ${
+                        isMobile
+                          ? stylestestimonial.testimonialMobile
+                          : stylestestimonial.testimonialDesktop
+                      } `}
                       src={data?.image}
-                      
                     />
-                    <p
+                    <h3
                       className={`${stylestestimonial.card_title} px-2 text-center`}
                       style={{
                         position: "absolute",
@@ -223,7 +224,7 @@ const HomeTestimonials = () => {
                       }}
                     >
                       {data?.title}
-                    </p>
+                    </h3>
                     <p
                       className={`${stylestestimonial.card_sub_title} px-2 text-center`}
                       style={{
@@ -239,7 +240,11 @@ const HomeTestimonials = () => {
                     <img
                       alt=""
                       src={data.icon}
-                      className={`${isMobile ? stylestestimonial.testimonialIconMobile : stylestestimonial.testimonialIconDesktop}`}
+                      className={`${
+                        isMobile
+                          ? stylestestimonial.testimonialIconMobile
+                          : stylestestimonial.testimonialIconDesktop
+                      }`}
                     />
                   </Col>
                 </div>

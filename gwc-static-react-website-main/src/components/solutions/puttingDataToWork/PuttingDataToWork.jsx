@@ -41,10 +41,14 @@ export const PuttingDataToWork = ({ puttingDataSectionContent }) => {
                         boxColorClass += ` ${styles.section_box_3}`;
                       }
                       return (
-                        <Col key={index} lg={3} className={` ${styles.card_container} mb-3`}>
-                          <div className={`${boxColorClass} ${styles.card} `}>
+                        <Col
+                          key={index}
+                          lg={3}
+                          className={` ${styles.card_container} mb-3`}
+                        >
+                          <p className={`${boxColorClass} ${styles.card} `}>
                             {item}
-                          </div>
+                          </p>
                         </Col>
                       );
                     })}

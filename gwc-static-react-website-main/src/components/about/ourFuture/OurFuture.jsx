@@ -15,7 +15,6 @@ export const OurFuture = ({ ourFutureContent }) => {
   const visionmissionRef = useRef("#vision-mission");
   useScroll();
 
-
   return (
     <Container
       fluid
@@ -34,23 +33,30 @@ export const OurFuture = ({ ourFutureContent }) => {
                 {" "}
                 {ourFutureContent?.sub_title}{" "}
               </p>
-              <p className={`mb-5 ${styles.title}`}>
+              <h2 className={`mb-5 ${styles.title}`}>
                 {" "}
                 {ourFutureContent?.title}{" "}
-              </p>
+              </h2>
             </Col>
             {ourFutureContent?.content?.map((item, index) => {
               return (
-                <Col key={index} sm={12} md={12} lg={6} className="mb-4" data-aos="zoom-in">
+                <Col
+                  key={index}
+                  sm={12}
+                  md={12}
+                  lg={6}
+                  className="mb-4"
+                  data-aos="zoom-in"
+                >
                   <Card className={`${styles.card_height} p-4 rounded-4`}>
                     <Image
                       className={`${styles.list_img}`}
                       src={item?.img}
                       alt="img"
                     />
-                    <p className={`${styles.list_title} mt-3`}>
+                    <h3 className={`${styles.list_title} mt-3`}>
                       {item?.title}{" "}
-                    </p>
+                    </h3>
                     <ul className={`${styles?.list_list} px-0`}>
                       {item?.list?.map((item, index) => (
                         <li key={index}> {item} </li>

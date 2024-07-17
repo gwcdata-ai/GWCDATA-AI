@@ -21,8 +21,9 @@ const ProductAllCard = ({ data }) => {
   return (
     <Col lg={12} className="">
       <div
-        className={`${isMobile ? styles.carrer_slider_card : styles.carrer_slider_card
-          }`}
+        className={`${
+          isMobile ? styles.carrer_slider_card : styles.carrer_slider_card
+        }`}
         data-aos="flip-down"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -217,9 +218,9 @@ const CareerSlider = () => {
 
   return (
     <Container className="my-5">
-      <div className={`${newStyles.meetOurLeadershipContainer} `}>
+      <h2 className={`${newStyles.meetOurLeadershipContainer} `}>
         Meet Our People
-      </div>
+      </h2>
       <p className={` ${styles?.card_para_title} mt-2 mb-0`}>
         At GWC Data Ai, we want all our people to find their spark. If one has
         an idea, there are ears ready to hear it. If one has a project, there’s

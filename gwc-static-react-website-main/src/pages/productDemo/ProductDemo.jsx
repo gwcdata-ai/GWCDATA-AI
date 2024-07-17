@@ -35,16 +35,21 @@ const ProductDemo = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
-    <Helmet>
-    <meta name="keywords" content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data" />
-    <meta name="description" content="As the exclusive implementation partner for DOMO, we take pride in delivering end-to-end data analytics services. Our expertise extends beyond implementation, ensuring clients receive a comprehensive solution tailored to their unique needs, covering the entire spectrum of data analytics."></meta>
-
-
-    </Helmet>
+      <Helmet>
+        <meta
+          name="keywords"
+          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
+        />
+        <title>GWC DATA.AI - Domo Data Experience Platform | Domo </title>
+        <meta
+          name="description"
+          content="As the exclusive implementation partner for DOMO, we take pride in delivering end-to-end data analytics services. Our expertise extends beyond implementation, ensuring clients receive a comprehensive solution tailored to their unique needs, covering the entire spectrum of data analytics."
+        ></meta>
+      </Helmet>
       <ProductBanner />
       <DomoNewSection />
       <DomoAnalytics />

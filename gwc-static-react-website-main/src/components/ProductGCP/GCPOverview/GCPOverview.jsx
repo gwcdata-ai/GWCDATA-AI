@@ -21,56 +21,52 @@ AOS.init({
 export const GCPOverview = () => {
   const isMobile = useMedia("(max-width:600px)");
 
-
   const [hoveredText1, setHoveredText1] = useState({
-    text: 'Symphonic Team',
+    text: "Symphonic Team",
     style: {},
   });
   const [hoveredText2, setHoveredText2] = useState({
-    text: 'Proactive Infrastructure Management',
+    text: "Proactive Infrastructure Management",
     style: {},
   });
   const [hoveredText3, setHoveredText3] = useState({
-    text: 'IoT Integration with Google Cloud',
+    text: "IoT Integration with Google Cloud",
     style: {},
   });
   const [hoveredText4, setHoveredText4] = useState({
-    text: 'Cost Optimization',
+    text: "Cost Optimization",
     style: {},
   });
   const [hoveredText5, setHoveredText5] = useState({
-    text: 'Security and Compliance',
+    text: "Security and Compliance",
     style: {},
   });
   const [hoveredText6, setHoveredText6] = useState({
-    text: 'Effortless Collaboration',
+    text: "Effortless Collaboration",
     style: {},
   });
 
   const textStyle = {
-    fontFamily: 'Roboto-Light',
-    fontSize: '18px',
-    fontWeight: 'bold',
-    color: '#FFF',
-    padding: '0px 114px'
+    fontFamily: "Roboto-Light",
+    fontSize: "18px",
+    fontWeight: "bold",
+    color: "#FFF",
+    padding: "0px 114px",
   };
 
   const hoveredTextStyle = {
-    color: '#FFF',
-    padding: '20px',
-    fontWeight: '400'
+    color: "#FFF",
+    padding: "20px",
+    fontWeight: "400",
   };
 
   const textStylemobile = {
-    fontFamily: 'Roboto-Light',
-    fontSize: '12px',
-    fontWeight: 'bold',
-    color: '#FFF',
-    padding: '0px 114px'
+    fontFamily: "Roboto-Light",
+    fontSize: "12px",
+    fontWeight: "bold",
+    color: "#FFF",
+    padding: "0px 114px",
   };
-
-
-
 
   const settings = {
     dots: true,
@@ -136,7 +132,11 @@ export const GCPOverview = () => {
                 <strong>Overview</strong>
               </p> */}
               <p className={styles?.title}>What Sets Us Apart?</p>
-              <p className={styles?.sub_main_title}>GWC's Managed Services team navigates the GCP landscape for you, delivering peak performance and unlocking sustainable growth through a trusted partnership.</p>
+              <p className={styles?.sub_main_title}>
+                GWC's Managed Services team navigates the GCP landscape for you,
+                delivering peak performance and unlocking sustainable growth
+                through a trusted partnership.
+              </p>
             </Col>
             {isMobile ? (
               <Col xs={12} md={6} lg={3} className="w-100">
@@ -145,89 +145,181 @@ export const GCPOverview = () => {
                     md={4}
                     className={`mb-md-0 mb-5`}
                     data-aos="zoom-in"
-                    style={{ position: 'relative' }}
-                    onMouseOver={() => setHoveredText1({ text: 'Our team of Certified Architects and Data Engineers ensures that your GCP Managed services requirements are handled effectively.  ', style: hoveredTextStyle })}
-                    onMouseOut={() => setHoveredText1({ text: 'Symphonic Team', style: {} })}
+                    style={{ position: "relative" }}
+                    onMouseOver={() =>
+                      setHoveredText1({
+                        text: "Our team of Certified Architects and Data Engineers ensures that your GCP Managed services requirements are handled effectively.  ",
+                        style: hoveredTextStyle,
+                      })
+                    }
+                    onMouseOut={() =>
+                      setHoveredText1({ text: "Symphonic Team", style: {} })
+                    }
                   >
-                    <img src={image1} className={` ${commonStyles.image_space} w-100 mb-4 `} alt="" />
-                    <p className={styles?.text_overlay} style={{ ...textStylemobile, ...hoveredText1.style }}>
+                    <img
+                      src={image1}
+                      className={` ${commonStyles.image_space} w-100 mb-4 `}
+                      alt=""
+                    />
+                    <h3
+                      className={styles?.text_overlay}
+                      style={{ ...textStylemobile, ...hoveredText1.style }}
+                    >
                       {hoveredText1.text}
-                    </p>
+                    </h3>
                   </Col>
 
                   <Col
                     md={4}
                     className={`mb-md-0 mb-5`}
                     data-aos="zoom-in"
-                    style={{ position: 'relative' }}
-                    onMouseOver={() => setHoveredText2({ text: 'Leverage our expertise to ensure your GCP infrastructure is optimized for performance, security, and cost efficiency.', style: hoveredTextStyle })}
-                    onMouseOut={() => setHoveredText2({ text: 'Proactive Infrastructure Management', style: {} })}
+                    style={{ position: "relative" }}
+                    onMouseOver={() =>
+                      setHoveredText2({
+                        text: "Leverage our expertise to ensure your GCP infrastructure is optimized for performance, security, and cost efficiency.",
+                        style: hoveredTextStyle,
+                      })
+                    }
+                    onMouseOut={() =>
+                      setHoveredText2({
+                        text: "Proactive Infrastructure Management",
+                        style: {},
+                      })
+                    }
                   >
-                    <img src={image2} className={` ${commonStyles.image_space} w-100 mb-4 `} alt="" />
-                    <p className={styles?.text_overlay} style={{ ...textStylemobile, ...hoveredText2.style }}>
+                    <img
+                      src={image2}
+                      className={` ${commonStyles.image_space} w-100 mb-4 `}
+                      alt=""
+                    />
+                    <h3
+                      className={styles?.text_overlay}
+                      style={{ ...textStylemobile, ...hoveredText2.style }}
+                    >
                       {hoveredText2.text}
-                    </p>
+                    </h3>
                   </Col>
 
                   <Col
                     md={4}
                     className={`mb-md-0 mb-5`}
                     data-aos="zoom-in"
-                    style={{ position: 'relative' }}
-                    onMouseOver={() => setHoveredText3({ text: 'Transform machine data into actionable insights with GCP integration into IoT hardware designed by us. ', style: hoveredTextStyle })}
-                    onMouseOut={() => setHoveredText3({ text: 'IoT Integration with Google Cloud', style: {} })}
+                    style={{ position: "relative" }}
+                    onMouseOver={() =>
+                      setHoveredText3({
+                        text: "Transform machine data into actionable insights with GCP integration into IoT hardware designed by us. ",
+                        style: hoveredTextStyle,
+                      })
+                    }
+                    onMouseOut={() =>
+                      setHoveredText3({
+                        text: "IoT Integration with Google Cloud",
+                        style: {},
+                      })
+                    }
                   >
-                    <img src={image3} className={` ${commonStyles.image_space} w-100 mb-4 `} alt="" />
-                    <p className={styles?.text_overlay} style={{ ...textStylemobile, ...hoveredText3.style }}>
+                    <img
+                      src={image3}
+                      className={` ${commonStyles.image_space} w-100 mb-4 `}
+                      alt=""
+                    />
+                    <h3
+                      className={styles?.text_overlay}
+                      style={{ ...textStylemobile, ...hoveredText3.style }}
+                    >
                       {hoveredText3.text}
-                    </p>
+                    </h3>
                   </Col>
 
                   <Col
                     md={4}
                     className={`mb-md-0 mb-5`}
                     data-aos="zoom-in"
-                    style={{ position: 'relative' }}
-                    onMouseOver={() => setHoveredText4({ text: '  We help you maximise cost savings by identifying and eliminating inefficiencies in your GCP usage, ensuring you only pay for what you need. ', style: hoveredTextStyle })}
-                    onMouseOut={() => setHoveredText4({ text: 'Cost Optimization', style: {} })}
+                    style={{ position: "relative" }}
+                    onMouseOver={() =>
+                      setHoveredText4({
+                        text: "  We help you maximise cost savings by identifying and eliminating inefficiencies in your GCP usage, ensuring you only pay for what you need. ",
+                        style: hoveredTextStyle,
+                      })
+                    }
+                    onMouseOut={() =>
+                      setHoveredText4({ text: "Cost Optimization", style: {} })
+                    }
                   >
-                    <img src={image4} className={` ${commonStyles.image_space} w-100 mb-4 `} alt="" />
-                    <p className={styles?.text_overlay} style={{ ...textStylemobile, ...hoveredText4.style }}>
+                    <img
+                      src={image4}
+                      className={` ${commonStyles.image_space} w-100 mb-4 `}
+                      alt=""
+                    />
+                    <h3
+                      className={styles?.text_overlay}
+                      style={{ ...textStylemobile, ...hoveredText4.style }}
+                    >
                       {hoveredText4.text}
-                    </p>
+                    </h3>
                   </Col>
 
                   <Col
                     md={4}
                     className={`mb-md-0 mb-5`}
                     data-aos="zoom-in"
-                    style={{ position: 'relative' }}
-                    onMouseOver={() => setHoveredText5({ text: 'Trust in our expertise in using GCP’s robust security measures and compliance practices, keeping your data safe and meeting industry standards.', style: hoveredTextStyle })}
-                    onMouseOut={() => setHoveredText5({ text: 'Security and Compliance', style: {} })}
+                    style={{ position: "relative" }}
+                    onMouseOver={() =>
+                      setHoveredText5({
+                        text: "Trust in our expertise in using GCP’s robust security measures and compliance practices, keeping your data safe and meeting industry standards.",
+                        style: hoveredTextStyle,
+                      })
+                    }
+                    onMouseOut={() =>
+                      setHoveredText5({
+                        text: "Security and Compliance",
+                        style: {},
+                      })
+                    }
                   >
-                    <img src={image5} className={` ${commonStyles.image_space} w-100 mb-4 `} alt="" />
-                    <p className={styles?.text_overlay} style={{ ...textStylemobile, ...hoveredText5.style }}>
+                    <img
+                      src={image5}
+                      className={` ${commonStyles.image_space} w-100 mb-4 `}
+                      alt=""
+                    />
+                    <h3
+                      className={styles?.text_overlay}
+                      style={{ ...textStylemobile, ...hoveredText5.style }}
+                    >
                       {hoveredText5.text}
-                    </p>
+                    </h3>
                   </Col>
 
                   <Col
                     md={4}
                     className={`mb-md-0 mb-5`}
                     data-aos="zoom-in"
-                    style={{ position: 'relative' }}
-                    onMouseOver={() => setHoveredText6({
-                      text: '  Our GCP-managed services facilitate seamless collaboration, allowing users from different locations to access and edit projects concurrently.', style: hoveredTextStyle
-                    })}
-                    onMouseOut={() => setHoveredText6({ text: 'Effortless Collaboration', style: {} })}
+                    style={{ position: "relative" }}
+                    onMouseOver={() =>
+                      setHoveredText6({
+                        text: "  Our GCP-managed services facilitate seamless collaboration, allowing users from different locations to access and edit projects concurrently.",
+                        style: hoveredTextStyle,
+                      })
+                    }
+                    onMouseOut={() =>
+                      setHoveredText6({
+                        text: "Effortless Collaboration",
+                        style: {},
+                      })
+                    }
                   >
-                    <img src={image6} className={` ${commonStyles.image_space} w-100 mb-4 `} alt="" />
-                    <p className={styles?.text_overlay} style={{ ...textStylemobile, ...hoveredText6.style }}>
+                    <img
+                      src={image6}
+                      className={` ${commonStyles.image_space} w-100 mb-4 `}
+                      alt=""
+                    />
+                    <p
+                      className={styles?.text_overlay}
+                      style={{ ...textStylemobile, ...hoveredText6.style }}
+                    >
                       {hoveredText6.text}
                     </p>
                   </Col>
-
-
                 </Slider>
               </Col>
             ) : (
@@ -236,89 +328,157 @@ export const GCPOverview = () => {
                   md={4}
                   className={`mb-md-0 mb-5`}
                   data-aos="zoom-in"
-                  style={{ position: 'relative' }}
-                  onMouseOver={() => setHoveredText1({ text: 'Our team of Certified Architects and Data Engineers ensures that your GCP Managed services requirements are handled effectively.  ', style: hoveredTextStyle })}
-                  onMouseOut={() => setHoveredText1({ text: 'Symphonic Team', style: {} })}
+                  style={{ position: "relative" }}
+                  onMouseOver={() =>
+                    setHoveredText1({
+                      text: "Our team of Certified Architects and Data Engineers ensures that your GCP Managed services requirements are handled effectively.  ",
+                      style: hoveredTextStyle,
+                    })
+                  }
+                  onMouseOut={() =>
+                    setHoveredText1({ text: "Symphonic Team", style: {} })
+                  }
                 >
                   <img src={image1} className="w-100 mb-4" alt="" />
-                  <p className={styles?.text_overlay} style={{ ...textStyle, ...hoveredText1.style }}>
+                  <h3
+                    className={styles?.text_overlay}
+                    style={{ ...textStyle, ...hoveredText1.style }}
+                  >
                     {hoveredText1.text}
-                  </p>
+                  </h3>
                 </Col>
 
                 <Col
                   md={4}
                   className={`mb-md-0 mb-5`}
                   data-aos="zoom-in"
-                  style={{ position: 'relative' }}
-                  onMouseOver={() => setHoveredText2({ text: 'Leverage our expertise to ensure your GCP infrastructure is optimized for performance, security, and cost efficiency. ', style: hoveredTextStyle })}
-                  onMouseOut={() => setHoveredText2({ text: 'Proactive Infrastructure Management', style: {} })}
+                  style={{ position: "relative" }}
+                  onMouseOver={() =>
+                    setHoveredText2({
+                      text: "Leverage our expertise to ensure your GCP infrastructure is optimized for performance, security, and cost efficiency. ",
+                      style: hoveredTextStyle,
+                    })
+                  }
+                  onMouseOut={() =>
+                    setHoveredText2({
+                      text: "Proactive Infrastructure Management",
+                      style: {},
+                    })
+                  }
                 >
                   <img src={image2} className="w-100 mb-4" alt="" />
-                  <p className={styles?.text_overlay} style={{ ...textStyle, ...hoveredText2.style }}>
+                  <h3
+                    className={styles?.text_overlay}
+                    style={{ ...textStyle, ...hoveredText2.style }}
+                  >
                     {hoveredText2.text}
-                  </p>
+                  </h3>
                 </Col>
 
                 <Col
                   md={4}
                   className={`mb-md-0 mb-5`}
                   data-aos="zoom-in"
-                  style={{ position: 'relative' }}
-                  onMouseOver={() => setHoveredText3({ text: 'Transform machine data into actionable insights with GCP integration into IoT hardware designed by us. ', style: hoveredTextStyle })}
-                  onMouseOut={() => setHoveredText3({ text: 'IoT Integration with Google Cloud', style: {} })}
+                  style={{ position: "relative" }}
+                  onMouseOver={() =>
+                    setHoveredText3({
+                      text: "Transform machine data into actionable insights with GCP integration into IoT hardware designed by us. ",
+                      style: hoveredTextStyle,
+                    })
+                  }
+                  onMouseOut={() =>
+                    setHoveredText3({
+                      text: "IoT Integration with Google Cloud",
+                      style: {},
+                    })
+                  }
                 >
                   <img src={image3} className="w-100 mb-4" alt="" />
-                  <p className={styles?.text_overlay} style={{ ...textStyle, ...hoveredText3.style }}>
+                  <h3
+                    className={styles?.text_overlay}
+                    style={{ ...textStyle, ...hoveredText3.style }}
+                  >
                     {hoveredText3.text}
-                  </p>
+                  </h3>
                 </Col>
 
                 <Col
                   md={4}
                   className={`mb-md-0 mb-5`}
                   data-aos="zoom-in"
-                  style={{ position: 'relative' }}
-                  onMouseOver={() => setHoveredText4({ text: ' We help you maximise cost savings by identifying and eliminating inefficiencies in your GCP usage, ensuring you only pay for what you need. ', style: hoveredTextStyle })}
-                  onMouseOut={() => setHoveredText4({ text: 'Cost Optimization', style: {} })}
+                  style={{ position: "relative" }}
+                  onMouseOver={() =>
+                    setHoveredText4({
+                      text: " We help you maximise cost savings by identifying and eliminating inefficiencies in your GCP usage, ensuring you only pay for what you need. ",
+                      style: hoveredTextStyle,
+                    })
+                  }
+                  onMouseOut={() =>
+                    setHoveredText4({ text: "Cost Optimization", style: {} })
+                  }
                 >
                   <img src={image4} className="w-100 mb-4" alt="" />
-                  <p className={styles?.text_overlay} style={{ ...textStyle, ...hoveredText4.style }}>
+                  <h3
+                    className={styles?.text_overlay}
+                    style={{ ...textStyle, ...hoveredText4.style }}
+                  >
                     {hoveredText4.text}
-                  </p>
+                  </h3>
                 </Col>
 
                 <Col
                   md={4}
                   className={`mb-md-0 mb-5`}
                   data-aos="zoom-in"
-                  style={{ position: 'relative' }}
-                  onMouseOver={() => setHoveredText5({ text: 'Trust in our expertise in using GCP’s robust security measures and compliance practices, keeping your data safe and meeting industry standards.', style: hoveredTextStyle })}
-                  onMouseOut={() => setHoveredText5({ text: 'Security and Compliance', style: {} })}
+                  style={{ position: "relative" }}
+                  onMouseOver={() =>
+                    setHoveredText5({
+                      text: "Trust in our expertise in using GCP’s robust security measures and compliance practices, keeping your data safe and meeting industry standards.",
+                      style: hoveredTextStyle,
+                    })
+                  }
+                  onMouseOut={() =>
+                    setHoveredText5({
+                      text: "Security and Compliance",
+                      style: {},
+                    })
+                  }
                 >
                   <img src={image5} className="w-100 mb-4" alt="" />
-                  <p className={styles?.text_overlay} style={{ ...textStyle, ...hoveredText5.style }}>
+                  <h3
+                    className={styles?.text_overlay}
+                    style={{ ...textStyle, ...hoveredText5.style }}
+                  >
                     {hoveredText5.text}
-                  </p>
+                  </h3>
                 </Col>
 
                 <Col
                   md={4}
                   className={`mb-md-0 mb-5`}
                   data-aos="zoom-in"
-                  style={{ position: 'relative' }}
-                  onMouseOver={() => setHoveredText6({
-                    text: '  Our GCP-managed services facilitate seamless collaboration, allowing users from different locations to access and edit projects concurrently.', style: hoveredTextStyle
-                  })}
-                  onMouseOut={() => setHoveredText6({ text: 'Effortless Collaboration', style: {} })}
+                  style={{ position: "relative" }}
+                  onMouseOver={() =>
+                    setHoveredText6({
+                      text: "  Our GCP-managed services facilitate seamless collaboration, allowing users from different locations to access and edit projects concurrently.",
+                      style: hoveredTextStyle,
+                    })
+                  }
+                  onMouseOut={() =>
+                    setHoveredText6({
+                      text: "Effortless Collaboration",
+                      style: {},
+                    })
+                  }
                 >
                   <img src={image6} className="w-100 mb-4" alt="" />
-                  <p className={styles?.text_overlay} style={{ ...textStyle, ...hoveredText6.style }}>
+                  <h3
+                    className={styles?.text_overlay}
+                    style={{ ...textStyle, ...hoveredText6.style }}
+                  >
                     {hoveredText6.text}
-                  </p>
+                  </h3>
                 </Col>
-
-
               </>
             )}
           </Row>
@@ -327,5 +487,3 @@ export const GCPOverview = () => {
     </Container>
   );
 };
-
-

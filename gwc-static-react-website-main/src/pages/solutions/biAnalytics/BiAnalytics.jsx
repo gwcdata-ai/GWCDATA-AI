@@ -23,6 +23,7 @@ import { DataGovernance } from "../../../components/solutions/dataGovernance/dat
 import HomeBottom from "../../../components/home/HomeBlog/HomeBottom";
 import { OurExpertiseBIA } from "../../../components/solutions/ourExpertise/ourExpertiseBIA";
 import BiAnalyticsBottomSection from "./BiAnalyticsBottomSection";
+import { Helmet } from "react-helmet-async";
 
 export const BiAnalyticsPage = () => {
   useEffect(() => {
@@ -31,10 +32,25 @@ export const BiAnalyticsPage = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
+      <Helmet>
+        {/* <meta
+          name="keywords"
+          content="
+          
+          Business Intelligence,Data Analytics,Data Visualization,BI Tools,Predictive Analytics,Data-Driven Decision Making,Performance Metrics,Reporting Solutions,Data Management,Analytics Strategies
+
+          "
+        /> */}
+        <title>{"GWC DATA.AI - Business Intelligence and Analytics "}</title>
+        <meta
+          name="description"
+          content="Unlock the power of Business Intelligence and Analytics to drive informed decision-making. Discover tools, techniques, and best practices for transforming data into actionable insights, enhancing operational efficiency, and boosting business performance."
+        ></meta>
+      </Helmet>
       <CommonSectionBanner commonSectionBannerContent={BiMigrationBannerData} />
       <DataGovernance
         commonRightSectionContent={BiMigrationMainDataGovernance}

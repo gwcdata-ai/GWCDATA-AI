@@ -410,30 +410,41 @@ const HomePartners2 = () => {
             <Col md={9} data-aos="fade-left">
               <h1 className="fixed_heading"> DBT </h1>
               <p className="">
-              At GWC Analytics, our dbt (data build tool) team is redefining the way we handle data transformation and modeling. With dbt, we turn raw data into valuable, actionable insights, empowering businesses to make data-driven decisions with confidence.
+                At GWC Analytics, our dbt (data build tool) team is redefining
+                the way we handle data transformation and modeling. With dbt, we
+                turn raw data into valuable, actionable insights, empowering
+                businesses to make data-driven decisions with confidence.
               </p>
               <h2>Capabilities</h2>
               {/* <div className="badge_box">Data Integrations</div> */}
               <div className={styles.badgeParent}>
                 <div className={styles.badge} data-aos="fade-right">
                   <div className={styles.badgeBase}>
-                    <div className={styles.text163}> DBT Implementation and Setup</div>
+                    <div className={styles.text163}>
+                      {" "}
+                      DBT Implementation and Setup
+                    </div>
                   </div>
                 </div>
 
                 <div className={styles.badge} data-aos="fade-right">
                   <div className={styles.badgeBase}>
-                    <div className={styles.text163}>Data Transformation Development</div>
+                    <div className={styles.text163}>
+                      Data Transformation Development
+                    </div>
                   </div>
                 </div>
                 <div className={styles.badge} data-aos="fade-right">
                   <div className={styles.badgeBase}>
-                    <div className={styles.text163}>Data Quality and Testing</div>
+                    <div className={styles.text163}>
+                      Data Quality and Testing
+                    </div>
                   </div>
                 </div>
                 <div className={styles.badge} data-aos="fade-left">
                   <div className={styles.badgeBase}>
-                    <div className={styles.text163}>Consulting and Best Practices
+                    <div className={styles.text163}>
+                      Consulting and Best Practices
                     </div>
                   </div>
                 </div>

@@ -23,6 +23,7 @@ import { DataGovernance } from "../../../components/solutions/dataGovernance/dat
 import HomeBottom from "../../../components/home/HomeBlog/HomeBottom";
 import { OurExpertiseCT } from "../../../components/solutions/ourExpertise/ourExpertiseCT";
 import CloudBottomSection from "./CloudBottomSection";
+import { Helmet } from "react-helmet-async";
 
 export const CloudTransformationPage = () => {
   useEffect(() => {
@@ -31,10 +32,21 @@ export const CloudTransformationPage = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
+      <Helmet>
+        {/* <meta
+          name="keywords"
+          content=""
+        /> */}
+        <title>{"GWC DATA.AI - Cloud Transformation"}</title>
+        <meta
+          name="description"
+          content="Discover how Cloud Transformation can revolutionize your business operations. Learn about strategies for migrating to the cloud, optimizing resources, enhancing collaboration, and driving innovation while ensuring security and scalability in your digital transformation journey."
+        ></meta>
+      </Helmet>
       <CommonSectionBanner
         commonSectionBannerContent={CloudTransformationBannerData}
       />

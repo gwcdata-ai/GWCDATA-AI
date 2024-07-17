@@ -42,10 +42,10 @@ export const OurStrengths = ({ strengthsData }) => {
                   >
                     <div className="p-3">
                       <Image src={item?.img} className="w-100" alt="" />
-                      <p className={`${styles.card_title} my-3`}>
+                      <h3 className={`${styles.card_title} my-3`}>
                         {" "}
                         <strong> {item?.title} </strong>
-                      </p>
+                      </h3>
                       <p className={`${styles.card_para} my-3`}>
                         {" "}
                         {item?.description}

@@ -25,7 +25,7 @@ export const OurExpertise = ({ ourExpertiseContent }) => {
               <p className={styles?.sub_title}>
                 <strong>{ourExpertiseContent?.sub_title}</strong>
               </p>
-              <p className={styles?.title}>{ourExpertiseContent?.title}</p>
+              <h2 className={styles?.title}>{ourExpertiseContent?.title}</h2>
             </Col>
             {ourExpertiseContent?.list?.map((item, index) => (
               <Col
@@ -43,7 +43,7 @@ export const OurExpertise = ({ ourExpertiseContent }) => {
                     alt=""
                   />
                   {/* <p className={`${styles.card_title} my-3`}> {item?.title}</p> */}
-                  <p
+                  <h3
                     className={`${styles.card_title} my-3`}
                     dangerouslySetInnerHTML={{
                       __html: item?.title?.replace(/\n/g, ""),

@@ -760,6 +760,13 @@ export const Header = () => {
               </NavDropdown>
 
               <Link
+                to="/innovation-labs"
+                active={activeItem === "innovation-labs"}
+                onClick={() => handleNavItemClick("innovation-labs")}
+              >
+                Innovation Hub
+              </Link>
+              <Link
                 to="/career"
                 active={activeItem === "career"}
                 onClick={() => handleNavItemClick("career")}

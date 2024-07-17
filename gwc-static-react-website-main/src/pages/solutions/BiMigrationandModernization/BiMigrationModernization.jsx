@@ -23,6 +23,7 @@ import { DataGovernance } from "../../../components/solutions/dataGovernance/dat
 import HomeBottom from "../../../components/home/HomeBlog/HomeBottom";
 import { OurExpertiseBIM } from "../../../components/solutions/ourExpertise/ourExpertiseBIM";
 import BiBottomSection from "./BiBottomSection";
+import { Helmet } from "react-helmet-async";
 
 export const BiMigrationModernizationPage = () => {
   useEffect(() => {
@@ -31,10 +32,21 @@ export const BiMigrationModernizationPage = () => {
       behavior: "smooth",
     });
 
-    return () => { };
+    return () => {};
   }, []);
   return (
     <>
+      <Helmet>
+        {/* <meta
+          name="keywords"
+          content="BI Migration,BI Modernization,Data Migration,Cloud BI,Business Intelligence,Analytics Transformation,Data Warehouse Migration,BI Tools Modernization,Enterprise BI Solutions,Data Integration"
+        /> */}
+        <title>{"GWC DATA.AI - BI Migration and Modernization"}</title>
+        <meta
+          name="description"
+          content="Explore BI Migration and Modernization strategies to seamlessly transition your business intelligence systems to the cloud. Discover best practices for enhancing data accessibility, improving analytics capabilities, and maximizing ROI while ensuring a smooth migration process."
+        ></meta>
+      </Helmet>
       <CommonSectionBanner commonSectionBannerContent={BiMigrationBannerData} />
       <DataGovernance
         commonRightSectionContent={BiMigrationMainDataGovernance}

@@ -22,9 +22,15 @@ export const ReadyToGetStart = ({ ReadyToGetStartContent }) => {
               <p className={styles?.sub_title}>
                 {ReadyToGetStartContent?.sub_title}
               </p>
-              <p className={` ${styles?.title} mb-1 `}>{ReadyToGetStartContent?.title1}</p>
-              <p className={` ${styles?.title} mb-1 `}>{ReadyToGetStartContent?.title2}</p>
-              <p className={` ${styles?.title} mb-4 `}>{ReadyToGetStartContent?.title3}</p>
+              <p className={` ${styles?.title} mb-1 `}>
+                {ReadyToGetStartContent?.title1}
+              </p>
+              <p className={` ${styles?.title} mb-1 `}>
+                {ReadyToGetStartContent?.title2}
+              </p>
+              <p className={` ${styles?.title} mb-4 `}>
+                {ReadyToGetStartContent?.title3}
+              </p>
               <Link to="/contact-us">
                 <Button className={`${styles.btn2} mx-1`}>
                   {" "}

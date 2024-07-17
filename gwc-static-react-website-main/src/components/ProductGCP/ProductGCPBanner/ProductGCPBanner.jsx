@@ -46,12 +46,8 @@ export const ProductGCPBanner = ({ allData }) => {
                 )}
               </p>
 
-              <h1 className={`${styles.banner_title} mb-4`}>
-                {allData?.title}
-              </h1>
-              <p className={`${styles.banner_para} mb-4`}>
-                {allData?.para}
-              </p>
+              <p className={`${styles.banner_title} mb-4`}>{allData?.title}</p>
+              <p className={`${styles.banner_para} mb-4`}>{allData?.para}</p>
               {allData?.buttontext && (
                 <>
                   <Button className={`${styles.banner_button} me-4`}>

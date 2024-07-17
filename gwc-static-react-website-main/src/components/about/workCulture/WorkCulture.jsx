@@ -24,7 +24,7 @@ const WorkCulture = () => {
         <Container className="" id="bi-analytics">
           <Row className="d-flex align-items-center justify-content-center">
             <Col lg={12} xs={12} className="py-md-0 py-0 ">
-              <p className={`mt-2 ${styles?.title4}`}>Work Culture</p>
+              <h2 className={`mt-2 ${styles?.title4}`}>Work Culture</h2>
 
               <Row>
                 <Col md={8} data-aos="fade-right">
