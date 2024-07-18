@@ -138,7 +138,7 @@ const BlogDetail = () => {
 
           <Col
             className="col-xl-9 "
-            md={7}
+            md={8}
             // style={{ border: "2px solid blue" }}
           >
             <Row className={styles.section}>
@@ -188,7 +188,11 @@ const BlogDetail = () => {
                           {listHeading && (
                             <h6
                               id={listId}
-                              className={` ${styles.blog_next_para} mb-3`}
+                              className={`${
+                                isMobile
+                                  ? ` ${styles.blog_next_para_Mobile}`
+                                  : ` ${styles.blog_next_para}`
+                              }`}
                             >
                               {listHeading}
                             </h6>
@@ -205,24 +209,34 @@ const BlogDetail = () => {
                           )}
                           {listPoints &&
                             listPoints.map((item, i) => (
-                              <div
-                                key={i} // Add a unique key for each item
-                                className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
-                              >
-                                <span className="mt-2 mb-3">
-                                  <strong style={{ color: "black" }}>
-                                    {item?.listPoint_Heading}
-                                  </strong>
-                                </span>
-                                <span
-                                  style={{
-                                    color: "#252B33",
-                                    lineHeight: "1.7",
-                                  }}
+                              <>
+                                <div
+                                  key={i} // Add a unique key for each item
+                                  className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
                                 >
-                                  {item?.listPoint}
-                                </span>
-                              </div>
+                                  <span className="mt-2 mb-3">
+                                    <strong style={{ color: "black" }}>
+                                      {item?.listPoint_Heading}
+                                    </strong>
+                                  </span>
+                                  <span
+                                    style={{
+                                      color: "#252B33",
+                                      lineHeight: "1.7",
+                                    }}
+                                  >
+                                    {item?.listPoint}
+                                  </span>
+                                </div>
+
+                                {item.images && (
+                                  <img
+                                    style={{ width: "100%" }}
+                                    src={item.images}
+                                    className="w-20 mt-3 mb-5"
+                                  />
+                                )}
+                              </>
                             ))}
                           {listPoint && (
                             <ol style={{ fontFamily: "poppins-regular" }}>
@@ -245,7 +259,7 @@ const BlogDetail = () => {
 
                           {images?.length === 1 &&
                             images?.map((item) => (
-                              <img src={item} className="w-50 mt-3 mb-5" />
+                              <img src={item} className="w-80 mt-3 mb-5" /> // change this to w-100 to make img full screen
                             ))}
                           <Row>
                             {images?.length === 2 &&
@@ -270,7 +284,13 @@ const BlogDetail = () => {
                   })}
                 </ul>
 
-                <h6 className={` ${styles.blog_next_para} `}>
+                <h6
+                  className={`${
+                    isMobile
+                      ? ` ${styles.blog_next_para_Mobile}`
+                      : ` ${styles.blog_next_para}`
+                  }`}
+                >
                   {item?.imageHeading}
                 </h6>
                 {item?.blogImage && (
@@ -281,7 +301,14 @@ const BlogDetail = () => {
                   />
                 )}
 
-                <h6 className={` ${styles.blog_next_para}`}>
+                <h6
+                  id={item?.conclusion}
+                  className={`${
+                    isMobile
+                      ? ` ${styles.blog_next_para_Mobile}`
+                      : ` ${styles.blog_next_para}`
+                  }`}
+                >
                   {item?.conclusion}
                 </h6>
                 <p className={` ${styles.blog_sub_para}`}>
@@ -317,8 +344,8 @@ const BlogDetail = () => {
           {/* rightside contents */}
 
           <Col
-            md={5}
-            className={`col-xl-3 ${isMobile && `${styles.padding_for_mobile}`}`}
+            md={3}
+            className={`col-xl-2 ${isMobile && `${styles.padding_for_mobile}`}`}
             style={{ padding: 0 }}
           >
             <Row>
@@ -338,13 +365,17 @@ const BlogDetail = () => {
                     );
                   }
                 })}
+
+                <div className={styles.rightside_content}>
+                  <a href={`#${item?.conclusion}`}>{item?.conclusion}</a>{" "}
+                </div>
               </div>
             </Row>
           </Col>
           <Col
             style={{ backgroundColor: "#eff3f6" }}
             md={12}
-            className="px-5 py-4 mt-5"
+            className={`${isMobile ? `px-2 py-4 mt-5` : `px-5 py-4 mt-5`}`}
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
           >
@@ -387,7 +418,8 @@ const BlogDetail = () => {
                 }}
                 md={4}
               >
-                <a target="_blank" href={""}>
+                <a target="_blank" href={item?.Author?.LinkedIn}>
+                  {/* {console.log("auth", item?.Author?.LinkedIn)} */}
                   <img src={Linkedin} alt="" />
                 </a>
               </Col>

@@ -137,7 +137,7 @@ export const BlogCardData3 = [
   },
   {
     id: 6,
-    date: "6 July 2024",
+    date: "16 July 2024",
     heading:
       "Transforming Fashion Retail with Domo: A One-Stop Shop for Data Analytics.",
     days: "Few days ago",
