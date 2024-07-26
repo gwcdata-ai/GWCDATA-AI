@@ -2,6 +2,7 @@
 
 import React from "react";
 import linkedin from "../../assets/images/about/linkedin.png";
+import { Helmet } from "react-helmet-async";
 
 import {
   Card,
@@ -45,6 +46,11 @@ const PUBLICID = "_M_x6ZxOlDwyjQYJ6";
 
 const BlogDetail = () => {
   const isMobile = useMedia("(max-width:600px)");
+  const isTablet = useMedia("(max-width:850px)");
+  let colClass = "col-xl-2"; // Default to desktop size
+  if (isMobile) {
+    colClass = "d-none"; // Hide on tablet and mobile screens
+  }
 
   useEffect(() => {
     window.scrollTo({
@@ -105,13 +111,30 @@ const BlogDetail = () => {
   });
 
   // console.log("item", item.blogSubHeading);
-
+  // const { title, slug, content, imageUrl } = blog;
   return (
     <Container
       fluid
       // style={{ backgroundColor: "lightgray" }}
       className={` ${styles.detail_container}`}
     >
+      <>
+        <Helmet>
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="blog" />
+          <meta property="og:title" content={item?.topHeading} />
+          <meta
+            property="og:url"
+            content={`https://gwcdata.ai/blogs/${slug}`}
+          />
+          <meta property="og:site_name" content="GWC Data.Ai" />
+          <meta property="og:image" content={item?.blogTopImg} />
+          <meta property="og:image:width" content="360" />
+          <meta property="og:image:height" content="203" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:description" content={item?.description} />
+        </Helmet>
+      </>
       <Container className={`md-5 ${styles.outermost_container}`}>
         <Row
           className=""
@@ -137,11 +160,16 @@ const BlogDetail = () => {
           </Col>
 
           <Col
-            className="col-xl-9 "
-            md={8}
+            className="col-xl-10 "
+            md={9}
+
             // style={{ border: "2px solid blue" }}
           >
-            <Row className={styles.section}>
+            <Row
+              className={
+                isMobile ? `${styles.section_mobile}` : `${styles.section}`
+              }
+            >
               <div className="mt-0">
                 {/* <img
                   src={item?.blogTopImg}
@@ -230,11 +258,31 @@ const BlogDetail = () => {
                                 </div>
 
                                 {item.images && (
-                                  <img
-                                    style={{ width: "100%" }}
-                                    src={item.images}
-                                    className="w-20 mt-3 mb-5"
-                                  />
+                                  // <img
+                                  //   style={{ width: "100%" }}
+                                  //   src={item.images}
+                                  //   className="w-20 mt-3 mb-5"
+                                  // />
+                                  <video
+                                    // width="100%"
+                                    // height="680px"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    className="video-element"
+                                    style={{
+                                      objectFit: "cover",
+                                      width: "100%",
+
+                                      padding: "0px",
+                                    }}
+                                  >
+                                    <source
+                                      src={item.images}
+                                      type="video/mp4"
+                                    />
+                                  </video>
                                 )}
                               </>
                             ))}
@@ -259,7 +307,8 @@ const BlogDetail = () => {
 
                           {images?.length === 1 &&
                             images?.map((item) => (
-                              <img src={item} className="w-80 mt-3 mb-5" /> // change this to w-100 to make img full screen
+                              <img src={item} className="w-80 mt-3 mb-5" />
+                              // change this to w-100 to make img full screen
                             ))}
                           <Row>
                             {images?.length === 2 &&
@@ -345,33 +394,39 @@ const BlogDetail = () => {
 
           <Col
             md={3}
-            className={`col-xl-2 ${isMobile && `${styles.padding_for_mobile}`}`}
+            className={`${colClass} ${isMobile && styles.padding_for_mobile}`}
             style={{ padding: 0 }}
           >
             <Row>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  // gap: "1rem",
-                }}
-              >
-                {item?.blogList.map((i) => {
-                  if (i?.listHeading !== undefined) {
-                    return (
-                      <div className={styles.rightside_content} key={i.id}>
-                        <a href={`#${i?.listId}`}>{i?.listHeading}</a>
-                      </div>
-                    );
-                  }
-                })}
+              <div>
+                {console.log("imageeeeee", item?.blog_right_image)}
+                {console.log("imageeeeeetabb", item?.Harnessing_Tablet)}
 
-                <div className={styles.rightside_content}>
-                  <a href={`#${item?.conclusion}`}>{item?.conclusion}</a>{" "}
-                </div>
+                {isTablet && (
+                  <img
+                    src={item?.blog_right_image_Tablet}
+                    alt=""
+                    style={{
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                )}
+                {!isTablet && (
+                  <img
+                    src={item?.blog_right_image}
+                    alt=""
+                    style={{
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                )}
               </div>
+              {/* Additional content */}
             </Row>
           </Col>
+
           <Col
             style={{ backgroundColor: "#eff3f6" }}
             md={12}
@@ -468,7 +523,7 @@ const BlogDetail = () => {
                           <Card.Text>
                             <div className={` ${styles?.text_section} `}>
                               <h6 className={` ${styles?.main_para} mb-0`}>
-                                {topHeading.slice(0, 45)}...
+                                {topHeading.slice(0, 55)}...
                               </h6>
                               <p className={` ${styles?.para} mb-3`}>{date}</p>
 

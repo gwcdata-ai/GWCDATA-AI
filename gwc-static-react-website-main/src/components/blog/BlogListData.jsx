@@ -17,6 +17,9 @@ import domo_for_streamline_manufacturing from "../../assets/images/Blog/domo_for
 import deeplink_filter_in_domo from "../../assets/images/Blog/deeplink_filter_in_domo.png";
 import challenges_faced_by_domo from "../../assets/images/Blog/challenges_faced_by_domo.png";
 import fashion_retail from "../../assets/images/Blog/fashion_retail.png";
+import harn from "../../assets/images/Blog/harn.mp4";
+import secure_vid from "../../assets/images/Blog/secure_vid.mp4";
+import fashion_video from "../../assets/images/Blog/fashion_video.mp4";
 
 import domo_custom_app_1 from "../../assets/images/Blog/domo_custom_app_1.png";
 import domo_custom_app_2 from "../../assets/images/Blog/domo_custom_app_2.png";
@@ -38,6 +41,14 @@ import domo_custom_app_17 from "../../assets/images/Blog/domo_custom_app_17.png"
 import Transforming_Fashion_Retail_with_Domo from "../../assets/images/Blog/Transforming_Fashion_Retail_with_Domo.png";
 import Revolutionizing_Manufacturing_with_Domo from "../../assets/images/Blog/Revolutionizing_Manufacturing_with_Domo.png";
 import Secure_Your_Data_with_Google_Cloud from "../../assets/images/Blog/Secure_Your_Data_with_Google_Cloud.png";
+import Harnessing_Right from "../../assets/images/Blog/Harnessing_Right.jpg";
+import Secure_Right from "../../assets/images/Blog/secure_data_desk.jpg";
+
+import Harnessing_Tablet from "../../assets/images/Blog/Harnessing_Tablet.jpg";
+import secure_tablet from "../../assets/images/Blog/secure_tablet.jpg";
+import Transform_Tablet from "../../assets/images/Blog/Transform_Tablet.jpg";
+
+import Transforming_Right from "../../assets/images/Blog/Transforming_Right.jpg";
 
 import Blog_4_1 from "../../assets/images/Blog/Customer_Service.jpg";
 import Blog_4_2 from "../../assets/images/Blog/Engineering_and_Design.jpg";
@@ -54,6 +65,11 @@ import image1Img from "../../assets/images/about/image1.png";
 export const BlogListData = [
   {
     id: 1,
+    blog_right_image_Tablet: secure_tablet,
+    blog_right_image: Secure_Right,
+    description:
+      "Google Cloud's Data Loss Prevention(DLP) offers a suite of cutting- edge services designed to help organizations discover, classify, and shield sensitive data across their cloud resources.DLP's feature set includes data inspection, categorization, and de - identification, all of which are vital for complying with data protection regulations and preventing data breaches.",
+
     slug: "secure-data-encryption-in-google-cloud-protecting-sensitive-data-with-cloud-dlp-and-kms",
     date: "January 08, 2024",
     heading: "Secure Data Encryption in Google Cloud",
@@ -245,7 +261,7 @@ export const BlogListData = [
             listPoint_Heading: " Upload Sample CSV:",
             listPoint:
               " Upload a sample CSV file containing sensitive PII data, such as US_SOCIAL_SECURITY_NUMBER.",
-            images: [Secure_Your_Data_with_Google_Cloud],
+            images: [secure_vid],
           },
         ],
       },
@@ -736,7 +752,13 @@ export const BlogListData = [
   // },
   {
     id: 5,
+    blog_right_image: Harnessing_Right,
+    blog_right_image_Tablet: Harnessing_Tablet,
+
     slug: "harnessing-the-power-of-domo-for-streamlined-manufacturing-operations",
+    description:
+      "Domo stands out due to its robust capabilities in data integration, data warehousing, data governance, artificial intelligence (AI), machine learning (ML), data visualization, workflow automation, and data-driven applications.",
+
     date: "June 28, 2024",
     heading:
       "Harnessing the Power of Domo for Streamlined Manufacturing Operations",
@@ -767,326 +789,378 @@ export const BlogListData = [
       },
       {
         id: 19,
-        listHeading: "Let’s explore how these features enhance the operations:",
+        listHeading: "1. Production/Manufacturing:",
         listId: "Let’s_explore",
-
         listPoints: [
           {
             id: 200,
-            listPoint_Heading: "1. Production/Manufacturing:",
+            // listPoint_Heading: "1. Production/Manufacturing:",
 
             listPoint:
-              " With Domo’s powerful data integration, real-time data from the shop floor is seamlessly consolidated, providing insights into machine performance, production rates, and downtime. The data warehousing capabilities ensure all production data is stored efficiently, making it easily accessible for analysis. AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
+              " With Domo’s powerful data integration, real-time data from the shop floor is seamlessly consolidated, providing insights into machine performance, production rates, and downtime.",
           },
 
           {
             id: 201,
-            listPoint_Heading: "2. Engineering and Design:",
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Domo facilitates collaboration between design and production teams by providing a unified view of project timelines, resource allocation, and design iterations. Data visualization tools help in presenting complex design data in an easily understandable format, ensuring quick communication and implementation of design changes. This reduces the time to market for new products.",
+              " The data warehousing capabilities ensure all production data is stored efficiently, making it easily accessible for analysis.",
           },
           {
             id: 202,
-            listPoint_Heading: "3. Procurement/Purchasing:",
+            // listPoint_Heading: "3. Procurement/Purchasing:",
             listPoint:
-              " Domo streamlines procurement by integrating supplier data, purchase orders, and contract management. This centralization allows for better negotiation with suppliers and timely procurement of raw materials, leading to significant cost savings. Detailed analytics on spending patterns aid in strategic sourcing decisions, while AI-driven insights improve procurement strategies.",
+              " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
           },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "2. Engineering and Design:",
+        listId: "Let’s_explore",
+        listPoints: [
           {
-            id: 203,
-            listPoint_Heading: "4. Quality Control/Assurance:",
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " Quality is non-negotiable in manufacturing. Domo’s data governance ensures that quality data is accurate and consistent. By integrating data from various quality checkpoints and testing stages, it provides a comprehensive view of product quality. Automated alerts, driven by AI, and detailed reports help in identifying defects early and implementing corrective actions promptly.",
-          },
-          {
-            id: 204,
-            listPoint_Heading: "5. Human Resources (HR):",
-            listPoint:
-              " Employee productivity and satisfaction are vital. Domo’s HR analytics provide insights into workforce performance, training needs, and employee engagement. Data integration and governance ensure that HR data is reliable, while AI and ML models help in predicting workforce trends and planning accordingly. This data-driven approach ensures that we attract, develop, and retain top talent, fostering a culture of continuous improvement.",
-          },
-          {
-            id: 205,
-            listPoint_Heading: "6. Supply Chain/Logistics:",
-            listPoint:
-              " Efficient supply chain management is critical for manufacturing success. Domo aggregates data from suppliers, inventory systems, and logistics providers, offering end-to-end visibility. ML algorithms forecast demand, optimizing inventory levels, and reducing lead times. Workflow automation further enhances supply chain efficiency, lowering costs and boosting customer satisfaction.",
-            images: [Revolutionizing_Manufacturing_with_Domo],
-          },
-          {
-            id: 206,
-            listPoint_Heading: "7. Finance and Accounting:",
-            listPoint:
-              " Financial health is the backbone of any business. Domo integrates financial data from various systems, offering real-time insights into revenue, expenses, and profitability. Data warehousing ensures all financial data is centralized, aiding in accurate budgeting, forecasting, and strategic financial planning. Automated workflows streamline financial operations, ensuring long-term sustainability.",
+              " Domo facilitates collaboration between design and production teams by providing a unified view of project timelines, resource allocation, and design iterations.",
           },
 
           {
-            id: 209,
-            listPoint_Heading: "8. Research and Development (R&D):",
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Innovation drives growth. Domo enables R&D teams to track project progress, manage budgets, and analyze the impact of new product introductions. By consolidating data from various experiments and prototypes, Domo helps in prioritizing projects that offer the best return on investment. Data-driven applications built on Domo can further enhance R&D processes.",
+              " Data visualization tools help in presenting complex design data in an easily understandable format, ensuring quick communication and implementation of design changes.",
           },
           {
-            id: 210,
-            listPoint_Heading: "9. Sales and Marketing:",
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint: " This reduces the time to market for new products.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "3. Procurement/Purchasing:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " Understanding market trends and customer needs is crucial. Domo’s powerful analytics help sales and marketing teams track campaign performance, customer acquisition costs, and sales pipelines. Data visualization tools present these insights clearly, driving targeted marketing efforts and effective sales strategies, ultimately boosting revenue growth.",
+              " Domo streamlines procurement by integrating supplier data, purchase orders, and contract management.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " Detailed analytics on spending patterns aid in strategic sourcing decisions, while AI-driven insights improve procurement strategies.",
           },
           {
-            id: 211,
-            listPoint_Heading: "10. Customer Service:",
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint: " This reduces the time to market for new products.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "4. Quality Control/Assurance:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " Exceptional customer service differentiates us from competitors. Domo consolidates customer feedback, service requests, and resolution times, enabling a proactive approach to customer satisfaction. AI-driven insights help in understanding customer needs better, while workflow automation ensures timely responses and resolution of issues. By analyzing this data, we can continuously improve our products and services.",
+              " Quality is non-negotiable in manufacturing. Domo’s data governance ensures that quality data is accurate and consistent.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " By integrating data from various quality checkpoints and testing stages, it provides a comprehensive view of product quality.",
           },
           {
-            id: 212,
-            listPoint_Heading: "11. Health, Safety, and Environment (HSE):",
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
             listPoint:
-              " Safety and sustainability are paramount. Domo integrates data from safety audits, incident reports, and environmental monitoring systems. AI and ML models predict potential safety hazards, while data governance ensures compliance with regulations. This centralized data helps in promoting a safe work environment and implementing sustainable practices.",
+              " Automated alerts, driven by AI, and detailed reports help in identifying defects early and implementing corrective actions promptly.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "5. Human Resources (HR):",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              " Employee productivity and satisfaction are vital. Domo’s HR analytics provide insights into workforce performance, training needs, and employee engagement.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " Data integration and governance ensure that HR data is reliable, while AI and ML models help in predicting workforce trends and planning accordingly.",
           },
           {
-            id: 213,
-            listPoint_Heading: "12. Information Technology (IT):",
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
             listPoint:
-              " Domo’s IT analytics provide a holistic view of the company’s technology infrastructure. This integration helps in monitoring system performance, managing data security, and supporting digital transformation initiatives. IT teams can leverage data-driven applications to ensure technology investments align with business goals.",
+              " This data-driven approach ensures that we attract, develop, and retain top talent, fostering a culture of continuous improvement.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "6. Supply Chain/Logistics:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              " Efficient supply chain management is critical for manufacturing success.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " Domo aggregates data from suppliers, inventory systems, and logistics providers, offering end-to-end visibility.",
           },
           {
-            id: 214,
-            listPoint_Heading: "13. Legal and Compliance:",
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
             listPoint:
-              " Navigating legal complexities is simplified with Domo. By integrating contract management, compliance checklists, and regulatory updates, Domo ensures that we adhere to legal requirements and minimize risks. This proactive approach safeguards our business interests, with data governance ensuring all legal data is accurate and up-to-date.",
+              " ML algorithms forecast demand, optimizing inventory levels, and reducing lead times. Workflow automation further enhances supply chain efficiency, lowering costs and boosting customer satisfaction.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "7. Finance and Accounting",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint: " Financial health is the backbone of any business.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " Domo integrates financial data from various systems, offering real-time insights into revenue, expenses, and profitability.",
           },
           {
-            id: 215,
-            listPoint_Heading: "14. Maintenance and Facilities:",
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
             listPoint:
-              " Domo enables predictive maintenance by integrating data from sensors and maintenance logs. AI-driven predictive models help in preventing equipment failures, reducing downtime, and extending the lifespan of assets. Workflow automation ensures timely maintenance actions, while facilities management is streamlined, ensuring optimal working conditions.",
+              " Data warehousing ensures all financial data is centralized, aiding in accurate budgeting, forecasting, and strategic financial planning. Automated workflows streamline financial operations, ensuring long-term sustainability.",
+            images: [harn],
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "8. Research and Development (R&D)",
+        // listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Innovation drives growth. Domo enables R&D teams to track project progress, manage budgets, and analyze the impact of new product introductions.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " By consolidating data from various experiments and prototypes, Domo helps in prioritizing projects that offer the best return on investment.",
+          },
+          {
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint:
+              " Data-driven applications built on Domo can further enhance R&D processes.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "9. Sales and Marketing",
+        // listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Understanding market trends and customer needs is crucial.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " Domo’s powerful analytics help sales and marketing teams track campaign performance, customer acquisition costs, and sales pipelines.",
+          },
+          {
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint:
+              " Data visualization tools present these insights clearly, driving targeted marketing efforts and effective sales strategies, ultimately boosting revenue growth.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "10. Customer Service",
+        // listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Exceptional customer service differentiates us from competitors.Domo consolidates customer feedback, service requests, and resolution times, enabling a proactive approach to customer satisfaction.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              "AI-driven insights help in understanding customer needs better, while workflow automation ensures timely responses and resolution of issues.",
+          },
+          {
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint:
+              "By analyzing this data, we can continuously improve our products and services.",
           },
         ],
       },
 
-      // {
-      //   id: 2,
-      //   listHeading: "1. Production/Manufacturing",
-      //   listId: "Production/Manufacturing",
+      {
+        id: 19,
+        listHeading: "11. Health, Safety, and Environment (HSE)",
+        // listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
 
-      //   listPara:
-      //     "With Domo’s powerful data integration, real-time data from the shop floor is seamlessly consolidated, providing insights into machine performance, production rates, and downtime. The data warehousing capabilities ensure all production data is stored efficiently, making it easily accessible for analysis. AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
-      // },
-      // {
-      //   id: 3,
-      //   listHeading: "2. Engineering and Design",
-      //   listId: "Engineering and Design",
+            listPoint:
+              "Safety and sustainability are paramount. Domo integrates data from safety audits, incident reports, and environmental monitoring systems.",
+          },
 
-      //   images: [Blog_4_2],
-      //   altTag:
-      //     "Engineers collaborating over digital blueprints with data visualizations.",
-      //   listPara:
-      //     "Domo facilitates collaboration between design and production teams by providing a unified view of project timelines, resource allocation, and design iterations. Data visualization tools help in presenting complex design data in an easily understandable format, ensuring quick communication and implementation of design changes. This reduces the time to market for new products.",
-      // },
-      // {
-      //   id: 6,
-      //   listHeading: "3. Procurement/Purchasing",
-      //   listId: "Procurement/Purchasing",
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              "AI and ML models predict potential safety hazards, while data governance ensures compliance with regulations.",
+          },
+          {
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint:
+              " This centralized data helps in promoting a safe work environment and implementing sustainable practices.",
+          },
+        ],
+      },
 
-      //   listPara:
-      //     "Domo streamlines procurement by integrating supplier data, purchase orders, and contract management. This centralization allows for better negotiation with suppliers and timely procurement of raw materials, leading to significant cost savings. Detailed analytics on spending patterns aid in strategic sourcing decisions, while AI-driven insights improve procurement strategies.",
-      // },
-      // {
-      //   id: 4,
-      //   listHeading: "4. Quality Control/Assurance",
-      //   listId: "Quality Control/Assurance",
+      {
+        id: 19,
+        listHeading: "12. Information Technology (IT)",
+        // listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
 
-      //   altTag:
-      //     "Quality control specialist inspecting products with data quality metrics.",
-      //   images: [Blog_4_6],
-      //   listPara:
-      //     "Quality is non-negotiable in manufacturing. Domo’s data governance ensures that quality data is accurate and consistent. By integrating data from various quality checkpoints and testing stages, it provides a comprehensive view of product quality. Automated alerts, driven by AI, and detailed reports help in identifying defects early and implementing corrective actions promptly.",
-      // },
-      // {
-      //   id: 8,
-      //   listId: "Human Resources",
+            listPoint:
+              "Domo’s IT analytics provide a holistic view of the company’s technology infrastructure.",
+          },
 
-      //   listHeading: "5. Human Resources (HR)",
-      //   listPara:
-      //     "Employee productivity and satisfaction are vital. Domo’s HR analytics provide insights into workforce performance, training needs, and employee engagement. Data integration and governance ensure that HR data is reliable, while AI and ML models help in predicting workforce trends and planning accordingly. This data-driven approach ensures that we attract, develop, and retain top talent, fostering a culture of continuous improvement.",
-      // },
-      // {
-      //   id: 5,
-      //   listHeading: "6. Supply Chain/Logistics",
-      //   listId: "Supply Chain",
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " This integration helps in monitoring system performance, managing data security, and supporting digital transformation initiatives.",
+          },
+          {
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint:
+              " IT teams can leverage data-driven applications to ensure technology investments align with business goals.",
+          },
+        ],
+      },
 
-      //   images: [Blog_4_8],
-      //   altTag:
-      //     "Logistics manager tracking shipments and inventory levels in real-time.",
-      //   listPara:
-      //     "Efficient supply chain management is critical for manufacturing success. Domo aggregates data from suppliers, inventory systems, and logistics providers, offering end-to-end visibility. ML algorithms forecast demand, optimizing inventory levels, and reducing lead times. Workflow automation further enhances supply chain efficiency, lowering costs and boosting customer satisfaction.",
-      // },
-      // {
-      //   id: 9,
-      //   listHeading: "7. Finance and Accounting",
-      //   listId: "Finance and Accounting",
+      {
+        id: 19,
+        listHeading: "13. Legal and Compliance",
+        // listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
 
-      //   listPara:
-      //     "Financial health is the backbone of any business. Domo integrates financial data from various systems, offering real-time insights into revenue, expenses, and profitability. Data warehousing ensures all financial data is centralized, aiding in accurate budgeting, forecasting, and strategic financial planning. Automated workflows streamline financial operations, ensuring long-term sustainability.",
-      // },
-      // {
-      //   id: 7,
-      //   listHeading: "8. Research and Development (R&D)",
-      //   listId: "Research and Development",
+            listPoint:
+              "Navigating legal complexities is simplified with Domo.By integrating contract management, compliance checklists, and regulatory updates, Domo ensures that we adhere to legal requirements and minimize risks.",
+          },
 
-      //   altTag: "R&D professionals analyzing data and project progress charts.",
-      //   images: [Blog_4_7],
-      //   listPara:
-      //     "Innovation drives growth. Domo enables R&D teams to track project progress, manage budgets, and analyze the impact of new product introductions. By consolidating data from various experiments and prototypes, Domo helps in prioritizing projects that offer the best return on investment. Data-driven applications built on Domo can further enhance R&D processes.",
-      // },
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " This proactive approach safeguards our business interests, with data governance ensuring all legal data is accurate and up-to-date.",
+          },
+        ],
+      },
 
-      // {
-      //   id: 10,
-      //   listId: "Sales and Marketing",
+      {
+        id: 19,
+        listHeading: "14. Maintenance and Facilities",
+        // listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
 
-      //   listHeading: "9. Sales and Marketing",
-      //   listPara:
-      //     "Understanding market trends and customer needs is crucial. Domo’s powerful analytics help sales and marketing teams track campaign performance, customer acquisition costs, and sales pipelines. Data visualization tools present these insights clearly, driving targeted marketing efforts and effective sales strategies, ultimately boosting revenue growth.",
-      // },
-      // {
-      //   id: 11,
-      //   listHeading: "10. Customer Service",
-      //   listId: "Customer Service",
+            listPoint:
+              "Domo enables predictive maintenance by integrating data from sensors and maintenance logs.AI-driven predictive models help in preventing equipment failures, reducing downtime, and extending the lifespan of assets.",
+          },
 
-      //   images: [Blog_4_1],
-
-      //   listPara:
-      //     "Exceptional customer service differentiates us from competitors. Domo consolidates customer feedback, service requests, and resolution times, enabling a proactive approach to customer satisfaction. AI-driven insights help in understanding customer needs better, while workflow automation ensures timely responses and resolution of issues. By analyzing this data, we can continuously improve our products and services.",
-      // },
-      // {
-      //   id: 13,
-      //   listId: "Health",
-
-      //   listHeading: "11. Health, Safety, and Environment (HSE)",
-      //   listPara:
-      //     "Safety and sustainability are paramount. Domo integrates data from safety audits, incident reports, and environmental monitoring systems. AI and ML models predict potential safety hazards, while data governance ensures compliance with regulations. This centralized data helps in promoting a safe work environment and implementing sustainable practices.",
-      // },
-      // {
-      //   id: 12,
-      //   listHeading: "12. Information Technology (IT)",
-      //   listId: "Information Technology",
-
-      //   images: [Blog_4_3],
-      //   listPara:
-      //     "Domo’s IT analytics provide a holistic view of the company’s technology infrastructure. This integration helps in monitoring system performance, managing data security, and supporting digital transformation initiatives. IT teams can leverage data-driven applications to ensure technology investments align with business goals.",
-      // },
-
-      // {
-      //   id: 14,
-      //   listHeading: "13. Legal and Compliance",
-      //   listId: "Legal",
-
-      //   listPara:
-      //     "Navigating legal complexities is simplified with Domo. By integrating contract management, compliance checklists, and regulatory updates, Domo ensures that we adhere to legal requirements and minimize risks. This proactive approach safeguards our business interests, with data governance ensuring all legal data is accurate and up-to-date.",
-      // },
-      // {
-      //   id: 15,
-      //   listHeading: "14. Maintenance and Facilities",
-      //   listId: "Maintenance",
-
-      //   images: [Blog_4_5],
-      //   listPara:
-      //     "Domo enables predictive maintenance by integrating data from sensors and maintenance logs. AI-driven predictive models help in preventing equipment failures, reducing downtime, and extending the lifespan of assets. Workflow automation ensures timely maintenance actions, while facilities management is streamlined, ensuring optimal working conditions.",
-      // },
-
-      // {
-      //   id: 5,
-      //   listHeading: "What We Will Cover",
-      //   listSub:
-      //     "In this article, we will guide you through the process of using Google Cloud's Data Loss Prevention (DLP) and Key Management Service(KMS) to: ",
-      //   listPoints: [
-      //     "Inspect and redact sensitive data using DLP's Inspection and De-Identification templates.",
-      //     "Use a KMS-generated symmetric encryption key to encrypt the identified sensitive data.",
-      //     "Create a data pipeline that reads data with sensitive information from a file in a Cloud Storage bucket.",
-      //     "Inspect the data using the DLP Inspection template and redact the findings by encrypting the data with a KMS encryption key",
-      //     "Load the encrypted data into a BigQuery table using Dataflow",
-      //     "This architecture ensures that sensitive information is securely encrypted in the BigQuery table, providing an extra layer of security in case of data exfiltration.",
-      //   ],
-      // },
-      // {
-      //   id: 6,
-      //   listHeading: "Setup and Requirements",
-      //   listSub:
-      //     "Before diving into the implementation, ensure you have the following set up:",
-      //   listPoints: [
-      //     "Google Cloud Data Loss Prevention (DLP)",
-      //     "Google Cloud Key Management Service (KMS)",
-      //     "Google Cloud Dataflow",
-      //     "Google Cloud Storage",
-      //     "Google BigQuery",
-      //   ],
-      // },
-      // {
-      //   id: 6,
-      //   listHeading:
-      //     "Ensure that the following roles are assigned to the service account:",
-      //   // listSub: 'Before diving into the implementation, ensure you have the following set up:',
-      //   listPoints: [
-      //     "BigQuery Data Editor",
-      //     "BigQuery Job User",
-      //     "Dataflow Worker",
-      //     "DLP Administrator",
-      //     "Storage Admin",
-      //   ],
-      // },
-      // {
-      //   id: 7,
-      //   listHeading: "1. Implementation Steps",
-      //   listSub: "Bucket in Google Cloud Storage and Load File",
-      //   listPoints: [
-      //     "Create a Google Cloud Storage bucket to hold the sample data file, e.g., gs://gcp-project bucket-2023.",
-      //     "Upload a sample CSV file containing sensitive PII data, such as US_SOCIAL_SECURITY_NUMBER",
-      //   ],
-      // },
-      // {
-      //   id: 8,
-      //   listHeading: "2. Key Ring and Encryption Key Creation in KMS",
-      //   // listSub: 'Bucket in Google Cloud Storage and Load File',
-      //   listPoints: [
-      //     "Navigate to the Cloud KMS section in Google Cloud Console.",
-      //     "Enable the KMS API if not already enabled.",
-      //     "Create a key ring (e.g., ring) within KMS.",
-      //     "Create a key within the key ring with software protection and purpose set to symmetric encrypt / decrypt.",
-      //     "Store the key resource name for later use",
-      //   ],
-      // },
-      // {
-      //   id: 9,
-      //   listHeading: "3. Create the Inspection Template in DLP",
-      //   // listSub: 'Bucket in Google Cloud Storage and Load File',
-      //   listPoints: [
-      //     "Enable the DLP API if not already enabled",
-      //     "In DLP, navigate to CONFIGURATION - TEMPLATES - INSPECT.",
-      //     "Create an Inspection Template, specifying the infotypes to detect, e.g.,US_SOCIAL_SECURITY_NUMBER.",
-      //   ],
-      // },
-      // {
-      //   id: 10,
-      //   listHeading: "4. Create the Wrapped Key and De-Identification Template",
-      //   // listSub: 'Bucket in Google Cloud Storage and Load File',
-      //   listPoints: [
-      //     "Create a De-Identification Template in DLP to define how findings should be redacted.",
-      //     "Specify the key resource name from KMS and provide a wrapped key.",
-      //     "Select the infoTypes (e.g., US_SOCIAL_SECURITY_NUMBER) to encrypt.",
-      //     "Review and create the De-Identification Template.",
-      //   ],
-      // },
-      // {
-      //   id: 11,
-      //   listHeading: "5. Create Dataflow Job",
-      //   // listSub: 'Bucket in Google Cloud Storage and Load File',
-      //   listPoints: [
-      //     "Ensure the required IAM roles are assigned for Dataflow service accounts",
-      //     "Create a BigQuery dataset to store the results.",
-      //     "Enable the necessary APIs for Dataflow",
-      //     "Create a Dataflow job using the Data Masking/Tokenization template",
-      //     "Configure the template parameters, specifying the location of the sample data, BigQuery dataset, project ID, temporary Cloud Storage bucket, and Cloud DLP De - Identification template resource name",
-      //     "Run the Dataflow job",
-      //   ],
-      // },
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " Workflow automation ensures timely maintenance actions, while facilities management is streamlined, ensuring optimal working conditions.",
+          },
+          {
+            id: 202,
+            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint:
+              " Data visualization tools present these insights clearly, driving targeted marketing efforts and effective sales strategies, ultimately boosting revenue growth.",
+          },
+        ],
+      },
     ],
     // imageHeading: "Why Does GWC Interaction Matter?",
     // blogImage: cloud_computing_header,
@@ -1096,7 +1170,10 @@ export const BlogListData = [
     writtenBy: "Written by Naveen - June 28, 2024",
   },
   {
-    id: 5,
+    id: 6,
+    blog_right_image: Transforming_Right,
+    blog_right_image_Tablet: Transform_Tablet,
+
     slug: "transforming-fashion-retai-with-domo:a-one-stop-shop-for-data-analytics",
     date: "July 16, 2024",
     heading:
@@ -1109,6 +1186,8 @@ export const BlogListData = [
     blogTopImg: fashion_retail,
     blogSubHeading:
       "Transforming Fashion Retail with DOMO : A One-Stop Shop for Data Analytics",
+    description:
+      "In today's fast-paced fashion retail industry, the ability to swiftly adapt to changing trends and customer preferences is crucial. Success hinges on seamless integration across various departments, from design and merchandising to sales and customer service. This is where Domo, a comprehensive data analytics platform, comes into play, revolutionizing the way we run our business.",
     // blogSubPara1: '',
     Author: {
       name: "Naveen Kumar",
@@ -1172,99 +1251,329 @@ export const BlogListData = [
       },
 
       {
-        id: 5,
+        id: 1,
         listHeading: "What We Will Cover",
-        listId: "What_We+_Will_Cover",
+        listId: "Introduction",
 
-        listSub:
+        listPara:
           "In this article, we will guide you through the process of using Google Cloud's Data Loss Prevention (DLP) and Key Management Service(KMS) to: ",
+      },
+
+      {
+        id: 19,
+        listHeading: "Design and Development:",
+        listId: "Let’s_explore",
         listPoints: [
           {
             id: 200,
-            listPoint_Heading: "Design and Development:",
+            // listPoint_Heading: "1. Production/Manufacturing:",
 
             listPoint:
-              " With Domo, our design team can integrate various data sources to predict trends and customer preferences, ensuring our collections are always on point. AI and ML algorithms analyze past sales data and social media trends, providing valuable insights that guide the creative process.",
+              " With Domo, our design team can integrate various data sources to predict trends and customer preferences, ensuring our collections are always on point.",
           },
 
           {
             id: 201,
-            listPoint_Heading: "Merchandising:",
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Domo’s data warehousing and integration capabilities allow our merchandising team to have a unified view of inventory levels, sales performance, and market trends. This enables precise product assortment and pricing strategies, ensuring that our stores and online platforms are always stocked with the right products at the right time.",
+              " AI and ML algorithms analyze past sales data and social media trends, providing valuable insights that guide the creative process.",
           },
+          // {
+          //   id: 202,
+          //   // listPoint_Heading: "3. Procurement/Purchasing:",
+          //   listPoint:
+          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
+          // },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Merchandising:",
+        listId: "Let’s_explore",
+        listPoints: [
           {
-            id: 202,
-            listPoint_Heading: "Buying:",
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " Our buyers leverage Domo’s advanced analytics to make data-driven decisions, negotiating better deals with suppliers and ensuring timely product delivery. The platform’s data visualization tools offer clear insights into supplier performance and market demand.",
+              " Domo’s data warehousing and integration capabilities allow our merchandising team to have a unified view of inventory levels, sales performance, and market trends.",
           },
+
           {
-            id: 203,
-            listPoint_Heading: "Production and Sourcing:",
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Domo’s workflow automation and data governance features streamline the production process, from sourcing raw materials to final manufacturing. By automating repetitive tasks and ensuring compliance with quality standards, we can focus on innovation and efficiency.",
+              " This enables precise product assortment and pricing strategies, ensuring that our stores and online platforms are always stocked with the right products at the right time.",
           },
+          // {
+          //   id: 202,
+          //   // listPoint_Heading: "3. Procurement/Purchasing:",
+          //   listPoint:
+          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
+          // },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Buying:",
+        listId: "Let’s_explore",
+        listPoints: [
           {
-            id: 204,
-            listPoint_Heading: "Marketing and Advertising:",
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " With Domo, our marketing team can create targeted campaigns based on real-time data. The platform’s data integration and visualization tools allow us to track campaign performance across various channels, optimizing our marketing spend and enhancing brand visibility.",
+              " Our buyers leverage Domo’s advanced analytics to make data-driven decisions, negotiating better deals with suppliers and ensuring timely product delivery.",
           },
+
           {
-            id: 205,
-            listPoint_Heading: "Sales:",
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Domo’s powerful data-driven apps provide our sales teams with real-time insights into store performance, customer preferences, and sales trends. This data enables proactive decision-making, driving sales growth both in-store and online.",
-            images: [Transforming_Fashion_Retail_with_Domo],
+              " The platform’s data visualization tools offer clear insights into supplier performance and market demand.",
           },
+          // {
+          //   id: 202,
+          //   // listPoint_Heading: "3. Procurement/Purchasing:",
+          //   listPoint:
+          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
+          // },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Production and Sourcing:",
+        listId: "Let’s_explore",
+        listPoints: [
           {
-            id: 206,
-            listPoint_Heading: "E-commerce:",
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " The e-commerce landscape is ever-evolving, and Domo helps us stay ahead of the curve. By integrating data from our website, social media, and third-party platforms, we can optimize the online shopping experience, improve customer satisfaction, and boost sales.",
+              "  Domo’s workflow automation and data governance features streamline the production process, from sourcing raw materials to final manufacturing.",
           },
+
           {
-            id: 208,
-            listPoint_Heading: "Finance and Accounting:",
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Domo’s robust data governance ensures financial data integrity and compliance. Our finance team uses the platform to manage budgets, forecast financial performance, and generate comprehensive reports, all within a secure environment.",
+              "  By automating repetitive tasks and ensuring compliance with quality standards, we can focus on innovation and efficiency.",
           },
+          // {
+          //   id: 202,
+          //   // listPoint_Heading: "3. Procurement/Purchasing:",
+          //   listPoint:
+          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
+          // },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Marketing and Advertising:",
+        listId: "Let’s_explore",
+        listPoints: [
           {
-            id: 209,
-            listPoint_Heading: "Human Resources:",
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " Domo empowers our HR team with data-driven insights into employee performance, recruitment trends, and workforce planning. This allows us to attract, retain, and develop top talent, fostering a culture of growth and innovation.",
+              "  With Domo, our marketing team can create targeted campaigns based on real-time data.",
           },
+
           {
-            id: 210,
-            listPoint_Heading: "Logistics and Supply Chain:",
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Efficiency in logistics and supply chain management is critical in fashion retail. Domo’s integration and workflow automation streamline operations, ensuring timely delivery and optimal inventory levels, reducing costs and enhancing customer satisfaction.",
+              "  The platform’s data integration and visualization tools allow us to track campaign performance across various channels, optimizing our marketing spend and enhancing brand visibility.",
           },
+          // {
+          //   id: 202,
+          //   // listPoint_Heading: "3. Procurement/Purchasing:",
+          //   listPoint:
+          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
+          // },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Sales:",
+        listId: "Let’s_explore",
+        listPoints: [
           {
-            id: 211,
-            listPoint_Heading: "Customer Service:",
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " With Domo, our customer service team can access a holistic view of customer interactions, feedback, and support tickets. This data-driven approach ensures quick resolution of issues, improving customer loyalty and driving repeat business.",
+              " Domo’s powerful data-driven apps provide our sales teams with real-time insights into store performance, customer preferences, and sales trends.",
           },
+
           {
-            id: 212,
-            listPoint_Heading: "IT and Technology:",
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Domo’s comprehensive platform supports our IT team in maintaining a secure and efficient technology infrastructure. From data analytics to cybersecurity, Domo ensures our systems are robust and reliable.",
+              "  This data enables proactive decision-making, driving sales growth both in-store and online.",
+            images: [harn],
           },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "E-commerce:",
+        listId: "Let’s_explore",
+        listPoints: [
           {
-            id: 213,
-            listPoint_Heading: "Visual Merchandising:",
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
             listPoint:
-              " Our visual merchandising team benefits from Domo’s data visualization tools, which help in designing captivating in-store displays. By analyzing foot traffic and sales data, we can optimize layouts to enhance the shopping experience and boost sales.",
+              " The e-commerce landscape is ever-evolving, and Domo helps us stay ahead of the curve.",
           },
+
           {
-            id: 214,
-            listPoint_Heading: "Legal:",
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
             listPoint:
-              " Domo’s data governance features ensure compliance with legal and regulatory requirements. Our legal team can manage contracts, intellectual property, and legal disputes with confidence, backed by accurate and up-to-date data.",
+              "  By integrating data from our website, social media, and third-party platforms, we can optimize the online shopping experience, improve customer satisfaction, and boost sales.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Finance and Accounting:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Domo’s robust data governance ensures financial data integrity and compliance.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              "Our finance team uses the platform to manage budgets, forecast financial performance, and generate comprehensive reports, all within a secure environment.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Human Resources:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Domo empowers our HR team with data-driven insights into employee performance, recruitment trends, and workforce planning.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              "This allows us to attract, retain, and develop top talent, fostering a culture of growth and innovation.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Logistics and Supply Chain:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Efficiency in logistics and supply chain management is critical in fashion retail.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " Domo’s integration and workflow automation streamline operations, ensuring timely delivery and optimal inventory levels, reducing costs and enhancing customer satisfaction.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Customer Service:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Efficiency in logistics and supply chain management is critical in fashion retail.With Domo, our customer service team can access a holistic view of customer interactions, feedback, and support tickets.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " This data-driven approach ensures quick resolution of issues, improving customer loyalty and driving repeat business.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "IT and Technology:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Domo’s comprehensive platform supports our IT team in maintaining a secure and efficient technology infrastructure. From data analytics to cybersecurity, Domo ensures our systems are robust and reliable.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Visual Merchandising:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Our visual merchandising team benefits from Domo’s data visualization tools, which help in designing captivating in-store displays.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " By analyzing foot traffic and sales data, we can optimize layouts to enhance the shopping experience and boost sales.",
+          },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Legal:",
+        listId: "Let’s_explore",
+        listPoints: [
+          {
+            id: 200,
+            // listPoint_Heading: "1. Production/Manufacturing:",
+
+            listPoint:
+              "Domo’s data governance features ensure compliance with legal and regulatory requirements.",
+          },
+
+          {
+            id: 201,
+            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint:
+              " Our legal team can manage contracts, intellectual property, and legal disputes with confidence, backed by accurate and up-to-date data.",
           },
         ],
       },

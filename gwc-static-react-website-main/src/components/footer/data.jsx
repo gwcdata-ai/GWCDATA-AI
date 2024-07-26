@@ -9,6 +9,7 @@ import DeviceIcon from "../../assets/images/footer/device-mobile.svg";
 import LocationIcon from "../../assets/images/footer/location-marker.svg";
 import MailIcon from "../../assets/images/footer/mail.svg";
 import LinkedInIcon from "../../assets/images/footer/linkedin.svg";
+import YoutubeIcon from "../../assets/images/footer/youtube.svg";
 
 export const FooterContentLeft = {
   footerBg: FooterBg,
@@ -19,9 +20,12 @@ export const FooterContentLeft = {
   nasscomImg: NasscomImg,
   socialmediatext: "Follow us on",
   socialmedia: [
-    // { icon: InstagramIcon, url: "" },
+    { icon: InstagramIcon, url: "https://www.instagram.com/gwcdata.ai/" },
     // { icon: FaceBookIcon, url: "" },
-    // { icon: TwitterIcon, url: "" },
+    {
+      icon: YoutubeIcon,
+      url: "https://www.youtube.com/channel/UCxMeBqyMJDlQSlO8ym-ZSxg",
+    },
     { icon: LinkedInIcon, url: "https://www.linkedin.com/company/gwcdataai" },
   ],
 };
@@ -34,7 +38,6 @@ export const FooterQuickLinks = {
     { menu: "Contact Us", url: "/contact-us" },
     { menu: "Blogs", url: "/blog" },
     { menu: "Case Studies", url: "/case-studies" },
-
   ],
 };
 
