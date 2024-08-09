@@ -12,6 +12,45 @@ import business_intelligence_header from "../../assets/images/Blog/business_inte
 import cloud_computing_header from "../../assets/images/Blog/cloud_computing_header.png";
 // import cloud_computing_header_redesigned from "../../assets/images/Blog/blog_sample.webp";
 import Secure_data_encryption from "../../assets/images/Blog/Secure_data_encryption.png";
+import Secure_data_encryption_mobile from "../../assets/images/Blog/secure_mobilr_banner.jpg";
+import Harnessing_banner_mobile from "../../assets/images/Blog/Harnessing_Mobile_bannerss.jpg";
+import Transforming_Fashion_mobile from "../../assets/images/Blog/Transforming_Fashion_bannerss.jpg";
+
+import Secure_data_encryption_1 from "../../assets/images/Blog/Imple.jpg";
+import Secure_data_encryption_2 from "../../assets/images/Blog/secure_2.jpg";
+import Secure_data_encryption_4 from "../../assets/images/Blog/secure_3.jpg";
+import Secure_data_encryption_5 from "../../assets/images/Blog/secure_4.jpg";
+
+//harnessing_mobile_image
+import harnessing_mobile_1 from "../../assets/images/Blog/Production_Manufacturing.jpg";
+import harnessing_mobile_2 from "../../assets/images/Blog/Engineering_Design.jpg";
+import harnessing_mobile_3 from "../../assets/images/Blog/Procurement&Purchase.jpg";
+import harnessing_mobile_4 from "../../assets/images/Blog/Quality_Control_Assurance.jpg";
+import harnessing_mobile_5 from "../../assets/images/Blog/Human_Resourc.jpg";
+import harnessing_mobile_6 from "../../assets/images/Blog/Supply_Chain_Logistics.jpg";
+import harnessing_mobile_7 from "../../assets/images/Blog/Research_Development.jpg";
+import harnessing_mobile_8 from "../../assets/images/Blog/Sales_Marketing.jpg";
+import harnessing_mobile_9 from "../../assets/images/Blog/Customer_Service.jpg";
+import harnessing_mobile_10 from "../../assets/images/Blog/Health_Environment.jpg";
+import harnessing_mobile_11 from "../../assets/images/Blog/Information_Technology.jpg";
+import harnessing_mobile_12 from "../../assets/images/Blog/Legal_Compliance.jpg";
+import harnessing_mobile_13 from "../../assets/images/Blog/Maintenance_Facilities.jpg";
+
+//transforming_mobile_image
+
+import transforming_1 from "../../assets/images/Blog/Design_Development.jpg";
+import transforming_2 from "../../assets/images/Blog/Merchandising.jpg";
+import transforming_3 from "../../assets/images/Blog/Buying.jpg";
+import transforming_4 from "../../assets/images/Blog/Production_Sourcing.jpg";
+import transforming_5 from "../../assets/images/Blog/E-commerce.jpg";
+import transforming_6 from "../../assets/images/Blog/Finance_and_Accounting.jpg";
+import transforming_7 from "../../assets/images/Blog/Human.jpg";
+import transforming_8 from "../../assets/images/Blog/Logistics_and_Supply Chain.jpg";
+import transforming_9 from "../../assets/images/Blog/Customer_Services.jpg";
+import transforming_10 from "../../assets/images/Blog/IT_and_Technology.jpg";
+import transforming_11 from "../../assets/images/Blog/Visual_Merchandising.jpg";
+import transforming_12 from "../../assets/images/Blog/Legal.jpg";
+
 import BI_and_Analytics from "../../assets/images/Blog/BI_and_Analytics.png";
 import domo_for_streamline_manufacturing from "../../assets/images/Blog/domo_for_streamline_manufacturing.png";
 import deeplink_filter_in_domo from "../../assets/images/Blog/deeplink_filter_in_domo.png";
@@ -76,6 +115,7 @@ export const BlogListData = [
     days: "2 days ago",
     // views: "110k views",
     img: Secure_data_encryption,
+    blogTopImg_mobile: Secure_data_encryption_mobile,
     topHeading:
       "Secure Data Encryption in Google Cloud: Protecting Sensitive Data with Cloud DLP and KMS",
     blogTopImg: Secure_data_encryption,
@@ -96,26 +136,21 @@ export const BlogListData = [
         id: 1,
         listHeading: "Overview",
         listPara:
-          "Google Cloud's Data Loss Prevention(DLP) offers a suite of cutting- edge services designed to help organizations discover, classify, and shield sensitive data across their cloud resources.DLP's feature set includes data inspection, categorization, and de - identification, all of which are vital for complying with data protection regulations and preventing data breaches.",
+          "Google Cloud's Data Loss Prevention (DLP) helps organizations discover, classify, and protect sensitive data across cloud resources with advanced techniques like pattern matching and machine learning. It includes predefined categories called 'Infotypes' for data such as credit card numbers and email addresses.",
       },
       {
         id: 2,
         // listHeading: "1. Data Ingestion",
         listPara:
-          'DLP employs a range of advanced techniques, from pattern matching to machine learning, enabling it to identify sensitive data accurately.Additionally, it offers predefined categories of sensitive information known as "Infotypes," encompassing a wide array of data types such as credit card numbers, Social Security numbers, National IDs, and email addresses.',
+          "Meanwhile, Google Cloud Key Management Service (KMS) streamlines encryption key management, offering various options like software-based and hardware-based keys, and integration with external key managers. Together, DLP and KMS enable secure, cloud-native data pipelines, utilizing data scanning and de-identification features.",
       },
-      {
-        id: 3,
-        // listHeading: "2. Data Storage",
-        listPara:
-          "On the other hand, Google's Cloud Key Management Service(KMS) simplifies encryption key management for cloud resources.It supports various key types, including software- based keysmanaged by Google, customer - managed encryption keys(CMEK), hardware - based keys with Hardware Security Modules(HSM), and integration with external key managers",
-      },
-      {
-        id: 4,
-        // listHeading: "Best Reasons to Invest in OTT App Development",
-        listPara:
-          "Dataflow service that enables the creation of secure data pipelines in Google Cloud. These services leverage the KMS and DLP APIs to build secure, cloud- native data pipelines, complete with data scanning and de- identification of sensitive data.",
-      },
+      // {
+      //   id: 3,
+      //   // listHeading: "2. Data Storage",
+      //   listPara:
+      //     "Together, DLP and KMS enable secure, cloud-native data pipelines, utilizing data scanning and de-identification features.",
+      // },
+
       {
         id: 5,
         listHeading: "What We Will Cover",
@@ -174,35 +209,35 @@ export const BlogListData = [
           {
             id: 206,
             // listPoint_Heading: "DLP Data Inspection:",
-            listPoint_Heading: " Google Cloud Data Loss Prevention (DLP):",
+            listPoint_Heading: "Google Cloud Data Loss Prevention (DLP):",
             listPoint:
               " Google Cloud DLP provides robust tools to identify and protect sensitive data across your organization, ensuring compliance with privacy regulations.",
           },
           {
             id: 207,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Google Cloud Key Management Service (KMS):",
+            listPoint_Heading: "Google Cloud Key Management Service (KMS):",
             listPoint:
               " Google Cloud KMS offers a secure and scalable solution for managing cryptographic keys, allowing organizations to control access and protect sensitive information.",
           },
           {
             id: 208,
             // listPoint_Heading: "Sensitive Data Pipeline:",
-            listPoint_Heading: " Google Cloud Dataflow:",
+            listPoint_Heading: "Google Cloud Dataflow:",
             listPoint:
               " Google Cloud Dataflow is a fully managed service for stream and batch data processing, enabling real-time analytics and insights.",
           },
           {
             id: 209,
             // listPoint_Heading: "Inspect and Encrypt:",
-            listPoint_Heading: " Google Cloud Storage:",
+            listPoint_Heading: "Google Cloud Storage:",
             listPoint:
               " Google Cloud Storage provides durable and scalable object storage solutions, ensuring secure and efficient data management for applications of any size.",
           },
           {
             id: 210,
             // listPoint_Heading: "Load Encrypted Data:",
-            listPoint_Heading: " Google BigQuery:",
+            listPoint_Heading: "Google BigQuery:",
             listPoint:
               " Google BigQuery is a powerful, serverless data warehouse that enables super-fast SQL queries using the processing power of Google's infrastructure.",
           },
@@ -251,17 +286,17 @@ export const BlogListData = [
           {
             id: 211,
             // listPoint_Heading: "DLP Data Inspection:",
-            listPoint_Heading: " Create Storage Bucket:",
+            listPoint_Heading: "➥ Create Storage Bucket:",
             listPoint:
               " Create a Google Cloud Storage bucket to hold the sample data file, e.g., gs://gcp-project bucket-2023.",
           },
           {
             id: 212,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Upload Sample CSV:",
+            listPoint_Heading: "➥ Upload Sample CSV:",
             listPoint:
               " Upload a sample CSV file containing sensitive PII data, such as US_SOCIAL_SECURITY_NUMBER.",
-            images: [secure_vid],
+            images: Secure_data_encryption_1,
           },
         ],
       },
@@ -275,34 +310,35 @@ export const BlogListData = [
           {
             id: 211,
             // listPoint_Heading: "DLP Data Inspection:",
-            listPoint_Heading: " Access Cloud KMS:",
+            listPoint_Heading: "➥ Access Cloud KMS:",
             listPoint:
               " Navigate to the Cloud KMS section in Google Cloud Console.",
           },
           {
             id: 212,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Enable KMS API:",
+            listPoint_Heading: "➥ Enable KMS API:",
             listPoint: " Enable the KMS API if not already enabled.",
           },
           {
             id: 213,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Create Key Ring:",
+            listPoint_Heading: "➥ Create Key Ring:",
             listPoint: " Create a key ring (e.g., ring) within KMS.",
           },
           {
             id: 214,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Create Symmetric Key:",
+            listPoint_Heading: "➥ Create Symmetric Key:",
             listPoint:
               " Create a key within the key ring with software protection and purpose set to symmetric encrypt / decrypt.",
           },
           {
-            id: 215,
+            id: 300,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Store Key Resource:",
+            listPoint_Heading: "➥ Store Key Resource:",
             listPoint: " Store the key resource name for later use.",
+            images: Secure_data_encryption_2,
           },
         ],
       },
@@ -317,22 +353,23 @@ export const BlogListData = [
           {
             id: 216,
             // listPoint_Heading: "DLP Data Inspection:",
-            listPoint_Heading: " Enable DLP API:",
+            listPoint_Heading: "➥ Enable DLP API:",
             listPoint: " Enable the DLP API if not already enabled.",
           },
           {
             id: 217,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Navigate DLP Configuration:",
+            listPoint_Heading: "➥ Navigate DLP Configuration:",
             listPoint:
               " In DLP, navigate to CONFIGURATION - TEMPLATES - INSPECT.",
           },
           {
             id: 218,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Create Inspection Template:",
+            listPoint_Heading: "➥ Create Inspection Template:",
             listPoint:
               " Create an Inspection Template, specifying the infotypes to detect, e.g.,US_SOCIAL_SECURITY_NUMBER.",
+            videos: [secure_vid],
           },
         ],
       },
@@ -347,29 +384,30 @@ export const BlogListData = [
           {
             id: 219,
             // listPoint_Heading: "DLP Data Inspection:",
-            listPoint_Heading: " Enable DLP API:",
+            listPoint_Heading: "➥ Enable DLP API:",
             listPoint:
               " Create a De-Identification Template in DLP to define how findings should be redacted.",
           },
           {
             id: 220,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Navigate DLP Configuration:",
+            listPoint_Heading: "➥ Navigate DLP Configuration:",
             listPoint:
               " Specify the key resource name from KMS and provide a wrapped key.",
           },
           {
             id: 221,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Create Inspection Template:",
+            listPoint_Heading: "➥ Create Inspection Template:",
             listPoint:
               " Select the infoTypes (e.g., US_SOCIAL_SECURITY_NUMBER) to encrypt.",
           },
           {
             id: 222,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Create Inspection Template:",
+            listPoint_Heading: "➥ Create Inspection Template:",
             listPoint: " Review and create the De-Identification Template.",
+            images: Secure_data_encryption_4,
           },
         ],
       },
@@ -384,41 +422,42 @@ export const BlogListData = [
           {
             id: 223,
             // listPoint_Heading: "DLP Data Inspection:",
-            listPoint_Heading: " Assign IAM Roles:",
+            listPoint_Heading: "➥ Assign IAM Roles:",
             listPoint:
               " Ensure the required IAM roles are assigned for Dataflow service accounts.",
           },
           {
             id: 224,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Create BigQuery Dataset:",
+            listPoint_Heading: "➥ Create BigQuery Dataset:",
             listPoint: " Create a BigQuery dataset to store the results.",
           },
           {
             id: 225,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Enable Dataflow APIs:",
+            listPoint_Heading: "➥ Enable Dataflow APIs:",
             listPoint: " Enable the necessary APIs for Dataflow",
           },
           {
             id: 226,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Create Dataflow Job:",
+            listPoint_Heading: "➥ Create Dataflow Job:",
             listPoint:
               " Create a Dataflow job using the Data Masking/Tokenization template.",
           },
           {
             id: 227,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Configure Template Parameters:",
+            listPoint_Heading: "➥ Configure Template Parameters:",
             listPoint:
               " Configure the template parameters, specifying the location of the sample data, BigQuery dataset, project ID, temporary Cloud Storage bucket, and Cloud DLP De - Identification template resource name.",
           },
           {
             id: 228,
             // listPoint_Heading: "KMS Encryption Key:",
-            listPoint_Heading: " Run Dataflow Job:",
+            listPoint_Heading: "➥ Run Dataflow Job:",
             listPoint: " Run the Dataflow job.",
+            images: Secure_data_encryption_5,
           },
         ],
       },
@@ -754,6 +793,7 @@ export const BlogListData = [
     id: 5,
     blog_right_image: Harnessing_Right,
     blog_right_image_Tablet: Harnessing_Tablet,
+    blogTopImg_mobile: Harnessing_banner_mobile,
 
     slug: "harnessing-the-power-of-domo-for-streamlined-manufacturing-operations",
     description:
@@ -794,7 +834,9 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            // listPoint_Heading: "➥ Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Seamless Data Integration and Performance Insights:",
 
             listPoint:
               " With Domo’s powerful data integration, real-time data from the shop floor is seamlessly consolidated, providing insights into machine performance, production rates, and downtime.",
@@ -802,15 +844,21 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            // listPoint_Heading: "➥ Engineering and Design:",
+            listPoint_Heading: "➥ Efficient Data Warehousing for Analysis:",
+
             listPoint:
               " The data warehousing capabilities ensure all production data is stored efficiently, making it easily accessible for analysis.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            // listPoint_Heading: "➥ Procurement/Purchasing:",
+            listPoint_Heading:
+              "➥ Predictive Maintenance and Workflow Automation:",
+
             listPoint:
               " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
+            images: harnessing_mobile_1,
           },
         ],
       },
@@ -821,7 +869,7 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Unified View for Design:",
 
             listPoint:
               " Domo facilitates collaboration between design and production teams by providing a unified view of project timelines, resource allocation, and design iterations.",
@@ -829,14 +877,15 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Data Visualization:",
             listPoint:
               " Data visualization tools help in presenting complex design data in an easily understandable format, ensuring quick communication and implementation of design changes.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ Accelerating Time to Market:",
             listPoint: " This reduces the time to market for new products.",
+            images: harnessing_mobile_2,
           },
         ],
       },
@@ -847,7 +896,7 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Streamlined Procurement Processes:",
 
             listPoint:
               " Domo streamlines procurement by integrating supplier data, purchase orders, and contract management.",
@@ -855,14 +904,15 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Detailed Analytics for Strategic Sourcing:",
             listPoint:
               " Detailed analytics on spending patterns aid in strategic sourcing decisions, while AI-driven insights improve procurement strategies.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ AI-Driven Procurement Insights:",
             listPoint: " This reduces the time to market for new products.",
+            images: harnessing_mobile_3,
           },
         ],
       },
@@ -873,7 +923,7 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Ensuring Accuracy in Quality Data:",
 
             listPoint:
               " Quality is non-negotiable in manufacturing. Domo’s data governance ensures that quality data is accurate and consistent.",
@@ -881,15 +931,16 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Comprehensive View of Product Quality:",
             listPoint:
               " By integrating data from various quality checkpoints and testing stages, it provides a comprehensive view of product quality.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ Automated Alerts and Corrective Actions:",
             listPoint:
               " Automated alerts, driven by AI, and detailed reports help in identifying defects early and implementing corrective actions promptly.",
+            images: harnessing_mobile_4,
           },
         ],
       },
@@ -900,7 +951,7 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Insights into Workforce Performance:",
 
             listPoint:
               " Employee productivity and satisfaction are vital. Domo’s HR analytics provide insights into workforce performance, training needs, and employee engagement.",
@@ -908,15 +959,16 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Reliable Data Integration and Governance:",
             listPoint:
               " Data integration and governance ensure that HR data is reliable, while AI and ML models help in predicting workforce trends and planning accordingly.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ Predictive HR Models for Talent Management:",
             listPoint:
               " This data-driven approach ensures that we attract, develop, and retain top talent, fostering a culture of continuous improvement.",
+            images: harnessing_mobile_5,
           },
         ],
       },
@@ -927,7 +979,7 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ End-to-End Supply Chain Visibility:",
 
             listPoint:
               " Efficient supply chain management is critical for manufacturing success.",
@@ -935,15 +987,17 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Inventory Optimization:",
             listPoint:
               " Domo aggregates data from suppliers, inventory systems, and logistics providers, offering end-to-end visibility.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading:
+              "➥ Enhancing Efficiency with Workflow Automation:",
             listPoint:
               " ML algorithms forecast demand, optimizing inventory levels, and reducing lead times. Workflow automation further enhances supply chain efficiency, lowering costs and boosting customer satisfaction.",
+            images: harnessing_mobile_6,
           },
         ],
       },
@@ -954,23 +1008,23 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Real-Time Financial Insights:",
 
             listPoint: " Financial health is the backbone of any business.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Centralized Data for Accurate Budgeting:",
             listPoint:
               " Domo integrates financial data from various systems, offering real-time insights into revenue, expenses, and profitability.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ Streamlined Financial Operations:",
             listPoint:
               " Data warehousing ensures all financial data is centralized, aiding in accurate budgeting, forecasting, and strategic financial planning. Automated workflows streamline financial operations, ensuring long-term sustainability.",
-            images: [harn],
+            videos: [harn],
           },
         ],
       },
@@ -981,23 +1035,25 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Tracking Progress and Managing Budgets:",
 
             listPoint:
-              "Innovation drives growth. Domo enables R&D teams to track project progress, manage budgets, and analyze the impact of new product introductions.",
+              " Innovation drives growth. Domo enables R&D teams to track project progress, manage budgets, and analyze the impact of new product introductions.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Consolidating Data for Project Prioritization:",
             listPoint:
               " By consolidating data from various experiments and prototypes, Domo helps in prioritizing projects that offer the best return on investment.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ Enhancing R&D with Data-Driven Applications:",
             listPoint:
               " Data-driven applications built on Domo can further enhance R&D processes.",
+            images: harnessing_mobile_7,
           },
         ],
       },
@@ -1008,23 +1064,27 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Tracking Campaign Performance and Sales Pipelines:",
 
             listPoint:
-              "Understanding market trends and customer needs is crucial.",
+              " Understanding market trends and customer needs is crucial.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Clear Data Visualization for Marketing Insights:",
             listPoint:
               " Domo’s powerful analytics help sales and marketing teams track campaign performance, customer acquisition costs, and sales pipelines.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading:
+              "➥ Driving Revenue Growth with Targeted Strategies:",
             listPoint:
               " Data visualization tools present these insights clearly, driving targeted marketing efforts and effective sales strategies, ultimately boosting revenue growth.",
+            images: harnessing_mobile_8,
           },
         ],
       },
@@ -1035,23 +1095,25 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Timely Response and Issue Resolution:",
 
             listPoint:
-              "Exceptional customer service differentiates us from competitors.Domo consolidates customer feedback, service requests, and resolution times, enabling a proactive approach to customer satisfaction.",
+              " Exceptional customer service differentiates us from competitors.Domo consolidates customer feedback, service requests, and resolution times, enabling a proactive approach to customer satisfaction.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ AI-Driven Insights for Understanding Customer Needs:",
             listPoint:
-              "AI-driven insights help in understanding customer needs better, while workflow automation ensures timely responses and resolution of issues.",
+              " AI-driven insights help in understanding customer needs better, while workflow automation ensures timely responses and resolution of issues.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ Timely Response and Issue Resolution:",
             listPoint:
-              "By analyzing this data, we can continuously improve our products and services.",
+              " By analyzing this data, we can continuously improve our products and services.",
+            images: harnessing_mobile_9,
           },
         ],
       },
@@ -1063,23 +1125,24 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Integrating Safety and Environmental Data:",
 
             listPoint:
-              "Safety and sustainability are paramount. Domo integrates data from safety audits, incident reports, and environmental monitoring systems.",
+              " Safety and sustainability are paramount. Domo integrates data from safety audits, incident reports, and environmental monitoring systems.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Predictive Models for Safety Hazards:",
             listPoint:
-              "AI and ML models predict potential safety hazards, while data governance ensures compliance with regulations.",
+              " AI and ML models predict potential safety hazards, while data governance ensures compliance with regulations.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ Promoting Safe Work Environments:",
             listPoint:
               " This centralized data helps in promoting a safe work environment and implementing sustainable practices.",
+            images: harnessing_mobile_10,
           },
         ],
       },
@@ -1091,23 +1154,25 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Holistic View of Technology Infrastructure:",
 
             listPoint:
-              "Domo’s IT analytics provide a holistic view of the company’s technology infrastructure.",
+              " Domo’s IT analytics provide a holistic view of the company’s technology infrastructure.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Monitoring System Performance and Data Security:",
             listPoint:
               " This integration helps in monitoring system performance, managing data security, and supporting digital transformation initiatives.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading: "➥ Supporting Digital Transformation:",
             listPoint:
               " IT teams can leverage data-driven applications to ensure technology investments align with business goals.",
+            images: harnessing_mobile_11,
           },
         ],
       },
@@ -1119,17 +1184,18 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Simplifying Legal and Compliance Management:",
 
             listPoint:
-              "Navigating legal complexities is simplified with Domo.By integrating contract management, compliance checklists, and regulatory updates, Domo ensures that we adhere to legal requirements and minimize risks.",
+              " Navigating legal complexities is simplified with Domo.By integrating contract management, compliance checklists, and regulatory updates, Domo ensures that we adhere to legal requirements and minimize risks.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Ensuring Accuracy and Minimizing Risks:",
             listPoint:
               " This proactive approach safeguards our business interests, with data governance ensuring all legal data is accurate and up-to-date.",
+            images: harnessing_mobile_12,
           },
         ],
       },
@@ -1141,23 +1207,25 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Predictive Maintenance with Integrated Data:",
 
             listPoint:
-              "Domo enables predictive maintenance by integrating data from sensors and maintenance logs.AI-driven predictive models help in preventing equipment failures, reducing downtime, and extending the lifespan of assets.",
+              " Domo enables predictive maintenance by integrating data from sensors and maintenance logs.AI-driven predictive models help in preventing equipment failures, reducing downtime, and extending the lifespan of assets.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ AI-Driven Models for Preventing Failures:",
             listPoint:
               " Workflow automation ensures timely maintenance actions, while facilities management is streamlined, ensuring optimal working conditions.",
           },
           {
             id: 202,
-            // listPoint_Heading: "3. Procurement/Purchasing:",
+            listPoint_Heading:
+              "➥ Streamlining Facilities Management and Maintenance:",
             listPoint:
               " Data visualization tools present these insights clearly, driving targeted marketing efforts and effective sales strategies, ultimately boosting revenue growth.",
+            images: harnessing_mobile_13,
           },
         ],
       },
@@ -1172,6 +1240,8 @@ export const BlogListData = [
   {
     id: 6,
     blog_right_image: Transforming_Right,
+    blogTopImg_mobile: Transforming_Fashion_mobile,
+
     blog_right_image_Tablet: Transform_Tablet,
 
     slug: "transforming-fashion-retai-with-domo:a-one-stop-shop-for-data-analytics",
@@ -1266,7 +1336,7 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Predicting Trends and Customer Preferences:",
 
             listPoint:
               " With Domo, our design team can integrate various data sources to predict trends and customer preferences, ensuring our collections are always on point.",
@@ -1274,16 +1344,12 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Guiding Creative Processes with AI and ML Insights:",
             listPoint:
               " AI and ML algorithms analyze past sales data and social media trends, providing valuable insights that guide the creative process.",
+            images: transforming_1,
           },
-          // {
-          //   id: 202,
-          //   // listPoint_Heading: "3. Procurement/Purchasing:",
-          //   listPoint:
-          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
-          // },
         ],
       },
       {
@@ -1293,7 +1359,8 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Unified View of Inventory and Sales Performance:",
 
             listPoint:
               " Domo’s data warehousing and integration capabilities allow our merchandising team to have a unified view of inventory levels, sales performance, and market trends.",
@@ -1301,16 +1368,12 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Optimizing Product Assortment and Pricing Strategies:",
             listPoint:
               " This enables precise product assortment and pricing strategies, ensuring that our stores and online platforms are always stocked with the right products at the right time.",
+            images: transforming_2,
           },
-          // {
-          //   id: 202,
-          //   // listPoint_Heading: "3. Procurement/Purchasing:",
-          //   listPoint:
-          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
-          // },
         ],
       },
       {
@@ -1320,7 +1383,8 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Data-Driven Decision Making for Supplier Negotiations:",
 
             listPoint:
               " Our buyers leverage Domo’s advanced analytics to make data-driven decisions, negotiating better deals with suppliers and ensuring timely product delivery.",
@@ -1328,16 +1392,12 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Clear Insights into Supplier Performance and Market Demand:",
             listPoint:
               " The platform’s data visualization tools offer clear insights into supplier performance and market demand.",
+            images: transforming_3,
           },
-          // {
-          //   id: 202,
-          //   // listPoint_Heading: "3. Procurement/Purchasing:",
-          //   listPoint:
-          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
-          // },
         ],
       },
       {
@@ -1347,24 +1407,21 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Streamlining Production with Workflow Automation:",
 
             listPoint:
-              "  Domo’s workflow automation and data governance features streamline the production process, from sourcing raw materials to final manufacturing.",
+              " Domo’s workflow automation and data governance features streamline the production process, from sourcing raw materials to final manufacturing.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Ensuring Compliance and Efficiency in Manufacturing:",
             listPoint:
-              "  By automating repetitive tasks and ensuring compliance with quality standards, we can focus on innovation and efficiency.",
+              " By automating repetitive tasks and ensuring compliance with quality standards, we can focus on innovation and efficiency.",
+            images: transforming_4,
           },
-          // {
-          //   id: 202,
-          //   // listPoint_Heading: "3. Procurement/Purchasing:",
-          //   listPoint:
-          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
-          // },
         ],
       },
       {
@@ -1374,24 +1431,20 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Creating Targeted Campaigns with Real-Time Data:",
 
             listPoint:
-              "  With Domo, our marketing team can create targeted campaigns based on real-time data.",
+              " With Domo, our marketing team can create targeted campaigns based on real-time data.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Optimizing Marketing Spend and Enhancing Brand Visibility:",
             listPoint:
-              "  The platform’s data integration and visualization tools allow us to track campaign performance across various channels, optimizing our marketing spend and enhancing brand visibility.",
+              " The platform’s data integration and visualization tools allow us to track campaign performance across various channels, optimizing our marketing spend and enhancing brand visibility.",
           },
-          // {
-          //   id: 202,
-          //   // listPoint_Heading: "3. Procurement/Purchasing:",
-          //   listPoint:
-          //     " AI and ML algorithms can predict potential equipment failures, while workflow automation streamlines production processes, reducing bottlenecks and ensuring timely delivery.",
-          // },
         ],
       },
       {
@@ -1401,7 +1454,8 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Real-Time Insights into Store Performance and Sales Trends:",
 
             listPoint:
               " Domo’s powerful data-driven apps provide our sales teams with real-time insights into store performance, customer preferences, and sales trends.",
@@ -1409,10 +1463,11 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Driving Growth with Data-Driven Sales Strategies:",
             listPoint:
-              "  This data enables proactive decision-making, driving sales growth both in-store and online.",
-            images: [harn],
+              " This data enables proactive decision-making, driving sales growth both in-store and online.",
+            videos: [harn],
           },
         ],
       },
@@ -1423,7 +1478,8 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Optimizing Online Shopping Experience with Integrated Data:",
 
             listPoint:
               " The e-commerce landscape is ever-evolving, and Domo helps us stay ahead of the curve.",
@@ -1431,9 +1487,11 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Improving Customer Satisfaction and Boosting Sales:",
             listPoint:
-              "  By integrating data from our website, social media, and third-party platforms, we can optimize the online shopping experience, improve customer satisfaction, and boost sales.",
+              " By integrating data from our website, social media, and third-party platforms, we can optimize the online shopping experience, improve customer satisfaction, and boost sales.",
+            images: transforming_5,
           },
         ],
       },
@@ -1444,7 +1502,8 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Ensuring Financial Data Integrity and Compliance:",
 
             listPoint:
               "Domo’s robust data governance ensures financial data integrity and compliance.",
@@ -1452,9 +1511,11 @@ export const BlogListData = [
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Managing Budgets and Forecasting Performance Securely:",
             listPoint:
-              "Our finance team uses the platform to manage budgets, forecast financial performance, and generate comprehensive reports, all within a secure environment.",
+              " Our finance team uses the platform to manage budgets, forecast financial performance, and generate comprehensive reports, all within a secure environment.",
+            images: transforming_6,
           },
         ],
       },
@@ -1465,17 +1526,20 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Data-Driven Insights into Workforce Planning and Performance:",
 
             listPoint:
-              "Domo empowers our HR team with data-driven insights into employee performance, recruitment trends, and workforce planning.",
+              " Domo empowers our HR team with data-driven insights into employee performance, recruitment trends, and workforce planning.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Attracting and Retaining Top Talent for Growth and Innovation:",
             listPoint:
-              "This allows us to attract, retain, and develop top talent, fostering a culture of growth and innovation.",
+              " This allows us to attract, retain, and develop top talent, fostering a culture of growth and innovation.",
+            images: transforming_7,
           },
         ],
       },
@@ -1486,17 +1550,19 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Streamlining Operations for Timely Delivery and Optimal Inventory:",
 
             listPoint:
-              "Efficiency in logistics and supply chain management is critical in fashion retail.",
+              " Efficiency in logistics and supply chain management is critical in fashion retail.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Enhancing Efficiency and Reducing Costs:",
             listPoint:
               " Domo’s integration and workflow automation streamline operations, ensuring timely delivery and optimal inventory levels, reducing costs and enhancing customer satisfaction.",
+            images: transforming_8,
           },
         ],
       },
@@ -1507,17 +1573,19 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Holistic View of Customer Interactions and Feedback:",
 
             listPoint:
-              "Efficiency in logistics and supply chain management is critical in fashion retail.With Domo, our customer service team can access a holistic view of customer interactions, feedback, and support tickets.",
+              " Efficiency in logistics and supply chain management is critical in fashion retail.With Domo, our customer service team can access a holistic view of customer interactions, feedback, and support tickets.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading: "➥ Improving Resolution Times:",
             listPoint:
               " This data-driven approach ensures quick resolution of issues, improving customer loyalty and driving repeat business.",
+            images: transforming_9,
           },
         ],
       },
@@ -1528,10 +1596,11 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading: "➥ Supporting Data Analytics and Cybersecurity:",
 
             listPoint:
-              "Domo’s comprehensive platform supports our IT team in maintaining a secure and efficient technology infrastructure. From data analytics to cybersecurity, Domo ensures our systems are robust and reliable.",
+              " Domo’s comprehensive platform supports our IT team in maintaining a secure and efficient technology infrastructure. From data analytics to cybersecurity, Domo ensures our systems are robust and reliable.",
+            images: transforming_10,
           },
         ],
       },
@@ -1542,17 +1611,20 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Designing Captivating In-Store Displays with Data Insights:",
 
             listPoint:
-              "Our visual merchandising team benefits from Domo’s data visualization tools, which help in designing captivating in-store displays.",
+              " Our visual merchandising team benefits from Domo’s data visualization tools, which help in designing captivating in-store displays.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Optimizing Layouts to Enhance the Shopping Experience:",
             listPoint:
               " By analyzing foot traffic and sales data, we can optimize layouts to enhance the shopping experience and boost sales.",
+            images: transforming_11,
           },
         ],
       },
@@ -1563,17 +1635,20 @@ export const BlogListData = [
         listPoints: [
           {
             id: 200,
-            // listPoint_Heading: "1. Production/Manufacturing:",
+            listPoint_Heading:
+              "➥ Ensuring Compliance with Legal and Regulatory Requirements:",
 
             listPoint:
-              "Domo’s data governance features ensure compliance with legal and regulatory requirements.",
+              " Domo’s data governance features ensure compliance with legal and regulatory requirements.",
           },
 
           {
             id: 201,
-            // listPoint_Heading: "2. Engineering and Design:",
+            listPoint_Heading:
+              "➥ Ensuring Compliance with Legal and Regulatory Requirements:",
             listPoint:
               " Our legal team can manage contracts, intellectual property, and legal disputes with confidence, backed by accurate and up-to-date data.",
+            images: transforming_12,
           },
         ],
       },
@@ -1588,7 +1663,7 @@ export const BlogListData = [
       },
       {
         id: 7,
-        // listHeading: "The Future of Fashion Retail with Domo",
+        // listHeading: "➥ Driving Innovation and Growth through Data Analytics",
         listPara:
           "Domo empowers us to make informed, data-driven decisions across all departments, ensuring our brand remains at the forefront of fashion retail. Here’s to a future where data meets creativity, and innovation knows no bounds. ",
       },

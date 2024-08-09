@@ -27,10 +27,11 @@ const DbtPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
-        /> */}
+          content="analytics engineering, analytics code, built-in testing, transformation workflows, dbt's support, data stack, dbt's focus, dbt allows, SQL Queries, Incremental Builds, DDL/DML, dbt’s pre-packaged, Data Services, Foster collaboration, Data Modernization, Governance, Data Vault, dbt Mesh, Data Processing, Cost Optimization, zero-waste analytics, dbt Cloud, data practices"
+        />
+
         <title>
           {"GWC DATA.AI -  DBT Labs | Transform Data in Your Warehouse"}
         </title>

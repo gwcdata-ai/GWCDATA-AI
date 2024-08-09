@@ -9,7 +9,7 @@ import newStyles from "../../../commoncss/Home.module.css";
 import useMedia from "../../../hooks/useMedia";
 import AOS from "aos";
 AOS.init({
-  duration: 1200,
+  duration: 800,
 });
 
 export const OurExpertiseSF = ({ ourExpertiseContent }) => {
@@ -30,7 +30,7 @@ export const OurExpertiseSF = ({ ourExpertiseContent }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 3000,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -180,7 +180,7 @@ export const OurExpertiseSF = ({ ourExpertiseContent }) => {
                         height: "200px",
                         objectFit: "cover",
                       }}
-                      alt=""
+                      alt={item?.alt}
                     />
                     <h3 className={`${styles.card_title_expert} my-3`}>
                       {" "}

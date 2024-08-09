@@ -42,6 +42,7 @@ export const BiMigrationMainDataGovernance = {
   description:
     "Embark on a smooth transition with our streamlined BI migration processes. We ensure the efficient transfer of your BI assets, minimizing downtime and optimizing performance in the new environment.",
   rightImg: DataGovernanceRightImg,
+  alt: "Revolutionize BI Landscape - Seamless BI Migration and Strategy Alignment",
 };
 
 export const BiMigrationDataGovernanceList = [
@@ -115,6 +116,7 @@ export const BiMigrationDataGovernanceList = [
       "Align BI migration goals with organizational objectives.",
     ],
     image: img1,
+    alt: "Baseline Assessment - Understanding BI Infrastructure and Migration Goals",
   },
   {
     id: 2,
@@ -126,6 +128,7 @@ export const BiMigrationDataGovernanceList = [
       "Identify dependencies between data sources, reports, and dashboards.",
     ],
     image: img2,
+    alt: "Ensure Accuracy in BI Migration - Data Cleansing and Transformation",
   },
   {
     id: 3,
@@ -137,6 +140,7 @@ export const BiMigrationDataGovernanceList = [
       "Monitor the data migration process in real-time and validate the integrity of transferred data.",
     ],
     image: img3,
+    alt: "Efficient Data Transfer to New BI Platform - Incremental Migration",
   },
   {
     id: 4,
@@ -147,6 +151,7 @@ export const BiMigrationDataGovernanceList = [
       "Gather feedback from stakeholders.",
     ],
     image: img4,
+    alt: "Optimizing BI Migration - Visualizations and Stakeholder Feedback",
   },
   {
     id: 5,
@@ -157,6 +162,7 @@ export const BiMigrationDataGovernanceList = [
       "Ensure a clean transition and minimize redundancy in the organization's IT landscape.",
     ],
     image: img5,
+    alt: "Seamless Data Flow - Integrate BI Solution with Existing Systems",
   },
   {
     id: 6,
@@ -168,6 +174,7 @@ export const BiMigrationDataGovernanceList = [
       "Apply encryption to sensitive data during transmission and storage.",
     ],
     image: img6,
+    alt: "Security Measures - Manage Access Rights & Apply Encryption",
   },
   {
     id: 7,
@@ -178,6 +185,7 @@ export const BiMigrationDataGovernanceList = [
       "Implement a communication plan to inform stakeholders about the upcoming changes.  ",
     ],
     image: img7,
+    alt: "Training & Communication - Maximize Modernized Solution",
   },
   {
     id: 8,
@@ -188,6 +196,7 @@ export const BiMigrationDataGovernanceList = [
       "Optimize performance based on testing results to ensure a seamless user experience.",
     ],
     image: img8,
+    alt: "Testing Strategy - Ensure Data Integrity & Performance",
   },
   {
     id: 9,
@@ -198,6 +207,7 @@ export const BiMigrationDataGovernanceList = [
       "Establish a support mechanism to assist users with the transition.",
     ],
     image: img9,
+    alt: "Phased Deployment - Minimize Disruptions & Support Transition",
   },
   {
     id: 10,
@@ -208,6 +218,7 @@ export const BiMigrationDataGovernanceList = [
       "Collect ongoing feedback from users and stakeholders. ",
     ],
     image: img10,
+    alt: "Monitor BI Platform Performance & Collect Feedback",
   },
 ];
 

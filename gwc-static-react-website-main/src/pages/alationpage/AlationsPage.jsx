@@ -28,10 +28,11 @@ const AlationsPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
-        /> */}
+          content="Distributed Databases, Big Data Processing Frameworks, In-Memory Computing, API Management, Backend Technologies, Manage Workflows, Monitor Workflows, Get Slack Alerts, Active Data Governance, AI & ML, Cloud Data Migration, Data Quality, Privacy, Risk, Compliance, From Data Deluge to Data Delight, Decision Confidence, Frictionless Collaboration, Compliance Management, Alation, Strategic Growth"
+        />
+
         <title>{" GWC DATA.AI - Alation"}</title>
         <meta
           name="description"

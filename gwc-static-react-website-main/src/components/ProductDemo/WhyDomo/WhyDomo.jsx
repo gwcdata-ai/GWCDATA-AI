@@ -35,7 +35,7 @@ export const WhyDomo = () => {
             >
               <img
                 src={image2}
-                alt=""
+                alt="product feature query data snowflake salesforce sap 2x"
                 className={`rounded-4 mx-lg-3 ${styles.imageCard}`}
               />
             </Col>

@@ -15,53 +15,60 @@ export const DomoSolutionsData = [
       "Incorporate data from your supply chain, manufacturing, IoT, and distribution channels to unearth valuable insights and enhance operational efficiency.",
     url: "https://www.domo.com/industries/manufacturing",
     image: Solu4,
+    alt: "Domo Dashboard for Manufacturing",
   },
   {
-    id: 1,
+    id: 2,
     title: "Domo for Retail",
     description:
       " Merge data from diverse sources & systems spanning supply chain, retail operations, e-commerce, IoT & beyond to reveal insights, refine planning & execution processes.",
     url: "https://www.domo.com/industries/retail",
+    alt: "Domo Dashboard for Retail",
     image: Solu7,
   },
   {
-    id: 1,
+    id: 3,
     title: "Domo for Healthcare",
     description:
       "Incorporate and oversee data generated at every phase of the life sciences value chain to reveal insights and facilitate improved, expedited decision-making.",
     url: "https://www.domo.com/industries/healthcare",
+    alt: "Domo Dashboard for Healthcare",
     image: Solu3,
   },
   {
-    id: 1,
+    id: 4,
     title: "Domo for Enterprise",
     description:
       "Domo empowers users to centralize their data, allowing for the creation and maintenance of intuitive data pipelines. ",
     url: "https://www.domo.com/domo-for-enterprise",
+    alt: "Domo Dashboard for Enterprise",
     image: Solu1,
   },
   {
-    id: 1,
+    id: 5,
     title: "Domo for Business",
     description:
       "Domo, an all-in-one platform that swiftly connects and transforms data from diverse sources into actionable insights enabling informed decision-making.      ",
     url: "https://www.domo.com/domo-for-business",
+    alt: "Domo Dashboard for Business",
     image: Solu5,
   },
   {
-    id: 1,
+    id: 6,
     title: "Domo for AWS",
     description:
       " Domo for AWS takes your data experience to new heights, enabling seamless access, visualization, and collaboration on AWS data.      ",
     url: "https://www.domo.com/partners/aws",
+    alt: "Domo Dashboard for AWS",
     image: Solu2,
   },
   {
-    id: 1,
+    id: 7,
     title: "Domo for Snowflake",
     description:
       "Domo empowers business users to utilize real-time insights from anywhere. With Domo's low-code custom app capabilities, users can seamlessly act on Snowflake data.      ",
     url: "https://www.domo.com/partners/snowflake",
+    alt: "Domo Dashboard for Snowflake",
     image: Solu6,
   },
 ];
@@ -81,6 +88,7 @@ export const DomoDashData = [
       "Incorporate data from your supply chain, manufacturing, IoT, and distribution channels to unearth valuable insights and enhance operational efficiency.",
     url: "/domoProdInfo/JZLOy",
     image: dash1,
+    alt: "Warehouse Management Dashboard",
   },
   {
     id: 2,
@@ -88,6 +96,7 @@ export const DomoDashData = [
     description:
       "Incorporate and oversee data generated at every phase of the life sciences value chain to reveal insights and facilitate improved, expedited decision-making.",
     url: "/domoProdInfo/LgMj4",
+    alt: "Automotive Retail Dashboard",
     image: dash3,
   },
   {
@@ -96,6 +105,7 @@ export const DomoDashData = [
     description:
       "Domo empowers users to centralize their data, allowing for the creation and maintenance of intuitive data pipelines. ",
     url: "/domoProdInfo/lOKxr",
+    alt: "Custom App Dashboard",
     image: dash4,
   },
   {
@@ -104,6 +114,7 @@ export const DomoDashData = [
     description:
       " Merge data from diverse sources & systems spanning supply chain, retail operations, e-commerce, IoT & beyond to reveal insights, refine planning & execution processes.",
     url: "/domoProdInfo/KOMP8",
+    alt: "Service Monitoring Dashboard",
     image: dash2,
   },
   // {

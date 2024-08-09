@@ -52,7 +52,7 @@ export const OurFuture = ({ ourFutureContent }) => {
                     <Image
                       className={`${styles.list_img}`}
                       src={item?.img}
-                      alt="img"
+                      alt={item.altImage}
                     />
                     <h3 className={`${styles.list_title} mt-3`}>
                       {item?.title}{" "}

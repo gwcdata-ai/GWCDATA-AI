@@ -235,6 +235,8 @@ const CareerCarousal = () => {
             {careerCarousalData &&
               careerCarousalData.map((data) => (
                 <div
+                  role="img"
+                  aria-label={data.alt}
                   className={`${styles.column} ${
                     data.className === "first" ? `${styles.expanded}` : null
                   } column `}

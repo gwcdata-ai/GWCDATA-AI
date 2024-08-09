@@ -22,10 +22,11 @@ const BoomiPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
-        /> */}
+          content="Automate Workflows, cloud-native platform, Pre-built Connectors, Real-time Monitoring, Boomi API, Boomi Power, Multi-cloud runtime, Intuitive interface, Powerful APIs, Healthcare and Life Sciences, Manufacturing, Financial Services, Retail, Public Sector, Higher Education, drive, partners Domo, with Boomi, Boomi platform, Boomi's API, of the Boomi, Boomi Looker Tableau, the Boomi platform, Boomi's API management, build a resilient campus"
+        />
+
         <title>{"GWC DATA.AI - Boomi"}</title>
         <meta
           name="description"

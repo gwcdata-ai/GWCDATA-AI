@@ -21,10 +21,11 @@ const LookerPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
-        /> */}
+          content="Looker Business Intelligence, BI solution, Business Intelligence, Data-powered Applications, Embedded Analytics, Data Modeling, Enhanced Collaboration, Enhanced Decision-making, Commissioning Looker, Data Extraction & Ingestion, LookML Engineering, Unearthing Insights, Looker BI, Choose GWC for Looker BI"
+        />
+
         <title>
           {
             "GWC DATA.AI -  Looker business intelligence platform embedded analytics | Google Cloud"

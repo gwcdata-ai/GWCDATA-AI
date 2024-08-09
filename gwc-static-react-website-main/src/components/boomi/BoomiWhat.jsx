@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
 // CSS
@@ -19,7 +19,7 @@ const BoomiWhat = () => {
             <Col xs={12} lg={6} md={6} className="px-md-0" data-aos="fade-left">
               <img
                 src={image1}
-                alt=""
+                alt="Automate Your Workflows in Boomi"
                 className=" mx-lg-5  mt-md-0 mt-5"
                 width="80%"
               />
@@ -37,8 +37,8 @@ const BoomiWhat = () => {
                 </p>
 
                 <p className={styles?.text}>
-                  Boomi enables rapid application development & deployment. Drive innovation & agility with GWC & Boomi by your side.
-
+                  Boomi enables rapid application development & deployment.
+                  Drive innovation & agility with GWC & Boomi by your side.
                 </p>
 
                 <a href="#solutions-boomi">
@@ -65,12 +65,11 @@ const BoomiWhat = () => {
                 </a>
               </div>
             </Col>
-
           </Row>
         </Container>
       </section>
     </Container>
-  )
-}
+  );
+};
 
-export default BoomiWhat
+export default BoomiWhat;

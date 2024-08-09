@@ -41,6 +41,7 @@ export const BiMigrationMainDataGovernance = {
   description:
     "Prepare for the future, by building a scalable and flexible data infrastructure. Our solutions enable you to handle growing data volumes, ensuring your organization remains agile and responsive.",
   rightImg: DataGovernanceRightImg,
+  alt: "Professional Analyzing Data Insights - Forge Business Triumph With Data Insights",
 };
 
 export const BiMigrationDataGovernanceList = [
@@ -54,6 +55,7 @@ export const BiMigrationDataGovernanceList = [
       "Embrace data discovery as a tool for efficient exploration, by allowing your team to dig deep into data effortlessly.",
     ],
     image: img1,
+    alt: "Magnifier with Pen and Graph Insights - Uncover Deeper Insights Through Data Discovery",
   },
   {
     id: 2,
@@ -65,6 +67,7 @@ export const BiMigrationDataGovernanceList = [
       "Gain a competitive edge by leveraging sophisticated algorithms and models that extract meaningful information",
     ],
     image: img2,
+    alt: "Graph on Screen - Overcome Complexity With Advanced Data Analytics",
   },
   {
     id: 3,
@@ -77,6 +80,7 @@ export const BiMigrationDataGovernanceList = [
       "Embrace change with agility as our consultants assist in the seamless integration of digital technologies.",
     ],
     image: img3,
+    alt: "Professional Analyzing Data - Navigate Digital Transformation with Expert Consulting",
   },
   {
     id: 4,
@@ -88,6 +92,7 @@ export const BiMigrationDataGovernanceList = [
       "Crafted with scalability in mind, the roadmap evolves alongside your business, accommodating growth and technological advancements.",
     ],
     image: img4,
+    alt: "Person Showing Customized Data Roadmap - Craft Your Strategic Data Roadmap with GWC",
   },
   {
     id: 5,
@@ -100,6 +105,7 @@ export const BiMigrationDataGovernanceList = [
       "We meticulously assess the relevance of data objectives to ensure alignment with organizational priorities, enabling the creation of a purposeful and impactful data strategy.",
     ],
     image: img5,
+    alt: "Person Touching Dashboard - Objective Identification for Data-Driven Excellence",
   },
   {
     id: 6,
@@ -111,6 +117,7 @@ export const BiMigrationDataGovernanceList = [
       "Our strategies facilitate optimized outreach efforts, ensuring that your messages resonate with the right individuals.",
     ],
     image: img6,
+    alt: "Target Audience Identification for Precise Engagement",
   },
   {
     id: 7,
@@ -122,6 +129,7 @@ export const BiMigrationDataGovernanceList = [
       "We focus on optimizing your data ecosystem, ensuring that every component of the strategy is tailored to enhance data quality, accessibility, and relevance.",
     ],
     image: img7,
+    alt: "Tailored Data Strategy - Customizing Data Approaches for Excellence",
   },
   {
     id: 8,
@@ -133,6 +141,7 @@ export const BiMigrationDataGovernanceList = [
       "Gain strategic insights into the potential areas for growth and improvement in your data practices.",
     ],
     image: img8,
+    alt: "Assessment of Data Maturity - Revealing Insights into Your Data Capabilities",
   },
   {
     id: 9,
@@ -145,6 +154,7 @@ export const BiMigrationDataGovernanceList = [
       "We implement continuous monitoring mechanisms to track changes in data compliance regulations, allowing prompt adjustments.",
     ],
     image: img9,
+    alt: "Data Compliance Monitoring - Ensuring Data Integrity and Adherence",
   },
   {
     id: 10,
@@ -157,6 +167,7 @@ export const BiMigrationDataGovernanceList = [
       "We provide scalable solutions to accommodate the evolving needs of your organization ",
     ],
     image: img10,
+    alt: "IT Infrastructure Optimization - Enhancing Operational Efficiency",
   },
 ];
 

@@ -15,7 +15,7 @@ import img5 from "../../../assets/images/fivetran/t5.svg";
 
 import AOS from "aos";
 AOS.init({
-  duration: 1500,
+  duration: 800,
 });
 const FiveTabs = () => {
   const appCreation = useRef(null);
@@ -78,7 +78,11 @@ const FiveTabs = () => {
                         className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-4 py-3`}
                       >
                         <Col md={5} className="px-md-0" data-aos="fade-right">
-                          <img src={img1} alt="" className="w-100 h-100" />
+                          <img
+                            src={img1}
+                            alt="Fivetran-Easy Data Integration"
+                            className="w-100 h-100"
+                          />
                         </Col>
                         <Col
                           md={7}
@@ -148,7 +152,11 @@ const FiveTabs = () => {
                           className={` ${styles?.text_tab_para} `}
                           data-aos="fade-right"
                         >
-                          <img src={img2} alt="" className="w-100 h-100" />
+                          <img
+                            src={img2}
+                            alt="Data modeled for insights"
+                            className="w-100 h-100"
+                          />
                         </Col>
                         <Col md={7} className=" pt-md-0" data-aos="fade-left">
                           <div className={styles.platformDataSection}>
@@ -211,7 +219,11 @@ const FiveTabs = () => {
                           className={` ${styles?.text_tab_para} `}
                           data-aos="fade-right"
                         >
-                          <img src={img3} alt="" className="w-100 h-100" />
+                          <img
+                            src={img3}
+                            alt="Fivetran - Scalable Data Growth"
+                            className="w-100 h-100"
+                          />
                         </Col>
                         <Col md={7} className=" pt-md-0" data-aos="fade-left">
                           <div className={styles.platformDataSection}>
@@ -277,7 +289,11 @@ const FiveTabs = () => {
                           className={` ${styles?.text_tab_para} `}
                           data-aos="fade-right"
                         >
-                          <img src={img4} alt="" className="w-100 h-100" />
+                          <img
+                            src={img4}
+                            alt="Fivetran - Automated Transformations"
+                            className="w-100 h-100"
+                          />
                         </Col>
                         <Col md={7} className=" pt-md-0" data-aos="fade-left">
                           <div className={styles.platformDataSection}>
@@ -339,7 +355,11 @@ const FiveTabs = () => {
                           className={` ${styles?.text_tab_para} `}
                           data-aos="fade-right"
                         >
-                          <img src={img5} alt="" className="w-100 h-100" />
+                          <img
+                            src={img5}
+                            alt="Fivetran - Data Security"
+                            className="w-100 h-100"
+                          />
                         </Col>
                         <Col md={7} className=" pt-md-0" data-aos="fade-left">
                           <div className={styles.platformDataSection}>

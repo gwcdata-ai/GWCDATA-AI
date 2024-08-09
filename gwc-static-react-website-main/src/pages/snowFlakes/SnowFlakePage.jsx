@@ -25,8 +25,9 @@ const SnowFlakePage = () => {
       <Helmet>
         <meta
           name="keywords"
-          content="snowflake, what is snowflake, snowflake database, snowflake inc, snowflake data, snowflake software, snowflake company, snowflakes, snowflake db, snowflake computing, snowflake cloud, snowflake data cloud, snowflake technology, snowflake login, snowflake inc., snowflake platform, snowflake tool, snowflake products, snowflake tech, what is snowflake database, snowflake analytics, snowflake system, data snowflake, snowflake services, snowflake data storage"
+          content="Snowflake partner, Data warehouse, data sharing, data integration, secure Data collaboration, multi cluster, multi cloud architecture, Query performance, global availability, Snowflake marketplace, Data governance and management"
         />
+
         <title>
           {
             " GWC DATA.AI - Snowflake AI Data Cloud - Mobilize Data, Apps, and AI "

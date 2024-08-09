@@ -88,7 +88,11 @@ const FiveOperations = () => {
                 onClick={handleC1Click}
                 className={` ${styles.five_card} mb-3 `}
               >
-                <img src={i1} alt="icon" style={{ width: "fit-content" }} />
+                <img
+                  src={i1}
+                  alt="Data pipelines, Fivetran"
+                  style={{ width: "fit-content" }}
+                />
                 <Card.Text>
                   <h3 className={` ${styles.card_para1} mb-2 `}>
                     Accelerate Data Transformation
@@ -105,7 +109,11 @@ const FiveOperations = () => {
                 onClick={handleC2Click}
                 className={` ${styles.five_card} mb-3 `}
               >
-                <img src={i2} alt="icon" style={{ width: "fit-content" }} />
+                <img
+                  src={i2}
+                  alt="Fivetran for marketing analytics"
+                  style={{ width: "fit-content" }}
+                />
                 <Card.Text>
                   <h3 className={` ${styles.card_para1} mb-2 `}>
                     Ensure Data Reliability
@@ -122,7 +130,11 @@ const FiveOperations = () => {
                 onClick={handleC3Click}
                 className={` ${styles.five_card} mb-3 `}
               >
-                <img src={i3} alt="icon" style={{ width: "fit-content" }} />
+                <img
+                  src={i3}
+                  alt="Fivetran - Enable Data Freshness"
+                  style={{ width: "fit-content" }}
+                />
                 <Card.Text>
                   <h3 className={` ${styles.card_para1} mb-2 `}>
                     Enable Data Freshness

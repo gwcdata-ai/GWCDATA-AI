@@ -88,7 +88,6 @@ export const HomePartnersData = [
         id: 6,
         title: "Enhanced Decision-making",
       },
-
     ],
   },
   {
@@ -149,7 +148,6 @@ export const HomePartnersData = [
         id: 6,
         title: "Aura Components",
       },
-
     ],
   },
   {
@@ -174,7 +172,6 @@ export const HomePartnersData = [
         id: 4,
         title: "Scalable Data Growth",
       },
-
     ],
   },
   {
@@ -263,7 +260,6 @@ export const HomePartnersData = [
         id: 4,
         title: "B2B/EDI Management",
       },
-
     ],
   },
   {
@@ -292,8 +288,6 @@ export const HomePartnersData = [
         id: 5,
         title: "Proactive Troubleshooting & Support",
       },
-
-
     ],
   },
   {
@@ -322,8 +316,6 @@ export const HomePartnersData = [
         id: 5,
         title: "Metadata Management",
       },
-
     ],
   },
-
 ];

@@ -41,7 +41,7 @@ const SnowflakeBanner = () => {
               </p>
             </Col>
             <Col lg={5} md={6}>
-              <img src={snowbanner} alt="logo" className="w-100" />
+              <img src={snowbanner} alt="Snoeflake logo" className="w-100" />
             </Col>
           </Row>
         </Container>

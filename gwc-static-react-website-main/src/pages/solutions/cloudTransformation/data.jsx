@@ -38,6 +38,7 @@ export const CloudTransformationMainDataGovernance = {
   description:
     " We enable businesses to quickly respond to changes and embrace new ways of working that incorporate the digital adoption of new technologies.",
   rightImg: DataGovernanceRightImg,
+  alt: "Embrace Digital Resilience and Adapt to New Technologies",
 };
 
 export const CloudTransformationDataGovernanceList = [
@@ -51,6 +52,7 @@ export const CloudTransformationDataGovernanceList = [
       "Leverage cloud-based IDEs and collaboration tools for seamless development across teams and locations.",
     ],
     image: img1,
+    alt: "Enhance DevOps with Cloud-Based IDEs and Collaboration Tools",
   },
   {
     id: 2,
@@ -61,6 +63,7 @@ export const CloudTransformationDataGovernanceList = [
       "Regularly review and assess your cloud operations to identify areas for improvement and iterate on your strategy.",
     ],
     image: img2,
+    alt: "Optimize Cloud Operations with Service Management and Monitoring",
   },
   {
     id: 3,
@@ -71,6 +74,7 @@ export const CloudTransformationDataGovernanceList = [
       "Utilize cloud platform services like AI/ML, data analytics, and APIs to unlock new functionalities and data-driven insights. ",
     ],
     image: img3,
+    alt: "Professional establishing essentials for cloud-native app development and modernizing legacy applications",
   },
   {
     id: 4,
@@ -81,6 +85,7 @@ export const CloudTransformationDataGovernanceList = [
       "Implement comprehensive disaster recovery and backup strategies that encompass both on-premises and cloud components.",
     ],
     image: img4,
+    alt: "Professional integrating cloud and on-premises systems with hybrid solutions",
   },
   {
     id: 5,
@@ -91,6 +96,7 @@ export const CloudTransformationDataGovernanceList = [
       "Integrate security into the DevOps pipeline and foster collaboration between security, development, and operations teams.",
     ],
     image: img5,
+    alt: "Professional setting up and optimizing security operations with a zero trust model",
   },
   {
     id: 6,
@@ -101,6 +107,7 @@ export const CloudTransformationDataGovernanceList = [
       "Regularly review your compliance posture and adapt your strategies as regulations and cloud environments evolve.",
     ],
     image: img6,
+    alt: "Streamline compliance processes with top tools and expertise",
   },
   {
     id: 7,
@@ -111,6 +118,7 @@ export const CloudTransformationDataGovernanceList = [
       "Implement a comprehensive data catalog across all environments to locate, understand, and track data lineage.",
     ],
     image: img7,
+    alt: "Data governance practices for optimizing data utilization and alignment with business goals",
   },
   {
     id: 8,
@@ -121,6 +129,7 @@ export const CloudTransformationDataGovernanceList = [
       "Leverage cloud tools for data enrichment and transformation to unlock greater value.",
     ],
     image: img8,
+    alt: "Assess and modernize enterprise data warehouses with cloud tools for enhanced value",
   },
   {
     id: 9,
@@ -131,6 +140,7 @@ export const CloudTransformationDataGovernanceList = [
       "Implement cloud-based BI platforms for interactive dashboards and data exploration.",
     ],
     image: img9,
+    alt: "Customized data solutions to make your organization data-driven with cloud-based BI platforms",
   },
   {
     id: 10,
@@ -141,6 +151,7 @@ export const CloudTransformationDataGovernanceList = [
       "Ensure smooth integration of your custom AI solution with existing IT infrastructure and applications.",
     ],
     image: img10,
+    alt: "Build and integrate custom AI solutions, including feasibility assessment and ML model development",
   },
 ];
 

@@ -129,7 +129,7 @@ export const Header = () => {
               }}
             >
               <img
-                alt="Company Logo"
+                alt="GWC Data.AI Logo"
                 src={Logo}
                 style={{ height: 100, width: 250, marginTop: -5 }}
               />

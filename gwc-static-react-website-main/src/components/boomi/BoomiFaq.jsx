@@ -88,13 +88,28 @@ const BoomiFaq = () => {
 
                 <Col md={4}>
                   {showC1 && (
-                    <img src={f1} alt="" className="w-100" height="100%" />
+                    <img
+                      src={f1}
+                      alt="Drag-&-Drop Interface"
+                      className="w-100"
+                      height="100%"
+                    />
                   )}
                   {showC2 && (
-                    <img src={f2} alt="" className="w-100" height="100%" />
+                    <img
+                      src={f2}
+                      alt="Pre-built Connectors"
+                      className="w-100"
+                      height="100%"
+                    />
                   )}
                   {showC3 && (
-                    <img src={f3} alt="" className="w-100" height="100%" />
+                    <img
+                      src={f3}
+                      alt="Real-time Monitoring"
+                      className="w-100"
+                      height="100%"
+                    />
                   )}
                 </Col>
               </Row>

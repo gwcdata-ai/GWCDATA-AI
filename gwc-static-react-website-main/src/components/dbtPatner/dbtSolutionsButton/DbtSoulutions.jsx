@@ -116,7 +116,7 @@ const DbtSoulutions = ({ dataLists }) => {
             <Col lg={4} md={6} className="px-md-0">
               <img
                 src={selectedItem?.image}
-                alt=""
+                alt={selectedItem?.alt}
                 className="w-100 mx-lg-3 rounded-4"
               />
             </Col>

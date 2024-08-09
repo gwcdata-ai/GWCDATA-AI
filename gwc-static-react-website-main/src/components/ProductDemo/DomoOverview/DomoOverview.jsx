@@ -16,7 +16,11 @@ export const DomoOverview = ({ commonLeftSectionContent }) => {
         <Container className="mt-5">
           <Row className="d-flex align-items-center justify-content-center">
             <Col lg={5} md={6} className="px-md-0" data-aos="fade-right">
-              <img src={overviewimg} alt="" className=" mx-lg-5  rounded-4" />
+              <img
+                src={overviewimg}
+                alt="DOMO"
+                className=" mx-lg-5  rounded-4"
+              />
             </Col>
             <Col
               lg={7}

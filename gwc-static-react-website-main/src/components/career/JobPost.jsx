@@ -268,9 +268,9 @@ const JobPost = () => {
                       <div className={` ${styles.roel_sec}  `}>
                         <p
                           className={` ${styles.team_para} mb-4  mb-xs-3`}
-                        // onClick={() =>
-                        //   handleJobDescription(jobdescription, filteredData)
-                        // }
+                          // onClick={() =>
+                          //   handleJobDescription(jobdescription, filteredData)
+                          // }
                         >
                           {jobRole}
                         </p>
@@ -398,7 +398,9 @@ const JobPost = () => {
                         )}
                       </div>
 
-                      <div className={` ${styles.btn_sec} d-flex justify-content-center`}>
+                      <div
+                        className={` ${styles.btn_sec} d-flex justify-content-center`}
+                      >
                         {isMobile ? (
                           <Button
                             style={{ marginTop: 10, fontSize: 12 }}
@@ -417,7 +419,8 @@ const JobPost = () => {
                               xmlns="http://www.w3.org/2000/svg"
                             >
                               <path d="m21 12-7-9v4.99L3 8v8h11v5l7-9z"></path>
-                            </svg> More Info
+                            </svg>{" "}
+                            More Info
                           </Button>
                         ) : (
                           <Button
@@ -478,7 +481,11 @@ const JobPost = () => {
               </div>
             </Col>
             <Col md={4} className="mb-5 mt-md-3">
-              <img src={carrerImg} alt="" className="w-100 rounded-3" />
+              <img
+                src={carrerImg}
+                alt="Explore the Amazingness"
+                className="w-100 rounded-3"
+              />
             </Col>
           </Row>
         )}
@@ -497,7 +504,7 @@ const JobPost = () => {
             </p>
             <div>
               <ul style={{ listStyleType: "circle" }}>
-                {jobDescription[0]?.list?.map((item,index) => {
+                {jobDescription[0]?.list?.map((item, index) => {
                   return <li key={index}> {item} </li>;
                 })}
               </ul>
@@ -509,7 +516,7 @@ const JobPost = () => {
             </p>
             <div>
               <ul style={{ listStyleType: "circle" }}>
-                {jobDescription[1]?.list?.map((item,index) => {
+                {jobDescription[1]?.list?.map((item, index) => {
                   return <li key={index}> {item} </li>;
                 })}
               </ul>
@@ -521,7 +528,7 @@ const JobPost = () => {
             </p>
             <div>
               <ul style={{ listStyleType: "circle" }}>
-                {jobDescription[2]?.list?.map((item,index) => {
+                {jobDescription[2]?.list?.map((item, index) => {
                   return <li key={index}> {item} </li>;
                 })}
               </ul>

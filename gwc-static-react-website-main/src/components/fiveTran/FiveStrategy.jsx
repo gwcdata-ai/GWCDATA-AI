@@ -11,7 +11,7 @@ const FiveStrategy = () => {
         <Col md={6}>
           <img
             src={tryimg}
-            alt="imgae"
+            alt="Fivetran debuts Lite connectors to ease SaaS app data integration"
             className={` ${styles.left_img} `}
             width="75%"
           />

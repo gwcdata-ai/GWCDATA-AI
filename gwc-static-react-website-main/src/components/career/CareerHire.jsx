@@ -69,7 +69,7 @@ const CareerHire = () => {
           <Card className={` ${styles?.step_card2} mt-5`}>
             <div className={` ${styles?.card_inside} `}>
               <div>
-                <img src={ccc} alt="" width="90%" />
+                <img src={ccc} alt="recruiting candidate" width="90%" />
               </div>
               <p className={` ${styles?.img_para} my-3`}>
                 A Recruiter/Technical panel will screen your application. We

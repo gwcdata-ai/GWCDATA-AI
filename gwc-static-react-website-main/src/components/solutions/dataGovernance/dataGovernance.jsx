@@ -28,7 +28,7 @@ export const DataGovernance = ({ commonRightSectionContent }) => {
                 )}
                 {commonRightSectionContent?.list && (
                   <ul className={styles?.text}>
-                    {commonRightSectionContent?.list?.map((item,index) => (
+                    {commonRightSectionContent?.list?.map((item, index) => (
                       <li key={index}> {item} </li>
                     ))}
                   </ul>
@@ -36,11 +36,12 @@ export const DataGovernance = ({ commonRightSectionContent }) => {
               </div>
             </Col>
             <Col lg={5} md={6} className="text-center" data-aos="fade-left">
+              {console.log(commonRightSectionContent?.alt)}
               <img
                 src={commonRightSectionContent?.rightImg}
-                alt=""
+                alt={commonRightSectionContent?.alt}
                 className="rounded-4 mx-lg-3 w-100"
-              // style={{ width: "349px", height: "343px" }}
+                // style={{ width: "349px", height: "343px" }}
               />
             </Col>
           </Row>

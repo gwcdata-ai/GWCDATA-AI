@@ -13,7 +13,7 @@ import t4 from "../../assets/images/boomi/t4.png";
 
 import AOS from "aos";
 AOS.init({
-  duration: 1500,
+  duration: 800,
 });
 
 const BoomiTabs = () => {
@@ -75,7 +75,11 @@ const BoomiTabs = () => {
                       className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-5`}
                     >
                       <Col md={5} className="px-md-0" data-aos="fade-right">
-                        <img src={t1} alt="" className="w-100 h-100" />
+                        <img
+                          src={t1}
+                          alt="Integration"
+                          className="w-100 h-100"
+                        />
                       </Col>
                       <Col md={7} className=" pt-md-0" data-aos="fade-left">
                         <div className={styles.platformDataSection}>
@@ -103,7 +107,11 @@ const BoomiTabs = () => {
                       className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-5`}
                     >
                       <Col md={5} className="px-md-0" data-aos="fade-right">
-                        <img src={t3} alt="" className="w-100 h-100" />
+                        <img
+                          src={t3}
+                          alt="API Management"
+                          className="w-100 h-100"
+                        />
                       </Col>
                       <Col md={7} className=" pt-md-0" data-aos="fade-left">
                         <div className={styles.platformDataSection}>
@@ -130,7 +138,11 @@ const BoomiTabs = () => {
                       className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-5`}
                     >
                       <Col md={5} className="px-md-0" data-aos="fade-right">
-                        <img src={t2} alt="" className="w-100 h-100" />
+                        <img
+                          src={t2}
+                          alt="Master Data Hub"
+                          className="w-100 h-100"
+                        />
                       </Col>
                       <Col md={7} className=" pt-md-0" data-aos="fade-left">
                         <div className={styles.platformDataSection}>
@@ -160,7 +172,11 @@ const BoomiTabs = () => {
                       className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-5`}
                     >
                       <Col md={5} className="px-md-0" data-aos="fade-right">
-                        <img src={t4} alt="" className="w-100 h-100" />
+                        <img
+                          src={t4}
+                          alt="B2B/EDI Management"
+                          className="w-100 h-100"
+                        />
                       </Col>
                       <Col md={7} className=" pt-md-0" data-aos="fade-left">
                         <div className={styles.platformDataSection}>

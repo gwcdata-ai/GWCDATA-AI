@@ -29,7 +29,7 @@ const HomeIndustries = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    arrows:true,
+    arrows: true,
     autoplaySpeed: 3000,
     nextArrow: isMobile ? false : <SampleNextArrow />,
     prevArrow: isMobile ? false : <SamplePrevArrow />,
@@ -187,7 +187,7 @@ const HomeIndustries = () => {
       <Row>
         <Col xs={12} sm={12} md={12} lg={3} className="w-100">
           <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-            {HomeIndustriesData.map((data,index) => (
+            {HomeIndustriesData.map((data, index) => (
               <div className="px-3" key={index}>
                 <div
                   className={styles["section-container"]}
@@ -197,7 +197,7 @@ const HomeIndustries = () => {
                     <img
                       className={styles["section-image"]}
                       src={data?.banner} // Replace with your image URL
-                      alt="Your Image"
+                      alt={data.altImage}
                     />
                     <div className={styles.IndustriesSectionBox}>
                       <img src={data?.image} alt="Icon" />

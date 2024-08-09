@@ -33,7 +33,11 @@ const DomoAnalytics = () => {
               </div>
             </Col>
             <Col lg={12} md={12} className="pb-md-0 pb-5">
-              <img src={image2} alt="" className="w-100 rounded-4 mx-lg-3" />
+              <img
+                src={image2}
+                alt="Domo Analytics Capabilities"
+                className="w-100 rounded-4 mx-lg-3"
+              />
             </Col>
           </Row>
         </Container>

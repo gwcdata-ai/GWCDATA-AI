@@ -471,6 +471,7 @@ export const CareerTeamData = {
     "Design the future you dream of! Wish to empower businesses and contribute to a more sustainable, inclusive future? Be a part of GWC, a dynamic organization where you become an integral part of a global community of innovative thinkers and industry experts. ",
 
   leftImg: team2,
+  alt: "Design the future you dream",
 };
 
 export const WfhBannerData = {
@@ -489,6 +490,7 @@ export const WfhTeamData = {
     "Presenting our groundbreaking and proven model Work from Hometown. We revolutionize the conventional work environment, forging a distinctive synergy between remote work, work- life harmony, and cost-effective benefits. Our initiative is centred on decentralizing workspaces and catalyzing development in India's burgeoning tier 2 and 3 cities.",
 
   leftImg: wfh,
+  alt: "Three Professionals Discussing with Laptop - Revolutionizing Work Experience with Work from Hometown Model",
 };
 
 import sl1 from "../../assets/images/career/slider1.png";
@@ -790,17 +792,20 @@ export const careerCarousalData = [
     img: f17,
     text: "3rd Anniversary for GWC",
     className: "first",
+    alt: "3rd Anniversary in GWC",
   },
   {
     id: 2,
     img: f18,
     text: "Sports Day Activity",
+    alt: "Sports Day Activity in GWC",
   },
 
   {
     id: 3,
     img: f3,
     text: "Onam Celebration",
+    alt: "Onam Celebration in GWC",
   },
 
   // {
@@ -812,11 +817,13 @@ export const careerCarousalData = [
     id: 5,
     img: f5,
     text: "GWC Diwali Gifthampers",
+    alt: "GWC Diwali Gifthampers in GWC",
   },
   {
     id: 6,
     img: f6,
     text: "Great Place to Work",
+    alt: "Great Place to Work in GWC",
   },
   // {
   //   id: 7,
@@ -848,16 +855,19 @@ export const careerCarousalData = [
     id: 12,
     img: f12,
     text: "Christmas Celebration",
+    alt: "Christmas Celebration in GWC",
   },
   {
     id: 13,
     img: f13,
     text: "Cricket Tournment",
+    alt: "Cricket Tournment in GWC",
   },
   {
     id: 14,
     img: f14,
     text: "Halloween Celebration",
+    alt: "Halloween Celebration in GWC",
   },
   // {
   //   id: 15,

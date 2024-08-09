@@ -26,7 +26,7 @@ const Location = () => {
 
       <div className={styles.frameParent1}>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.rectangleIcon} alt="" src={loc8} />
+          <img className={styles.rectangleIcon} alt="USA " src={loc8} />
           <div className={styles.frameChild4} />
           <div className={styles.sawmillRoadSuite200Container}>
             <p className={styles.fillOutThis}>
@@ -39,7 +39,7 @@ const Location = () => {
           <img className={styles.frameChild5} alt="" src={locIcon} />
         </div>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.rectangleIcon} src={loc6} alt="" />
+          <img className={styles.rectangleIcon} src={loc6} alt="Bengaluru" />
           <div className={styles.frameChild7} />
           <div className={styles.sawmillRoadSuite200Container}>
             Novel Tech Park, HSR Extension, Bengaluru - 560068
@@ -48,7 +48,7 @@ const Location = () => {
           <img className={styles.frameChild5} alt="" src={locIcon} />
         </div>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.frameChild9} alt="" src={loc7} />
+          <img className={styles.frameChild9} alt="Chennai" src={loc7} />
           <div className={styles.frameChild10} />
           <div className={styles.plot1113rd3}>
             Siddharth Building, Industrial Estate, Guindy, Chennai - 600032
@@ -57,7 +57,7 @@ const Location = () => {
           <img className={styles.frameChild11} alt="" src={locIcon} />
         </div>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.rectangleIcon} alt="" src={loc9} />
+          <img className={styles.rectangleIcon} alt="Coimbatore" src={loc9} />
           <div className={styles.frameChild4} />
           <div className={styles.sawmillRoadSuite200Container}>
             <p className={styles.fillOutThis}>MayFlowerSignature</p>
@@ -71,9 +71,8 @@ const Location = () => {
       </div>
 
       <div className={styles.frameParent1}>
-        
         <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.rectangleIcon} src={loc10} alt="" />
+          <img className={styles.rectangleIcon} src={loc10} alt="Hosur" />
           <div className={styles.frameChild7} />
           <div className={styles.sawmillRoadSuite200Container}>
             Opp. 5 Star Petrol Bunk, NH Bangalore Road, Hosur-635109
@@ -82,7 +81,7 @@ const Location = () => {
           <img className={styles.frameChild5} alt="" src={locIcon} />
         </div>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.frameChild9} alt="" src={loc5} />
+          <img className={styles.frameChild9} alt="Dharmapuri" src={loc5} />
           <div className={styles.frameChild10} />
           <div className={styles.plot1113rd3}>
             Opp. Hero Showroom, Bharathipuram, Dharmapuri 636705
@@ -92,7 +91,7 @@ const Location = () => {
           <img className={styles.frameChild11} alt="" src={locIcon} />
         </div>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.rectangleIcon} alt="" src={loc4} />
+          <img className={styles.rectangleIcon} alt="Salem" src={loc4} />
           <div className={styles.frameChild4} />
           <div className={styles.sawmillRoadSuite200Container}>
             <p className={styles.fillOutThis}>Kamarajar Nagar Colony , </p>
@@ -102,7 +101,7 @@ const Location = () => {
           <img className={styles.frameChild5} alt="" src={locIcon} />
         </div>
         <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.rectangleIcon} src={loc11} alt="" />
+          <img className={styles.rectangleIcon} src={loc11} alt="Tirupattur" />
           <div className={styles.frameChild7} />
           <div className={styles.sawmillRoadSuite200Container}>
             3/6, CKC Road, Tirupattur - 635501

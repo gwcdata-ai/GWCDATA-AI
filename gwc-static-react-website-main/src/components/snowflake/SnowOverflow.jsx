@@ -171,7 +171,7 @@ const SnowOverflow = () => {
                       <img
                         src={image1}
                         className={` ${commonStyles.image_space} w-100 mb-4 `}
-                        alt=""
+                        alt="Performance Optimization"
                       />
                       <div className={commonStyles?.overlay}></div>
                     </div>
@@ -203,7 +203,7 @@ const SnowOverflow = () => {
                       <img
                         src={image2}
                         className={` ${commonStyles.image_space} w-100 mb-4 `}
-                        alt=""
+                        alt="Cost Optimization"
                       />
                       <div className={commonStyles?.overlay}></div>
                     </div>
@@ -272,7 +272,7 @@ const SnowOverflow = () => {
                       <img
                         src={image4}
                         className={` ${commonStyles.image_space} w-100 mb-4 `}
-                        alt=""
+                        alt="Security Implementation"
                       />
                       <div className={commonStyles?.overlay}></div>
                     </div>
@@ -306,7 +306,7 @@ const SnowOverflow = () => {
                       <img
                         src={image5}
                         className={` ${commonStyles.image_space} w-100 mb-4 `}
-                        alt=""
+                        alt="ETL Process Enhancements"
                       />
 
                       <div className={commonStyles?.overlay}></div>
@@ -341,7 +341,7 @@ const SnowOverflow = () => {
                       <img
                         src={image6}
                         className={` ${commonStyles.image_space} w-100 mb-4 `}
-                        alt=""
+                        alt="BI Integration Success"
                       />
 
                       <div className={commonStyles?.overlay}></div>
@@ -379,7 +379,7 @@ const SnowOverflow = () => {
                     <img
                       src={image1}
                       className="w-100 mb-4 image_container"
-                      alt=""
+                      alt="Performance Optimization"
                     />
                     <div className="overlay"></div>
                   </div>
@@ -408,7 +408,11 @@ const SnowOverflow = () => {
                   }
                 >
                   <div className="overlay_container">
-                    <img src={image2} className="w-100 mb-4" alt="" />
+                    <img
+                      src={image2}
+                      className="w-100 mb-4"
+                      alt="Cost Optimization"
+                    />
                     <div className="overlay"></div>
                   </div>
 
@@ -439,7 +443,11 @@ const SnowOverflow = () => {
                   }
                 >
                   <div className="overlay_container">
-                    <img src={image3} className="w-100 mb-4" alt="" />
+                    <img
+                      src={image3}
+                      className="w-100 mb-4"
+                      alt="Data Modeling Excellence"
+                    />
                     <div className="overlay"></div>
                   </div>
 
@@ -470,7 +478,11 @@ const SnowOverflow = () => {
                   }
                 >
                   <div className="overlay_container">
-                    <img src={image4} className="w-100 mb-4" alt="" />
+                    <img
+                      src={image4}
+                      className="w-100 mb-4"
+                      alt="Security Implementation"
+                    />
                     <div className="overlay"></div>
                   </div>
 
@@ -501,7 +513,11 @@ const SnowOverflow = () => {
                   }
                 >
                   <div className="overlay_container">
-                    <img src={image5} className="w-100 mb-4" alt="" />
+                    <img
+                      src={image5}
+                      className="w-100 mb-4"
+                      alt="ETL Process Enhancements"
+                    />
 
                     <div className="overlay"></div>
                   </div>
@@ -532,7 +548,11 @@ const SnowOverflow = () => {
                   }
                 >
                   <div className="overlay_container">
-                    <img src={image6} className="w-100 mb-4" alt="" />
+                    <img
+                      src={image6}
+                      className="w-100 mb-4"
+                      alt="BI Integration Success"
+                    />
 
                     <div className="overlay"></div>
                   </div>

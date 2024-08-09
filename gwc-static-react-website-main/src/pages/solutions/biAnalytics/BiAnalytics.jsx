@@ -37,14 +37,11 @@ export const BiAnalyticsPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="
-          
-          Business Intelligence,Data Analytics,Data Visualization,BI Tools,Predictive Analytics,Data-Driven Decision Making,Performance Metrics,Reporting Solutions,Data Management,Analytics Strategies
+          content="Business Intelligence & Analytics Solutions, Data Collection, Data Exploration, Dashboard & Report Design, Data Analysis, Data Presentation, Performance Monitoring, Data Interpretation & Insight Generation, Collaboration & Knowledge Sharing, Integration with Business Processes, Iterative Analysis & Refinement, Comprehensive Data Visualization, Advanced Analytics Integration, Real-time Reporting & Dashboards, Data-driven Strategy Development, Solving Problems Using BI Tools"
+        />
 
-          "
-        /> */}
         <title>{"GWC DATA.AI - Business Intelligence and Analytics "}</title>
         <meta
           name="description"

@@ -317,12 +317,12 @@ input[type="email"] {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  border-left: 5px solid #8e8e8e;
+  /* border-left: 5px solid #8e8e8e; */
   border-radius: 10px;
 }
 
 .blog_sub_para_list:hover {
-  border-left: 5px solid #6f2b8c;
+  /* border-left: 5px solid #6f2b8c; */
 }
 
 .blog_next_para {

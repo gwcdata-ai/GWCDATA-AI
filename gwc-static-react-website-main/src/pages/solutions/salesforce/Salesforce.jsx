@@ -42,10 +42,11 @@ export const SalesforcePage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
-        /> */}
+          content="sales cloud, service cloud, commerce cloud, CPQ (configure, price, quote), Experience cloud, OSM (order management system), health cloud, field services lightning, Solution Architecting, Data Management, Lightning Web Component, Automation Tools, Aura Components, SOQL, SOSL, & JavaScript, Salesforce Tableau Integration, Salesforce, CRM Consultation, Request Free Salesforce, Salesforce Partner"
+        />
+
         <meta
           name="description"
           content="Discover how Salesforce can transform your business operations. Learn about its powerful CRM solutions, cloud-based applications, and tools for improving customer relationships, driving sales growth, and enhancing productivity. Leverage Salesforce to unlock your organization’s full potential."

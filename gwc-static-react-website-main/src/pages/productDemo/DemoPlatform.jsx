@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
-import whitlogo from "../../assets/images/domologo_white.svg"
-import macimg from "../../assets/images/create.png"
+import whitlogo from "../../assets/images/domologo_white.svg";
+import macimg from "../../assets/images/create.png";
 import { HiOutlineCheckCircle } from "react-icons/hi2";
 import commonStyles from "../../commoncss/common.module.css";
 import "./style.css";
@@ -26,14 +25,16 @@ import client9 from "../../assets/images/homeClient/client9.svg";
 import client10 from "../../assets/images/homeClient/client10.svg";
 
 const DemoPlatform = () => {
-    return (
-        <>
-            <Container fluid id="domo-freeaccount"
-                className={`${commonStyles.banner_container_img} container_bg py-5`}
-                style={{ backgroundImage: `url(${bannerImg})` }}
-            >
-                <Container className="mt-2">
-                    {/* <Row className="d-flex align-items-center justify-content-center">
+  return (
+    <>
+      <Container
+        fluid
+        id="domo-freeaccount"
+        className={`${commonStyles.banner_container_img} container_bg py-5`}
+        style={{ backgroundImage: `url(${bannerImg})` }}
+      >
+        <Container className="mt-2">
+          {/* <Row className="d-flex align-items-center justify-content-center">
 
                         <Col md={4}>
                             <div className="w-100 center_align mt-2">
@@ -49,25 +50,30 @@ const DemoPlatform = () => {
                         </Col>
                     </Row> */}
 
-                    <Row className="mb-2">
-                        <Col md={4} className="" data-aos="fade-right">
+          <Row className="mb-2">
+            <Col md={4} className="" data-aos="fade-right">
+              <div className="left_section">
+                <img
+                  src={macimg}
+                  alt="DOMO Partners"
+                  className=" mx-lg-0 rounded-4 w-100 mb-2 px-4 mt4"
+                />
+                <div className="btn_Wrapper">
+                  <Link
+                    to="https://www.domo.com/start/freemium?utm_source=referral_gwc&utm_medium=organic&orgid=100000770&utm_campid=701f2000001C6UOAA0%20Start%20Free%20|%20Domo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="create_btn">
+                      Create Your Free Account
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </Col>
 
-                            <div className="left_section">
-                                <img src={macimg} alt="" className=" mx-lg-0 rounded-4 w-100 mb-2 px-4 mt4" />
-                                <div className="btn_Wrapper">
-                                    <Link
-                                        to="https://www.domo.com/start/freemium?utm_source=referral_gwc&utm_medium=organic&orgid=100000770&utm_campid=701f2000001C6UOAA0%20Start%20Free%20|%20Domo"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <button className="create_btn">Create Your Free Account</button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col md={8} data-aos="fade-left">
-                            {/* <Row className="mb-4 mt-4">
+            <Col md={8} data-aos="fade-left">
+              {/* <Row className="mb-4 mt-4">
                                 <Col md={6}>
                                     <Card className="domo_card mb-2">
                                         <div>
@@ -88,41 +94,64 @@ const DemoPlatform = () => {
                                     </Card>
                                 </Col>
                             </Row> */}
-                            <div className="mx-lg-4">
-                                <p className="domo_heading mt-4 mb-2"><b>Create Your Free Account Now & Access It Forever</b></p>
-                                <p className="domo_para mb-2">Enjoy unlimited features and get an unlimited number of users- With no credit card!</p>
-                            </div>
-                            <Row className=" mb-md-0 mb-5 mt-4 mx-lg-4">
-                                <Col xs={12} md={4} data-aos="fade-right" className="mb-3">
-                                    <div className={styles.groupParentss}>
-                                        <div className={styles.vectorParent}>
-                                            <img className={` ${styles.vectorIcon8_dash} mx-3 `} width="75%" alt="" src={client5} />
-                                        </div>
-                                        <div className={styles1.domo3cardtitle2}>Unlimited Users</div>
-                                        {/* <div className={styles1.domo1cardtext}>There's no seat limit, ever.</div> */}
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} data-aos="fade-right" className="mb-3">
-                                    <div className={styles.groupParentss}>
-                                        <div className={styles.vectorParent}>
-                                            <img className={` ${styles.vectorIcon8_dash} mx-3 `} width="75%" alt="" src={client6} />
-                                        </div>
-                                        <div className={styles1.domo1cardtitle2}>1200+ Connecters</div>
-                                        {/* <div className={styles1.domo2cardtext}>Give all users access to real-time data to make fast, smart decisions that transform the business.</div> */}
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} data-aos="fade-left" className="mb-3">
-                                    <div className={styles.groupParentss}>
-                                        <div className={styles.vectorParent}>
-                                            <img className={` ${styles.vectorIcon8_dash} mx-3 `} width="75%" alt="" src={client7} />
-                                        </div>
-                                        <div className={styles1.domo2cardtitle2}>Next Gen AI</div>
-                                        {/* <div className={styles1.domo3cardtext}>payback period</div> */}
-                                    </div>
-                                </Col>
-
-                            </Row>
-                            {/* <Row>
+              <div className="mx-lg-4">
+                <p className="domo_heading mt-4 mb-2">
+                  <b>Create Your Free Account Now & Access It Forever</b>
+                </p>
+                <p className="domo_para mb-2">
+                  Enjoy unlimited features and get an unlimited number of users-
+                  With no credit card!
+                </p>
+              </div>
+              <Row className=" mb-md-0 mb-5 mt-4 mx-lg-4">
+                <Col xs={12} md={4} data-aos="fade-right" className="mb-3">
+                  <div className={styles.groupParentss}>
+                    <div className={styles.vectorParent}>
+                      <img
+                        className={` ${styles.vectorIcon8_dash} mx-3 `}
+                        width="75%"
+                        alt=""
+                        src={client5}
+                      />
+                    </div>
+                    <div className={styles1.domo3cardtitle2}>
+                      Unlimited Users
+                    </div>
+                    {/* <div className={styles1.domo1cardtext}>There's no seat limit, ever.</div> */}
+                  </div>
+                </Col>
+                <Col xs={12} md={4} data-aos="fade-right" className="mb-3">
+                  <div className={styles.groupParentss}>
+                    <div className={styles.vectorParent}>
+                      <img
+                        className={` ${styles.vectorIcon8_dash} mx-3 `}
+                        width="75%"
+                        alt=""
+                        src={client6}
+                      />
+                    </div>
+                    <div className={styles1.domo1cardtitle2}>
+                      1200+ Connecters
+                    </div>
+                    {/* <div className={styles1.domo2cardtext}>Give all users access to real-time data to make fast, smart decisions that transform the business.</div> */}
+                  </div>
+                </Col>
+                <Col xs={12} md={4} data-aos="fade-left" className="mb-3">
+                  <div className={styles.groupParentss}>
+                    <div className={styles.vectorParent}>
+                      <img
+                        className={` ${styles.vectorIcon8_dash} mx-3 `}
+                        width="75%"
+                        alt=""
+                        src={client7}
+                      />
+                    </div>
+                    <div className={styles1.domo2cardtitle2}>Next Gen AI</div>
+                    {/* <div className={styles1.domo3cardtext}>payback period</div> */}
+                  </div>
+                </Col>
+              </Row>
+              {/* <Row>
                                 <Col md={6}>
                                     <Card className="domo_card mb-2">
                                         <div>
@@ -142,41 +171,62 @@ const DemoPlatform = () => {
                                     </Card>
                                 </Col>
                             </Row> */}
-                            <Row className=" mb-md-0 mb-5 mt-4 mx-lg-4">
-                                <Col xs={12} md={4} data-aos="fade-right" className="mb-3">
-                                    <div className={styles.groupParentss}>
-                                        <div className={styles.vectorParent}>
-                                            <img className={` ${styles.vectorIcon8_dash} mx-3 `} width="75%" alt="" src={client8} />
-                                        </div>
-                                        <div className={styles1.domo1cardtitle8}>Workflow Automation</div>
-                                        {/* <div className={styles1.domo1cardtext}>Create BI dashboards, build apps, transform and govern your data at scale, integrate AI in your business, and more.</div> */}
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} data-aos="fade-right" className="mb-3">
-                                    <div className={styles.groupParentss}>
-                                        <div className={styles.vectorParent}>
-                                            <img className={` ${styles.vectorIcon8_dash} mx-3 `} width="75%" alt="" src={client9} />
-                                        </div>
-                                        <div className={styles1.domo2cardtitle8}>Flexible Pricing</div>
-                                        {/* <div className={styles1.domo3cardtext}>When it's time to move beyond free, get budget-friendly pricing based on how much you use the platform.</div> */}
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} data-aos="fade-left" className="mb-3">
-                                    <div className={styles.groupParentss}>
-                                        <div className={styles.vectorParent}>
-                                            <img className={` ${styles.vectorIcon8_dash} mx-3 `} width="75%" alt="" src={client10} />
-                                        </div>
-                                        <div className={styles1.domo2cardtitle9}>Reuse the Instance</div>
-                                        {/* <div className={styles1.domo3cardtext}>payback period</div> */}
-                                    </div>
-                                </Col>
-                            </Row>
-                        </Col>
-                    </Row>
-                </Container>
-            </Container>
-        </>
-    )
-}
+              <Row className=" mb-md-0 mb-5 mt-4 mx-lg-4">
+                <Col xs={12} md={4} data-aos="fade-right" className="mb-3">
+                  <div className={styles.groupParentss}>
+                    <div className={styles.vectorParent}>
+                      <img
+                        className={` ${styles.vectorIcon8_dash} mx-3 `}
+                        width="75%"
+                        alt=""
+                        src={client8}
+                      />
+                    </div>
+                    <div className={styles1.domo1cardtitle8}>
+                      Workflow Automation
+                    </div>
+                    {/* <div className={styles1.domo1cardtext}>Create BI dashboards, build apps, transform and govern your data at scale, integrate AI in your business, and more.</div> */}
+                  </div>
+                </Col>
+                <Col xs={12} md={4} data-aos="fade-right" className="mb-3">
+                  <div className={styles.groupParentss}>
+                    <div className={styles.vectorParent}>
+                      <img
+                        className={` ${styles.vectorIcon8_dash} mx-3 `}
+                        width="75%"
+                        alt=""
+                        src={client9}
+                      />
+                    </div>
+                    <div className={styles1.domo2cardtitle8}>
+                      Flexible Pricing
+                    </div>
+                    {/* <div className={styles1.domo3cardtext}>When it's time to move beyond free, get budget-friendly pricing based on how much you use the platform.</div> */}
+                  </div>
+                </Col>
+                <Col xs={12} md={4} data-aos="fade-left" className="mb-3">
+                  <div className={styles.groupParentss}>
+                    <div className={styles.vectorParent}>
+                      <img
+                        className={` ${styles.vectorIcon8_dash} mx-3 `}
+                        width="75%"
+                        alt=""
+                        src={client10}
+                      />
+                    </div>
+                    <div className={styles1.domo2cardtitle9}>
+                      Reuse the Instance
+                    </div>
+                    {/* <div className={styles1.domo3cardtext}>payback period</div> */}
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+    </>
+  );
+};
 
-export default DemoPlatform
+export default DemoPlatform;

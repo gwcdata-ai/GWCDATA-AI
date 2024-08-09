@@ -13,15 +13,15 @@ import l3 from "../../../../assets/images/looker/LookML Engineering.svg";
 import l4 from "../../../../assets/images/looker/Unearthing insights.svg";
 import l5 from "../../../../assets/images/looker/Google App Engine.svg";
 
-
 export const dataExplainedGCPServices = [
   {
     id: 1,
     name: "Google Compute Engine",
-    className:"first",
+    className: "first",
     image: img1,
     description:
       "Google Compute Engine is an Infrastructure as a Service (IaaS) offering that allows users to run virtual machines (VMs) on Google's infrastructure. It provides scalable and flexible computing resources, allowing you to deploy and manage virtual machines in the cloud easily. Compute Engine is suitable for a wide range of workloads, including web hosting, application development, and data processing.",
+    alt: "Google Compute Engine",
   },
   {
     id: 2,
@@ -29,6 +29,8 @@ export const dataExplainedGCPServices = [
     image: img2,
     description:
       "Google Kubernetes Engine (GKE) is a managed Kubernetes service provided by Google Cloud Platform. Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerised applications. GKE simplifies the process of deploying, managing, and scaling containerised applications using Kubernetes. GKE supports standard Kubernetes tooling and is compatible with the Kubernetes ecosystem, allowing you to use Helm charts, kubectl commands, and other Kubernetes resources.",
+
+    alt: "Google Kubernetes Engine",
   },
   {
     id: 3,
@@ -37,10 +39,12 @@ export const dataExplainedGCPServices = [
 
     description:
       "Google Cloud Storage is a cloud-based object storage system offered by GCP. It allows you to store and retrieve data in a highly scalable and durable manner. Google Cloud Storage integrates with other Google Cloud Platform services, making it easy to use your stored data in conjunction with services like BigQuery, Cloud Functions, and more. BigQuery is suitable for a wide range of use cases, including business intelligence, ad hoc querying, data exploration, and machine learning.",
+    alt: "Google Cloud Storage",
   },
   {
     id: 4,
     name: "BigQuery",
+    alt: "BigQuery",
     image: img4,
 
     description:
@@ -49,6 +53,7 @@ export const dataExplainedGCPServices = [
   {
     id: 5,
     name: "Google App Engine",
+    alt: "Google App Engine",
     image: img5,
 
     description:
@@ -57,6 +62,7 @@ export const dataExplainedGCPServices = [
   {
     id: 6,
     name: "Looker Studio",
+    alt: "Looker Studio",
     image: img6,
 
     description:
@@ -65,6 +71,7 @@ export const dataExplainedGCPServices = [
   {
     id: 7,
     name: "Vertex AI",
+    alt: "Vertex AI",
     image: img7,
 
     description:
@@ -73,6 +80,7 @@ export const dataExplainedGCPServices = [
   {
     id: 8,
     name: "Migration Tools",
+    alt: "Migration Tools",
     image: img8,
 
     description:
@@ -80,18 +88,20 @@ export const dataExplainedGCPServices = [
   },
 ];
 
-
 export const LookerdataExplainedGCPServices = [
   {
     id: 1,
     name: "Commissioning Looker",
-    className:'first',
+    alt: "Commissioning Looker",
+
+    className: "first",
     image: l1,
     description:
       " We access your existing infrastructure and do a feasibility check for the looker implementation quickly and effectively. We then restructure the organisation’s architecture with the Looker platform and connect the data sources in a way that you can unearth the hidden information from your data. We prepare looks and dashboard to form user stories which eventually help in better decision making.",
   },
   {
     id: 2,
+    alt: "Data Extraction & Ingestion in looker",
     name: "Data Extraction & Ingestion",
     image: l2,
     description:
@@ -99,6 +109,8 @@ export const LookerdataExplainedGCPServices = [
   },
   {
     id: 3,
+    alt: "LookML Engineering in looker",
+
     name: "LookML Engineering",
     image: l3,
 
@@ -107,6 +119,8 @@ export const LookerdataExplainedGCPServices = [
   },
   {
     id: 4,
+    alt: "Unearthing Insights in looker",
+
     name: "Unearthing Insights",
     image: l4,
 

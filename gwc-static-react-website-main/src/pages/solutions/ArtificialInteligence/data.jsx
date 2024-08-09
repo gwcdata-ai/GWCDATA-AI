@@ -38,6 +38,7 @@ export const BiMigrationMainDataGovernance = {
   description:
     "Our experts craft a tailored AI strategy and roadmap for your business. We enable businesses to create a new-age ecosystem with enhanced organizational efficiency, productivity and business outcomes.",
   rightImg: DataGovernanceRightImg,
+  alt: "Craft tailored AI strategies to enhance efficiency and productivity with our expert roadmap",
 };
 
 export const BiMigrationDataGovernanceList = [
@@ -50,6 +51,7 @@ export const BiMigrationDataGovernanceList = [
       "Summarize lengthy documents into concise and contextually rich summaries.",
       "Generate automated responses.",
     ],
+    alt: "Create concise summaries and automated responses from lengthy documents",
     image: img1,
   },
   {
@@ -60,6 +62,7 @@ export const BiMigrationDataGovernanceList = [
       "Contextual Dialogue Management.",
       "Multichannel Engagement.",
     ],
+    alt: "Manage contextual dialogues and engage across multiple channels",
     image: img2,
   },
   {
@@ -70,6 +73,7 @@ export const BiMigrationDataGovernanceList = [
       "Text Analysis and Understanding.",
       "Semantic Search and Information Retrieval. ",
     ],
+    alt: "Enhance user experience with text analysis and semantic search",
     image: img3,
   },
   {
@@ -80,6 +84,7 @@ export const BiMigrationDataGovernanceList = [
       "Object Recognition and Classification",
       "Image Segmentation",
     ],
+    alt: "Understand environment structure with object recognition and image segmentation",
     image: img4,
   },
   {
@@ -90,6 +95,7 @@ export const BiMigrationDataGovernanceList = [
       "Elevating visuals through innovative image processing.",
       "Feature Extraction.",
     ],
+    alt: "Enhance visuals with innovative image processing and feature extraction",
     image: img5,
   },
   {
@@ -100,6 +106,7 @@ export const BiMigrationDataGovernanceList = [
       "Automated Model Deployment.",
       "Continuous Model Monitoring ",
     ],
+    alt: "Automate deployment of machine learning models with continuous monitoring",
     image: img6,
   },
   // {
@@ -370,28 +377,33 @@ export const AiData = [
     title: "Retail & E-commerce",
     img: Pharmaceuticals,
     para: " Utilize AI-powered solutions to tailor customer experiences, optimize inventory levels for demand, & drive sales growth, enhancing competitiveness & fostering customer loyalty in the dynamic retail landscape.",
+    alt: "AI in retail and e-commerce: personalized recommendations, inventory management, and customer insights",
   },
   {
     id: 2,
     title: "Manufacturing",
     img: Real,
     para: " Implement AI to enhance production efficiency, accurately forecast equipment maintenance requirements, & optimize supply chain logistics, enabling manufacturers to operate more efficiently & competitively in a rapidly evolving industry.",
+    alt: "AI in manufacturing: optimizing production processes and quality control",
   },
   {
     id: 3,
     title: "Logistics & Supply Chain",
+    alt: "AI in logistics and supply chain: enhancing efficiency and predictive analytics",
     img: Retail,
     para: "Deploy AI-driven solutions to streamline logistical operations, improve supply chain visibility, & mitigate disruptions, ensuring smoother operations, enhanced efficiency, & greater resilience in the face of challenges.",
   },
   {
     id: 4,
     title: "Finance & Banking",
+    alt: "AI in finance and banking: fraud detection, risk management, and automated trading",
     img: Technology,
     para: "Embrace AI-powered financial solutions to revolutionize risk management, detect fraudulent activities, & enhance customer experiences, enabling financial institutions to operate more securely, efficiently, & competitively in the digital age.",
   },
   {
     id: 5,
     title: "Healthcare",
+    alt: "AI in healthcare: diagnostics, personalized treatment, and patient monitoring",
     img: Healthcare,
     para: "Harness AI-driven healthcare solutions to elevate patient care quality, optimize treatment strategies, & facilitate groundbreaking medical research, driving advancements in healthcare delivery & improving patient outcomes worldwide.",
   },

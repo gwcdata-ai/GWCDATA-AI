@@ -37,14 +37,11 @@ export const IiotPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="
-          
-          Business Intelligence,Data Analytics,Data Visualization,BI Tools,Predictive Analytics,Data-Driven Decision Making,Performance Metrics,Reporting Solutions,Data Management,Analytics Strategies
+          content="Sensors & Devices Deployment, Data Acquisition, Connectivity & Communication, Edge Computing, Cloud-Based Analytics, Data Storage, Integration with Existing Systems, Visualization & Dashboarding, Predictive Maintenance, Continuous Monitoring & Optimization, Smart Manufacturing, Quality Control & Assurance, AI-Driven Insights, Real-Time Machine Tracking, Improved Efficiency, Cost-Effective, Customized to Your Business"
+        />
 
-          "
-        /> */}
         <title>{"GWC DATA.AI - Industrial IOT "}</title>
         <meta
           name="description"

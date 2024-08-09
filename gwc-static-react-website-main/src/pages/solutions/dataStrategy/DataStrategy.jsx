@@ -37,10 +37,11 @@ export const DataStrategyPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="snowflake, what is snowflake, snowflake database, snowflake inc, snowflake data, snowflake software, snowflake company, snowflakes, snowflake db, snowflake computing, snowflake cloud, snowflake data cloud, snowflake technology, snowflake login, snowflake inc., snowflake platform, snowflake tool, snowflake products, snowflake tech, what is snowflake database, snowflake analytics, snowflake system, data snowflake, snowflake services, snowflake data storage"
-        /> */}
+          content="Data Discovery, Advanced Analytics, Digital Transformation Consulting, Customized Data Roadmaps, Objective Identification, Target Audience Identification, Tailored Data Strategies, Data Maturity Identification, Data Compliance, IT Infra Optimization, Data Strategy for Better ROI, Combine Traditional & Modern Data Strategies, Data Strategies for AI Implementation"
+        />
+
         <title>{"GWC DATA.AI - Data Stratergy & Engineering "}</title>
         <meta
           name="description"

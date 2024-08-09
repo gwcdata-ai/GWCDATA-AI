@@ -66,10 +66,34 @@ const BoomiCustomers = () => {
               <Card className={` ${styles?.work_card} mt-5`}>
                 <Row>
                   <Col md={5}>
-                    {showC1 && <img src={c1} alt="" className="w-100" />}
-                    {showC2 && <img src={c2} alt="" className="w-100" />}
-                    {showC3 && <img src={c3} alt="" className="w-100" />}
-                    {showC4 && <img src={c4} alt="" className="w-100" />}
+                    {showC1 && (
+                      <img
+                        src={c1}
+                        alt="Boomi - Intuitive interface"
+                        className="w-100"
+                      />
+                    )}
+                    {showC2 && (
+                      <img
+                        src={c2}
+                        alt="Boomi - Multi-cloud runtime"
+                        className="w-100"
+                      />
+                    )}
+                    {showC3 && (
+                      <img
+                        src={c3}
+                        alt="Boomi - Powerful APIs"
+                        className="w-100"
+                      />
+                    )}
+                    {showC4 && (
+                      <img
+                        src={c4}
+                        alt="Boomi - Part of the family"
+                        className="w-100"
+                      />
+                    )}
                   </Col>
                   <Col md={1}></Col>
                   <Col md={6}>

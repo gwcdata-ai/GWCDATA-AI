@@ -47,6 +47,7 @@ const PUBLICID = "_M_x6ZxOlDwyjQYJ6";
 const BlogDetail = () => {
   const isMobile = useMedia("(max-width:600px)");
   const isTablet = useMedia("(max-width:850px)");
+
   let colClass = "col-xl-2"; // Default to desktop size
   if (isMobile) {
     colClass = "d-none"; // Hide on tablet and mobile screens
@@ -110,8 +111,49 @@ const BlogDetail = () => {
     return ele.slug == slug;
   });
 
+  let metaTitle = item?.topHeading;
+  let metaURL = `https://gwc.anuvicdesigns.in/blogs/${slug}`;
+  let metaDescription = item?.description;
+  let metaImage = `https://gwc.anuvicdesigns.in${item?.img}`;
+  let metaAuthor = item?.Author.name;
+  let metaDate = item?.date;
+
+  let metadata={
+    metaTitle,metaURL,metaDescription,metaImage,metaAuthor,metaDate
+  }
   // console.log("item", item.blogSubHeading);
   // const { title, slug, content, imageUrl } = blog;
+  // console.log(metaImage);
+  console.log('meta data from blog list', metadata);
+
+
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": metaURL,
+    },
+    headline: metaTitle,
+    description: metaDescription,
+    image: metaImage,
+    author: {
+      "@type": "Person",
+      name: metaAuthor,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "",
+      logo: {
+        "@type": "ImageObject",
+        url: "",
+      },
+    },
+    datePublished: metaDate,
+  };
+  console.log('schema data from object', schemaMarkup);
+  
+
   return (
     <Container
       fluid
@@ -120,19 +162,23 @@ const BlogDetail = () => {
     >
       <>
         <Helmet>
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:type" content="blog" />
-          <meta property="og:title" content={item?.topHeading} />
-          <meta
-            property="og:url"
-            content={`https://gwcdata.ai/blogs/${slug}`}
-          />
+          <script type="application/ld+json">
+            {JSON.stringify(schemaMarkup)}
+          </script>
+
+          {/* <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="Blog" />
+          <meta property="og:title" content={metaTitle} />
+          <meta property="og:url" content={metaURL} />
           <meta property="og:site_name" content="GWC Data.Ai" />
-          <meta property="og:image" content={item?.blogTopImg} />
-          <meta property="og:image:width" content="360" />
-          <meta property="og:image:height" content="203" />
-          <meta property="og:image:type" content="image/jpeg" />
-          <meta property="og:description" content={item?.description} />
+          <meta property="og:image" content={metaImage} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta name="image" property="og:image:type" content="image/png" />
+          <meta property="og:description" content={metaDescription} />
+          <link rel="canonical" href={metaURL}></link>
+          <meta name="twitter:image" content={metaImage}></meta>
+          <meta name="twitter:card" content="summary"></meta> */}
         </Helmet>
       </>
       <Container className={`md-5 ${styles.outermost_container}`}>
@@ -143,7 +189,11 @@ const BlogDetail = () => {
           <Col className={`col-xl-12 col-sm-12`}>
             <div className={` ${styles.ThumbImage_parent}`}>
               <img
-                src={item?.blogTopImg}
+                src={
+                  isMobile
+                    ? `${item?.blogTopImg_mobile}`
+                    : `${item?.blogTopImg}`
+                }
                 alt="image"
                 className={` ${styles.ThumbImage_Img}`}
               />
@@ -212,122 +262,273 @@ const BlogDetail = () => {
                                                     <p className={` ${styles.blog_sub_para}`}>{listPara}</p>
                                                 </li> */}
 
-                        <li key={id}>
-                          {listHeading && (
-                            <h6
-                              id={listId}
-                              className={`${
-                                isMobile
-                                  ? ` ${styles.blog_next_para_Mobile}`
-                                  : ` ${styles.blog_next_para}`
-                              }`}
-                            >
-                              {listHeading}
-                            </h6>
-                          )}
-                          {listSub && (
-                            <h6 className={` ${styles.blog_sub_para}`}>
-                              {listSub}
-                            </h6>
-                          )}
-                          {listPara && (
-                            <p className={` ${styles.blog_sub_para}`}>
-                              {listPara}
-                            </p>
-                          )}
-                          {listPoints &&
-                            listPoints.map((item, i) => (
-                              <>
-                                <div
-                                  key={i} // Add a unique key for each item
-                                  className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
-                                >
-                                  <span className="mt-2 mb-3">
-                                    <strong style={{ color: "black" }}>
+                        {isMobile && (
+                          <li key={id}>
+                            {listHeading && (
+                              <h6
+                                id={listId}
+                                className={`${
+                                  isMobile
+                                    ? ` ${styles.blog_next_para_Mobile}`
+                                    : ` ${styles.blog_next_para}`
+                                }`}
+                              >
+                                {listHeading}
+                              </h6>
+                            )}
+                            {listSub && (
+                              <h6 className={` ${styles.blog_sub_para}`}>
+                                {listSub}
+                              </h6>
+                            )}
+                            {listPara && (
+                              <p className={` ${styles.blog_sub_para}`}>
+                                {listPara}
+                              </p>
+                            )}
+                            {listPoints &&
+                              listPoints.map((item, i) => (
+                                <>
+                                  <ul
+                                    key={i} // Add a unique key for each item
+                                    className={`${styles.blog_sub_para_list} mx-2 my-3 px-0`}
+                                    style={{ listStyle: "none" }}
+                                  >
+                                    <li
+                                      className="mt-2 "
+                                      // style={{ display: "inline-block" }}
+                                    >
+                                      <strong style={{ color: "#6f2b8c" }}>
+                                        {item?.listPoint_Heading}
+                                      </strong>
+                                      <span
+                                        style={{
+                                          color: "#252B33",
+                                          lineHeight: "1.7",
+                                        }}
+                                      >
+                                        {item?.listPoint}
+                                      </span>
+                                    </li>
+                                  </ul>
+                                  {/* {console.log("vvvv", item)} */}
+
+                                  {item.videos && (
+                                    // <img
+                                    //   style={{ width: "100%" }}
+                                    //   src={item.images}
+                                    //   className="w-20 mt-3 mb-5"
+                                    // />
+                                    <video
+                                      // width="100%"
+                                      // height="680px"
+                                      autoPlay
+                                      muted
+                                      loop
+                                      playsInline
+                                      className="video-element"
+                                      style={{
+                                        objectFit: "cover",
+                                        width: "100%",
+
+                                        padding: "0px",
+                                      }}
+                                    >
+                                      <source
+                                        src={item.videos}
+                                        type="video/mp4"
+                                      />
+                                    </video>
+                                  )}
+                                  {item.images && (
+                                    <div style={{ padding: "0px 20px" }}>
+                                      <img
+                                        style={{
+                                          width: "100%",
+                                          borderRadius: "10px",
+                                        }}
+                                        src={item.images}
+                                        className="w-20 mt-3 mb-5"
+                                      />
+                                    </div>
+                                  )}
+                                </>
+                              ))}
+                            {listPoint && (
+                              <ol style={{ fontFamily: "poppins-regular" }}>
+                                {listPoint.map((item, i) => (
+                                  <li
+                                    key={i} // Add a unique key for each item
+                                    className={` mx-2 my-3 px-2`}
+                                  >
+                                    <span
+                                      style={{ color: "black" }}
+                                      className="mt-2 mb-3"
+                                    >
+                                      {" "}
                                       {item?.listPoint_Heading}
-                                    </strong>
-                                  </span>
-                                  <span
-                                    style={{
-                                      color: "#252B33",
-                                      lineHeight: "1.7",
-                                    }}
-                                  >
-                                    {item?.listPoint}
-                                  </span>
-                                </div>
+                                    </span>
+                                  </li>
+                                ))}
+                              </ol>
+                            )}
 
-                                {item.images && (
-                                  // <img
-                                  //   style={{ width: "100%" }}
-                                  //   src={item.images}
-                                  //   className="w-20 mt-3 mb-5"
-                                  // />
-                                  <video
-                                    // width="100%"
-                                    // height="680px"
-                                    autoPlay
-                                    muted
-                                    loop
-                                    playsInline
-                                    className="video-element"
-                                    style={{
-                                      objectFit: "cover",
-                                      width: "100%",
-
-                                      padding: "0px",
-                                    }}
-                                  >
-                                    <source
-                                      src={item.images}
-                                      type="video/mp4"
-                                    />
-                                  </video>
-                                )}
-                              </>
-                            ))}
-                          {listPoint && (
-                            <ol style={{ fontFamily: "poppins-regular" }}>
-                              {listPoint.map((item, i) => (
-                                <li
-                                  key={i} // Add a unique key for each item
-                                  className={` mx-2 my-3 px-2`}
-                                >
-                                  <span
-                                    style={{ color: "black" }}
-                                    className="mt-2 mb-3"
-                                  >
+                            {images?.length === 1 &&
+                              images?.map((item) => (
+                                <img src={item} className="w-80 mt-3 mb-5" />
+                                // change this to w-100 to make img full screen
+                              ))}
+                            <Row>
+                              {images?.length === 2 &&
+                                images?.map((item) => (
+                                  <Col lg={5}>
+                                    <img src={item} className="w-100 mb-5" />
+                                  </Col>
+                                ))}
+                            </Row>
+                            <Row>
+                              {images?.length === 3 &&
+                                images?.map((item) => (
+                                  <Col lg={4}>
                                     {" "}
-                                    {item?.listPoint_Heading}
-                                  </span>
-                                </li>
-                              ))}
-                            </ol>
-                          )}
+                                    <img
+                                      src={item}
+                                      className="w-100 mb-5"
+                                    />{" "}
+                                  </Col>
+                                ))}
+                            </Row>
+                          </li>
+                        )}
+                        {!isMobile && (
+                          <li key={id}>
+                            {listHeading && (
+                              <h6
+                                id={listId}
+                                className={`${
+                                  isMobile
+                                    ? ` ${styles.blog_next_para_Mobile}`
+                                    : ` ${styles.blog_next_para}`
+                                }`}
+                              >
+                                {listHeading}
+                              </h6>
+                            )}
+                            {listSub && (
+                              <h6 className={` ${styles.blog_sub_para}`}>
+                                {listSub}
+                              </h6>
+                            )}
+                            {listPara && (
+                              <p className={` ${styles.blog_sub_para}`}>
+                                {listPara}
+                              </p>
+                            )}
+                            {listPoints &&
+                              listPoints.map((item, i) => (
+                                <>
+                                  <div
+                                    key={i} // Add a unique key for each item
+                                    className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
+                                  >
+                                    <span className="mt-2 mb-3">
+                                      <strong style={{ color: "#6f2b8c " }}>
+                                        {item?.listPoint_Heading}
+                                      </strong>
+                                    </span>
+                                    <span
+                                      style={{
+                                        color: "#252B33",
+                                        lineHeight: "1.7",
+                                      }}
+                                    >
+                                      {item?.listPoint}
+                                    </span>
+                                  </div>
+                                  {/* {console.log("vvvv", item)} */}
 
-                          {images?.length === 1 &&
-                            images?.map((item) => (
-                              <img src={item} className="w-80 mt-3 mb-5" />
-                              // change this to w-100 to make img full screen
-                            ))}
-                          <Row>
-                            {images?.length === 2 &&
-                              images?.map((item) => (
-                                <Col lg={5}>
-                                  <img src={item} className="w-100 mb-5" />
-                                </Col>
+                                  {item.videos && (
+                                    // <img
+                                    //   style={{ width: "100%" }}
+                                    //   src={item.images}
+                                    //   className="w-20 mt-3 mb-5"
+                                    // />
+                                    <video
+                                      // width="100%"
+                                      // height="680px"
+                                      autoPlay
+                                      muted
+                                      loop
+                                      playsInline
+                                      className="video-element"
+                                      style={{
+                                        objectFit: "cover",
+                                        width: "100%",
+
+                                        padding: "0px",
+                                      }}
+                                    >
+                                      <source
+                                        src={item.videos}
+                                        type="video/mp4"
+                                      />
+                                    </video>
+                                  )}
+                                  {/* {isMobile && (
+                                    <img
+                                      style={{ width: "100%" }}
+                                      src={item.images}
+                                      className="w-20 mt-3 mb-5"
+                                    />
+                                  )} */}
+                                </>
                               ))}
-                          </Row>
-                          <Row>
-                            {images?.length === 3 &&
+                            {listPoint && (
+                              <ol style={{ fontFamily: "poppins-regular" }}>
+                                {listPoint.map((item, i) => (
+                                  <li
+                                    key={i} // Add a unique key for each item
+                                    className={` mx-2 my-3 px-2`}
+                                  >
+                                    <span
+                                      style={{ color: "black" }}
+                                      className="mt-2 mb-3"
+                                    >
+                                      {" "}
+                                      {item?.listPoint_Heading}
+                                    </span>
+                                  </li>
+                                ))}
+                              </ol>
+                            )}
+
+                            {images?.length === 1 &&
                               images?.map((item) => (
-                                <Col lg={4}>
-                                  {" "}
-                                  <img src={item} className="w-100 mb-5" />{" "}
-                                </Col>
+                                <img src={item} className="w-80 mt-3 mb-5" />
+                                // change this to w-100 to make img full screen
                               ))}
-                          </Row>
-                        </li>
+                            <Row>
+                              {images?.length === 2 &&
+                                images?.map((item) => (
+                                  <Col lg={5}>
+                                    <img src={item} className="w-100 mb-5" />
+                                  </Col>
+                                ))}
+                            </Row>
+                            <Row>
+                              {images?.length === 3 &&
+                                images?.map((item) => (
+                                  <Col lg={4}>
+                                    {" "}
+                                    <img
+                                      src={item}
+                                      className="w-100 mb-5"
+                                    />{" "}
+                                  </Col>
+                                ))}
+                            </Row>
+                          </li>
+                        )}
                       </>
                     );
                   })}
@@ -399,8 +600,8 @@ const BlogDetail = () => {
           >
             <Row>
               <div>
-                {console.log("imageeeeee", item?.blog_right_image)}
-                {console.log("imageeeeeetabb", item?.Harnessing_Tablet)}
+                {/* {console.log("imageeeeee", item?.blog_right_image)}
+                {console.log("imageeeeeetabb", item?.Harnessing_Tablet)} */}
 
                 {isTablet && (
                   <img
@@ -427,59 +628,124 @@ const BlogDetail = () => {
             </Row>
           </Col>
 
-          <Col
-            style={{ backgroundColor: "#eff3f6" }}
-            md={12}
-            className={`${isMobile ? `px-2 py-4 mt-5` : `px-5 py-4 mt-5`}`}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-          >
-            <Row>
-              <Col md={8}>
-                <div style={{ display: "flex", gap: "2rem" }}>
-                  <img
-                    src={item?.Author.author_Image}
-                    alt={item?.Author.name}
-                    className={styles.author_img}
-                  />
+          {isMobile && (
+            <Col
+              style={{ backgroundColor: "#eff3f6" }}
+              md={12}
+              className={`${isMobile ? `px-2 py-4 mt-5` : `px-5 py-4 mt-5`}`}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <Row>
+                <Col md={8}>
                   <div
                     style={{
                       display: "flex",
-                      justifyContent: "center",
-                      flexDirection: "column",
+                      // gap: "0.8rem",
+                      justifyContent: "space-between",
                     }}
                   >
-                    <p className={styles.writtenby}>{"Written by"}</p>
-                    {isMobile ? (
-                      <p className={styles.author_name_mobile}>
-                        {item?.Author?.name}
-                      </p>
-                    ) : (
-                      <p className={styles.author_name}>{item?.Author?.name}</p>
-                    )}
+                    <img
+                      src={item?.Author.author_Image}
+                      alt={item?.Author.name}
+                      className={styles.author_img}
+                    />
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <p className={styles.writtenby}>{"Written by"}</p>
+                      {isMobile ? (
+                        <p className={styles.author_name_mobile}>
+                          {item?.Author?.name}
+                        </p>
+                      ) : (
+                        <p className={styles.author_name}>
+                          {item?.Author?.name}
+                        </p>
+                      )}
 
-                    <p className={styles.writtenby}>
-                      {item?.Author?.author_designation}
-                    </p>
+                      <p className={styles.writtenby}>
+                        {item?.Author?.author_designation}
+                      </p>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <a target="_blank" href={item?.Author?.LinkedIn}>
+                        {/* {console.log("auth", item?.Author?.LinkedIn)} */}
+                        <img src={Linkedin} alt="" />
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </Col>
-              <Col
-                style={{
-                  // border: "1px solid green",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                md={4}
-              >
-                <a target="_blank" href={item?.Author?.LinkedIn}>
-                  {/* {console.log("auth", item?.Author?.LinkedIn)} */}
-                  <img src={Linkedin} alt="" />
-                </a>
-              </Col>
-            </Row>
-          </Col>
+                </Col>
+              </Row>
+            </Col>
+          )}
+
+          {!isMobile && (
+            <Col
+              style={{ backgroundColor: "#eff3f6" }}
+              md={12}
+              className={`${isMobile ? `px-2 py-4 mt-5` : `px-5 py-4 mt-5`}`}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <Row>
+                <Col md={8}>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "2rem",
+                    }}
+                  >
+                    <img
+                      src={item?.Author.author_Image}
+                      alt={item?.Author.name}
+                      className={styles.author_img}
+                    />
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <p className={styles.writtenby}>{"Written by"}</p>
+                      {isMobile ? (
+                        <p className={styles.author_name_mobile}>
+                          {item?.Author?.name}
+                        </p>
+                      ) : (
+                        <p className={styles.author_name}>
+                          {item?.Author?.name}
+                        </p>
+                      )}
+
+                      <p className={styles.writtenby}>
+                        {item?.Author?.author_designation}
+                      </p>
+                    </div>
+                  </div>
+                </Col>
+                <Col
+                  style={{
+                    // border: "1px solid green",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                  md={4}
+                >
+                  <a target="_blank" href={item?.Author?.LinkedIn}>
+                    {/* {console.log("auth", item?.Author?.LinkedIn)} */}
+                    <img src={Linkedin} alt="" />
+                  </a>
+                </Col>
+              </Row>
+            </Col>
+          )}
 
           <Col
             className="col-xl-12 mt-4"

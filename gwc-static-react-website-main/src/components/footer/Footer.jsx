@@ -60,20 +60,18 @@ export const FooterComponent = () => {
                     <div>
                       <Image
                         src={FooterContentLeft?.certifiedImg}
-                        alt=""
+                        alt={FooterContentLeft?.certifiedImgAlt}
                         style={{ width: "81px", height: "140px" }}
                       />
                     </div>
                     <div className="mt-2">
                       <Image
                         src={FooterContentLeft?.nasscomImg}
-                        alt=""
+                        alt={FooterContentLeft?.nasscomImgAlt}
                         className="nasscomImg"
-
                       />
                     </div>
                   </div>
-
                 </Col>
                 {/* <Col xs={12} md={9} className={styles.ImgPadding}>
                 <Image
@@ -86,9 +84,10 @@ export const FooterComponent = () => {
             </Col>
             <Col lg={6} className="mt-lg-0">
               <Row className="px-0">
-
                 <Col lg={3} xs={6} className="">
-                  <p className={`${styles.footer_links_heading} mt-lg-0 mt-3 mb-4`}>
+                  <p
+                    className={`${styles.footer_links_heading} mt-lg-0 mt-3 mb-4`}
+                  >
                     {" "}
                     {FooterQuickLinks?.title}{" "}
                   </p>
@@ -124,7 +123,9 @@ export const FooterComponent = () => {
                   })} */}
                 </Col>
                 <Col lg={3} xs={6} className="">
-                  <p className={`${styles.footer_links_heading} mt-lg-0 mt-3 mb-4 `}>
+                  <p
+                    className={`${styles.footer_links_heading} mt-lg-0 mt-3 mb-4 `}
+                  >
                     {" "}
                     {FooterResourcesLinks?.title}{" "}
                   </p>
@@ -194,11 +195,17 @@ export const FooterComponent = () => {
                 {FooterContactUs?.links?.map((item, index) => {
                   return (
                     <div key={index}>
-                      <Col xs={1} className=" p-0 m-0" >
+                      <Col xs={1} className=" p-0 m-0">
                         <Image src={item?.icon} alt="" className="" />
                       </Col>
                       <Col xs={11} className="">
-                        <p className={`${styles.footer_links} ${item.icon === DeviceIcon && styles.phone_number}`}>{item?.info}</p>
+                        <p
+                          className={`${styles.footer_links} ${
+                            item.icon === DeviceIcon && styles.phone_number
+                          }`}
+                        >
+                          {item?.info}
+                        </p>
                       </Col>
                     </div>
                   );
@@ -219,7 +226,7 @@ export const FooterComponent = () => {
                   <span>
                     {" "}
                     <a
-                    key={index}
+                      key={index}
                       href={item?.url}
                       target="_blank"
                       className={styles.socialmediacss}
@@ -231,7 +238,7 @@ export const FooterComponent = () => {
                 ))}
               </p>
             </Col>
-            <Col lg={6} >
+            <Col lg={6}>
               {/* <SubscribeForm />className="border rounded-4 py-2" */}
             </Col>
           </Row>

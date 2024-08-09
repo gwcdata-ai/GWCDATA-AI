@@ -40,6 +40,7 @@ export const BiMigrationMainDataGovernance = {
   description:
     " Navigate compliance with ease, build audit readiness, and prioritize customer trust. We help you manage data ethically and responsibly, keeping you on the right side of every regulation.",
   rightImg: DataGovernanceRightImg,
+  alt: "Data Fabric Architecture - Building Robust Data Governance",
 };
 
 export const BiMigrationDataGovernanceList = [
@@ -53,6 +54,7 @@ export const BiMigrationDataGovernanceList = [
       "Protect confidential information, prevent data breaches, and build trust with customers and stakeholders.",
     ],
     image: img1,
+    alt: "Data Classification - Securing Business and Compliance",
   },
   {
     id: 2,
@@ -64,6 +66,7 @@ export const BiMigrationDataGovernanceList = [
       "Turn data chaos into clarity to empower your business.",
     ],
     image: img2,
+    alt: "Data Quality Management - Turning Chaos into Clarity",
   },
   {
     id: 3,
@@ -75,6 +78,7 @@ export const BiMigrationDataGovernanceList = [
       "Provides transparency into data origins and processing.",
     ],
     image: img3,
+    alt: "Data Lineage - Transparency in Data Origins and Effects",
   },
   {
     id: 4,
@@ -86,6 +90,7 @@ export const BiMigrationDataGovernanceList = [
       "Sets clear data classification levels based on sensitivity.",
     ],
     image: img4,
+    alt: "Data Access & Authorization - Protecting Sensitive Information",
   },
   {
     id: 5,
@@ -97,6 +102,7 @@ export const BiMigrationDataGovernanceList = [
       "Includes encryption, access controls, and incident response plans.",
     ],
     image: img5,
+    alt: "Data Privacy Compliance - Securing Customer Data",
   },
   {
     id: 6,
@@ -108,6 +114,7 @@ export const BiMigrationDataGovernanceList = [
       " Proactive measures to reduce potential data breach issues and financial costs.",
     ],
     image: img6,
+    alt: "Data Governance Policies - Enhancing Efficiency and Security",
   },
   {
     id: 7,
@@ -119,6 +126,7 @@ export const BiMigrationDataGovernanceList = [
       "Integrates with your existing data infrastructure by making metadata easily accessible across your systems.",
     ],
     image: img7,
+    alt: "Metadata Management - Standardizing Data Description",
   },
   {
     id: 8,
@@ -130,6 +138,7 @@ export const BiMigrationDataGovernanceList = [
       "Certified professionals to develop and implement effective training programs.",
     ],
     image: img8,
+    alt: "Training & Awareness - Online Learning and Certified Programs",
   },
   {
     id: 9,
@@ -141,6 +150,7 @@ export const BiMigrationDataGovernanceList = [
       " Ensures adherence to data privacy laws and reduces the risk of costly fines.",
     ],
     image: img9,
+    alt: "Data Risk Management - Protecting Data and Ensuring Compliance",
   },
   {
     id: 10,
@@ -152,6 +162,7 @@ export const BiMigrationDataGovernanceList = [
       " Expertise on early detection and response to data issues before they cause significant harm to the business.",
     ],
     image: img10,
+    alt: "Audit & Monitoring - Detecting Risks and Ensuring Data Quality",
   },
 ];
 

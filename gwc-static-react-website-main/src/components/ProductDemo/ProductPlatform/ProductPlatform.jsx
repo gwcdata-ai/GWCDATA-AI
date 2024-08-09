@@ -77,7 +77,7 @@ const ProductPlatform = () => {
                         >
                           <img
                             src={img1}
-                            alt=""
+                            alt="product feature platform architecture 2023 data experience platform 2x"
                             className="w-100 mx-lg-3 rounded-4"
                           />
                         </Col>
@@ -163,7 +163,7 @@ const ProductPlatform = () => {
                         >
                           <img
                             src={img2}
-                            alt=""
+                            alt="product feature platform architecture 2023 app creation 2x"
                             className="w-100 mx-lg-3 rounded-4"
                           />
                         </Col>
@@ -219,7 +219,7 @@ const ProductPlatform = () => {
                         >
                           <img
                             src={img3}
-                            alt=""
+                            alt="product feature platform architecture 2023 bi analytics 2x"
                             className="w-100 mx-lg-3 rounded-4"
                           />
                         </Col>
@@ -282,7 +282,7 @@ const ProductPlatform = () => {
                         >
                           <img
                             src={img4}
-                            alt=""
+                            alt="product feature platform architecture 2023 data foundation 2x"
                             className="w-100 mx-lg-3 rounded-4"
                           />
                         </Col>

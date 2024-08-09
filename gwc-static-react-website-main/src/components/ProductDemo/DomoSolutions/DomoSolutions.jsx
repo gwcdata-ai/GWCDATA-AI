@@ -10,7 +10,7 @@ import newStyles from "../../../commoncss/Home.module.css";
 import useMedia from "../../../hooks/useMedia";
 import AOS from "aos";
 
-const DomoSolutionsCard = ({ data,index }) => {
+const DomoSolutionsCard = ({ data, index }) => {
   const isMobile = useMedia("(max-width:600px)");
 
   const [hover, setHover] = useState(false);
@@ -24,7 +24,8 @@ const DomoSolutionsCard = ({ data,index }) => {
   };
 
   return (
-    <div key={index}
+    <div
+      key={index}
       className={`${
         isMobile ? styles.BenefitSectionBox1 : styles.BenefitSectionBox
       }`}
@@ -32,7 +33,7 @@ const DomoSolutionsCard = ({ data,index }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img src={data?.image} alt="Icon" />
+      <img src={data?.image} alt={data?.alt} />
       <div className={`${styles.title_card} fw-bold`}>{data.title}</div>
       <div style={{ color: "black" }} className={`${styles.description_card}`}>
         {data.description}
@@ -194,7 +195,7 @@ const DomoSolutions = () => {
           width: "40px",
           borderRadius: "50%",
           zIndex: "1",
-          left:"-35px",
+          left: "-35px",
         }}
         onClick={onClick}
       >
@@ -231,8 +232,7 @@ const DomoSolutions = () => {
             <div
               className={`${newStyles.meetOurLeadershipContainer} text-white`}
             >
-              <h2 className={newStyles.title}>  Solutions of Domo </h2>
-
+              <h2 className={newStyles.title}> Solutions of Domo </h2>
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ const DomoSolutions = () => {
       <Row className="mt-3">
         <Col xs={12} md={6} lg={3} className="w-100">
           <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-            {DomoSolutionsData?.map((data,index) => (
+            {DomoSolutionsData?.map((data, index) => (
               <DomoSolutionsCard data={data} index={index} />
             ))}
           </Slider>

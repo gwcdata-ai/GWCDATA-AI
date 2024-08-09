@@ -69,13 +69,25 @@ const AlationCards = () => {
                 data-aos="fade-right"
               >
                 {showC1 && (
-                  <img src={ct1} alt="" className=" mx-lg-5  mt-lg-2 w-100" />
+                  <img
+                    src={ct1}
+                    alt="Optimize workflows and accelerate research with fast, accurate data retrieval. GWC and Alation partner to drive growth and performance through comprehensive data insights and collaborative services."
+                    className=" mx-lg-5  mt-lg-2 w-100"
+                  />
                 )}
                 {showC2 && (
-                  <img src={ct2} alt="" className=" mx-lg-5  mt-lg-2 w-100" />
+                  <img
+                    src={ct2}
+                    alt="Optimize workflows and accelerate research with fast, accurate data retrieval. GWC and Alation partner to drive growth and performance through comprehensive data insights and collaborative services."
+                    className=" mx-lg-5  mt-lg-2 w-100"
+                  />
                 )}
                 {showC3 && (
-                  <img src={ct3} alt="" className=" mx-lg-5 mt-lg-2 w-100" />
+                  <img
+                    src={ct3}
+                    alt="Optimize workflows and accelerate research with fast, accurate data retrieval. GWC and Alation partner to drive growth and performance through comprehensive data insights and collaborative services."
+                    className=" mx-lg-5 mt-lg-2 w-100"
+                  />
                 )}
               </Col>
             </Row>
@@ -90,7 +102,7 @@ const AlationCards = () => {
                     <div className={` ${styles.text_icon} mb-2`}>
                       <img
                         src={ci1}
-                        alt="icon"
+                        alt="Manage workflows in Alation"
                         style={{ width: "fit-content" }}
                       />
                       <h3 className={` ${styles.card_para1} mb-3 `}>
@@ -114,7 +126,7 @@ const AlationCards = () => {
                     <div className={` ${styles.text_icon} mb-2`}>
                       <img
                         src={ci2}
-                        alt="icon"
+                        alt="Monitor workflows in Alation"
                         style={{ width: "fit-content" }}
                       />
                       <h3 className={` ${styles.card_para1} mb-3 `}>
@@ -138,7 +150,7 @@ const AlationCards = () => {
                     <div className={` ${styles.text_icon} mb-2`}>
                       <img
                         src={ci3}
-                        alt="icon"
+                        alt="Get Slack alerts in Alation"
                         style={{ width: "fit-content" }}
                       />
                       <p className={` ${styles.card_para1} mb-3 `}>

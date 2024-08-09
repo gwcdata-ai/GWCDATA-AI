@@ -85,6 +85,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={demo}
+                alt="DOMO logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -146,6 +147,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={gcp}
+                alt="GCP Partner logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -212,6 +214,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={snoflakes}
+                alt="Snowflake Partner logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -274,6 +277,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={salesforce}
+                alt="Salesforce logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -342,6 +346,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={fivetran}
+                alt="Fivetran logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -400,6 +405,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={dbt}
+                alt="dbt logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -469,6 +475,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={looker}
+                alt="looker logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -539,6 +546,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={partner10}
+                alt="Alation logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -604,6 +612,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={tableau}
+                alt="Tableau Solutions Logo"
                 style={{
                   height: "200px",
                   width: "200px",
@@ -676,6 +685,7 @@ const HomePartners2 = () => {
               <img
                 data-aos="fade-right"
                 src={bomi}
+                alt="Boomi Integration Solutions Logo"
                 style={{
                   height: "200px",
                   width: "200px",

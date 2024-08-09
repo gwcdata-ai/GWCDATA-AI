@@ -95,7 +95,11 @@ export const TrablueForm = () => {
                   can start your journey with us in moulding your data and
                   getting the best insights out of it in just a few clicks away.
                 </p>
-                <img src={formImg} alt="" className="w-75 h-50" />
+                <img
+                  src={formImg}
+                  alt="Derive Key Insights from Data in Tableau"
+                  className="w-75 h-50"
+                />
               </div>
             </Col>
             <Col lg={5} md={6} className="text-center">

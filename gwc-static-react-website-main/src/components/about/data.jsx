@@ -87,6 +87,7 @@ export const AboutOurStrengthData = [
     description:
       "At GWC, our team members specialize in extracting actionable insights from complex datasets. We work collaboratively with you to find the right answer for your business needs.",
     css: "--theme-purple",
+    alt: "Team Discussing with Laptop - Specializing in Extracting Actionable Insights from Complex Datasets",
   },
   {
     id: 2,
@@ -95,6 +96,7 @@ export const AboutOurStrengthData = [
     description:
       "Our leaders dive into any challenge and swiftly provide effective data and AI solutions. At GWC, our leaders approach complex issues head-on, ensuring minimal downtime and optimal performance for your business. ",
     css: "--theme-blue",
+    alt: "Leaders Solving Problems - Providing Effective Data and AI Solutions for Optimal Performance",
   },
   {
     id: 3,
@@ -103,6 +105,7 @@ export const AboutOurStrengthData = [
     description:
       "The essence of our strength lies in the value we bring to the forefront. With leaders deeply entrenched in the nuances of data analytics and AI, we strive to be your strategic data analytics partner to achieve unparalleled success. ",
     css: "--theme-red",
+    alt: "Leadership in Data Analytics and AI - Strengthening Partnerships through Value Addition",
   },
 ];
 
@@ -145,6 +148,7 @@ export const AboutWhyChooseGwcEmployees = [
     description: "Founder & CEO",
     logo: linkedin,
     url: "https://www.linkedin.com/in/naveenkumarnawinkrp?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bp9y1dgiSQIeWENiIxBx6qw%3D%3D",
+    alt: "Naveen Kumar, Founder & CEO of GWC Data.AI",
   },
   {
     id: 2,
@@ -153,6 +157,7 @@ export const AboutWhyChooseGwcEmployees = [
     description: "Chief Operating Officer",
     logo: linkedin,
     url: "https://www.linkedin.com/in/prasanna-srinivasan-a533b062?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9p%2Flp57jR%2FW%2FyjYQnyGdlg%3D%3D",
+    alt: "Prasanna Srinivasan, Chief Operating Officer of GWC Data.AI",
   },
   {
     id: 3,
@@ -161,6 +166,7 @@ export const AboutWhyChooseGwcEmployees = [
     description: "Chief Technology Officer",
     logo: linkedin,
     url: "https://www.linkedin.com/in/subash-ramu-92553784?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVrsJCTEJT1avEOmJ0ozBQQ%3D%3D",
+    alt: "Subash Ramu, Chief Technology Officer at GWC Data.AI",
   },
   {
     id: 4,
@@ -169,6 +175,7 @@ export const AboutWhyChooseGwcEmployees = [
     description: "Chief Data Officer",
     logo: linkedin,
     url: "https://www.linkedin.com/in/srinath-raja-8a5710115?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B03V3%2Be5aQUeDV%2B0DIDlZvA%3D%3D",
+    alt: "Srinath Raja, Chief Data Officer at GWC Data.AI",
   },
 
   {
@@ -178,6 +185,7 @@ export const AboutWhyChooseGwcEmployees = [
     description: "Chief Innovation Officer",
     logo: linkedin,
     url: "https://www.linkedin.com/in/santhosh-kumar-5a3ba3121",
+    alt: "Santhosh Kumar, Chief Innovation Officer at GWC Data.AI",
   },
   {
     id: 6,
@@ -186,6 +194,7 @@ export const AboutWhyChooseGwcEmployees = [
     description: "VP, Data-Engineering",
     logo: linkedin,
     url: "https://www.linkedin.com/in/madhu-sudhanan-mahendran-a00b4477?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrxBAZq7iQSWvbNuQm0YlBA%3D%3D",
+    alt: " Madhu Sudhanan, VP of Data Engineering at GWC Data.AI",
   },
   {
     id: 7,
@@ -194,6 +203,7 @@ export const AboutWhyChooseGwcEmployees = [
     description: "Associate Director",
     logo: linkedin,
     url: "https://www.linkedin.com/in/mamtha-shanmugam-43ba8016a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGP%2FBBJapQ%2FCZkBi6ABu5fA%3D%3D",
+    alt: " Mamtha Shanmugam, Associate Director at GWC Data.AI",
   },
 
   {
@@ -203,8 +213,8 @@ export const AboutWhyChooseGwcEmployees = [
     description: "Head of People Operations",
     logo: linkedin,
     url: "https://www.linkedin.com/in/abinaya-sindhu-a05311206?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWmWkbWztTR%2B3xjUejHGspA%3D%3D",
+    alt: " Abinaya Sindhu, Head of People Operations at GWC Data.AI",
   },
-
 ];
 
 export const AboutWorkFromHomeData = {
@@ -243,6 +253,8 @@ export const AboutOurFutureData = {
         // "Our commitment is to be at the forefront of transformative technologies, leading the way towards a smarter and more connected world.",
       ],
       img: VisionImg,
+      altImage:
+        "Man Representing Vision - Inspiring Business Transformation with Data Analytics and AI",
     },
     {
       id: 2,
@@ -253,6 +265,8 @@ export const AboutOurFutureData = {
         // "Through continuous innovation, collaboration, and a steadfast commitment to excellence, we aim to be the trusted partner for organizations navigating the complexities of the digital era. ",
       ],
       img: MissionImg,
+      altImage:
+        "Target Art Representing Mission - Driving Excellence with Data Analytics and AI Solutions",
     },
   ],
   bannerBg: OurFutureImg,
@@ -265,30 +279,36 @@ export const AboutRecognitionsData = {
   title2: "What Makes GWC Data.AI a Great Place to Work?",
   bannerBg: RecognitionBgImg,
   img: RecognitionsImg,
+  alt_img:
+    "Great Place to Work Certified - Recognizing Exceptional Workplace Culture",
   list: [
     {
       id: 1,
       title: "People-First Culture",
       text: "With a commitment to a people-first culture, we prioritize the value of each team member. By promoting collaboration and encouraging continuous growth, we cultivate trust and loyalty. ",
       img: Recognitions1Img,
+      alt: "Professional Growth - Two People Sitting with One Explaining a Topic Using a Laptop",
     },
     {
       id: 2,
       title: "Inclusivity",
       text: "We celebrate diversity, recognizing that a varied workforce brings unique perspectives, ideas, and innovation, contributing significantly to our success. ",
       img: Recognitions2Img,
+      alt: "Inclusivity - Embracing Diversity and Ensuring Equal Opportunities for All",
     },
     {
       id: 3,
       title: "Innovation",
       text: "We foster an innovative work environment. We empower our employees to think creatively, explore novel concepts, and actively contribute to the perpetual enhancement of our products and services.",
       img: Recognitions3Img,
+      alt: "Team Members Discussing - Fostering Innovation through Collaborative Discussions",
     },
     {
       id: 4,
       title: "Professional Growth",
       text: "GWC is dedicated to providing opportunities for training, mentorship, and career advancement, ensuring our employees possess the skills essential to excel in their roles.",
       img: Recognitions4Img,
+      alt: "Professional Growth - Two People Sitting with One Explaining a Topic Using a Laptop",
     },
   ],
 };

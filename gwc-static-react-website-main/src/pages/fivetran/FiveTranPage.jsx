@@ -23,10 +23,11 @@ const FiveTranPage = () => {
     <>
       {/* <CommonSectionBanner commonSectionBannerContent={FiveBannerData} /> */}
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
-        /> */}
+          content="Fivetran Nando's builds, with Fivetran Nando's, hours with Fivetran, Fivetran Dropbox cuts, Fivetran data movement, with Fivetran, dbt labs, data ingestion, data readiness, using Fivetran’s, partners Domo, Fivetran handles, data transformation"
+        />
+
         <meta
           name="description"
           content="Effortlessly centralize all the data you need so your team can deliver better insights, faster. Start for free."

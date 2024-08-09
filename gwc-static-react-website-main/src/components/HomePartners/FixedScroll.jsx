@@ -49,7 +49,12 @@ const FixedScroll = () => {
 
   return (
     <>
-      <Container fluid className="p-0 m-0 mb-5 mb-lg-0 pb-5 pb-lg-0" id="our-partners" ref={solutionsRef}>
+      <Container
+        fluid
+        className="p-0 m-0 mb-5 mb-lg-0 pb-5 pb-lg-0"
+        id="our-partners"
+        ref={solutionsRef}
+      >
         {/* <div class="blank_row">Scroll Me</div> */}
         {/* <div class="blank_row">Scroll Me</div>
                     <div class="blank_row">Scroll Me</div> */}
@@ -383,32 +388,42 @@ const FixedScroll = () => {
               <div className="fixed_para">
                 <h1> DBT</h1>
                 <p>
-                At GWC Analytics, our dbt (data build tool) team is redefining the way we handle data transformation and modeling. With dbt, we turn raw data into valuable, actionable insights, empowering businesses to make data-driven decisions with confidence.
+                  At GWC Analytics, our dbt (data build tool) team is redefining
+                  the way we handle data transformation and modeling. With dbt,
+                  we turn raw data into valuable, actionable insights,
+                  empowering businesses to make data-driven decisions with
+                  confidence.
                 </p>
                 <h2>Capabilities</h2>
 
                 <div className={styles.badgeParent}>
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}> Dbt Implementation and Setup</div>
+                      <div className={styles.text163}>
+                        {" "}
+                        Dbt Implementation and Setup
+                      </div>
                     </div>
                   </div>
 
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}>Data Transformation Development
+                      <div className={styles.text163}>
+                        Data Transformation Development
                       </div>
                     </div>
                   </div>
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}>Data Quality and Testing
+                      <div className={styles.text163}>
+                        Data Quality and Testing
                       </div>
                     </div>
                   </div>
                   <div className={styles.badge}>
                     <div className={styles.badgeBase}>
-                      <div className={styles.text163}>Consulting and Best Practices
+                      <div className={styles.text163}>
+                        Consulting and Best Practices
                       </div>
                     </div>
                   </div>

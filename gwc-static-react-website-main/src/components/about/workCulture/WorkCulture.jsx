@@ -89,7 +89,7 @@ const WorkCulture = () => {
                 <Col md={4} className="pt-md-0 pt-5" data-aos="fade-left">
                   <img
                     src={WorkGwcRightImg}
-                    alt=""
+                    alt="Great Place to Work Certified - Recognizing Exceptional Workplace Culture"
                     className="w-100"
                     height="100%"
                   />

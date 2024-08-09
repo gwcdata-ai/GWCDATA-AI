@@ -78,7 +78,11 @@ const DbtTab = () => {
                       className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-4 py-4`}
                     >
                       <Col md={5} className="px-md-0" data-aos="fade-right">
-                        <img src={t1} alt="" className="w-100 h-100" />
+                        <img
+                          src={t1}
+                          alt="DBT - Optimization"
+                          className="w-100 h-100"
+                        />
                       </Col>
                       <Col md={7} className=" pt-md-0" data-aos="fade-left">
                         <div className={styles.platformDataSection}>
@@ -109,7 +113,11 @@ const DbtTab = () => {
                       className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-4 py-4`}
                     >
                       <Col md={5} className="px-md-0" data-aos="fade-right">
-                        <img src={t2} alt="" className="w-100 h-100" />
+                        <img
+                          src={t2}
+                          alt="DBT - Hypothesis"
+                          className="w-100 h-100"
+                        />
                       </Col>
                       <Col md={7} className=" pt-md-0" data-aos="fade-left">
                         <div className={styles.platformDataSection}>
@@ -139,7 +147,11 @@ const DbtTab = () => {
                       className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-4 py-4`}
                     >
                       <Col md={5} className="px-md-0" data-aos="fade-right">
-                        <img src={t3} alt="" className="w-100 h-100" />
+                        <img
+                          src={t3}
+                          alt="DBT - Effective Delivery"
+                          className="w-100 h-100"
+                        />
                       </Col>
                       <Col md={7} className=" pt-md-0" data-aos="fade-left">
                         <div className={styles.platformDataSection}>
@@ -173,7 +185,11 @@ const DbtTab = () => {
                       className={` ${styles.tab_sub_sec} d-flex align-items-center justify-content-center p-md-4 py-4`}
                     >
                       <Col md={5} className="px-md-0" data-aos="fade-right">
-                        <img src={t4} alt="" className="w-100 h-100" />
+                        <img
+                          src={t4}
+                          alt="DBT - Eliminate Silos"
+                          className="w-100 h-100"
+                        />
                       </Col>
                       <Col md={7} className=" pt-md-0" data-aos="fade-left">
                         <div className={styles.platformDataSection}>

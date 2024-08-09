@@ -27,7 +27,12 @@ const CareerCard = () => {
                         </Col> */}
             <Col md={4} className="mb-5">
               <Card className={` ${styles?.home_card} mt-3 h-100`}>
-                <Card.Img variant="top" src={img2} className="p-3" />
+                <Card.Img
+                  variant="top"
+                  src={img2}
+                  alt="College Graduates"
+                  className="p-3"
+                />
                 <div className="p-3">
                   <h2 className={` ${styles?.card_title} `}>
                     College Graduates
@@ -42,7 +47,12 @@ const CareerCard = () => {
             </Col>
             <Col md={4} className="mb-5">
               <Card className={` ${styles?.home_card} mt-3 h-100`}>
-                <Card.Img variant="top" src={img3} className="p-3" />
+                <Card.Img
+                  variant="top"
+                  alt="Experienced Professionals"
+                  src={img3}
+                  className="p-3"
+                />
                 <div className="p-3">
                   <h2 className={` ${styles?.card_title} `}>
                     Experienced Professionals
@@ -57,7 +67,12 @@ const CareerCard = () => {
             </Col>
             <Col md={4} className="mb-5">
               <Card className={` ${styles?.home_card} mt-3 h-100`}>
-                <Card.Img variant="top" src={img4} className="p-3" />
+                <Card.Img
+                  variant="top"
+                  alt="Career Restart"
+                  src={img4}
+                  className="p-3"
+                />
                 <div className="p-3">
                   <h2 className={` ${styles?.card_title} `}> Career Restart</h2>
                   <p className={` ${styles?.card_para_title} mt-2 mb-0`}>

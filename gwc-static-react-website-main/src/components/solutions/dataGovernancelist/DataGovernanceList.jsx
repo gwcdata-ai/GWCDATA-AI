@@ -108,9 +108,10 @@ export const DataGovernanceList = ({ dataList }) => {
         <Container>
           <Row className="d-flex align-items-center justify-content-center mt-5 mb-3  ">
             <Col lg={4} md={6} className="px-md-0">
+              {/* {console.log(selectedItem?.alt)} */}
               <img
                 src={selectedItem?.image}
-                alt=""
+                alt={selectedItem?.alt}
                 className="w-100 mx-lg-3 rounded-4 mt-lg-3"
               />
             </Col>

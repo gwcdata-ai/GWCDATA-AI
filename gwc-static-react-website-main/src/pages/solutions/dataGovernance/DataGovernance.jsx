@@ -37,10 +37,11 @@ export const DataGovernancePage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="snowflake, what is snowflake, snowflake database, snowflake inc, snowflake data, snowflake software, snowflake company, snowflakes, snowflake db, snowflake computing, snowflake cloud, snowflake data cloud, snowflake technology, snowflake login, snowflake inc., snowflake platform, snowflake tool, snowflake products, snowflake tech, what is snowflake database, snowflake analytics, snowflake system, data snowflake, snowflake services, snowflake data storage"
-        /> */}
+          content="Data Classification & Sensitivity, Data Quality Management, Data Lineage, Data Access & Authorization, Data Privacy Compliance, Data Governance Policies, Metadata Management, Training & Awareness, Data Risk Management, Audit & Monitoring, Business Glossary, Active Metadata, Intelligent Automation, Compliance Management, Frictionless Collaboration with Business Data, Data-Based Decision Confidence"
+        />
+
         <title>{"GWC DATA.AI - Data Governance"}</title>
         <meta
           name="description"

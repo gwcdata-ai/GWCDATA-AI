@@ -50,6 +50,7 @@ export const TrablueBannerData = {
   url: "/contact-us",
   bannerBg:
     "https://zerozilla-admin.s3.ap-south-1.amazonaws.com/apartment/images/1706602128861~banner.gif",
+  alt: "Enhance your business with our Salesforce expertise",
 };
 
 export const IIOTMainDataGovernance = {
@@ -58,6 +59,7 @@ export const IIOTMainDataGovernance = {
   description:
     "GWC’s dedicated team ensures that Salesforce aligns seamlessly with your evolving business needs, driving efficiency, innovation, and a customer-centric approach. At GWC, we have Salesforce implementation expertise across the following",
   rightImg: DataGovernanceRightImg,
+  alt: "Align departments and enhance customer service with Salesforce",
 };
 
 export const IIOTDataGovernanceList = [
@@ -142,6 +144,7 @@ export const IIOTDataGovernanceList = [
       "Our Salesforce Solution Architecting expertise involves designing & creating scalable & efficient solutions tailored to meet the unique needs of businesses, ensuring optimal performance within the Salesforce ecosystem.",
       "Designing solutions on the Salesforce platform involves a blend of technical expertise, understanding of Business Requirements, Assessment of Existing Systems and Processes, Salesforce Platform Familiarization.",
     ],
+    alt: "Design scalable Salesforce solutions tailored to your business needs",
     image: img8,
   },
   {
@@ -152,6 +155,7 @@ export const IIOTDataGovernanceList = [
       "Our capabilities in Data Management empower users to seamlessly handle, organize, & maintain their data, ensuring data accuracy, accessibility, & integrity throughout the Salesforce platform.",
       "Data management in Salesforce is a critical aspect of maintaining the integrity, security, & usability of your organization's data.",
     ],
+    alt: "Efficiently manage and organize your data on Salesforce",
     image: img7,
   },
   {
@@ -162,6 +166,7 @@ export const IIOTDataGovernanceList = [
       "Lightning Web Components are a modern development approach in Salesforce, enabling developers to build responsive & efficient user interfaces with reusable components for enhanced flexibility & performance. ",
       "Using Lightning Web Components (LWC) to develop web content offers a powerful way to leverage the capabilities of the Salesforce platform while providing a modern & responsive user experience.",
     ],
+    alt: "Build responsive user interfaces with Salesforce Lightning Web Components",
     image: img1,
   },
   {
@@ -172,6 +177,7 @@ export const IIOTDataGovernanceList = [
       "Salesforce provides a suite of Automation Tools, such as Process Builder & Workflow Rules, allowing users to automate complex business processes, saving time & ensuring consistency in operations. ",
       "Flow Builder, Apex Triggers, Salesforce Einstein AI- these automation tools empower businesses to automate repetitive tasks, enforce business rules, & orchestrate complex business processes without extensive coding or technical expertise.",
     ],
+    alt: "Automate complex business processes with Salesforce tools like Process Builder, Workflow Rules, and Flow Builder",
     image: img2,
   },
   {
@@ -182,6 +188,7 @@ export const IIOTDataGovernanceList = [
       "Salesforce integrates with various Payment Gateways, facilitating secure & seamless transactions within the platform, ensuring a smooth payment experience for users & customers. ",
       "Outline the payment gateways that seamlessly integrate with Salesforce, such as PayPal, Stripe, Authorize.Net, Braintree, & Square. Businesses can build trust in this essential functionality for e-commerce success.",
     ],
+    alt: "Integrate secure payment gateways with Salesforce, including PayPal, Stripe, and Braintree",
     image: img3,
   },
   {
@@ -192,6 +199,7 @@ export const IIOTDataGovernanceList = [
       "Aura Components are a framework in Salesforce for building dynamic web apps, allowing developers to create reusable components for building robust & interactive user interfaces. ",
       "Aura Components are part of the Salesforce Lightning Component framework & are used to create responsive & interactive user interfaces.",
     ],
+    alt: "Develop dynamic web apps with Salesforce Aura Components, creating reusable and interactive user interfaces",
     image: img6,
   },
   {
@@ -202,6 +210,7 @@ export const IIOTDataGovernanceList = [
       "Asynchronous Apex, on the other hand, refers to executing code outside of the standard request/response cycle, often used for long-running or resource-intensive processes. ",
       " Salesforce's Apex programming language enables developers to build custom business logic and extensions, while Asynchronous Apex processes data in the background to enhance performance & efficiency.",
     ],
+    alt: "Utilize Salesforce Apex for custom business logic and Asynchronous Apex for background data processing",
     image: img5,
   },
   {
@@ -212,6 +221,7 @@ export const IIOTDataGovernanceList = [
       "Salesforce Object Query Language (SOQL) and Salesforce Object Search Language (SOSL) are query languages used for retrieving and searching data, while JavaScript is employed for client-side scripting, enhancing the interactivity of Salesforce applications. ",
       "Each language serves a distinct purpose but can be used together to create rich and interactive user experiences in Salesforce applications.",
     ],
+    alt: "SOQL & SOSL for Salesforce data queries, JavaScript for client-side scripting",
     image: img4,
   },
 ];
@@ -297,60 +307,71 @@ export const IIOTOurExpertise = {
       title: "Sales Cloud",
       img: sale,
       text: "Salesforce's Sales Cloud is a robust customer relationship management (CRM) solution, streamlining sales processes, enhancing lead management, and optimizing opportunities, all within a unified platform.",
+      alt: "Optimize sales processes and drive growth with Salesforce Sales Cloud",
     },
     {
       id: 2,
       title: "Service Cloud",
       img: Service,
       text: "Salesforce's Service Cloud is a leading customer service and support platform, empowering organizations to deliver exceptional customer experiences through efficient case management, self-service options, and personalized interactions.",
+      alt: "Enhance customer support and streamline service operations with Salesforce Service Cloud",
     },
     {
       id: 3,
       title: "Commerce Cloud",
       img: Commerce,
       text: "Salesforce's Commerce Cloud is an e-commerce solution that provides a seamless and personalized shopping experience, enabling businesses to connect with customers across various digital channels and drive sales growth.",
+      alt: "Optimize online shopping experiences with Salesforce Commerce Cloud for seamless e-commerce solutions",
     },
     {
       id: 4,
       title: "CPQ (Configure, Price, Quote)",
       img: CPQ,
       text: "Salesforce CPQ automates and streamlines the quote-to-cash process, ensuring accurate and efficient quoting, pricing, and proposal generation to enhance sales effectiveness.",
+      alt: "Streamline your sales process with Salesforce CPQ for accurate configuration, pricing, and quoting",
     },
     {
       id: 5,
       title: "Experience Cloud",
       img: Experience,
       text: "Salesforce's Experience Cloud enables organizations to create personalized and engaging portals, communities, and websites to connect with customers, partners, and employees, fostering collaboration and interaction.",
+      alt: "Enhance customer engagement and collaboration with Salesforce Experience Cloud",
     },
     {
       id: 6,
       title: "OMS (Order Management System)",
       img: Order,
       text: "Salesforce's Order Management System helps businesses efficiently manage orders and fulfillments, ensuring a seamless and unified experience for customers across multiple channels.",
+      alt: "Streamline order processing and fulfillment with Salesforce OMS",
     },
     {
       id: 7,
       title: "Health Cloud",
       img: Health,
       text: "Salesforce's Health Cloud is designed for the healthcare industry, providing a comprehensive patient management system that facilitates personalized and connected care experiences.",
+      alt: "Transform healthcare delivery with Salesforce Health Cloud",
     },
     {
       id: 8,
       title: "Salesforce Einstein",
       img: Salesforce_Einstein,
       text: "Salesforce Einstein is an AI technology embedded within the Salesforce platform that provides advanced predictive analytics, automation, and personalization. It helps businesses improve their CRM processes by delivering insights and automating tasks to enhance customer experiences.",
+
+      alt: "Empower your business with Salesforce Einstein's AI-driven insights",
     },
     {
       id: 9,
       title: "Salesforce Life Sciences Cloud",
       img: Salesforce_Life_Sciences_Cloud,
       text: "Salesforce Life Sciences Cloud is a specialized CRM solution for the life sciences industry, streamlining operations and ensuring regulatory compliance. It facilitates effective healthcare professional engagement, clinical trials management, and patient relationship management.",
+      alt: "Optimize life sciences with Salesforce's Life Sciences Cloud",
     },
     {
       id: 10,
       title: "Field Services Lightening",
       img: Field,
       text: "Salesforce's Field Service Lightning is a powerful solution for managing field service operations, optimizing scheduling, and ensuring field service teams deliver exceptional on-site customer experiences.",
+      alt: "Streamline field operations with Salesforce Field Service Lightening",
     },
     // {
     //   id: 1,
@@ -482,6 +503,7 @@ export const IIOTReadyToGetStart = {
   btn1: "Watch Demo",
   btn2: "Talk to GWC",
   video: VideoRefImg,
+  alt: "Explore GWC's solutions for your business and customers",
 };
 
 export const IIOTCaseStudies = {

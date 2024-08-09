@@ -17,7 +17,11 @@ export const FooterContentLeft = {
   description:
     "We ensure better services and better quality at every product you might be interested in and we shall help grow better.",
   certifiedImg: CertifiedImg,
+  certifiedImgAlt: "Great Place to Work Certified",
+
   nasscomImg: NasscomImg,
+  nasscomImgAlt: "NASSCOM Logo",
+
   socialmediatext: "Follow us on",
   socialmedia: [
     { icon: InstagramIcon, url: "https://www.instagram.com/gwcdata.ai/" },

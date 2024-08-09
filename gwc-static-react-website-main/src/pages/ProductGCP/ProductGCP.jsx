@@ -23,10 +23,11 @@ const ProductGCP = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
-        /> */}
+          content="Application Modernization, Data Engineering, BI Modernization, Machine Learning Operations, FinOps, GCP environment, cloud operations, Google Compute Engine, Google Kubernetes Engine, Google Cloud Storage, BigQuery, Google App Engine, Looker Studio, Vertex AI, Migration Tools, IoT integration with Google Cloud"
+        />
+
         <meta
           name="description"
           content="Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML."

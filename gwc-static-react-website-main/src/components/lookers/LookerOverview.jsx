@@ -160,7 +160,7 @@ export const LookerOverview = () => {
                       <img
                         src={image1}
                         className={`w-100 h-100 mb-4 ${styles.last_img}`}
-                        alt=""
+                        alt="Expert Support"
                       />
                     </div>
                     <h3
@@ -191,7 +191,7 @@ export const LookerOverview = () => {
                       <img
                         src={image2}
                         className={`w-100 h-100 mb-4 ${styles.last_img}`}
-                        alt=""
+                        alt="Tailored Solutions"
                       />
                     </div>
                     <h3
@@ -222,7 +222,7 @@ export const LookerOverview = () => {
                       <img
                         src={image3}
                         className={`w-100 h-100 mb-4 ${styles.last_img}`}
-                        alt=""
+                        alt="Proven Success"
                       />
                     </div>
                     <h3

@@ -132,7 +132,7 @@ const DbtCard = () => {
                   {showC1 && (
                     <img
                       src={Efficiency_and_Reproducibility}
-                      alt=""
+                      alt="DBT - Efficiency and Reproducibility"
                       className="w-100"
                       height="100%"
                     />
@@ -140,7 +140,7 @@ const DbtCard = () => {
                   {showC2 && (
                     <img
                       src={Collaboration_and_Documentation}
-                      alt=""
+                      alt="DBT - Collaboration and Documentation"
                       className="w-100"
                       height="100%"
                     />
@@ -148,7 +148,7 @@ const DbtCard = () => {
                   {showC3 && (
                     <img
                       src={Git_Integration}
-                      alt=""
+                      alt="DBT - Git Integration"
                       className="w-100"
                       height="100%"
                     />
@@ -156,7 +156,7 @@ const DbtCard = () => {
                   {showC4 && (
                     <img
                       src={Scheduled_Runs}
-                      alt=""
+                      alt="DBT - Scheduled Runs"
                       className="w-100"
                       height="100%"
                     />

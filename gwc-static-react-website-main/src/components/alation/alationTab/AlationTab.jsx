@@ -109,7 +109,11 @@ const AlationTab = () => {
                           </p>
                         </div>
                         <div className="mt-3">
-                          <img src={t1} alt="image" className="w-100" />
+                          <img
+                            src={t1}
+                            alt="Governance dashboard in Alation"
+                            className="w-100"
+                          />
                         </div>
                       </Col>
                     </Row>
@@ -150,7 +154,11 @@ const AlationTab = () => {
                           </p>
                         </div>
                         <div className="mt-3">
-                          <img src={t2} alt="image" className="w-100" />
+                          <img
+                            src={t2}
+                            alt="Frontend Technologies in Alation"
+                            className="w-100"
+                          />
                         </div>
                       </Col>
                     </Row>
@@ -188,7 +196,11 @@ const AlationTab = () => {
                           </p>
                         </div>
                         <div className="mt-3">
-                          <img src={t3} alt="image" className="w-100" />
+                          <img
+                            src={t3}
+                            alt="Artificial Intelligence and Machine Learning in Alation"
+                            className="w-100"
+                          />
                         </div>
                       </Col>
                     </Row>
@@ -226,7 +238,11 @@ const AlationTab = () => {
                           </p>
                         </div>
                         <div className="mt-3">
-                          <img src={t4} alt="image" className="w-100" />
+                          <img
+                            src={t4}
+                            alt="Additional Technologies in Alation"
+                            className="w-100"
+                          />
                         </div>
                       </Col>
                     </Row>

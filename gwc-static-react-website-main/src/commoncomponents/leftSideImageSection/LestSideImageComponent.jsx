@@ -17,7 +17,7 @@ export const CommonLeftImageComponent = ({ commonLeftSectionContent }) => {
             <Col lg={4} md={6} className="px-md-0" data-aos="fade-right">
               <img
                 src={commonLeftSectionContent?.leftImg}
-                alt=""
+                alt={commonLeftSectionContent?.alt}
                 className="w-100 mx-lg-3 rounded-4"
               />
             </Col>

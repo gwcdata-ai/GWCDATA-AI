@@ -109,7 +109,7 @@ const News = () => {
                 <img
                   src={banner}
                   className={` ${styles.zoomable_image}`}
-                  alt="Description of the image"
+                  alt="Naveen Kumar - Thinking Growth for Society at Large, Embracing Work From Hometown"
                 />
               </a>
               <a
@@ -135,7 +135,7 @@ const News = () => {
                 <img
                   src={banner1}
                   className={` ${styles.zoomable_image}`}
-                  alt="Description of the image"
+                  alt="GWC DATA.AI - Navigating the Road to Cloud Data Analytics, AI, and Beyond"
                 />
               </a>
               <a

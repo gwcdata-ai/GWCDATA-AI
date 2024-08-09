@@ -52,10 +52,11 @@ export const TrabluePage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="DOMO,domo,Domo tools,data,data tools,Data Ai,AI tools,cloud solutions,data solutions,Big data"
-        /> */}
+          content="Derive Key Insights, strategic Data visualization, customized reporting solution, optimized data Integration, Advanced analytics capabilities, responsive designs for mobile, Cost-Effective Scaling, On-Premise Implementation, Cloud Implementation, Website Integration, Advanced Data Flow, Data Integration, Scalable Solutions, Data Quality Assurance, Security & Compliance, Real-Time Analytics, User Training & Adoption, analytics bi migration, cloud transformation artificial, artificial intelligence industrial, business intelligence analytics bi, tableau features and updates, latest tableau features"
+        />
+
         <title>
           {" Business Intelligence and Analytics Software | Tableau"}
         </title>

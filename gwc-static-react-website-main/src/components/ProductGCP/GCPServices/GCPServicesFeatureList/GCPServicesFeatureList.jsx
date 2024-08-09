@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { dataExplainedGCPServices } from "./data";
-import img1 from "../../../../assets/images/ProductDemo/PrincipalDomo/GoogleComputeEngine.webp";
+// import img1 from "../../../../assets/images/ProductDemo/PrincipalDomo/GoogleComputeEngine.webp";
+import l1 from "../../../../assets/images/looker/Commissioning Looker.svg";
 
 // CSS
 import styles from "./GCPServicesFeatureList.module.css";
@@ -10,10 +11,11 @@ import useMedia from "../../../../hooks/useMedia";
 export const GCPServicesFeatureList = ({ dataList }) => {
   const [selectedItem, setSelectedItem] = useState({
     id: 1,
-    name: "Google Compute Engine",
-    image: img1,
+    alt: "Commissioning Looker",
+    name: "Commissioning Looker",
+    image: l1,
     description:
-      "Google Compute Engine is an Infrastructure as a Service (IaaS) offering that allows users to run virtual machines (VMs) on Google's infrastructure. It provides scalable and flexible computing resources, allowing you to easily deploy and manage virtual machines in the cloud. Compute Engine is suitable for a wide range of workloads, including web hosting, application development, and data processing. ",
+      "We access your existing infrastructure and do a feasibility check for the looker implementation quickly and effectively. We then restructure the organisation’s architecture with the Looker platform and connect the data sources in a way that you can unearth the hidden information from your data. We prepare looks and dashboard to form user stories which eventually help in better decision making. ",
   });
   const tbs = document.getElementsByClassName("tb");
   const tbsMobile = document.getElementsByClassName("tbm");
@@ -118,7 +120,7 @@ export const GCPServicesFeatureList = ({ dataList }) => {
           <Col lg={5} md={6} className="px-md-0">
             <img
               src={selectedItem?.image}
-              alt=""
+              alt={selectedItem?.alt}
               className="w-100 mx-lg-3 rounded-4"
             />
           </Col>

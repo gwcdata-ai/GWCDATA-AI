@@ -38,14 +38,11 @@ export const ArtificialInteligencePage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="
-          
-          Business Intelligence,Data Analytics,Data Visualization,BI Tools,Predictive Analytics,Data-Driven Decision Making,Performance Metrics,Reporting Solutions,Data Management,Analytics Strategies
+          content="AI Strategy, Generative AI, Conversational AI, Natural Language Processing (NLP), Computer Vision, Image Processing, Machine Learning Operations, Creative Data Synthesis, Predictive Modeling Evolution, Adaptive Decision-Making, Innovative Problem Solving, Ethical AI, Strong Data Governance Foundation, Cost-Effective, Retail & E-commerce AI, Manufacturing AI, Logistics & Supply Chain AI, Finance & Banking AI, Healthcare AI"
+        />
 
-          "
-        /> */}
         <title>{"GWC DATA.AI - Artificial Intelligence "}</title>
         <meta
           name="description"

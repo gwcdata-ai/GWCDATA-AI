@@ -22,6 +22,7 @@ export const DbtListData = [
       "Redefine data delivery for enhanced precision and agility",
     ],
     image: img1,
+    alt: "Data Modernization in DBT",
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ export const DbtListData = [
       "Utilize features like automatic documentation and version control for error minimization",
     ],
     image: img2,
+    alt: "Governance in DBT",
   },
   {
     id: 3,
@@ -44,6 +46,7 @@ export const DbtListData = [
       "Enhance productivity with automated documentation and built-in lineage features",
     ],
     image: img3,
+    alt: "Data Vault in DBT",
   },
   {
     id: 4,
@@ -55,6 +58,7 @@ export const DbtListData = [
       "Empower domain teams for swift, autonomous operation, eliminating bottlenecks",
     ],
     image: img4,
+    alt: "dbt Mesh in DBT",
   },
   {
     id: 5,
@@ -66,6 +70,7 @@ export const DbtListData = [
       "Gain insights into high-cost models and implement auto-cancellation for outdated builds",
     ],
     image: img5,
+    alt: "Cost Optimization in DBT",
   },
   {
     id: 6,
@@ -77,6 +82,7 @@ export const DbtListData = [
       "Utilize existing data, saving time and streamlining the data warehouse",
     ],
     image: img6,
+    alt: "Data Processing in DBT",
   },
 ];
 
@@ -89,21 +95,27 @@ export const KeyFeaturesDbt = {
       title: "Modular SQL Queries",
       img: Modular_SQL_Queries,
       text: "Leverage the simplicity and flexibility of modular SQL queries to transform and model your data. dbt allows you to build, test, and iterate on your data transformations seamlessly.",
+      alt: "DBT - Modular SQL Queries",
     },
     {
       id: 2,
       title: "Analytics Engineering",
       img: Analytics_Engineering,
       text: "Elevate your analytics engineering capabilities with dbt's focus on the transformation layer of the data stack. Streamline and organize your data transformation process for improved collaboration and efficiency.",
+      alt: "DBT - Analytics Engineering",
     },
     {
       id: 3,
+      alt: "DBT - Incremental Builds",
+
       title: "Incremental Builds",
       img: Incremental_Builds,
       text: "Optimize your data transformation workflows with dbt's support for incremental builds. Process only the data that has changed, reducing processing time and resource utilization. .",
     },
     {
       id: 4,
+      alt: "DBT - Data Testing",
+
       title: "Data Testing",
       img: Data_Testing,
       text: "Ensure the accuracy and reliability of your analytics code with dbt's built-in testing features. Test data quality, schema, and business logic, providing confidence in your analytics results.",

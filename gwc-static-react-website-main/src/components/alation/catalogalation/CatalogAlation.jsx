@@ -19,7 +19,7 @@ const CatalogAlation = () => {
             <Col xs={12} lg={6} md={6} className="px-md-0" data-aos="fade-left">
               <img
                 src={image1}
-                alt=""
+                alt="Alation Cloud Service"
                 className=" mx-lg-5  mt-md-0 mt-5"
                 width="80%"
               />

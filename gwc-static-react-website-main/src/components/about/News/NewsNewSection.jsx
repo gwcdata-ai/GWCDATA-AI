@@ -27,13 +27,21 @@ const NewsNewSection = () => {
               </div>
             </Col>
             <Col xs={12} lg={6} md={6} className="px-md-0" data-aos="fade-left">
-              <img src={news1} alt="" className="w-100 mx-lg-3 rounded-4 " />
+              <img
+                src={news1}
+                alt="GCU Puraskar - Award for Excellence in Analytics and Business Intelligence"
+                className="w-100 mx-lg-3 rounded-4 "
+              />
             </Col>
           </Row>
 
           <Row className="d-flex align-items-center justify-content-center my-5">
             <Col xs={12} lg={6} className="pt-md-0 pt-2" data-aos="fade-right">
-              <img src={news2} alt="" className="w-100 mx-lg-3 rounded-4 " />
+              <img
+                src={news2}
+                alt="Young Entrepreneur Award - Received from Vendhar TV for Achievements in Tirupattur District"
+                className="w-100 mx-lg-3 rounded-4 "
+              />
             </Col>
             <Col xs={12} lg={6} md={6} className="px-md-0" data-aos="fade-left">
               <div className="px-lg-5">

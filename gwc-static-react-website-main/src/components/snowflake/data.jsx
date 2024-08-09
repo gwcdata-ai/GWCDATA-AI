@@ -27,6 +27,7 @@ export const SnowBannerData = {
   // buttontext: "Get in Touch",
   url: "/contact-us",
   bannerBg: snowbanner,
+  alt: "snowflake - background",
 };
 
 export const OfferCardData = [
@@ -104,6 +105,7 @@ export const SnowList = [
       "Real-time Analytics: Supports real-time analytics, helping retailers analyze customer behavior, optimize inventory management, and personalize marketing strategies.",
     ],
     image: img1,
+    alt: "Snowflake for your industry - Retail",
   },
   {
     id: 2,
@@ -113,6 +115,7 @@ export const SnowList = [
       " Secure Data Handling: By focusing on data security and compliance, Snowflake assists healthcare organizations in managing sensitive patient data securely.",
       "Advanced Analytics: Facilitates advanced analytics, allowing healthcare professionals to derive meaningful insights from patient records, optimize treatment plans, and streamline operations.",
     ],
+    alt: "Snowflake for your industry - Healthcare",
     image: img2,
   },
   {
@@ -123,6 +126,7 @@ export const SnowList = [
       "Scalable Data Processing: Handles large volumes of financial data efficiently for activities like risk management, fraud detection, and compliance reporting.",
       "Real-time Reporting: Supports real-time reporting and analytics, enabling faster decision-making and regulatory compliance.",
     ],
+    alt: "Snowflake for your industry - Finance",
     image: img3,
   },
   {
@@ -133,6 +137,7 @@ export const SnowList = [
       "Supply Chain Optimization: Helps manufacturers streamline their supply chain by integrating data from various sources, optimizing inventory levels, and improving production efficiency.",
       "Predictive Maintenance: Supports predictive maintenance analytics, reducing downtime by predicting equipment failures and scheduling maintenance proactively.",
     ],
+    alt: "Snowflake for your industry - Manufacturing",
     image: img4,
   },
   {
@@ -143,6 +148,7 @@ export const SnowList = [
       "Data Collaboration: Snowflake's data sharing capabilities facilitate collaboration between technology companies and their partners, enabling secure and controlled data sharing.",
       "Scalable Infrastructure:Handles large datasets and adapts to changing infrastructure requirements.",
     ],
+    alt: "Snowflake for your industry - Technology",
     image: img5,
   },
   {
@@ -153,6 +159,7 @@ export const SnowList = [
       "Data-driven Decision-Making: Empowers educational institutions with data-driven decision-making by consolidating data from student records, academic performance, and administrative systems.",
       "Personalized Learning: Real-time analytics support personalized learning initiatives, helping educators tailor educational content to individual student needs.",
     ],
+    alt: "Snowflake for your industry - Education",
     image: img6,
   },
   {
@@ -163,6 +170,7 @@ export const SnowList = [
       "Customer Experience Enhancement: Allows hospitality businesses to analyze customer preferences, feedback, and booking patterns, enabling personalized services and improving customer satisfaction.",
       "Operational Efficiency: Assists in optimizing operations by integrating data from various departments such as reservations, inventory, and customer service.",
     ],
+    alt: "Snowflake for your industry - Hospitality",
     image: img7,
   },
   {
@@ -173,6 +181,7 @@ export const SnowList = [
       "Smart Grid Analytics: Supports smart grid analytics, helping utilities analyze data from sensors and meters to optimize energy distribution.",
       "Predictive Analytics: Enables energy companies to implement predictive analytics for equipment maintenance, reducing downtime and operational costs.",
     ],
+    alt: "Snowflake for your industry - Energy",
     image: img8,
   },
   // {

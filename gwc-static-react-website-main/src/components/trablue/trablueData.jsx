@@ -13,49 +13,49 @@ export const TrablueOurExpertise = {
     bannerBg: OurExpertisebannerBgImg,
     list: [
         {
-            id: 1,
+            id: 1,alt:"Strategic Data Visualization - Tableau",
             title: "Strategic Data Visualization",
             img: sale,
             text: "Create visually compelling dashboards tailored to the client's industry and specific business needs, enhancing the clarity and effectiveness of data representation.",
         },
         {
-            id: 2,
+            id: 2,alt:"Customized Reporting Solutions - Tableau",
             title: "Customized Reporting Solutions",
             img: Service,
             text: "Develop reporting solutions that align with the client's key performance indicators (KPIs), ensuring that insights generated are directly relevant to their strategic goals.",
         },
         {
-            id: 3,
+            id: 3,alt:"Optimized Data Integration - Tableau",
             title: "Optimized Data Integration",
             img: Commerce,
             text: "Leverage the expertise of an experienced professional to expertly integrate Tableau with various data sources, ensuring seamless data connectivity and comprehensive analysis.",
         },
         {
-            id: 4,
+            id: 4,alt:"Advanced Analytics Capabilities - Tableau",
             title: "Advanced Analytics Capabilities",
             img: CPQ,
             text: "Provide in-depth analytics capabilities, utilizing advanced Tableau features to uncover intricate patterns, trends, and correlations within the data for more sophisticated insights.",
         },
         {
-            id: 5,
+            id: 5,alt:"Predictive Modelling & Forecasting - Tableau",
             title: "Predictive Modelling & Forecasting",
             img: Experience,
             text: "Apply advanced statistical techniques within Tableau to enable predictive modelling and forecasting, helping clients anticipate future trends and make proactive business decisions.",
         },
         {
-            id: 6,
+            id: 6,alt:"Responsive Design for Mobile - Tableau",
             title: "Responsive Design for Mobile",
             img: Order,
             text: "Design Tableau dashboards with a mobile-first approach, ensuring that insights are accessible and engaging across various devices, enhancing user experience and accessibility.",
         },
         {
-            id: 7,
+            id: 7,alt:"Proactive Troubleshooting & Support - Tableau",
             title: "Proactive Troubleshooting & Support",
             img: Health,
             text: "Offer proactive troubleshooting and responsive support to address any Tableau-related issues promptly, minimizing downtime and ensuring a smooth user experience.",
         },
         {
-            id: 8,
+            id: 8,alt:"Continuous Innovation & Upgrades - Tableau",
             title: "Continuous Innovation & Upgrades",
             img: Field,
             text: "Stay abreast of the latest Tableau features and updates, ensuring that the client's Tableau solutions remain cutting-edge, scalable, and aligned with industry best practices.",
@@ -84,10 +84,10 @@ export const TrablueIIOTDataGovernanceList = [
             "Strategically plan and scale Tableau solutions according to the client's growing needs, optimizing resource allocation and ensuring cost-effectiveness over time.",
             "Solutions would be programmed to maintain the performance of the dashboards ,and maintain great end user experience. "
         ],
-        image: img8,
+        image: img8,alt:" in Tableau",
     },
     {
-        id: 2,
+        id: 2,alt:"On-Premise Implementation in Tableau",
         name: "On-Premise Implementation",
         description_title: "On-Premise Implementation",
         description_list: [
@@ -97,7 +97,7 @@ export const TrablueIIOTDataGovernanceList = [
         image: img7,
     },
     {
-        id: 3,
+        id: 3,alt:"Cloud Implementation in Tableau",
         name: "Cloud Implementation",
         description_title: "Cloud Implementation",
         description_list: [
@@ -107,7 +107,7 @@ export const TrablueIIOTDataGovernanceList = [
         image: img1,
     },
     {
-        id: 4,
+        id: 4,alt:"Website Integration in Tableau",
         name: "Website Integration",
         description_title: "Website Integration",
         description_list: [
@@ -117,7 +117,7 @@ export const TrablueIIOTDataGovernanceList = [
         image: img2,
     },
     {
-        id: 5,
+        id: 5,alt:"Advanced Data Flow in Tableau",
         name: "Advanced Data Flow",
         description_title: "Advanced Data Flow",
         description_list: [
@@ -127,7 +127,7 @@ export const TrablueIIOTDataGovernanceList = [
         image: img3,
     },
     {
-        id: 6,
+        id: 6,alt:"Data Integration in Tableau",
         name: "Data Integration",
         description_title: "Data Integration",
         description_list: [
@@ -137,7 +137,7 @@ export const TrablueIIOTDataGovernanceList = [
         image: img6,
     },
     {
-        id: 7,
+        id: 7,alt:"Scalable Solutions in Tableau",
         name: "Scalable Solutions",
         description_title: "Scalable Solutions",
         description_list: [

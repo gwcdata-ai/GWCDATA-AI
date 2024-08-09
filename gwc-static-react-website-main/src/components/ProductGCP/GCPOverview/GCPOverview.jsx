@@ -159,7 +159,7 @@ export const GCPOverview = () => {
                     <img
                       src={image1}
                       className={` ${commonStyles.image_space} w-100 mb-4 `}
-                      alt=""
+                      alt="Symphonic Team"
                     />
                     <h3
                       className={styles?.text_overlay}
@@ -190,7 +190,7 @@ export const GCPOverview = () => {
                     <img
                       src={image2}
                       className={` ${commonStyles.image_space} w-100 mb-4 `}
-                      alt=""
+                      alt="Proactive Infrastructure Management"
                     />
                     <h3
                       className={styles?.text_overlay}
@@ -221,7 +221,7 @@ export const GCPOverview = () => {
                     <img
                       src={image3}
                       className={` ${commonStyles.image_space} w-100 mb-4 `}
-                      alt=""
+                      alt="IoT Integration with Google Cloud"
                     />
                     <h3
                       className={styles?.text_overlay}
@@ -249,7 +249,7 @@ export const GCPOverview = () => {
                     <img
                       src={image4}
                       className={` ${commonStyles.image_space} w-100 mb-4 `}
-                      alt=""
+                      alt="Cost Optimization"
                     />
                     <h3
                       className={styles?.text_overlay}
@@ -280,7 +280,7 @@ export const GCPOverview = () => {
                     <img
                       src={image5}
                       className={` ${commonStyles.image_space} w-100 mb-4 `}
-                      alt=""
+                      alt="Security and Compliance"
                     />
                     <h3
                       className={styles?.text_overlay}
@@ -311,7 +311,7 @@ export const GCPOverview = () => {
                     <img
                       src={image6}
                       className={` ${commonStyles.image_space} w-100 mb-4 `}
-                      alt=""
+                      alt="Effortless Collaboration"
                     />
                     <p
                       className={styles?.text_overlay}

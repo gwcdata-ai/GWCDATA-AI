@@ -41,7 +41,7 @@ export const OurStrengths = ({ strengthsData }) => {
                     className={`${styles.section_border}  ${borderColorClass} p-2`}
                   >
                     <div className="p-3">
-                      <Image src={item?.img} className="w-100" alt="" />
+                      <Image src={item?.img} className="w-100" alt={item.alt} />
                       <h3 className={`${styles.card_title} my-3`}>
                         {" "}
                         <strong> {item?.title} </strong>

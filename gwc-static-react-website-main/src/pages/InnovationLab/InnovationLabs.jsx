@@ -33,8 +33,9 @@ const InnovationLabs = () => {
       <Helmet>
         <meta
           name="keywords"
-          content="GWC DATA.AI, research and innovation, data technology, analytics solutions, cutting-edge projects, industry advancements, data science research, innovative solutions, tech innovation"
+          content="Research & Innovation, AI Solutions, Data Analytics, Sustainability, Manufacturing, Applied AI, Advanced Data Science, Machine Learning, Precision Medicine, Autonomous Systems, Aerospace Simulations, Industrial Automation, Strategic Innovation, Experimentation, AI Technologies, 3D Printing, Drones, Robotics, Big Data, Research and Ideation, Open Innovation, Technology Partnerships, Hackathons, App-a-thons, Innovation Ecosystem, GWC Data.AI"
         />
+
         <meta
           name="description"
           content="Explore GWC DATA.AI's commitment to research and innovation. Discover cutting-edge projects and solutions that drive advancements in data technology and analytics, shaping the future of the industry."

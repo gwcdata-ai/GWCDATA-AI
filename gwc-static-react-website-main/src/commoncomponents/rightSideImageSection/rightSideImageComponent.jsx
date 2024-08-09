@@ -38,7 +38,7 @@ export const CommonRightImageComponent = ({ commonRightSectionContent }) => {
             <Col lg={5} md={6} className="text-center" data-aos="fade-left">
               <img
                 src={commonRightSectionContent?.rightImg}
-                alt=""
+                alt="product feature credit utilization used credits new 2x"
                 className="rounded-4 mx-lg-3 w-100"
                 // style={{ width: "349px", height: "343px" }}
               />

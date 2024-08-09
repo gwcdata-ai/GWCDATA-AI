@@ -37,10 +37,11 @@ export const CloudTransformationPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content=""
-        /> */}
+          content="Data-powered Innovation, Operate & Optimize Dev Capabilities, Transform Cloud Operations, Application Migration, Integrate Hybrid Solutions, Setup & Optimize Security Operations, Compliance Management, Data Governance, Data Migration, Data & Analytics Solutions, Custom AI Solutions, Cloud Migration Efficiency, AI-Infused Cloud Services, Data-Driven Decision Power, Secure Cloud Ecosystems, Skilled Data-driven, Ground-breaking Technology"
+        />
+
         <title>{"GWC DATA.AI - Cloud Transformation"}</title>
         <meta
           name="description"

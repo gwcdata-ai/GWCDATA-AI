@@ -45,6 +45,7 @@ export const IIOTMainDataGovernance = {
   description:
     "Boost visibility and elevate the troubleshooting and maintenance capabilities of your business. With IIoT, you get enhanced efficiencies, low costs, and increased safety and security.",
   rightImg: DataGovernanceRightImg,
+  alt: "Smarter industrial landscape with IIoT: enhanced visibility, maintenance, efficiency, and safety",
 };
 
 export const IIOTDataGovernanceList = [
@@ -59,6 +60,7 @@ export const IIOTDataGovernanceList = [
       "Gathering comprehensive data that feeds into the analytics pipeline.  ",
     ],
     image: img1,
+    alt: "Strategic sensor deployment for actionable insights and comprehensive data collection",
   },
   {
     id: 2,
@@ -69,6 +71,7 @@ export const IIOTDataGovernanceList = [
       "Retrieval, filtering, and processing of raw data at the source.",
     ],
     image: img2,
+    alt: "Systematic data acquisition from sensors and connected devices",
   },
   {
     id: 3,
@@ -79,6 +82,7 @@ export const IIOTDataGovernanceList = [
       "Reliable and secure transmission of data.",
     ],
     image: img3,
+    alt: "Implementing robust communication protocols for seamless connectivity",
   },
   {
     id: 4,
@@ -89,6 +93,7 @@ export const IIOTDataGovernanceList = [
       "Optimize bandwidth usage and reduce reliance on centralized cloud resources. ",
     ],
     image: img4,
+    alt: "Reduce latency and enhance system efficiency with swift analysis of critical information",
   },
   {
     id: 5,
@@ -99,6 +104,7 @@ export const IIOTDataGovernanceList = [
       "Perform complex analytics, machine learning, and pattern recognition.",
     ],
     image: img5,
+    alt: "Unlock actionable intelligence from vast datasets with advanced data processing and machine learning",
   },
   {
     id: 6,
@@ -109,6 +115,7 @@ export const IIOTDataGovernanceList = [
       "Ensure accessibility of historical and real-time data for analysis, compliance, and long-term insights. ",
     ],
     image: img6,
+    alt: "Efficient data storage for massive volumes from sensors and devices, ensuring accessibility for analysis",
   },
   {
     id: 7,
@@ -118,6 +125,7 @@ export const IIOTDataGovernanceList = [
       "Ensure compatibility and interoperability.",
       "Sharing and utilizing data across diverse platforms.",
     ],
+    alt: "Seamless integration with industrial systems, ensuring compatibility and data sharing",
     image: img7,
   },
   {
@@ -129,6 +137,7 @@ export const IIOTDataGovernanceList = [
       "Provide a visual representation of key performance indicators. ",
       "Enhance situational awareness and empower decision-makers.",
     ],
+    alt: "Transform complex data into clear insights with visual KPIs for better decision-making",
     image: img8,
   },
   {
@@ -139,6 +148,7 @@ export const IIOTDataGovernanceList = [
       "Enhance equipment reliability and operational efficiency. ",
       "Predict potential equipment failures before they occur. ",
     ],
+    alt: "Implement predictive maintenance to enhance equipment reliability and foresee failures",
     image: img9,
   },
   {
@@ -149,6 +159,7 @@ export const IIOTDataGovernanceList = [
       "Identification of optimization opportunities. ",
       "Maximize the value derived from IoT investments.",
     ],
+    alt: "Identify optimization opportunities to maximize IoT investment value",
     image: img10,
   },
 ];

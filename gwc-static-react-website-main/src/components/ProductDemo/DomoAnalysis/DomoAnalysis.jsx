@@ -43,7 +43,11 @@ export const DomoAnalysis = () => {
               </div>
             </Col>
             <Col lg={5} md={6} className="pb-md-0 pb-5" data-aos="fade-left">
-              <img src={image2} alt="" className="w-100  rounded-4 mx-lg-3" />
+              <img
+                src={image2}
+                alt="ai and ml business intelligence workflows dashboards reporting"
+                className="w-100  rounded-4 mx-lg-3"
+              />
             </Col>
           </Row>
         </Container>

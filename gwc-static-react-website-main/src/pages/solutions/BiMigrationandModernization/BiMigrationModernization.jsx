@@ -37,10 +37,11 @@ export const BiMigrationModernizationPage = () => {
   return (
     <>
       <Helmet>
-        {/* <meta
+        <meta
           name="keywords"
-          content="BI Migration,BI Modernization,Data Migration,Cloud BI,Business Intelligence,Analytics Transformation,Data Warehouse Migration,BI Tools Modernization,Enterprise BI Solutions,Data Integration"
-        /> */}
+          content="BI Landscape, Assessment & Planning, Data Inventory & Analysis, Data Migration, Report & Dashboard Migration, Integration with Existing Systems, Security & Access Control, Training & Change Management, Testing & Quality Assurance, Deployment, Post-Migration Optimization, GWC Data Migration Accelerator, Advanced Data Integration, Cloud-Based BI Solutions, AI-Infused Analytics, Migrate For Modernization, Migrate in Shorter Time Span, BI Migration Best Practices"
+        />
+
         <title>{"GWC DATA.AI - BI Migration and Modernization"}</title>
         <meta
           name="description"

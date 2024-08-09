@@ -124,6 +124,7 @@ const AiINdustries = () => {
                     variant="top"
                     src={item?.img}
                     className="px-3 py-2"
+                    alt={item?.alt}
                   />
                   <div className="px-3">
                     <h3 className={` ${styles?.card_title} mb-3`}>

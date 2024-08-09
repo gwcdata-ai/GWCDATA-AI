@@ -39,6 +39,7 @@ export const BiMigrationMainDataGovernance = {
   description:
     "Our BI and analytics solutions are tailored to suit the unique needs of your business. From custom reporting to industry-specific analytics, we design solutions that resonate with the distinct challenges and goals of your organization.",
   rightImg: DataGovernanceRightImg,
+  alt: "Turning Data Into Asset - Tailored BI and Analytics Solutions",
 };
 
 export const BiMigrationDataGovernanceList = [
@@ -53,6 +54,7 @@ export const BiMigrationDataGovernanceList = [
       "Employ robust data collection methods.",
     ],
     image: img1,
+    alt: "Data Collection - Gathering Information from Diverse Sources",
   },
   {
     id: 2,
@@ -64,6 +66,7 @@ export const BiMigrationDataGovernanceList = [
       "Identify potential insights and formulate hypotheses for further steps.",
     ],
     image: img2,
+    alt: "Understanding Data Characteristics - Discover Patterns and Trends",
   },
   {
     id: 3,
@@ -74,6 +77,7 @@ export const BiMigrationDataGovernanceList = [
       "Enable decision-makers to grasp insights quickly.",
     ],
     image: img3,
+    alt: "Convey Analytical Findings - Dashboard and Report Creation",
   },
   {
     id: 4,
@@ -85,6 +89,7 @@ export const BiMigrationDataGovernanceList = [
       "Uncover patterns, correlations, and trends.",
     ],
     image: img4,
+    alt: "Systematic Examination of Data - Extract Insights and Patterns",
   },
   {
     id: 5,
@@ -95,6 +100,7 @@ export const BiMigrationDataGovernanceList = [
       "Enhance comprehension and support the decision-making process.",
     ],
     image: img5,
+    alt: "Effectively Communicate Results - Visualizations and Charts",
   },
   {
     id: 6,
@@ -105,6 +111,7 @@ export const BiMigrationDataGovernanceList = [
       "Help identify and address issues promptly.",
     ],
     image: img6,
+    alt: "Continuous Performance Monitoring - Efficient Operation",
   },
   {
     id: 7,
@@ -115,6 +122,7 @@ export const BiMigrationDataGovernanceList = [
       "Help derive strategic value from data.",
     ],
     image: img7,
+    alt: "Data Interpretation Beyond Analysis - Strategic Value",
   },
   {
     id: 8,
@@ -125,6 +133,7 @@ export const BiMigrationDataGovernanceList = [
       "Enhance the quality of analysis and promote a culture of continuous learning.",
     ],
     image: img8,
+    alt: "Maximizing Analytics Impact - Expertise and Insights",
   },
   {
     id: 9,
@@ -135,6 +144,7 @@ export const BiMigrationDataGovernanceList = [
       "Ensure that analytical insights remain relevant and accurate over time.",
     ],
     image: img9,
+    alt: "Iterative Analysis - Ongoing Feedback and Accurate Insights",
   },
   {
     id: 10,
@@ -145,6 +155,7 @@ export const BiMigrationDataGovernanceList = [
       "Enhance agility, responsiveness, and overall organizational performance.",
     ],
     image: img10,
+    alt: "Translate Insights - Data-Driven Decision-Making for Business Success",
   },
   // {
   //   id: 1,

@@ -192,7 +192,7 @@ export const AboutRecognitions = ({ recognitionsContent }) => {
               <Image
                 src={recognitionsContent?.img}
                 style={{ width: "70%" }}
-                alt=""
+                alt={recognitionsContent?.alt_img}
               />
             </Col>
             {/* <p className={` ${styles.slide_title}`}>
@@ -228,7 +228,7 @@ export const AboutRecognitions = ({ recognitionsContent }) => {
                       <Image
                         className={`rounded-4 ${styles.section_image}`}
                         src={data?.img} // Replace with your image URL
-                        alt="Your Image"
+                        alt={data.alt}
                       />
                       <div className={styles.IndustriesSectionBox}>
                         {/* <img

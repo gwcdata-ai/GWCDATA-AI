@@ -17,12 +17,13 @@ const PrincipalDomoFeatureListData = [
   {
     id: 1,
     name: "Dashboard Creation",
-    className:"firsttab",
+    className: "firsttab",
     description_title: "Dynamic Dashboards to Unleash Business Insights",
     description_list: [
       "Craft dynamic and interactive dashboards tailored to your business needs with Domo's intuitive and user-friendly dashboard creation tools.",
     ],
     image: img7,
+    alt: "Dynamic Dashboards to Unleash Business Insights",
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ const PrincipalDomoFeatureListData = [
     description_list: [
       "Transform complex data into compelling visual narratives, leveraging Domo's robust data visualization capabilities for insightful and actionable analytics. ",
     ],
+    alt: "Harness Actionable Analytics with Data Visualization",
     image: img8,
   },
   {
@@ -41,6 +43,7 @@ const PrincipalDomoFeatureListData = [
     description_list: [
       "Explore a diverse array of pre-built apps and solutions within the Domo Appstore, accelerating your analytics journey with ready-to-use functionalities.",
     ],
+    alt: "Domo Appstore",
     image: img1,
   },
   {
@@ -50,6 +53,7 @@ const PrincipalDomoFeatureListData = [
     description_list: [
       "Seamlessly connect and integrate data from various sources, ensuring flexibility and accessibility to diverse datasets for comprehensive analysis.",
     ],
+    alt: "Flexible Data Connections",
     image: img2,
   },
   {
@@ -59,6 +63,7 @@ const PrincipalDomoFeatureListData = [
     description_list: [
       "Enhance your workflow efficiency by integrating Domo with a variety of third-party applications and services, fostering a cohesive and interconnected data ecosystem.",
     ],
+    alt: "Flexible Integrations",
     image: img3,
   },
   {
@@ -68,6 +73,7 @@ const PrincipalDomoFeatureListData = [
     description_list: [
       "Experience the power of Domo on the go with a mobile-first approach, ensuring access to critical insights anytime, anywhere, directly from your mobile device. ",
     ],
+    alt: "Mobile First",
     image: img4,
   },
   {
@@ -77,6 +83,7 @@ const PrincipalDomoFeatureListData = [
     description_list: [
       "Streamline project oversight and coordination within the Domo platform, facilitating effective project management to ensure successful and timely completion.",
     ],
+    alt: "Project Management",
     image: img5,
   },
   {
@@ -86,6 +93,7 @@ const PrincipalDomoFeatureListData = [
     description_list: [
       "Foster a collaborative analytics environment with Domo's sharing features, enabling team members to collaborate, discuss insights, and collectively drive informed decision-making.",
     ],
+    alt: "Sharing & Collaboration",
     image: img6,
   },
 ];
@@ -95,41 +103,39 @@ export const PrincipalDomoFeatureList = ({ dataList }) => {
 
   const [selectedItem, setSelectedItem] = useState({});
 
-  const tbs =  document.querySelectorAll('.tb');
-  const tbsMobile =  document.getElementsByClassName('tbm');
+  const tbs = document.querySelectorAll(".tb");
+  const tbsMobile = document.getElementsByClassName("tbm");
 
-  const funSelectedlist = (item,seltab) => {
+  const funSelectedlist = (item, seltab) => {
     // console.log('this is ', seltab);
-    
-    if(isMobile)
-      {
-        // console.log('tbsMobile',tbsMobile);
-    if (tbsMobile[0].classList.contains('activeTab')) {
-      tbsMobile[0].classList.remove('activeTab');
-    }
 
-    Array.from(tbsMobile).forEach(elem => {
-      // console.log('foreach', elem);
-      if (elem.classList.contains('tbm')) {
-        elem.classList.remove('activeTab');
+    if (isMobile) {
+      // console.log('tbsMobile',tbsMobile);
+      if (tbsMobile[0].classList.contains("activeTab")) {
+        tbsMobile[0].classList.remove("activeTab");
       }
-    });
-    seltab.classList.add('activeTab');
-      }
-    else{
-      // for desktop
-      if (tbs[0].classList.contains('activeTab')) {
-        tbs[0].classList.remove('activeTab');
-      }
-      Array.from(tbs).forEach(elem => {
+
+      Array.from(tbsMobile).forEach((elem) => {
         // console.log('foreach', elem);
-        if (elem.classList.contains('tb')) {
-          elem.classList.remove('activeTab');
+        if (elem.classList.contains("tbm")) {
+          elem.classList.remove("activeTab");
         }
       });
-    // console.log('seltab',seltab);
-      seltab.classList.add('activeTab');
+      seltab.classList.add("activeTab");
+    } else {
+      // for desktop
+      if (tbs[0].classList.contains("activeTab")) {
+        tbs[0].classList.remove("activeTab");
       }
+      Array.from(tbs).forEach((elem) => {
+        // console.log('foreach', elem);
+        if (elem.classList.contains("tb")) {
+          elem.classList.remove("activeTab");
+        }
+      });
+      // console.log('seltab',seltab);
+      seltab.classList.add("activeTab");
+    }
     setSelectedItem(item);
     // console.log(item);
   };
@@ -146,13 +152,15 @@ export const PrincipalDomoFeatureList = ({ dataList }) => {
           {isMobile ? (
             PrincipalDomoFeatureListData?.map((item, index) => {
               return (
-                <div
-                  key={index}
-                  className={`w-100 mb-md-0 mb-2 `}
-                  
-                >
-                  <div onClick={(event) => {funSelectedlist(item,event.currentTarget)}} 
-                  className={`px-1 ${item?.className === 'firsttab' ? `activeTab` : ''} tbm  ${styles.list} mb-md-3 mb-1`}>
+                <div key={index} className={`w-100 mb-md-0 mb-2 `}>
+                  <div
+                    onClick={(event) => {
+                      funSelectedlist(item, event.currentTarget);
+                    }}
+                    className={`px-1 ${
+                      item?.className === "firsttab" ? `activeTab` : ""
+                    } tbm  ${styles.list} mb-md-3 mb-1`}
+                  >
                     {" "}
                     <div className="px-1"> {item?.name} </div>{" "}
                   </div>
@@ -184,10 +192,15 @@ export const PrincipalDomoFeatureList = ({ dataList }) => {
                 return (
                   <Col md={3} key={index} className={`mb-md-0 mb-2`}>
                     <div
-                      className={`px-1 tb ${item.className === 'firsttab' ? `activeTab` : ''}
+                      className={`px-1 tb ${
+                        item.className === "firsttab" ? `activeTab` : ""
+                      }
                       ${styles.list} mb-md-3 mb-1`}
-                      style={{cursor:'pointer'}}
-                      onClick={(event) => funSelectedlist(item,event.currentTarget)}>
+                      style={{ cursor: "pointer" }}
+                      onClick={(event) =>
+                        funSelectedlist(item, event.currentTarget)
+                      }
+                    >
                       {" "}
                       <div className="px-1"> {item?.name} </div>{" "}
                     </div>

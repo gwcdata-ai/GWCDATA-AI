@@ -40,7 +40,11 @@ const SalesBottom = () => {
             </Col>
             <Col lg={5}>
               <div className="d-flex justify-content-center">
-                <img src={CertifiedImg} alt="image" className="w-25" />
+                <img
+                  src={CertifiedImg}
+                  alt="Great place to work certification"
+                  className="w-25"
+                />
               </div>
             </Col>
           </Row>

@@ -30,7 +30,7 @@ export const WhyChooseGwc = ({ dataWhyChooseGwc, dataEmployees }) => {
                   <Image
                     src={item?.img}
                     className={`${styles.card_img} w-100`}
-                    alt=""
+                    alt={item.alt}
                   />
                   <Row className="mt-3">
                     <Col xs={1} sm={2}>
