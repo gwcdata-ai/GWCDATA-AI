@@ -19,6 +19,8 @@ import image6Img from "../../assets/images/about/image6.png";
 import image7Img from "../../assets/images/about/image7.png";
 import image8Img from "../../assets/images/about/image8.png";
 import image9Img from "../../assets/images/about/image9.png";
+import image10Img from "../../assets/images/about/image10.png";
+
 import WorkFromHomeTownImg from "../../assets/images/about/workFromHomeTown.webp";
 import WFHImg from "../../assets/images/about/wfh.png";
 import OurCultureImg from "../../assets/images/about/ourCultureBg.webp";
@@ -186,6 +188,15 @@ export const AboutWhyChooseGwcEmployees = [
     logo: linkedin,
     url: "https://www.linkedin.com/in/santhosh-kumar-5a3ba3121",
     alt: "Santhosh Kumar, Chief Innovation Officer at GWC Data.AI",
+  },
+  {
+    id: 9,
+    img: image10Img,
+    title: "Shashank Ravikumar",
+    description: "Chief Strategy Officer",
+    logo: linkedin,
+    url: "https://www.linkedin.com/in/shashank-ravikumar-780649125/",
+    alt: " Shashank Ravikumar, Chief Strategy Officer at GWC Data.AI",
   },
   {
     id: 6,

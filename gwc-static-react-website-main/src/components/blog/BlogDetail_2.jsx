@@ -24,7 +24,7 @@ import { BlogCardData, BlogCardData2, BlogCardData3 } from "./data";
 import detailImg from "../../assets/images/Blog/detailImg.png";
 import BlogDetailImg from "../../assets/images/Blog/BlogDetailImg.png";
 import logo from "../../assets/images/Blog/logo.png";
-import { BlogListData } from "../../components/blog/BlogListData";
+import { BlogListData } from "./BlogListData";
 import { Link, useParams } from "react-router-dom";
 
 import { Formik, Form, Field } from "formik";
@@ -48,7 +48,7 @@ const SERVICEID = "service_tq3fxn1";
 const TEMPLATEID = "template_msmv4ui";
 const PUBLICID = "_M_x6ZxOlDwyjQYJ6";
 
-const BlogDetail = () => {
+const BlogDetail_2 = () => {
   const isMobile = useMedia("(max-width:600px)");
   const isTablet = useMedia("(max-width:850px)");
 
@@ -133,7 +133,7 @@ const BlogDetail = () => {
   // console.log("item", item.blogSubHeading);
   // const { title, slug, content, imageUrl } = blog;
   // console.log(metaImage);
-  console.log("meta data from blog list", metadata);
+  // console.log("meta data from blog list", metadata);
 
   const schemaMarkup = {
     "@context": "https://schema.org",
@@ -159,7 +159,7 @@ const BlogDetail = () => {
     },
     datePublished: metaDate,
   };
-  console.log("schema data from object", schemaMarkup);
+  // console.log("schema data from object", schemaMarkup);
 
   return (
     <Container
@@ -217,16 +217,12 @@ const BlogDetail = () => {
           </Col>
 
           <Col
-            className="col-xl-10 "
+            className="col-xl-12 "
             md={9}
 
             // style={{ border: "2px solid blue" }}
           >
-            <Row
-              className={
-                isMobile ? `${styles.section_mobile}` : `${styles.section}`
-              }
-            >
+            <Row className={isMobile ? `${styles.section_mobile}` : `null`}>
               <div className="mt-0">
                 {/* <img
                   src={item?.blogTopImg}
@@ -250,11 +246,15 @@ const BlogDetail = () => {
                   </p>
                 )}
                 <ul className={` ${styles.list_section}`}>
+                  {console.log("item.blogList", item.blogList)}
+
                   {item.blogList.map((data) => {
                     const {
                       id,
                       listId,
                       listHeading,
+                      videoLeft,
+                      videoMain,
                       listPara,
                       listSub,
                       listPoints,
@@ -264,6 +264,15 @@ const BlogDetail = () => {
                       images,
                       Author,
                     } = data;
+
+                    var listPoints3 = data.listPoints3;
+                    var listPoints4 = data.listPoints4;
+                    // let videoMain = data.videoMain;
+
+                    // console.log("videoMainnnnn", data);
+                    // console.log("listPoints3", listPoints3);
+                    // console.log("listPoints2", listPoints2);
+
                     return (
                       <>
                         {/* <li key={id}>
@@ -364,125 +373,350 @@ const BlogDetail = () => {
                                 </>
                               ))}
                             {listPoints2 && (
-                              <div
-                                // Add a unique key for each item
-                                className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
-                              >
-                                <span className="mt-2 mb-3">
-                                  <section
-                                    style={{ padding: "24px 0px" }}
-                                    className={`${gramen.workProcessSection} p-relative`}
-                                  >
-                                    <div className={`${gramen.shape1}`}></div>
+                              <>
+                                <div
+                                  // Add a unique key for each item
+                                  className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
+                                >
+                                  <span className="mt-2 mb-3">
+                                    <section
+                                      style={{ paddingTop: "30px 0px" }}
+                                      className={`${gramen.workProcessSection} ${gramen.sectionSpace} p-relative`}
+                                    >
+                                      {/* <div className={`${gramen.shape1}`}></div> */}
 
-                                    <>
-                                      <div
-                                        className={`${gramen.smallContainer}`}
-                                      >
-                                        <div className="row">
-                                          <div
-                                            className="col-xxl-4 col-xl-4 col-lg-4"
-                                            style={{
-                                              display: "flex",
-                                              justifyContent: "space-between",
-                                              width: "100%",
-                                              flexWrap: "wrap",
-                                              gap: "20px",
-                                            }}
-                                          >
-                                            {listPoints2.map((item, i) => (
-                                              <>
-                                                <div
-                                                  className={`${gramen.workProcessBox} text-center`}
-                                                  style={{ width: "100%" }}
-                                                >
+                                      <>
+                                        <div
+                                          className={`${gramen.smallContainer}`}
+                                        >
+                                          <div className="row">
+                                            <div
+                                              className="col-xxl-4 col-xl-4 col-lg-4"
+                                              style={{
+                                                display: "flex",
+                                                justifyContent: "space-between",
+                                                width: "100%",
+                                                flexWrap: "wrap",
+                                                rowGap: "30px",
+                                              }}
+                                            >
+                                              {listPoints2.map((item, i) => (
+                                                <>
                                                   <div
-                                                    className={`${gramen.iconBox} p-relative`}
+                                                    className={
+                                                      styles.outermost_div
+                                                    }
+                                                    style={{ width: "100%" }}
+                                                  >
+                                                    <div
+                                                      style={{
+                                                        margin: "0  30px",
+                                                      }}
+                                                    >
+                                                      <h4
+                                                        className={`${styles.font_rubik} ${styles.outerdiv_h4}`}
+                                                      >
+                                                        {
+                                                          item?.listPoint_Heading
+                                                        }
+                                                      </h4>
+                                                      <p
+                                                        className={`${styles.outerdiv_steps}`}
+                                                      >
+                                                        {`STEP ${i + 1}`}
+                                                      </p>
+                                                      <hr />{" "}
+                                                      <p
+                                                        className={`${styles.outerdiv_p}`}
+                                                      >
+                                                        {item?.listPoint}
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                </>
+                                              ))}
+                                            </div>
+                                          </div>
+                                          {/* {console.log("itemmmm", item.blo)} */}
+
+                                          {/* <div style={{height:'20vh',border:'2px solid'}}>
+
+                                          </div> */}
+                                        </div>{" "}
+                                      </>
+                                    </section>
+                                  </span>
+                                </div>
+                              </>
+                            )}
+                            {listPoints3 && (
+                              <>
+                                <div
+                                  // Add a unique key for each item
+                                  className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
+                                >
+                                  <span className="mt-2 mb-3">
+                                    <section
+                                      style={{
+                                        padding: "30px 0px",
+                                      }}
+                                      className={`${gramen.workProcessSection} ${gramen.sectionSpace} p-relative`}
+                                    >
+                                      <>
+                                        <div
+                                          style={{ padding: 0 }}
+                                          className={`${gramen.smallContainer}`}
+                                        >
+                                          <div className="row">
+                                            <div
+                                              className="col-xxl-4 col-xl-4 col-lg-4"
+                                              style={{
+                                                display: "flex",
+                                                justifyContent: "space-between",
+                                                width: "120%",
+                                                flexWrap: "wrap",
+                                                rowGap: "30px",
+                                              }}
+                                            >
+                                              {listPoints3.map((item, i) => (
+                                                <>
+                                                  {/* <div
                                                     style={{
-                                                      border: "2px solid pink",
+                                                      width: "30%",
+                                                      height: "35vh",
+                                                      border: "2px solid ",
+                                                    }}
+                                                  ></div> */}
+
+                                                  <div
+                                                    className={`${gramen.workProcessBox} `}
+                                                    style={{
+                                                      width: "100%",
+                                                      borderRadius: "10px",
+                                                      padding:
+                                                        "0px 25px 10px 35px",
+                                                      // border: "2px solid",
+                                                      backgroundColor:
+                                                        "whitesmoke",
                                                     }}
                                                   >
-                                                    <i
-                                                      className={`${gramen.iconDoll}`}
-                                                    ></i>
-                                                    <span
-                                                      style={{
-                                                        top: "-3%",
-                                                        left: "35%",
-                                                      }}
+                                                    <div
+                                                      className={`${gramen.iconBox} p-relative`}
                                                     >
-                                                      {i + 1}
-                                                    </span>
+                                                      <i
+                                                        className={`${gramen.iconDoll}`}
+                                                        style={{
+                                                          // border: "2px solid",
+                                                          backgroundImage: `url('${item.icon}')`,
+                                                        }}
+                                                      ></i>
+                                                      {/* <span>{i + 1}</span> */}
+                                                    </div>
+                                                    <div>
+                                                      <h4
+                                                        className=""
+                                                        style={{
+                                                          padding: "20px 0px",
+                                                          fontSize: "16px",
+                                                          fontWeight: "700",
+                                                          // border:
+                                                          //   "2px solid blue",
+                                                        }}
+                                                      >
+                                                        {
+                                                          item?.listPoint_Heading
+                                                        }
+                                                      </h4>
+
+                                                      <ul
+                                                        style={{
+                                                          paddingLeft: "0",
+                                                        }}
+                                                      >
+                                                        {item?.points.map(
+                                                          (itemlist, i) => (
+                                                            <li
+                                                              style={{
+                                                                paddingBottom:
+                                                                  "20px",
+                                                                listStyle:
+                                                                  "disc",
+                                                              }}
+                                                            >
+                                                              {itemlist}
+                                                            </li>
+                                                          )
+                                                        )}
+                                                      </ul>
+
+                                                      {/* <p
+                                                        style={{
+                                                          fontSize: "15px",
+                                                          // border:
+                                                          //   "2px solid red",
+                                                        }}
+                                                      >
+                                                        {item?.listPoint}
+                                                      </p> */}
+                                                    </div>
                                                   </div>
-                                                  <div>
-                                                    <h4
-                                                      className=""
+                                                </>
+                                              ))}
+                                            </div>
+                                          </div>
+                                        </div>{" "}
+                                      </>
+                                    </section>
+                                  </span>
+                                </div>
+                              </>
+                            )}
+                            {listPoints4 && (
+                              <>
+                                <div
+                                  // Add a unique key for each item
+                                  className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
+                                >
+                                  <span className="mt-2 mb-3">
+                                    <section
+                                      style={{
+                                        padding: "30px 0px",
+                                      }}
+                                      className={`${gramen.workProcessSection} ${gramen.sectionSpace} p-relative`}
+                                    >
+                                      <>
+                                        <div
+                                          className={`${gramen.smallContainer}`}
+                                        >
+                                          <div className="row">
+                                            <div
+                                              className="col-xxl-4 col-xl-4 col-lg-4"
+                                              style={{
+                                                display: "flex",
+                                                justifyContent: "space-between",
+                                                width: "100%",
+                                                flexWrap: "wrap",
+                                                // border: "2px solid",
+                                                rowGap: "30px",
+                                              }}
+                                            >
+                                              <div
+                                                style={{
+                                                  width: "100%",
+                                                  display: "flex",
+                                                  alignItems: "center",
+                                                }}
+                                              >
+                                                <video
+                                                  // width="100%"
+                                                  // height="680px"
+                                                  autoPlay
+                                                  muted
+                                                  loop
+                                                  playsInline
+                                                  className="video-element"
+                                                  style={{
+                                                    objectFit: "cover",
+                                                    width: "100%",
+                                                    height: "10vh",
+
+                                                    padding: "0px",
+                                                  }}
+                                                >
+                                                  <source
+                                                    src={videoLeft}
+                                                    type="video/mp4"
+                                                  />
+                                                </video>
+                                              </div>
+                                              <div
+                                                className={`${gramen.listPoint_4_parent}`}
+                                                style={{ width: "100%" }}
+                                              >
+                                                {listPoints4.map((item, i) => (
+                                                  <div
+                                                    className={`${gramen.listPoint_4_parent_child}`}
+                                                    style={{
+                                                      flexWrap: "wrap",
+                                                      padding: "20px 10px",
+                                                    }}
+                                                  >
+                                                    <div
+                                                      className={`${gramen.listPoint4_iconBox} p-relative`}
                                                       style={{
-                                                        padding: "20px 0px",
-                                                        fontSize: "16px",
-                                                        fontWeight: "700",
+                                                        width: "40%",
+                                                        border: "3px solid",
+                                                        // height: "7vh",
                                                       }}
                                                     >
-                                                      {item?.listPoint_Heading}
-                                                    </h4>
-                                                    <p
+                                                      <i
+                                                        className={`${gramen.listPoint4_iconDoll}`}
+                                                        style={{
+                                                          backgroundImage: `url('${item.icon}')`,
+                                                        }}
+                                                      ></i>
+                                                    </div>
+                                                    <div
                                                       style={{
-                                                        fontSize: "15px",
+                                                        width: "90%",
+                                                        padding: "25px 0px",
+                                                        // border:
+                                                        //   "2px solid yellow",
                                                       }}
                                                     >
-                                                      {item?.listPoint}
+                                                      <h4
+                                                        className={`${styles.font_rubik}`}
+                                                        style={{
+                                                          fontSize: "20px",
+                                                          fontWeight: "600",
+                                                        }}
+                                                      >
+                                                        {
+                                                          item?.listPoint_Heading
+                                                        }
+                                                      </h4>
+                                                      <p
+                                                        style={{
+                                                          padding: "5px 0px",
+                                                          marginBottom: 0,
+                                                        }}
+                                                      >
+                                                        {item?.listPoint}
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                ))}
+
+                                                {/* <div
+                                                  style={{
+                                                    display: "flex",
+                                                    flexDirection: "row",
+                                                    justifyContent:
+                                                      "space-between",
+                                                  }}
+                                                >
+                                                  <div style={{ width: "70%" }}>
+                                                    <h4>heading</h4>
+                                                    <p>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Deleniti mollitia
                                                     </p>
                                                   </div>
-                                                </div>
-                                              </>
-                                            ))}
-                                            {listPoints2.map((item, i) => (
-                                              // console.log(
-                                              //   "itemmmm",
-                                              //   item.images
-                                              // )
-                                              <>
-                                                {item?.images && (
-                                                  <>
-                                                    <img
-                                                      style={{
-                                                        width: "100%",
-                                                        borderRadius: "10px",
-                                                      }}
-                                                      src={item.images}
-                                                      className="w-20 mt-3 mb-5"
-                                                    />
-                                                  </>
-                                                )}
-                                              </>
-                                            ))}
+                                                  <div style={{ width: "10%" }}>
+                                                    icon
+                                                  </div>
+                                                </div> */}
+                                              </div>
+                                            </div>
                                           </div>
-                                        </div>
-                                      </div>{" "}
-                                    </>
-                                  </section>
-                                </span>
-                              </div>
+                                        </div>{" "}
+                                      </>
+                                    </section>
+                                  </span>
+                                </div>
+                              </>
                             )}
-                            {listPoint && (
-                              <ol style={{ fontFamily: "poppins-regular" }}>
-                                {listPoint.map((item, i) => (
-                                  <li
-                                    key={i} // Add a unique key for each item
-                                    className={` mx-2 my-3 px-2`}
-                                  >
-                                    <span
-                                      style={{ color: "black" }}
-                                      className="mt-2 mb-3"
-                                    >
-                                      {" "}
-                                      {item?.listPoint_Heading}
-                                    </span>
-                                  </li>
-                                ))}
-                              </ol>
-                            )}
-
                             {images?.length === 1 &&
                               images?.map((item) => (
                                 <img src={item} className="w-80 mt-3 mb-5" />
@@ -535,68 +769,108 @@ const BlogDetail = () => {
                                 {listPara}
                               </p>
                             )}
-                            {listPoints &&
-                              listPoints.map((item, i) => (
-                                <>
-                                  <div
-                                    key={i} // Add a unique key for each item
-                                    className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
-                                  >
-                                    <span className="mt-2 mb-3">
-                                      <strong style={{ color: "#6f2b8c " }}>
-                                        {item?.listPoint_Heading}
-                                      </strong>
-                                    </span>
-                                    <span
-                                      style={{
-                                        color: "#252B33",
-                                        lineHeight: "1.7",
-                                      }}
-                                    >
-                                      {item?.listPoint}
-                                    </span>
-                                  </div>
-
-                                  {/* {console.log("vvvv", item)} */}
-
-                                  {item.videos && (
-                                    // <img
-                                    //   style={{ width: "100%" }}
-                                    //   src={item.images}
-                                    //   className="w-20 mt-3 mb-5"
-                                    // />
-                                    <video
-                                      // width="100%"
-                                      // height="680px"
-                                      autoPlay
-                                      muted
-                                      loop
-                                      playsInline
-                                      className="video-element"
-                                      style={{
-                                        objectFit: "cover",
-                                        width: "100%",
-
-                                        padding: "0px",
-                                      }}
-                                    >
-                                      <source
-                                        src={item.videos}
-                                        type="video/mp4"
-                                      />
-                                    </video>
-                                  )}
-                                  {/* {isMobile && (
-                                    <img
-                                      style={{ width: "100%" }}
-                                      src={item.images}
-                                      className="w-20 mt-3 mb-5"
-                                    />
-                                  )} */}
-                                </>
-                              ))}
 
                             {listPoints2 && (
+                              <>
+                                <div
+                                  // Add a unique key for each item
+                                  className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
+                                >
+                                  <span className="mt-2 mb-3">
+                                    <section
+                                      className={`${gramen.workProcessSection} ${gramen.sectionSpace} p-relative`}
+                                    >
+                                      {/* <div className={`${gramen.shape1}`}></div> */}
+
+                                      <>
+                                        <div
+                                          className={`${gramen.smallContainer}`}
+                                        >
+                                          <div className="row">
+                                            <div
+                                              style={{
+                                                width: "100%",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                paddingBottom: "30px",
+                                              }}
+                                            >
+                                              <video
+                                                // width="100%"
+                                                // height="680px"
+                                                autoPlay
+                                                muted
+                                                loop
+                                                playsInline
+                                                className="video-element"
+                                                style={{
+                                                  objectFit: "cover",
+                                                  width: "100%",
+
+                                                  padding: "0px",
+                                                }}
+                                              >
+                                                <source
+                                                  src={data.videoMain}
+                                                  type="video/mp4"
+                                                />
+                                              </video>
+                                            </div>
+                                            <div
+                                              className="col-xxl-4 col-xl-4 col-lg-4"
+                                              style={{
+                                                display: "flex",
+                                                justifyContent: "space-between",
+                                                width: "100%",
+                                                flexWrap: "wrap",
+                                                // rowGap: "30px",
+                                              }}
+                                            >
+                                              {listPoints2.map((item, i) => (
+                                                <>
+                                                  <div
+                                                    className={
+                                                      styles.outermost_div
+                                                    }
+                                                  >
+                                                    <div
+                                                      style={{
+                                                        margin: "0  30px",
+                                                      }}
+                                                    >
+                                                      <h4
+                                                        className={`${styles.font_rubik} ${styles.outerdiv_h4}`}
+                                                      >
+                                                        {
+                                                          item?.listPoint_Heading
+                                                        }
+                                                      </h4>
+                                                      <p
+                                                        className={`${styles.outerdiv_steps}`}
+                                                      >
+                                                        {`STEP ${i + 1}`}
+                                                      </p>
+                                                      <hr />{" "}
+                                                      <p
+                                                        className={`${styles.outerdiv_p}`}
+                                                      >
+                                                        {item?.listPoint}
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                </>
+                                              ))}
+                                            </div>
+                                          </div>
+                                        </div>{" "}
+                                      </>
+                                    </section>
+                                  </span>
+                                </div>
+                              </>
+                            )}
+                            {/* {console.log("listPoints333", listPoints3)} */}
+                            {listPoints3 && (
                               <>
                                 <div
                                   // Add a unique key for each item
@@ -623,31 +897,47 @@ const BlogDetail = () => {
                                                 // rowGap: "30px",
                                               }}
                                             >
-                                              {listPoints2.map((item, i) => (
+                                              {listPoints3.map((item, i) => (
                                                 <>
-                                                  <div
+                                                  {/* <div
                                                     style={{
                                                       width: "30%",
                                                       height: "35vh",
                                                       border: "2px solid ",
                                                     }}
-                                                  ></div>
+                                                  ></div> */}
 
-                                                  {/* <div
-                                                    className={`${gramen.workProcessBox} text-center`}
-                                                    style={{ width: "48%" }}
+                                                  <div
+                                                    className={`${gramen.workProcessBox} `}
+                                                    style={{
+                                                      width: "29%",
+                                                      // border: "2px solid",
+                                                      backgroundColor:
+                                                        "whitesmoke",
+                                                    }}
                                                   >
                                                     <div
                                                       className={`${gramen.iconBox} p-relative`}
-                                                      style={{
-                                                        border:
-                                                          "2px solid pink",
-                                                      }}
+                                                      style={
+                                                        {
+                                                          // border:
+                                                          //   "2px solid pink",
+                                                          // backgroundImage: `url('${item.icon}')`,
+                                                          // backgroundRepeat:
+                                                          //   "no-repeat",
+                                                          // backgroundPosition:
+                                                          //   "center",
+                                                        }
+                                                      }
                                                     >
                                                       <i
                                                         className={`${gramen.iconDoll}`}
+                                                        style={{
+                                                          // border: "2px solid",
+                                                          backgroundImage: `url('${item.icon}')`,
+                                                        }}
                                                       ></i>
-                                                      <span>{i + 1}</span>
+                                                      {/* <span>{i + 1}</span> */}
                                                     </div>
                                                     <div>
                                                       <h4
@@ -656,6 +946,147 @@ const BlogDetail = () => {
                                                           padding: "20px 0px",
                                                           fontSize: "16px",
                                                           fontWeight: "700",
+                                                          // border:
+                                                          //   "2px solid blue",
+                                                        }}
+                                                      >
+                                                        {
+                                                          item?.listPoint_Heading
+                                                        }
+                                                      </h4>
+
+                                                      <ul
+                                                        style={{
+                                                          paddingLeft: "0",
+                                                        }}
+                                                      >
+                                                        {item?.points.map(
+                                                          (itemlist, i) => (
+                                                            <li
+                                                              style={{
+                                                                paddingBottom:
+                                                                  "20px",
+                                                                listStyle:
+                                                                  "disc",
+                                                              }}
+                                                            >
+                                                              {itemlist}
+                                                            </li>
+                                                          )
+                                                        )}
+                                                      </ul>
+
+                                                      {/* <p
+                                                        style={{
+                                                          fontSize: "15px",
+                                                          // border:
+                                                          //   "2px solid red",
+                                                        }}
+                                                      >
+                                                        {item?.listPoint}
+                                                      </p> */}
+                                                    </div>
+                                                  </div>
+                                                </>
+                                              ))}
+                                            </div>
+                                          </div>
+                                        </div>{" "}
+                                      </>
+                                    </section>
+                                  </span>
+                                </div>
+                              </>
+                            )}
+                            {listPoints4 && (
+                              <>
+                                <div
+                                  // Add a unique key for each item
+                                  className={`${styles.blog_sub_para_list} mx-2 my-3 px-2`}
+                                >
+                                  <span className="mt-2 mb-3">
+                                    <section
+                                      className={`${gramen.workProcessSection} ${gramen.sectionSpace} p-relative`}
+                                    >
+                                      <>
+                                        <div
+                                          className={`${gramen.smallContainer}`}
+                                        >
+                                          <div className="row">
+                                            <div
+                                              className="col-xxl-4 col-xl-4 col-lg-4"
+                                              style={{
+                                                display: "flex",
+                                                justifyContent: "space-between",
+                                                width: "100%",
+                                                flexWrap: "wrap",
+                                                // border: "2px solid",
+                                                // rowGap: "30px",
+                                              }}
+                                            >
+                                              <div
+                                                style={{
+                                                  width: "50%",
+                                                  display: "flex",
+                                                  alignItems: "center",
+                                                }}
+                                              >
+                                                <video
+                                                  // width="100%"
+                                                  // height="680px"
+                                                  autoPlay
+                                                  muted
+                                                  loop
+                                                  playsInline
+                                                  className="video-element"
+                                                  style={{
+                                                    objectFit: "cover",
+                                                    width: "80%",
+
+                                                    padding: "0px",
+                                                  }}
+                                                >
+                                                  <source
+                                                    src={videoLeft}
+                                                    type="video/mp4"
+                                                  />
+                                                </video>
+                                              </div>
+                                              <div
+                                                className={`${gramen.listPoint_4_parent}`}
+                                              >
+                                                {listPoints4.map((item, i) => (
+                                                  <div
+                                                    className={`${gramen.listPoint_4_parent_child}`}
+                                                  >
+                                                    <div
+                                                      className={`${gramen.listPoint4_iconBox} p-relative`}
+                                                      style={{
+                                                        width: "20%",
+                                                        border: "3px solid",
+                                                        // height: "7vh",
+                                                      }}
+                                                    >
+                                                      <i
+                                                        className={`${gramen.listPoint4_iconDoll}`}
+                                                        style={{
+                                                          backgroundImage: `url('${item.icon}')`,
+                                                        }}
+                                                      ></i>
+                                                    </div>
+                                                    <div
+                                                      style={{
+                                                        width: "70%",
+                                                        padding: "15px 0px",
+                                                        // border:
+                                                        //   "2px solid yellow",
+                                                      }}
+                                                    >
+                                                      <h4
+                                                        className={`${styles.font_rubik}`}
+                                                        style={{
+                                                          fontSize: "20px",
+                                                          fontWeight: "600",
                                                         }}
                                                       >
                                                         {
@@ -664,39 +1095,39 @@ const BlogDetail = () => {
                                                       </h4>
                                                       <p
                                                         style={{
-                                                          fontSize: "15px",
+                                                          padding: "5px 0px",
+                                                          marginBottom: 0,
                                                         }}
                                                       >
                                                         {item?.listPoint}
                                                       </p>
                                                     </div>
-                                                  </div> */}
-                                                </>
-                                              ))}
+                                                  </div>
+                                                ))}
 
-                                              {/* {listPoints2.map((item, i) => (
-                                                // console.log(
-                                                //   "itemmmm",
-                                                //   item.images
-                                                // )
-                                                <>
-                                                  {item?.images && (
-                                                    <>
-                                                      <img
-                                                        src={item?.images}
-                                                        className="w-80 mt-3 mb-5"
-                                                      />
-                                                    </>
-                                                  )}
-                                                </>
-                                              ))} */}
+                                                {/* <div
+                                                  style={{
+                                                    display: "flex",
+                                                    flexDirection: "row",
+                                                    justifyContent:
+                                                      "space-between",
+                                                  }}
+                                                >
+                                                  <div style={{ width: "70%" }}>
+                                                    <h4>heading</h4>
+                                                    <p>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Deleniti mollitia
+                                                    </p>
+                                                  </div>
+                                                  <div style={{ width: "10%" }}>
+                                                    icon
+                                                  </div>
+                                                </div> */}
+                                              </div>
                                             </div>
                                           </div>
-                                          {/* {console.log("itemmmm", item.blo)} */}
-
-                                          {/* <div style={{height:'20vh',border:'2px solid'}}>
-
-                                          </div> */}
                                         </div>{" "}
                                       </>
                                     </section>
@@ -704,6 +1135,7 @@ const BlogDetail = () => {
                                 </div>
                               </>
                             )}
+
                             {listPoint && (
                               <ol style={{ fontFamily: "poppins-regular" }}>
                                 {listPoint.map((item, i) => (
@@ -808,39 +1240,6 @@ const BlogDetail = () => {
                     {"Contact Us Today!"}
                   </Link>
                 </p>
-              </div>
-            </Row>
-          </Col>
-
-          {/* rightside contents */}
-
-          <Col
-            md={3}
-            className={`${colClass} ${isMobile && styles.padding_for_mobile}`}
-            style={{ padding: 0 }}
-          >
-            <Row>
-              <div>
-                {isTablet && (
-                  <img
-                    src={item?.blog_right_image_Tablet}
-                    alt=""
-                    style={{
-                      width: "100%",
-                      objectFit: "cover",
-                    }}
-                  />
-                )}
-                {!isTablet && (
-                  <img
-                    src={item?.blog_right_image}
-                    alt=""
-                    style={{
-                      width: "100%",
-                      objectFit: "cover",
-                    }}
-                  />
-                )}
               </div>
             </Row>
           </Col>
@@ -1042,7 +1441,7 @@ const BlogDetail = () => {
   );
 };
 
-export default BlogDetail;
+export default BlogDetail_2;
 
 //old blog page code
 

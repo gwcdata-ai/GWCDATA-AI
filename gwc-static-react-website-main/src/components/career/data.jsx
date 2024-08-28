@@ -16,6 +16,103 @@ export const jobType = [
 
 export const jobCareerData = [
   {
+    id: 11,
+    jobID: "senior-data-analyst",
+    jobRole: "Senior Data Analyst",
+    experience: " 4+ Years",
+    location: jobLocations[2],
+    type: jobType[0],
+    jobdescription: [
+      {
+        // title: "",
+        para1:
+          "GWC DATA.AI is seeking a highly skilled and experienced Data Analyst to join our team in Bangalore, India. The ideal candidate will have a strong background in data analysis, data warehousing, and reporting, with expertise in tools such as Power BI, DAX queries, SQL, and Data Warehousing concepts.",
+        // para2:"",
+        // para3:"",
+        // para4: " ",
+      },
+      {
+        title: "Responsibilities",
+        list: [
+          "Develop, maintain, and manage advanced reporting, analytics, dashboards, and other BI solutions using Power BI .",
+          "Write complex DAX queries to generate insightful reports and visualizations. ",
+          "Design, implement, and maintain data warehousing solutions to support business intelligence needs. ",
+          "Perform detailed data analysis and validation to ensure accuracy and consistency of data. ",
+          "Collaborate with cross-functional teams to understand their data requirements and deliver actionable insights. ",
+          "Optimize and improve existing BI systems and processes. ",
+          "Utilize SQL for data extraction, transformation, and loading (ETL) tasks. ",
+          "Ensure data quality and integrity across various datasets and reports. ",
+          "Provide training and support to business users on BI tools and reports. ",
+        ],
+      },
+      {
+        title: "Requirements",
+        list: [
+          "Bachelor’s degree in Computer Science, Information Technology, Statistics, or a related field.",
+          "Proven experience as a Power BI Developer, preferably in a senior role.",
+          "Strong proficiency in Power BI with the ability to create complex reports and dashboards·",
+          "In-depth knowledge of DAX (Data Analysis Expressions) and its application in BI tools·",
+          "Solid understanding of data warehousing concepts and best practices. ",
+          "Advanced skills in SQL for data manipulation and query optimizatio. ",
+          "Excellent analytical, problem-solving, and communication skills. ",
+          "Ability to work independently and as part of a team in a fast-paced environment. ",
+          "Attention to detail and a commitment to delivering high-quality work. ",
+
+          ,
+        ],
+      },
+    ],
+  },
+  {
+    id: 10,
+    jobID: "snowflake-data-engineer",
+    jobRole: "Snowflake Data Engineer",
+    experience: " 5+ Years",
+    location: jobLocations[2],
+    type: jobType[0],
+    jobdescription: [
+      {
+        // title: "",
+        para1:
+          " GWC Data.ai is looking for a Snowflake Data Engineer with strong SQL and Python skills, and experience in at least one cloud platform (AWS, Azure, or GCP). The ideal candidate will have in-depth knowledge of Snowflake and be responsible for building and optimizing data pipelines and architectures.",
+        // para2:"",
+        // para3:"",
+        // para4: " ",
+      },
+      {
+        title: "Key Responsibilities",
+        list: [
+          "Create and maintain scalable data pipelines on Snowflake.",
+          "Develop efficient data models and optimize Snowflake performance. ",
+          "Proficient in writing and optimizing complex SQL queries and use Python for data processing and automation. ",
+          "Hands on experience with Snowflake cloud integration to ensure seamless data flow. ",
+          "Experience with performance tuning, query optimizing and data access within Snowflake. ",
+          "Collaborate with data teams to understand requirements and deliver solutions. ",
+        ],
+      },
+      {
+        title: "Qualifications",
+        list: [
+          "Strong experience with Snowflake data warehousing. Relevant experience in Snowflake should be atleast more than 2 years.",
+          "Advanced SQL skills for complex queries and optimizations.",
+          "Experience with Python for data-related tasks·",
+          "Proficiency in at least one cloud platform (AWS, Azure, GCP)·",
+          "Hands-on experience with ETL/ELT processes. ",
+          ,
+        ],
+      },
+      {
+        title: "Preferred",
+        list: [
+          "Experience with data tools like Apache Airflow or Talend.",
+          "Snowflake or relevant cloud certifications.",
+
+          ,
+        ],
+      },
+    ],
+  },
+  {
     id: 8,
     jobID: "senior-data-scientist",
     jobRole: "Senior Data Scientist",

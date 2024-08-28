@@ -47,6 +47,8 @@ import Domoproductinfo from "./pages/productDemo/DomoProductionPage/Domoproducti
 import JobPost from "./components/career/jobPost";
 import DomodashboardRetail from "./pages/productDemo/DomoProductionPage/DomodashboardRetail";
 import InnovationLabs from "./pages/InnovationLab/InnovationLabs";
+import BlogDetail from "./components/blog/BlogDetail";
+import BlogDetail_2 from "./components/blog/BlogDetail_2";
 
 function App() {
   return (
@@ -100,6 +102,7 @@ function App() {
           <Route path="/career-detail/:jobId" element={<CareerDetail />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route exact path="/blogs/:slug" element={<BlogDetailPage />}></Route>
+          <Route exact path="/blogs2/:slug" element={<BlogDetail_2 />}></Route>
 
           {/* <Route path="/blog-detail" element={<BlogDetailPage />} /> */}
 

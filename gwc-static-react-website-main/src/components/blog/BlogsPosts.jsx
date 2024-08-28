@@ -41,17 +41,18 @@ const BlogsPosts = ({ blogData }) => {
                   img,
                   blogList,
                   topHeading,
+                  page,
                 } = data;
                 return (
                   <Col md={4} key={id}>
                     <Card className={` ${styles.card_bg} mb-5`}>
-                      <Link to={`/blogs/${data?.slug}`}>
+                      <Link to={`/${page}/${data?.slug}`}>
                         <Card.Img variant="top" src={img} />
                       </Link>
 
                       <Card.Text>
                         <div className={` ${styles?.text_section} `}>
-                          <Link to={`/blogs/${data?.slug}`}>
+                          <Link to={`/${page}/${data?.slug}`}>
                             <p className={` ${styles?.para} mb-0`}>{date}</p>{" "}
                             <h6
                               className={` ${styles?.main_para} mb-0`}

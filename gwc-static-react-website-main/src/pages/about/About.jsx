@@ -56,6 +56,7 @@ export const AboutPage = () => {
 
         <title>GWC DATA.AI - About Us</title>
       </Helmet>
+
       <CommonSectionBanner commonSectionBannerContent={AboutBannerData} />
       <CommonLeftImageComponent commonLeftSectionContent={AboutOverViewData} />
       <OurFuture ourFutureContent={AboutOurFutureData} />

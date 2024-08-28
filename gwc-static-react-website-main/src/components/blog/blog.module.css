@@ -1,3 +1,73 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../../assets/fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font_rubik {
+  font-family: "Rubik";
+}
+
+.outermost_div {
+  width: 29%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 45px 10px 30px 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  transition: 550ms ease;
+  cursor: pointer;
+}
+.outermost_div:hover {
+  width: 29%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 45px 10px 30px 10px;
+  background-color: #6f2b8c;
+}
+.outerdiv_h4 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  transition: 500ms ease;
+
+  /* color: black; */
+}
+
+.outerdiv_p {
+  font-size: 16px;
+  text-align: "center";
+  line-height: "1.8rem";
+  color: "73727A";
+  transition: 500ms ease;
+}
+.outermost_div:hover .outerdiv_h4 {
+  color: white !important;
+}
+
+.outermost_div:hover .outerdiv_p {
+  color: whitesmoke !important;
+}
+.outermost_div > hr {
+  color: black !important;
+  border-top: 2px solid;
+}
+.outerdiv_steps {
+  padding: 35px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  color: #6f2b8c;
+  transition: 500ms ease;
+}
+.outermost_div:hover .outerdiv_steps {
+  color: #f48363 !important;
+}
+
 .container {
   margin-top: 3rem;
   background: rgb(255, 255, 255);
