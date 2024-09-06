@@ -28,6 +28,7 @@ import {
 } from "./data";
 
 import { SubscribeForm } from "./Form";
+import { Link } from "react-router-dom";
 
 export const FooterComponent = () => {
   // console.log("footerContent", FooterQuickLinks);
@@ -253,20 +254,16 @@ export const FooterComponent = () => {
             <Col lg={6} className="text-end">
               <p className={styles.footer_bottom}>
                 {" "}
-                <a href="" className={styles.footer_bottom}>
-                  {" "}
-                  Privacy{" "}
-                </a>{" "}
+                {/* <Link to={"/privacy&policy"} className={styles.footer_bottom}> */}{" "}
+                Privacy {/* </Link>{" "} */}
                 {/* |{" "} */}
                 {/* <a href="" className={styles.footer_bottom}>
                   {" "}
                   Cookies{" "}
                 </a>{" "} */}
                 |{" "}
-                <a href="" className={styles.footer_bottom}>
-                  {" "}
-                  Terms & Conditions{" "}
-                </a>{" "}
+                {/* <Link to={"/privacy&policy"} className={styles.footer_bottom}> */}{" "}
+                Terms & Conditions {/* </Link> */}
               </p>
             </Col>
           </Row>

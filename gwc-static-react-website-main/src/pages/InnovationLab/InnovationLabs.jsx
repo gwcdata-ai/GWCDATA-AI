@@ -23,8 +23,20 @@ import AOS from "aos";
 import useMedia from "../../hooks/useMedia";
 import { Helmet } from "react-helmet-async";
 
+import stylesb from "../../commoncss/Home.module.css";
+import Cricket_Poster from "../../assets/images/Banner/cricket.png";
+
 const InnovationLabs = () => {
   const isMobile = useMedia("(max-width:600px)");
+  const isTablet = useMedia("(max-width:850px)");
+  const isDesktop = useMedia("(max-width:1200px)");
+  const [isVisible, setIsVisible] = useState(false);
+  // console.log("state", isVisible);
+  const toggleVisibility = (e) => {
+    setIsVisible(!isVisible);
+    // console.log("clicked");
+  };
+
   AOS.init({
     duration: 300,
   });
@@ -33,7 +45,7 @@ const InnovationLabs = () => {
       <Helmet>
         <meta
           name="keywords"
-          content="Research & Innovation, AI Solutions, Data Analytics, Sustainability, Manufacturing, Applied AI, Advanced Data Science, Machine Learning, Precision Medicine, Autonomous Systems, Aerospace Simulations, Industrial Automation, Strategic Innovation, Experimentation, AI Technologies, 3D Printing, Drones, Robotics, Big Data, Research and Ideation, Open Innovation, Technology Partnerships, Hackathons, App-a-thons, Innovation Ecosystem, GWC Data.AI"
+          content="Research & Innovation, AI Solutions, Data Analytics, Sustainability, Manufacturing, Applied AI, Advanced Data Science, Machine Learning, Precision Medicine, Autonomous Systems, Aerospace Simulations, Industrial Automation, Strategic Innovation, Experimentation, AI Technologies, 3D Printing, Drones, Robotics, Big Data, Research and Ideation, Open Innovation, Technology Partnerships, Hackathons, App-a-thons, Innovation Ecosystem, GWC Data.AI,Innovation hub,gwc Innovation hub "
         />
 
         <meta
@@ -43,12 +55,93 @@ const InnovationLabs = () => {
 
         <title>GWC DATA.AI - Research & Innovation hub</title>
       </Helmet>
+      {!isVisible && (
+        <section>
+          <div
+            className={`${
+              isMobile
+                ? stylesb.poster_section_div_mobile
+                : stylesb.poster_section_div
+            }`}
+          >
+            <div
+              onClick={(e) => toggleVisibility(e)}
+              className={`${
+                isMobile
+                  ? stylesb.poster_svg_parent_mobile
+                  : stylesb.poster_svg_parent
+              }`}
+            >
+              <div
+                style={{
+                  cursor: "pointer",
+                  zIndex: 1,
+                  // border: "2px solid blue",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  width="20"
+                  height="19"
+                  style={{
+                    cursor: "pointer",
+                    zIndex: 1,
+                  }} // Ensure cursor pointer is applied
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className={`${
+                isMobile
+                  ? stylesb.poster_image_outer_div_mobile
+                  : stylesb.poster_image_outer_div
+              }`}
+            >
+              <img
+                src={Cricket_Poster}
+                alt="Cricket_Poster"
+                className={`${
+                  isMobile ? stylesb.poster_image_mobile : stylesb.poster_image
+                }`}
+              />
+            </div>
+            <div className={`${stylesb.poster_button_outer_div}`}>
+              <button
+                className={`${
+                  isMobile
+                    ? stylesb.poster_button_div_mobile
+                    : stylesb.poster_button_div
+                }`}
+              >
+                <a
+                  href="https://events.mhealth.ai/domo/domo-cxo-cricket-league"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "unset", textDecoration: "none" }} // Ensure link is styled correctly
+                >
+                  Register Now
+                </a>
+              </button>
+            </div>
+          </div>
+        </section>
+      )}
       <Container
         fluid
         className={`${
           isMobile
             ? `${styles.banner_Mobile} py-lg-0  mt-5`
-            : `${styles.banner_Desktop} py-lg-0`
+            : `${isTablet}`
+            ? `${styles.banner_Tablet} py-lg-0`
+            : `${isDesktop}`
+            ? `${styles.banner_Desktop} py-lg-0}`
+            : null
         }`}
       >
         <section
@@ -66,7 +159,7 @@ const InnovationLabs = () => {
             }`}
           >
             <Row className="d-flex">
-              <Col lg={7} md={6} className="py-lg-5">
+              <Col lg={7} md={8} className="py-lg-5">
                 {/* <p className={`${styles.breadcrumbs} mb-4 mt-5 mt-lg-3`}>
                                 <span>
                                     <a
@@ -82,8 +175,11 @@ const InnovationLabs = () => {
 
                 {/* <h1 className={`${styles.banner_title} mb-4`} /> */}
                 <h1
-                  className={`${styles.banner_title} `}
-                  style={{ margin: "20rem 0rem 0rem 0rem" }}
+                  className={`${
+                    isMobile
+                      ? `${styles.banner_title_mobile} `
+                      : `${styles.banner_title} `
+                  }`}
                 >
                   Research & Innovation
                 </h1>

@@ -49,6 +49,7 @@ import DomodashboardRetail from "./pages/productDemo/DomoProductionPage/Domodash
 import InnovationLabs from "./pages/InnovationLab/InnovationLabs";
 import BlogDetail from "./components/blog/BlogDetail";
 import BlogDetail_2 from "./components/blog/BlogDetail_2";
+import Privacy from "./pages/InnovationLab/Privacy";
 
 function App() {
   return (
@@ -134,6 +135,7 @@ function App() {
             element={<DomodashboardRetail />}
           />
           <Route path="/innovation-labs" element={<InnovationLabs />} />
+          <Route path="/privacy&policy" element={<Privacy />} />
         </Routes>
         <FooterComponent />
       </Suspense>

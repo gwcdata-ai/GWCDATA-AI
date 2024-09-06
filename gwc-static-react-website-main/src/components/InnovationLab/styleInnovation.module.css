@@ -16,12 +16,28 @@
   /* background-position: 60% 115%; */
   background-repeat: no-repeat;
 }
-
-.banner_Mobile {
+.banner_Tablet {
   background-image: url("../../../src/assets/images/innovationLabs/inno_banner.png");
   height: 100vh;
-  background-position: 60% 115%;
+  background-position: 55% 10%;
   background-repeat: no-repeat;
+}
+
+.banner_Desktop_Privacy {
+  background-image: url("../../../src/assets/images/innovationLabs/privacy&policy.webp");
+  height: 65vh;
+  /* background-position: 60% 115%; */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner_Mobile {
+  background-image: url("../../../src/assets/images/innovationLabs/inno_banner_2.png");
+  height: 90vh;
+  /* background-position: 62% 50%; */
+  background-repeat: no-repeat;
+  margin-top: 5.5rem;
+  background-size: cover;
 }
 .banner_title {
   font-family: "OS-Regular";
@@ -31,6 +47,27 @@
   /* line-height: 72px; */
   /* letter-spacing: -0.02em; */
   text-align: left;
+  color: var(--white);
+  margin: 23rem 0rem 0rem 0rem;
+}
+.banner_title_mobile {
+  font-family: "Roboto-Bold";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--white);
+  margin: 12rem 0rem 0rem 0rem;
+}
+.privacy_banner_title {
+  font-family: "OS-Regular";
+  /* font-family: "Roboto-Bold"; */
+  font-size: 45px;
+  font-weight: 800;
+  /* line-height: 72px; */
+  /* letter-spacing: -0.02em; */
+  text-align: center;
   color: var(--white);
 }
 .banner_description {
@@ -167,6 +204,24 @@
   color: black;
   padding: 1rem 0rem 1.7rem 0rem;
   text-align: center;
+}
+
+.privacy_ul li {
+  margin-bottom: 5px;
+}
+.privacy_ul li span {
+  line-height: 2.1;
+}
+
+.Privacy_text1 {
+  font-family: "OS-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0em;
+  color: black;
+  padding: 0rem 0rem 0.5rem 0rem;
+  text-align: left;
 }
 
 .banner_para {
@@ -509,12 +564,13 @@
   margin: auto;
 }
 .margin_10_mobile {
-  margin-top: 70%;
+  margin-top: 53%;
+  padding-right: 35px;
 }
 @media only screen and (max-width: 600px) {
   .banner_title {
     font-family: "Roboto-Bold";
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 35px;
     letter-spacing: -0.02em;
@@ -529,7 +585,7 @@
     /* line-height: 1.5; */
     /* letter-spacing: 0em; */
     color: black;
-    padding: 1rem 0rem 1.7rem 0rem;
+    padding: 0.5rem 0rem 1rem 0rem;
     color: var(--white);
   }
 
@@ -894,6 +950,15 @@
   line-height: 44px;
   letter-spacing: -0.02em;
   text-align: center;
+}
+
+.privacy_title {
+  font-family: "Roboto-Bold";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 44px;
+  /* letter-spacing: -0.02em; */
+  text-align: left;
 }
 
 .title_desktop {
