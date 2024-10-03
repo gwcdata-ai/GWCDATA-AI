@@ -34,7 +34,7 @@ const DomoSolutionsCard = ({ data, index }) => {
       onMouseLeave={handleMouseLeave}
     >
       <img src={data?.image} alt={data?.alt} />
-      <div className={`${styles.title_card} fw-bold`}>{data.title}</div>
+      <h3 className={`${styles.title_card} fw-bold`}>{data.title}</h3>
       <div style={{ color: "black" }} className={`${styles.description_card}`}>
         {data.description}
       </div>

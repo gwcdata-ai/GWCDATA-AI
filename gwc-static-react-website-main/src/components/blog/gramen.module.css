@@ -10,6 +10,21 @@
   font-display: block;
 }
 
+.listpoint3_tablet {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.listpoint3_desktop {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  /* row-gap: 30px; */
+}
+
 .workProcessSection {
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,6 +200,19 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
+.listPoint_4_parent_tablet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.listPoint_4_parent_tablet > div:nth-child(even) {
+  flex-direction: row-reverse !important ;
+}
+.listPoint_4_parent_tablet > div:nth-child(odd) {
+  flex-direction: row !important ;
+  /* color: red; */
 }
 
 .listPoint_4_parent {

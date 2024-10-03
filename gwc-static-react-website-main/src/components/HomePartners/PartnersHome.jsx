@@ -69,9 +69,9 @@ const HomePartners2 = () => {
     >
       <div className={styles.content2} ref={partnersSectionRef}>
         <div className={`${styles.heading4} text-white mt-1`}>
-          <span
+          <h1
             className={styles.whoAreWith}
-          >{` Our Trusted Network of Partners `}</span>
+          >{` Our Trusted Network of Partners `}</h1>
         </div>
         <Container
           className="my-3 py-md-4 py-3 bg-white rounded-3 d-flex align-items-center justify-content-center"
@@ -94,7 +94,7 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> DOMO </h1>
+              <h2 className="fixed_heading"> DOMO </h2>
               <p className="">
                 As the exclusive implementation partner for DOMO, we take pride
                 in delivering end-to-end data analytics services. Our expertise
@@ -102,7 +102,7 @@ const HomePartners2 = () => {
                 comprehensive solution tailored to their unique needs, covering
                 the entire spectrum of data analytics.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
               <div className={styles.badgeParent}>
                 <div className={styles.badge} data-aos="fade-right">
@@ -156,7 +156,7 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> GCP </h1>
+              <h2 className="fixed_heading"> GCP </h2>
               <p className="">
                 As a GCP partner, we specialize in crafting robust solutions
                 that harness the advanced services of Google Cloud Platform.
@@ -165,7 +165,7 @@ const HomePartners2 = () => {
                 empowering businesses with actionable insights for
                 transformative intelligence.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
               <div className={styles.badgeParent}>
                 <div className={styles.badge} data-aos="fade-right">
@@ -223,7 +223,7 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> Snowflake </h1>
+              <h2 className="fixed_heading"> Snowflake </h2>
               <p className="">
                 GWC excels as a Snowflake partner. We leverage Snowflake's
                 robust infrastructure and provide bespoke solutions across the
@@ -232,7 +232,7 @@ const HomePartners2 = () => {
                 empowers businesses to derive actionable insights, optimize
                 operations, and drive strategic decision-making.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
               <div className={styles.badgeParent}>
                 <div className={styles.badge} data-aos="fade-right">
@@ -286,7 +286,7 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> Salesforce </h1>
+              <h2 className="fixed_heading"> Salesforce </h2>
               <p className="">
                 GWC stands as the premier destination for comprehensive
                 Salesforce solutions. Our expertise lies in effortlessly
@@ -294,7 +294,7 @@ const HomePartners2 = () => {
                 workflows with just a few clicks. As your dedicated CRM Partner,
                 GWC propels your business towards unparalleled success.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
               <div className={styles.badgeParent}>
                 <div className={styles.badge} data-aos="fade-right">
@@ -355,7 +355,7 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> Fivetran </h1>
+              <h2 className="fixed_heading"> Fivetran </h2>
               <p className="">
                 Our seasoned team of Fivetran experts assists in dashboard
                 creation, metric development, cost and time reduction, and
@@ -363,7 +363,7 @@ const HomePartners2 = () => {
                 automated data movement platform, we deliver customized and
                 efficient data solutions tailored to your business requirements.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
               <div className={styles.badgeParent}>
                 <div className={styles.badge} data-aos="fade-right">
@@ -414,14 +414,14 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> DBT </h1>
+              <h2 className="fixed_heading"> DBT </h2>
               <p className="">
                 At GWC Analytics, our dbt (data build tool) team is redefining
                 the way we handle data transformation and modeling. With dbt, we
                 turn raw data into valuable, actionable insights, empowering
                 businesses to make data-driven decisions with confidence.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
               <div className={styles.badgeParent}>
                 <div className={styles.badge} data-aos="fade-right">
@@ -484,14 +484,14 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> Looker </h1>
+              <h2 className="fixed_heading"> Looker </h2>
               <p className="">
                 Unlock the full potential of your team with GWC’s Looker BI
                 solution, enabling seamless exploration, analysis, and
                 visualization of data. Experience the power of streamlined data
                 insights with our comprehensive Looker BI solution.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
 
               <div className={styles.badgeParent}>
@@ -555,7 +555,7 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> Alation </h1>
+              <h2 className="fixed_heading"> Alation </h2>
               <p className="">
                 GWC's proficiency in Alation empowers you to cultivate a robust
                 data culture. Our capabilities enable every member of your
@@ -563,7 +563,7 @@ const HomePartners2 = () => {
                 trust in data. Experience the transformative power of Alation
                 with GWC by your side.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
 
               <div className={styles.badgeParent}>
@@ -621,7 +621,7 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> Tableau </h1>
+              <h2 className="fixed_heading"> Tableau </h2>
               <p className="">
                 GWC boasts a solid history of translating intricate data into
                 enlightening visualizations that drive informed decision-making.
@@ -630,7 +630,7 @@ const HomePartners2 = () => {
                 resource utilization and delivering sustained
                 cost-effectiveness.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
 
               <div className={styles.badgeParent}>
@@ -694,7 +694,7 @@ const HomePartners2 = () => {
               />
             </Col>
             <Col md={9} data-aos="fade-left">
-              <h1 className="fixed_heading"> Boomi </h1>
+              <h2 className="fixed_heading"> Boomi </h2>
               <p className="">
                 At GWC, we specialize in Boomi, the foremost integration
                 platform engineered to seamlessly connect applications, data,
@@ -702,7 +702,7 @@ const HomePartners2 = () => {
                 take pride in delivering tailored Boomi solutions to businesses
                 spanning diverse industries.
               </p>
-              <h2>Capabilities</h2>
+              <h3>Capabilities</h3>
               {/* <div className="badge_box">Data Integrations</div> */}
 
               <div className={styles.badgeParent}>

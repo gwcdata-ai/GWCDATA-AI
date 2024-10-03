@@ -182,7 +182,10 @@ export const ProductCompany = () => {
                       } ${styles.list} tb mb-md-3 mb-1`}
                     >
                       {" "}
-                      <div className="px-1"> {item?.name} </div>{" "}
+                      <h2 className="px-1" style={{ fontSize: "18px" }}>
+                        {" "}
+                        {item?.name}{" "}
+                      </h2>
                     </div>
                   </Col>
                 );

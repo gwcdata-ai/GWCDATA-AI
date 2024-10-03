@@ -81,9 +81,9 @@ const DomoUse = () => {
         <div className={newStyles.headingAndSupportingText10}>
           <div className={newStyles.headingAndSubheading7}>
             {/* <div className={`${styles.sub_title} `}>Use Of Domo</div> */}
-            <div className={`${newStyles.meetOurLeadershipContainer}`}>
+            <h2 className={`${newStyles.meetOurLeadershipContainer}`}>
               When to use Domo?
-            </div>
+            </h2>
           </div>
           <div className={`${newStyles.supportingText36} mb-4`}>
             Want actionable insights to make smart decisions? Try Domo!
@@ -100,16 +100,18 @@ const DomoUse = () => {
           onMouseLeave={handleMouseLeave}
         >
           <Slider {...settings} className="m-0 p-0">
-            {DomoUseData.map((data,index) => (
+            {DomoUseData.map((data, index) => (
               <div
-              key={index}
+                key={index}
                 className={styles["section-container"]}
                 data-aos="fade-right"
               >
                 <div className={styles["image-container"]}>
                   <div className={`${styles.productCard} rounded-4 m-3`}>
                     <div className="text-start mb-3">{data.image}</div>
-                    <div className="fw-bold">{data.title}</div>
+                    <h3 className="fw-bold" style={{ fontSize: "16px" }}>
+                      {data.title}
+                    </h3>
                   </div>
                 </div>
               </div>

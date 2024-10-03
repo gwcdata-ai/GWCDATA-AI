@@ -29,7 +29,7 @@ const DomoAnalytics = () => {
           <Row className="d-flex align-items-center justify-content-center">
             <Col lg={12} md={12} className="py-md-0 py-lg-5 pt-5">
               <div className="">
-                <h1 className={styles?.title}>Domo Analytics Capabilities</h1>
+                <h2 className={styles?.title}>Domo Analytics Capabilities</h2>
               </div>
             </Col>
             <Col lg={12} md={12} className="pb-md-0 pb-5">

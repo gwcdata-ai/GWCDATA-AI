@@ -59,12 +59,12 @@ const HomeSolutionsCard = ({ id, data, highlightCard }) => {
         </div>
         <div className={styles.textAndSupportingTextParent}>
           <div className={styles.textAndSupportingText24}>
-            <div
+            <h3
               className={styles.text121}
               style={{ color: hover ? "white" : "black" }}
             >
               {data?.title}
-            </div>
+            </h3>
 
             <div
               className={styles.supportingText37}
@@ -291,12 +291,12 @@ const HomeSolutions = () => {
                   Our Solutions
                 </div> */}
                 <Container>
-                  <div
+                  <h2
                     className={`${styles.meetOurLeadershipContainer} mb-4 mt-md-5 mt-5 mx-lg-5 px-lg-5 px-3 mx-3`}
                   >
                     Fast-Track The Integration of AI Throughout Your Entire
                     business Value Chain
-                  </div>
+                  </h2>
                 </Container>
               </div>
               {/* <div className={`mb-4 ${styles.supportingText36}`}>

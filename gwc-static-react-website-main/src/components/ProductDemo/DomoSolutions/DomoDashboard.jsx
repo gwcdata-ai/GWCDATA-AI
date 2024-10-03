@@ -55,10 +55,10 @@ const DomoSolutionsCard = ({ data, index }) => {
             className={`${styles1.title_card_img}`}
           />
 
-          <div className={`${styles1.title_card_dash} fw-bold text-center`}>
+          <h3 className={`${styles1.title_card_dash} fw-bold text-center`}>
             {" "}
             {data.title}{" "}
-          </div>
+          </h3>
         </div>
       </div>
     </Link>

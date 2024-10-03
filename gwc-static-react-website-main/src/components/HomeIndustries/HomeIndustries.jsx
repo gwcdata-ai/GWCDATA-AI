@@ -173,9 +173,9 @@ const HomeIndustries = () => {
             >
               Industries we Cater to
             </div> */}
-            <div className={`${newStyles.meetOurLeadershipContainer} mb-4`}>
+            <h2 className={`${newStyles.meetOurLeadershipContainer} mb-4`}>
               AI-Driven Solutions for Seamless Success in Your Industry.
-            </div>
+            </h2>
           </div>
           {/* <div className={`${newStyles.supportingText36} mb-4`}>
               We build strategic data analytics platforms helping businesses
@@ -201,7 +201,9 @@ const HomeIndustries = () => {
                     />
                     <div className={styles.IndustriesSectionBox}>
                       <img src={data?.image} alt="Icon" />
-                      <div className="fw-bold">{data.title}</div>
+                      <h3 className="fw-bold" style={{ fontSize: "16px" }}>
+                        {data.title}
+                      </h3>
                       <div className="text-start" style={{ color: "black" }}>
                         {data.description}
                       </div>

@@ -757,6 +757,21 @@ export const Header = () => {
                 >
                   Domo Free Account
                 </NavDropdown.Item>
+                <NavDropdown.Item
+
+                // onClick={() => {
+                //   handleNavItemClick("domo-consulting#domo-freeaccount");
+                //   // navigate("/domo-consulting#domo-freeaccount");
+                // }}
+                >
+                  <Link
+                    to="blogs2/simplifying-your-looker-to-domo-migration-with-domodel"
+                    active={activeItem === "looker-to-domo"}
+                    onClick={() => handleNavItemClick("looker-to-domo")}
+                  >
+                    Looker to DOMO
+                  </Link>
+                </NavDropdown.Item>
               </NavDropdown>
 
               <Link

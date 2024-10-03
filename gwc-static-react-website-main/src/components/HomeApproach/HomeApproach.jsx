@@ -167,26 +167,31 @@ const HomeApproach = () => {
             {/* <div className={`${newStyles.subheading} text-white`}>
               Our Approach
             </div> */}
-            <div
+            <h2
               className={`${newStyles.meetOurLeadershipContainer} text-white`}
             >
               Amplify Business Impacts with the Transformative Power of Data
-            </div>
+            </h2>
           </div>
           <div className={`${newStyles.supportingText36} text-light mb-3`}>
-            Discover data analytics and AI solutions, that expand the horizons of
-            your business possibilities.
+            Discover data analytics and AI solutions, that expand the horizons
+            of your business possibilities.
           </div>
         </div>
       </div>
       <Row>
         <Col xs={12} md={6} lg={3} className="w-100">
           <Slider ref={sliderRef} {...settings} className="m-0 p-0">
-            {HomeApproachData.map((data,index) => (
+            {HomeApproachData.map((data, index) => (
               <div key={index} className={styles.approachdivpadding}>
                 <div className={styles.BenefitSectionBox} data-aos="fade-out">
                   <img src={data?.image} alt="Icon" />
-                  <div className={styles.benefits_title}>{data.title}</div>
+                  <h3
+                    className={styles.benefits_title}
+                    style={{ fontSize: "20px" }}
+                  >
+                    {data.title}
+                  </h3>
                   <div className="text-left">{data.description}</div>
                 </div>
               </div>

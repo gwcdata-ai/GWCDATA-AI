@@ -105,7 +105,7 @@ import Transforming_Right from "../../assets/images/Blog/Transforming_Right.jpg"
 import Timeicon from "../../assets/images/Blog/time_icon.png";
 import accuracy_icon from "../../assets/images/Blog/accuracy.png";
 import Looker_Domo from "../../assets/images/Blog/Looker_Domo.mp4";
-import DoModel_Video from "../../assets/images/Blog/DoModel.mp4";
+import DoModel_Video from "../../assets/images/Blog/DoModel.svg";
 
 import cost_effective_icon from "../../assets/images/Blog/cost-effective.png";
 
@@ -1704,174 +1704,174 @@ export const BlogListData = [
       " Domo is transforming our approach to fashion retail by enabling seamless data integration and analytics across all departments. This empowers us to make informed, data-driven decisions that enhance efficiency and innovation. With Domo, we can anticipate trends, optimize operations, and elevate customer experiences. As we look to the future, we are excited to leverage data to remain at the forefront of the industry. Together, we are setting new standards in fashion retail. ",
     writtenBy: "Written by Naveen Kumar - February 13, 2024",
   },
-  // {
-  //   id: 7,
-  //   blog_right_image: Simplifying_Your_Looker_Right,
-  //   blogTopImg_mobile: Simplifying_Your_Looker_Mobile,
-  //   page: "blogs2",
+  {
+    id: 7,
+    blog_right_image: Simplifying_Your_Looker_Right,
+    blogTopImg_mobile: Simplifying_Your_Looker_Mobile,
+    page: "blogs2",
 
-  //   blog_right_image_Tablet: Simplifying_Your_Looker_Right_Tablet,
+    blog_right_image_Tablet: Simplifying_Your_Looker_Right_Tablet,
 
-  //   slug: "simplifying-your-looker-to-domo-migration-with-domodel",
-  //   date: "August 10, 2024",
-  //   heading: "Simplifying Your Looker to DOMO Migration with DoModel",
-  //   days: "2 days ago",
-  //   views: "22k views",
-  //   img: Simplifying_Your_Looker,
-  //   topHeading: "Simplifying Your Looker to DOMO Migration with DoModel",
-  //   blogTopImg: Simplifying_Your_Looker,
-  //   blogSubHeading: "Simplifying Your Looker to DOMO Migration with DoModel",
-  //   description:
-  //     "In today’s fast-paced business environment, leveraging advanced data analytics tools is crucial for maintaining a competitive edge. As companies increasingly recognize the benefits of transitioning from traditional BI platforms like Looker to more dynamic and user-friendly solutions like DOMO, the challenge of migration often arises. At GWC Data.AI, we understand this challenge, which is why we've developed DoModel, a powerful utility designed to streamline your migration process.",
-  //   blogSubPara1:
-  //     "In today’s fast-paced business environment, leveraging advanced data analytics tools is crucial for maintaining a competitive edge. As companies increasingly recognize the benefits of transitioning from traditional BI platforms like Looker to more dynamic and user-friendly solutions like DOMO, the challenge of migration often arises. At GWC Data.AI, we understand this challenge, which is why we've developed DoModel, a powerful utility designed to streamline your migration process.",
-  //   Author: {
-  //     name: "Subash Ramu",
-  //     author_designation: "Chief Technology Officer",
+    slug: "simplifying-your-looker-to-domo-migration-with-domodel",
+    date: "August 10, 2024",
+    heading: "Simplifying Your Looker to DOMO Migration with DoModel",
+    days: "2 days ago",
+    views: "22k views",
+    img: Simplifying_Your_Looker,
+    topHeading: "Simplifying Your Looker to DOMO Migration with DoModel",
+    blogTopImg: Simplifying_Your_Looker,
+    blogSubHeading: "Simplifying Your Looker to DOMO Migration with DoModel",
+    description:
+      "In today’s fast-paced business environment, leveraging advanced data analytics tools is crucial for maintaining a competitive edge. As companies increasingly recognize the benefits of transitioning from traditional BI platforms like Looker to more dynamic and user-friendly solutions like DOMO, the challenge of migration often arises. At GWC Data.AI, we understand this challenge, which is why we've developed DoModel, a powerful utility designed to streamline your migration process.",
+    blogSubPara1:
+      "In today’s fast-paced business environment, leveraging advanced data analytics tools is crucial for maintaining a competitive edge. As companies increasingly recognize the benefits of transitioning from traditional BI platforms like Looker to more dynamic and user-friendly solutions like DOMO, the challenge of migration often arises. At GWC Data.AI, we understand this challenge, which is why we've developed DoModel, a powerful utility designed to streamline your migration process.",
+    Author: {
+      name: "Subash Ramu",
+      author_designation: "Chief Technology Officer",
 
-  //     author_Image: image2Img,
-  //     LinkedIn: "https://www.linkedin.com/in/subash-ramu-92553784/",
-  //   },
-  //   videoMain: DoModel_Video,
+      author_Image: image2Img,
+      LinkedIn: "https://www.linkedin.com/in/subash-ramu-92553784/",
+    },
+    videoMain: DoModel_Video,
 
-  //   blogList: [
-  //     {
-  //       id: 1,
-  //       listHeading: "Introducing DoModel",
-  //       listId: "Introduction",
+    blogList: [
+      // {
+      //   id: 1,
+      //   listHeading: "Introducing DoModel",
+      //   listId: "Introduction",
 
-  //       listPara:
-  //         "In today's fast-paced fashion retail industry, the ability to swiftly adapt to changing trends and customer preferences is crucial. Success hinges on seamless integration across various departments, from design and merchandising to sales and customer service. This is where Domo, a comprehensive data analytics platform, comes into play, revolutionizing the way we run our business. ",
-  //     },
-  //     {
-  //       id: 19,
-  //       listHeading: "How DoModel Works",
-  //       listId: "Let’s_explore",
-  //       videoMain: DoModel_Video,
+      //   listPara:
+      //     "In today's fast-paced fashion retail industry, the ability to swiftly adapt to changing trends and customer preferences is crucial. Success hinges on seamless integration across various departments, from design and merchandising to sales and customer service. This is where Domo, a comprehensive data analytics platform, comes into play, revolutionizing the way we run our business. ",
+      // },
+      {
+        id: 19,
+        listHeading: "How DoModel Works",
+        listId: "Let’s_explore",
+        videoMain: DoModel_Video,
 
-  //       listPoints2: [
-  //         {
-  //           id: 200,
-  //           listPoint_Heading: "Upload Your LookML Files",
+        listPoints2: [
+          {
+            id: 200,
+            listPoint_Heading: "Upload Your LookML Files",
 
-  //           listPoint:
-  //             " Begin by feeding your existing LookML files into DoModel. These files contain the structure and logic of your current Looker dashboards and data models.",
-  //         },
+            listPoint:
+              " Begin by feeding your existing LookML files into DoModel. These files contain the structure and logic of your current Looker dashboards and data models.",
+          },
 
-  //         {
-  //           id: 201,
-  //           listPoint_Heading: "Automated Conversion",
-  //           listPoint:
-  //             " DoModel automatically converts LookML files into DOMO Beast Mode measures and SQL queries, ensuring accuracy and consistency.",
-  //         },
-  //         {
-  //           id: 201,
-  //           listPoint_Heading: "Review and Deploy",
-  //           listPoint:
-  //             " After conversion, you receive the output in DOMO-importable format, including all measures and transformation queries for a smooth transition.",
-  //           // images: Simplifying_Your_Looker_1,
-  //           videos: [Simplifying_Your_Looker_video],
-  //         },
-  //         // {
-  //         //   videos: [Simplifying_Your_Looker_video],
-  //         // },
-  //       ],
-  //     },
-  //     {
-  //       id: 19,
-  //       listHeading: "Key Benefits of DoModel",
-  //       listId: "Let’s_explore",
-  //       listPoints3: [
-  //         {
-  //           id: 200,
-  //           listPoint_Heading: "Efficiency and Time-Saving",
+          {
+            id: 201,
+            listPoint_Heading: "Automated Conversion",
+            listPoint:
+              " DoModel automatically converts LookML files into DOMO Beast Mode measures and SQL queries, ensuring accuracy and consistency.",
+          },
+          {
+            id: 201,
+            listPoint_Heading: "Review and Deploy",
+            listPoint:
+              " After conversion, you receive the output in DOMO-importable format, including all measures and transformation queries for a smooth transition.",
+            // images: Simplifying_Your_Looker_1,
+            videos: [Simplifying_Your_Looker_video],
+          },
+          // {
+          //   videos: [Simplifying_Your_Looker_video],
+          // },
+        ],
+      },
+      {
+        id: 19,
+        listHeading: "Key Benefits of DoModel",
+        listId: "Let’s_explore",
+        listPoints3: [
+          {
+            id: 200,
+            listPoint_Heading: "Efficiency and Time-Saving",
 
-  //           points: [
-  //             "DoModel automates the conversion process, significantly reducing manual effort.",
-  //             "Automation saves time and minimizes the risk of human error.",
-  //           ],
-  //           icon: Timeicon,
-  //         },
-  //         {
-  //           id: 200,
-  //           listPoint_Heading: "Consistency and Accuracy",
+            points: [
+              "DoModel automates the conversion process, significantly reducing manual effort.",
+              "Automation saves time and minimizes the risk of human error.",
+            ],
+            icon: Timeicon,
+          },
+          {
+            id: 200,
+            listPoint_Heading: "Consistency and Accuracy",
 
-  //           points: [
-  //             "DoModel ensures accurate translation of Looker logic and calculations into DOMO.",
-  //             "It maintains the integrity of your data analytics by preventing inconsistencies and errors.",
-  //           ],
-  //           icon: accuracy_icon,
-  //         },
+            points: [
+              "DoModel ensures accurate translation of Looker logic and calculations into DOMO.",
+              "It maintains the integrity of your data analytics by preventing inconsistencies and errors.",
+            ],
+            icon: accuracy_icon,
+          },
 
-  //         {
-  //           id: 201,
-  //           listPoint_Heading: "Cost-Effective",
-  //           points: [
-  //             "A 30% reduction in migration effort lowers operational costs.",
-  //             "Quicker transition to DOMO enables your team to utilize advanced features sooner.",
-  //           ],
-  //           icon: cost_effective_icon,
+          {
+            id: 201,
+            listPoint_Heading: "Cost-Effective",
+            points: [
+              "A 30% reduction in migration effort lowers operational costs.",
+              "Quicker transition to DOMO enables your team to utilize advanced features sooner.",
+            ],
+            icon: cost_effective_icon,
 
-  //           images: Simplifying_Your_Looker_2,
-  //           // ImageSample: blog7sampleimg,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       id: 30,
-  //       listHeading: "Why Migrate to DOMO ?",
+            images: Simplifying_Your_Looker_2,
+            // ImageSample: blog7sampleimg,
+          },
+        ],
+      },
+      {
+        id: 30,
+        listHeading: "Why Migrate to DOMO ?",
 
-  //       listPara:
-  //         "DOMO offers a robust and user-friendly environment for data visualization and business intelligence. Its real-time data integration, advanced analytics capabilities, and collaborative features make it an ideal choice for organizations looking to enhance their data strategy. ",
-  //     },
-  //     {
-  //       id: 19,
-  //       listHeading: "Use Cases",
+        listPara:
+          "DOMO offers a robust and user-friendly environment for data visualization and business intelligence. Its real-time data integration, advanced analytics capabilities, and collaborative features make it an ideal choice for organizations looking to enhance their data strategy. ",
+      },
+      {
+        id: 19,
+        listHeading: "Use Cases",
 
-  //       videoLeft: Looker_Domo,
+        videoLeft: Looker_Domo,
 
-  //       listPoints4: [
-  //         {
-  //           id: 200,
-  //           listPoint_Heading: "Retail Sector",
+        listPoints4: [
+          {
+            id: 200,
+            listPoint_Heading: "Retail Sector",
 
-  //           listPoint:
-  //             " Retail companies can quickly switch their dashboards from Looker to DOMO for real-time updates and mobile access.",
-  //           icon: retail_icon,
-  //         },
-  //         {
-  //           id: 200,
-  //           listPoint_Heading: "Manufacturing",
+            listPoint:
+              " Retail companies can quickly switch their dashboards from Looker to DOMO for real-time updates and mobile access.",
+            icon: retail_icon,
+          },
+          {
+            id: 200,
+            listPoint_Heading: "Manufacturing",
 
-  //           listPoint:
-  //             " Manufacturers can shift to DOMO for real-time analytics, enhancing efficiency and reducing downtime",
-  //           icon: manufacturing_icon,
-  //         },
-  //         {
-  //           id: 200,
-  //           listPoint_Heading: "Financial Services",
+            listPoint:
+              " Manufacturers can shift to DOMO for real-time analytics, enhancing efficiency and reducing downtime",
+            icon: manufacturing_icon,
+          },
+          {
+            id: 200,
+            listPoint_Heading: "Financial Services",
 
-  //           listPoint:
-  //             " Financial institutions can transfer their models and reports to ensure continuity in data analysis and compliance.",
-  //           icon: financial_icon,
-  //         },
+            listPoint:
+              " Financial institutions can transfer their models and reports to ensure continuity in data analysis and compliance.",
+            icon: financial_icon,
+          },
 
-  //         {
-  //           id: 201,
-  //           listPoint_Heading: "Healthcare",
-  //           listPoint:
-  //             "Healthcare providers can migrate patient data analytics to enhance reporting speed and decision-making efficiency.",
-  //           images: Simplifying_Your_Looker_3,
-  //           icon: health_insurance_icon,
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   // imageHeading: "Addressing Challenges Faced by Domo",
-  //   // blogImage: domo_custom_app_header,
-  //   conclusion: "Conclusion",
-  //   conclusionText:
-  //     " Migrating from Looker to DOMO doesn’t have to be a cumbersome process. With DoModel by GWC Data.AI, you can achieve a smooth, efficient, and accurate transition, enabling your organization to quickly capitalize on DOMO’s advanced analytics capabilities. By reducing migration efforts by 30%, DoModel helps you save time, reduce costs, and maintain data integrity.  ",
-  //   writtenBy: "Written by Subash Ramu - August 10, 2024",
-  // },
+          {
+            id: 201,
+            listPoint_Heading: "Healthcare",
+            listPoint:
+              "Healthcare providers can migrate patient data analytics to enhance reporting speed and decision-making efficiency.",
+            images: Simplifying_Your_Looker_3,
+            icon: health_insurance_icon,
+          },
+        ],
+      },
+    ],
+    // imageHeading: "Addressing Challenges Faced by Domo",
+    // blogImage: domo_custom_app_header,
+    conclusion: "Conclusion",
+    conclusionText:
+      " Migrating from Looker to DOMO doesn’t have to be a cumbersome process. With DoModel by GWC Data.AI, you can achieve a smooth, efficient, and accurate transition, enabling your organization to quickly capitalize on DOMO’s advanced analytics capabilities. By reducing migration efforts by 30%, DoModel helps you save time, reduce costs, and maintain data integrity.  ",
+    writtenBy: "Written by Subash Ramu - August 10, 2024",
+  },
 ];

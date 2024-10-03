@@ -18,9 +18,9 @@ export const CommonRightImageComponent = ({ commonRightSectionContent }) => {
                 <p className={styles?.sub_title}>
                   <strong>{commonRightSectionContent?.sub_title}</strong>
                 </p>
-                <h1 className={styles?.title}>
+                <h2 className={styles?.title}>
                   {commonRightSectionContent?.title}
-                </h1>
+                </h2>
                 {commonRightSectionContent?.description && (
                   <p className={styles?.text}>
                     {commonRightSectionContent?.description}

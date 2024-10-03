@@ -9,6 +9,8 @@ import loc8 from "../../../assets/images/ContactUs/Location/usa.webp";
 import loc10 from "../../../assets/images/ContactUs/Location/hosur.webp";
 import loc9 from "../../../assets/images/ContactUs/Location/coimbatore.webp";
 import loc11 from "../../../assets/images/ContactUs/Location/tirupattur.webp";
+import loc12 from "../../../assets/images/ContactUs/Location/uk.jpeg";
+
 import locIcon from "../../../assets/images/ContactUs/Location/locationmap.svg";
 
 import AOS from "aos";
@@ -36,12 +38,31 @@ const Location = () => {
             <div className={styles.frameChild4} />
             <div className={styles.sawmillRoadSuite200Container}>
               <p className={styles.fillOutThis}>
-                600 N Broad Street Suite 5 #3907{" "}
+                600 N Broad St 5 3907, Middletown, DE 19709, USA{" "}
               </p>
-              <p className={styles.fillOutThis}>Middletown, DE 19709</p>
             </div>
 
             <div className={styles.ohioUsa}>USA</div>
+            <img className={styles.frameChild5} alt="" src={locIcon} />
+          </div>
+        </a>
+        <a
+          href={"https://maps.app.goo.gl/CFfLBfXPcx7oQdnJ8"}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#22211f" }}
+        >
+          <div className={styles.rectangleContainer} data-aos="zoom-in">
+            <img className={styles.rectangleIcon} alt="USA " src={loc12} />
+            <div className={styles.frameChild4} />
+            <div className={styles.sawmillRoadSuite200Container}>
+              <p className={styles.fillOutThis}>
+                11 Grove Cl, Rayleigh SS6 8QU, England{" "}
+              </p>
+              <p className={styles.fillOutThis}></p>
+            </div>
+
+            <div className={styles.ohioUsa}>United Kingdom</div>
             <img className={styles.frameChild5} alt="" src={locIcon} />
           </div>
         </a>
@@ -78,7 +99,9 @@ const Location = () => {
             <img className={styles.frameChild11} alt="" src={locIcon} />
           </div>
         </a>
+      </div>
 
+      <div className={styles.frameParent1}>
         <a
           href={"https://maps.app.goo.gl/zeNj7cgJSfoppPBQA"}
           target="_blank"
@@ -98,9 +121,6 @@ const Location = () => {
             <img className={styles.frameChild5} alt="" src={locIcon} />
           </div>
         </a>
-      </div>
-
-      <div className={styles.frameParent1}>
         <a
           href={"https://maps.app.goo.gl/kYNQPsHoswsPwydP9"}
           target="_blank"
@@ -151,7 +171,9 @@ const Location = () => {
             <img className={styles.frameChild5} alt="" src={locIcon} />
           </div>
         </a>
+      </div>
 
+      <div className={styles.frameParent1}>
         <a
           href={"https://maps.app.goo.gl/RXZm4NzCM2pRm83n9"}
           target="_blank"
@@ -173,28 +195,6 @@ const Location = () => {
           </div>
         </a>
       </div>
-
-      {/* <div className={styles.frameParent1}>
-        <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.rectangleIcon} alt="" src={loc4} />
-          <div className={styles.frameChild4} />
-          <div className={styles.sawmillRoadSuite200Container}>
-            <p className={styles.fillOutThis}>Kamarajar Nagar Colony , </p>
-            <p className={styles.fillOutThis}>Ammapet, Salem 636014</p>
-          </div>
-          <div className={styles.ohioUsa}>Salem </div>
-          <img className={styles.frameChild5} alt="" src={locIcon} />
-        </div>
-        <div className={styles.rectangleContainer} data-aos="zoom-in">
-          <img className={styles.rectangleIcon} src={loc11} alt="" />
-          <div className={styles.frameChild7} />
-          <div className={styles.sawmillRoadSuite200Container}>
-            3/6, CKC Road, Tirupattur - 635501
-          </div>
-          <div className={styles.ohioUsa}>Tirupattur</div>
-          <img className={styles.frameChild5} alt="" src={locIcon} />
-        </div>
-      </div> */}
     </div>
   );
 };

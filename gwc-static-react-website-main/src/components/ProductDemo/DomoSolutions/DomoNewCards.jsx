@@ -16,7 +16,7 @@ const DomoNewCards = () => {
           </p>
         </Col>
       </Row>
-      <Row className='mx-2'>
+      <Row className="mx-2">
         {DomoWhyChooseGwc?.map((item, index) => (
           <Col
             md={6}
@@ -32,19 +32,17 @@ const DomoNewCards = () => {
                                 style={{ width: "72px", height: "72px" }}
                                 alt=""
                             /> */}
-              <p className={`${styles.card_title5} my-4  mt-0 px-0`}>
-                {' '}
+              <h3 className={`${styles.card_title5} my-4  mt-0 px-0`}>
+                {" "}
                 {item?.title}
-              </p>
-              <div className='px-3 my-4'>
+              </h3>
+              <div className="px-3 my-4">
                 <p className={`${styles.card_title2} mb-0`}> {item?.title2}</p>
                 <p className={`${styles.card_para1} mb-3 mt-2`}>
-                  {' '}
+                  {" "}
                   {item?.description}
                 </p>
               </div>
-
-
             </div>
           </Col>
         ))}

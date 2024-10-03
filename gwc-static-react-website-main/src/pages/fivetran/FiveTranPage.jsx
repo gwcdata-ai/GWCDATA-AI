@@ -25,7 +25,7 @@ const FiveTranPage = () => {
       <Helmet>
         <meta
           name="keywords"
-          content="Fivetran Nando's builds, with Fivetran Nando's, hours with Fivetran, Fivetran Dropbox cuts, Fivetran data movement, with Fivetran, dbt labs, data ingestion, data readiness, using Fivetran’s, partners Domo, Fivetran handles, data transformation"
+          content="Fivetran Nando's builds,Fivetran, Fivetran Dropbox cuts, Fivetran data movement,data ingestion,Gwc and Fivetran,Fivetran partner, data transformation,analytics,data"
         />
 
         <meta

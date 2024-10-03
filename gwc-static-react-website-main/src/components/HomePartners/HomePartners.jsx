@@ -31,7 +31,6 @@ const HomePartners = () => {
 
   //     if (scrollPosition >= partnersSectionTop && selectedOption !== "boomi") {
 
-
   //       window.scrollTo({ top: partnersSectionTop, behavior: 'smooth' });
 
   //     }
@@ -39,19 +38,10 @@ const HomePartners = () => {
 
   //   window.addEventListener('scroll', handleScroll);
 
-
   //   return () => {
   //     window.removeEventListener('scroll', handleScroll);
   //   };
   // }, [selectedOption]);
-
-
-
-
-
-
-
-
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
